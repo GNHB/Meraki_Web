@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!----------------------CSS CONTENT-->
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../css/TheLoai.css" />
+    <!----------------------FONT-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body style="font-family: Arial; font-size: 16px; background-color: #FEFAF4;">
+    <!--Navigation bar-->
+    <input type="checkbox" id="check" />
+    <nav>
+        <a href="#">
+            <img class="logo" src="../image/imvBanner/logo.png" />
+        </a>
+        <div class="help_me">
+            <div class=" line1_navbar">
+                <div class="search_box">
+                    <input type="search" placeholder="search" />
+                    <span><a href="#"><img class="search_icon" src="../image/imvIcon/icon_search.png" /></a></span>
+                </div>
+                <div class="icon">
+                    <a href="#"><img id="vip_icon" src="../image/imvIcon/icon_vip.png" /></a>
+                    <a href="#"><img id="cart_icon" src="../image/imvIcon/icon_card_fontbar.png" /></a>
+                    <a href="#"><img id="user_icon" src="../image/imvIcon/icon_user.png" /></a>
+                </div>
+            </div>
+            <ol>
+                <li><a href="#">Thể loại</a></li>
+                <li><a href="#">Xếp hạng</a></li>
+                <li><a href="#">Blog</a></li>
+            </ol>
+        </div>
+        <label for="check" class="bar">
+            <span><img id="bar_icon" src="../image/imvIcon/menu-bar.png" /></span>
+        </label>
+    </nav>
+
+    <!--CONTENT-->
+    <div class="giohang_body">
+
+        <div class="list_item">
+            <p style="font-size: 20px;">Giỏ hàng</p>
+            <div class="item" style="border-top: 1px solid black;">
+                <p style="margin-top: 10px;"><strong>Truyện Kiều</strong> </p>
+                <p style="font-size: 14px;"> Nguyễn Du</p>
+                <table class="tbl_item">
+                    <tr>
+                        <td class="tbl_img" rowspan="3"><img src="../image/imvBook/truyenkieu.jpg" /></td>
+                        <td class="mo_ta" style=" vertical-align: bottom;"> <p><strong>Bìa:</strong> cứng </p> </td>
+                        <td class="chi_tiet">Giá</td>
+                        <td class="chi_tiet">Số lượng</td>
+                        <td class="chi_tiet">Tổng</td>
+                    </tr>
+                    <tr>
+                        <td class="mo_ta"> <p><strong>Nhà XB:</strong> NXB Kim Đồng </p> </td>
+                        <td>40.000đ</td>
+                        <td><span> <input min="0" type="number" id="soLuong" name="soLuong" /></span></td>
+                        <td>40.000đ</td>
+                    </tr>
+                    <tr>
+                        <td class="mo_ta" style=" vertical-align: top;"> <p><strong>Mã số seri:</strong> 123 </p> </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="item">
+                <p style="margin-top: 10px;"><strong>Kỳ án ánh trăng</strong> </p>
+                <p style="font-size: 14px;"> Quỷ Cổ Nữ</p>
+                <table class="tbl_item">
+                    <tr>
+                        <td class="tbl_img" rowspan="3"><img src="../image/imvBook/kyananhtrang.jpg" /></td>
+                        <td class="mo_ta" style=" vertical-align: bottom;"> <p>Bìa: cứng </p> </td>
+                        <td class="chi_tiet">Giá</td>
+                        <td class="chi_tiet">Số lượng</td>
+                        <td class="chi_tiet">Tổng</td>
+                    </tr>
+                    <tr>
+                        <td class="mo_ta"> <p>Nhà XB: NXB Kim Đồng </p> </td>
+                        <td>40.000đ</td>
+                        <td><span> <input min="0" type="number" id="soLuong" name="soLuong" /></span></td>
+                        <td>40.000đ</td>
+                    </tr>
+                    <tr>
+                        <td class="mo_ta" style=" vertical-align: top;"> <p>Mã số seri: 123 </p> </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="btnTiepTucMuaHang">
+                <button> Tiếp tục mua hàng</button>
+            </div>
+
+        </div>
+        <div class="thanh_tien_box">
+            <p style="text-align: center;"><strong>THÀNH TIỀN</strong></p>
+            <table>
+                <tr>
+                    <td>Tổng đơn hàng: </td>
+                    <td>80.000 </td>
+                </tr>
+                <tr id="border_table">
+                    <td>Giảm giá </td>
+                    <td>0 </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 600;">Thành tiền </td>
+                    <td style="font-weight: 600;">80.000 </td>
+                </tr>
+            </table>
+            <button> Thanh toán</button>
+        </div>
+    </div>
+
+</body>
+</html>

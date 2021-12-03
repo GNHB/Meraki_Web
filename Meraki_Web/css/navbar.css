@@ -1,0 +1,207 @@
+﻿
+nav {
+    display: flex;
+    background-color: #487B72;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+    nav * {
+        font-family: Arial;
+    }
+
+    nav img.logo {
+        display: flex;
+        margin-left: 30px;
+        height: 80px;
+        width: 115px;
+    }
+
+
+    nav div.help_me {
+        margin: auto;
+        width: 80%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav div.line1_navbar {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    nav div.icon {
+        display: flex;
+    }
+
+        nav div.icon a {
+            margin-left: 20px;
+        }
+
+#vip_icon {
+    height: 48px;
+    width: 55px;
+}
+
+#cart_icon {
+    height: 48px;
+    width: 50px;
+}
+
+#user_icon {
+    height: 50px;
+    width: 55px;
+}
+
+nav label #bar_icon {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+nav ol {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    width: 90%;
+    height: 30px;
+    align-items: center;
+}
+
+    nav ol li {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+    }
+
+
+        nav ol li a {
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+        }
+
+
+        nav ol li:hover {
+            background: #F7BB34;
+            color: #487B72;
+            cursor: pointer;
+        }
+
+nav div.search_box {
+    display: flex;
+    height: 40px;
+    width: 80%;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: auto;
+}
+
+nav span {
+    height: 100%;
+    padding: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+    nav span img.search_icon {
+        float: right;
+        height: 30px;
+        width: 30px;
+        vertical-align: middle;
+    }
+
+nav input {
+    height: 100%;
+    width: 95%;
+    border-radius: 5px;
+    margin: 0;
+    padding: 5px;
+}
+
+nav .bar {
+    position: relative;
+    margin: auto;
+    display: none;
+}
+
+    nav .bar span {
+        position: absolute;
+        color: white;
+        font-size: 35px;
+    }
+
+input[type="checkbox" ] {
+    -webkit-appearance: none;
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        display: block;
+        padding: 0;
+    }
+
+        nav img.logo {
+            display: inline-flex;
+            padding: 15px 30px;
+        }
+
+        nav div.search_box {
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+            nav div.search_box input {
+                width: 100%;
+            }
+
+        nav ol {
+            border-top: 3px solid white;
+            display: flex;
+            flex-direction: column;
+            height: 0;
+            visibility: hidden;
+            transition: 0.3s;
+        }
+
+            nav ol li {
+                border-right: none;
+                text-align: center;
+            }
+
+                nav ol li a {
+                    margin: 25px;
+                    display: block;
+                }
+
+        nav .bar {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 80px;
+        }
+
+            nav.bar #bar_icon {
+                display: none;
+            }
+
+    #check:checked ~ nav.bar #bar_icon {
+        display: block;
+    }
+
+    #check:checked ~ nav ol {
+        visibility: visible;
+        height: 50%;
+    }
+}
+
+
+

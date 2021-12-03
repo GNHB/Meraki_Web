@@ -1,0 +1,306 @@
+﻿:root {
+    --green: #487B72;
+    --yellow: #F7BB34;
+    --skin: #FBF1E1;
+    --light_skin: #FEFAF4;
+}
+
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+.theloai_body {
+    width: 80%;
+    margin: auto;
+    align-content: center;
+    align-self: center;
+}
+/*SIDEBAR*/
+.sidebar {
+    float: left;
+    width: 20%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--light_skin);
+    padding-top: 20px;
+    border-right: 1px solid black;
+    margin-right: 5%;
+}
+.sidebar a, .dropdown_btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    border: 1px solid black;
+}
+.dropdown-container {
+    display: block;
+    text-decoration: none;
+    background-color: var(--skin);
+    
+}
+.dropdown-container a{
+    border: none;
+}
+.sidebar a:hover, .dropdown-btn:hover {
+    color: var(--yellow);
+}
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.giamua_btn {
+    background-color: var(--yellow);
+    border-radius: 10px;
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px #888888;
+}
+.giamua_btn:hover {
+     background-color: var(--green);
+     color: white;
+}
+
+/*---------------------------------------------THỂ LOẠI-----------------------------------------------------------------------------------------------/
+/*NỘI DUNG*/
+.content {
+    top: 0;
+    right: 0;
+    width: 75%;
+    float: right;
+}
+.slider {
+    max-width: 85%;
+    display: flex;
+    margin: 10px 20px 0;
+}
+.slider_second {
+    max-width: 85%;
+    display: flex;
+    margin: 10px 20px 0;
+}
+.wrap {
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    position: relative;
+    padding-left: 20px;
+    margin: auto;
+}
+.slider {
+   /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;*/
+}
+.slider_box {
+    height: 284px;
+    width: 155px;
+    border-radius: 10px;
+    background-color: var(--skin);
+    align-items: center;
+    cursor: pointer;
+}
+.slider_box:hover .img_detail a {
+    color: var(--yellow);
+}
+.slider_img {
+    height: 221px;
+    width: 95%;
+    margin: 0 auto;
+    
+}
+.slider_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing:border-box;
+    border-radius: 10px;
+}
+.img_detail {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5px;
+    box-sizing: border-box; 
+}
+.img_detail a{
+    text-decoration: none;
+    font-weight:500;
+    font-size: 16px;
+    color:black;
+}
+.img_detail p{
+    font-size: 14px;
+    font-weight:lighter;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+/*TAC GIA YEU THICH*/
+.tac_gia_yeu_thich {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.sach_yeu_thich .slider_box{
+    height: 250px;
+    width: 160px;
+    border-radius: 10px;
+    background-color: var(--skin);
+    align-items: center;
+    cursor: pointer;
+}
+.tac_gia{
+    margin-left: 10%;
+}
+.tac_gia .slider_box {
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: var(--skin);
+    align-items: center;
+    cursor: pointer;
+}
+
+/*---------------------------------------------GIỎ HÀNG--------------------------------------------------------------------------------------------*/
+ /*NỘI DUNG*/
+
+.giohang_body {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list_item {
+    float: left;
+    width: 60%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--light_skin);
+    padding-top: 20px;
+    margin-right: 5%;
+
+}
+.mo_ta {
+    text-align: left;
+   
+}
+.item {
+   
+}
+.list_item  table {
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+}
+.list_item table, th, td {
+    text-align: center;
+}
+.tbl_item .tbl_img {
+    text-align: left;
+}
+.tbl_item .tbl_img img {
+    width: 117px;
+    height: 165px;
+    
+}
+
+.tbl_item #soLuong {
+    width: 40px;
+}
+.chi_tiet{
+    vertical-align: bottom;
+    text-decoration: underline;
+    color: var(--green);
+    font-weight: 500;
+}
+
+.tbl_item input {
+    background-color: var(--green);
+    color: white;
+    
+}
+.btnTiepTucMuaHang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnTiepTucMuaHang button {
+    background-color: var(--green);
+    border-radius: 10px;
+    padding: 7px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px #888888;
+}
+
+.thanh_tien_box {
+    float: right;
+    width: 25%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--skin);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: auto;
+    border: 1px solid black;
+    box-shadow: 2px 2px #888888;
+}
+    .thanh_tien_box button {
+        width: 60%;
+        display: block;
+        background-color: var(--yellow);
+        border-radius: 10px;
+        padding: 7px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        box-shadow: 2px 2px #888888;
+        
+    }
+    .thanh_tien_box p{
+        margin-bottom: 10px;
+    }
+    .thanh_tien_box span {
+        width: 100%;
+        margin: 20px;
+    }
+.thanh_tien_box  td{
+   text-align: left;
+   padding: 5px 0 5px 20px;
+}
+.thanh_tien_box table{
+    margin-left: auto;
+  margin-right: auto;
+}
+#border_table td{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+}

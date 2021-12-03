@@ -1,0 +1,410 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!----------------------CSS/JAVESCRIPT  SLIDER-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slickSlider.css" />
+    <script type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/theLoaiSlider.js"></script>
+
+    <!-----------------------CSS CONTENT------------>
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../css/TheLoai.css" />
+
+    <!----------------------FONT-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+</head>
+<body style="font-family: Arial; font-size: 16px; background-color: #FEFAF4;" ng-app="myApp">
+    <!--Navigation bar-->
+    <input type="checkbox" id="check" />
+    <nav>
+        <a href="#">
+            <img class="logo" src="../image/imvBanner/logo.png" />
+        </a>
+        <div class="help_me">
+            <div class=" line1_navbar">
+                <div class="search_box">
+                    <input type="search" placeholder="search" />
+                    <span><a href="#"><img class="search_icon" src="../image/imvIcon/icon_search.png" /></a></span>
+                </div>
+                <div class="icon">
+                    <a href="#"><img id="vip_icon" src="../image/imvIcon/icon_vip.png" /></a>
+                    <a href="#"><img id="cart_icon" src="../image/imvIcon/icon_card_fontbar.png" /></a>
+                    <a href="#"><img id="user_icon" src="../image/imvIcon/icon_user.png" /></a>
+                </div>
+            </div>
+            <ol>
+                <li><a href="#">Thể loại</a></li>
+                <li><a href="#">Xếp hạng</a></li>
+                <li><a href="#">Blog</a></li>
+            </ol>
+        </div>
+        <label for="check" class="bar">
+            <span><img id="bar_icon" src="../image/imvIcon/menu-bar.png" /></span>
+        </label>
+    </nav>
+
+    <!--SIDEBAR MENU-->
+    <div class="theloai_body" >
+        <p style=" margin: 20px auto 20px 160px; font-size: 18px;"><strong>Thể loại</strong></p>
+
+
+        <!--SIDE BAR-->
+        <div class="sidebar">
+            <button class="dropdown_btn">Khoa học <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="#">Thiên văn - Địa Lý</a>
+                <a href="#">Vật Lý - Công Nghệ</a>
+            </div>
+            <a href="#">Kinh tế - Xã Hội</a>
+            <button class="dropdown_btn">Tiểu Thuyết/ Văn học <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="#">Tình Cảm</a>
+                <a href="#">Trinh Thám</a>
+                <a href="#">Kinh Dị</a>
+                <a href="#">Viễn Tưởng</a>
+                <a href="#">Thơ</a>
+                <a href="#">Phương Tây</a>
+            </div>
+            <a href="#">Tâm Lý</a>
+            <br />
+            <p>Đánh giá</p>
+            <a href="#" style="border: none;">5 sao</a>
+            <a href="#" style="border: none;">Từ 4 sao </a>
+            <a href="#" style="border: none;">Từ 5 sao</a>
+            <br />
+            <p>Giá mua Ebook</p>
+            <button class="giamua_btn">Từ 20.000đ - 45.000đ</button>
+            <button class="giamua_btn">Từ 45.000đ - 60.000đ</button>
+            <button class="giamua_btn">Từ 65.000đ - 100.000đ</button>
+            <button class="giamua_btn">Trên 100.000đ</button>
+        </div>
+
+
+
+        <!--NỘI DUNG-->
+        <div class="content" >
+            <p style="text-align: center; ">Khoa học</p>
+            <hr style="width: 50%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom:5px;" />
+            <a style="text-decoration: none;" href="#"><p style="color: #487B72; font-size:13px; text-align: end; margin-right: 10%; ">Xem tất cả</p></a>
+            <div class="wrap">
+                <div class="slider" id="carouselContent">
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 40px;">Tiểu thuyết/ Văn học</p>
+            <hr style="width: 50%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom:5px;" />
+            <a style="text-decoration: none;" href="#"><p style="color: #487B72; font-size:13px; text-align: end; margin-right: 10%; ">Xem tất cả</p></a>
+            <div class="wrap">
+                <div class="slider" id="carouselContent">
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/truockhinhammat.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng1</a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/truockhinhammat.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng1</a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/truockhinhammat.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng1</a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/truockhinhammat.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng1</a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/truockhinhammat.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng1</a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/truockhinhammat.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng1</a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 40px;">Viễn tưởng</p>
+            <hr style="width: 50%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom:5px;" />
+            <a style="text-decoration: none;" href="#"><p style="color: #487B72; font-size:13px; text-align: end; margin-right: 10%; ">Xem tất cả</p></a>
+            <div class="wrap">
+                <div class="slider" id="carouselContent">
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng1</a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng1</a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng1</a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng1</a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng1</a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--<p style="text-align: center; margin-top: 70px;">Kinh dị</p>
+    <div class="wrap">
+        <div class="slider_second" id="carouselContent">
+            <div class="slider_box">
+                <div class="slider_img">
+                    <img src="image/trenduongbang.jpg" />
+                </div>
+                <div class="img_detail">
+                    <a href="#" class="title">Trên đường băng1</a>
+                    <p class="author">Tony Buổi Sáng</p>
+                </div>
+            </div>
+            <div class="slider_box">
+                <div class="slider_img">
+                    <img src="image/trenduongbang.jpg" />
+                </div>
+                <div class="img_detail">
+                    <a href="#" class="title">Trên đường băng1</a>
+                    <p class="author">Tony Buổi Sáng</p>
+                </div>
+            </div>
+            <div class="slider_box">
+                <div class="slider_img">
+                    <img src="image/trenduongbang.jpg" />
+                </div>
+                <div class="img_detail">
+                    <a href="#" class="title">Trên đường băng1</a>
+                    <p class="author">Tony Buổi Sáng</p>
+                </div>
+            </div>
+            <div class="slider_box">
+                <div class="slider_img">
+                    <img src="image/trenduongbang.jpg" />
+                </div>
+                <div class="img_detail">
+                    <a href="#" class="title">Trên đường băng1</a>
+                    <p class="author">Tony Buổi Sáng</p>
+                </div>
+            </div>
+            <div class="slider_box">
+                <div class="slider_img">
+                    <img src="image/trenduongbang.jpg" />
+                </div>
+                <div class="img_detail">
+                    <a href="#" class="title">Trên đường băng1</a>
+                    <p class="author">Tony Buổi Sáng</p>
+                </div>
+            </div>
+            <div class="slider_box">
+                <div class="slider_img">
+                    <img src="image/trenduongbang.jpg" />
+                </div>
+                <div class="img_detail">
+                    <a href="#" class="title">Trên đường băng1</a>
+                    <p class="author">Tony Buổi Sáng</p>
+                </div>
+            </div>
+        </div>-->
+            <!--</div>-->
+            <p style="text-align: center; margin-top: 40px;">Tác giả trinh thám được yêu thích nhất</p>
+            <hr style="width: 50%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom:5px;" />
+            <a style="text-decoration: none;" href="#"><p style="color: #487B72; font-size:13px; text-align: end; margin-right: 10%; ">Xem tất cả</p></a>
+            <div class="tac_gia_yeu_thich">
+                <div class="tac_gia">
+                    <div class="slider_box" style="margin-right: 50px; margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng1</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sach_yeu_thich">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="slider_box" style="margin-right: 50px; margin-bottom: 20px;">
+                                    <div class="slider_img">
+                                        <img src="../image/imvBook/trenduongbang.jpg" />
+                                    </div>
+                                    <div class="img_detail">
+                                        <a href="#" class="title">Trên đường băng1</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="slider_box" style="margin-bottom: 20px;">
+                                    <div class="slider_img">
+                                        <img src="../image/imvBook/trenduongbang.jpg" />
+                                    </div>
+                                    <div class="img_detail">
+                                        <a href="#" class="title">Trên đường băng1</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="slider_box" style="margin-right: 30px;">
+                                    <div class="slider_img">
+                                        <img src="../image/imvBook/truockhinhammat.jpg" />
+                                    </div>
+                                    <div class="img_detail">
+                                        <a href="#" class="title">Trên đường băng1</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="slider_box">
+                                    <div class="slider_img">
+                                        <img src="../image/imvBook/truockhinhammat.jpg" />
+                                    </div>
+                                    <div class="img_detail">
+                                        <a href="#" class="title">Trên đường băng1</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--DROP DOWN-->
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown_btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

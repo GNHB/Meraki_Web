@@ -1,0 +1,49 @@
+﻿[
+  {
+    "Title": "Trên đường băng",
+    "Author": "Tony Buổi Sáng",
+    "Images": [
+      "\\image\\trenduongbang.jpg"
+    ]
+  },
+
+  {
+    "Title": "Trước khi nhắm mắt",
+    "Author": "Keigo Hagashino",
+    "Images": [
+      "\\image\\truokhinhammat.jpg"
+    ]
+  },
+
+  {
+    "Title": "Truyện Kiều",
+    "Author": "Nguyễn Du",
+    "Images": [
+      "\\image\\truyenkieu.jpg"
+    ]
+  },
+
+  {
+    "Title": "Vòng tròn máu",
+    "Author": "Edgar Wallace",
+    "Images": [
+      "\\image\\vongtronmau.jpg"
+    ]
+  },
+
+  {
+    "Title": "Hỏa ngục",
+    "Author": "Dan Brown",
+    "Images": [
+      "\\image\\hoanguc.jpg"
+    ]
+  },
+
+  {
+    "Title": "Kỳ án ánh trăng",
+    "Author": "Quỷ Cổ Nữ",
+    "Images": [
+      "\\image\\kyananhtrang.jpg"
+    ]
+  }
+]
