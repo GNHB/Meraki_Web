@@ -1,4 +1,5 @@
-﻿$(document).ready(function () {
+﻿
+$(document).ready(function () {
     $('.slider').slick({
         slidesToShow: 4,
         slidesToScroll: 2,
@@ -62,4 +63,5 @@ $(document).ready(function () {
         ]
     });
 });
+
 

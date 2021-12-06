@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Sách mới</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    
+    <script src="../js/book.js"></script>
+    
+</head>
+<body ng-app="myApp">
+    
+    <!--Navigation bar-->
+    <input type="checkbox" id="check" />
+    <nav>
+        <a href="#">
+            <img class="logo" src="../image/imvBanner/logo.png" />
+        </a>
+        <div class="help_me">
+            <div class=" line1_navbar">
+                <div class="search_box">
+                    <input type="search" placeholder="search" />
+                    <span><a href="#"><img class="search_icon" src="../image/imvIcon/icon_search.png" /></a></span>
+                </div>
+                <div class="icon">
+                    <a href="#"><img id="vip_icon" src="../image/imvIcon/icon_vip.png" /></a>
+                    <a href="#"><img id="cart_icon" src="../image/imvIcon/icon_card_fontbar.png" /></a>
+                    <a href="#"><img id="user_icon" src="../image/imvIcon/icon_user.png" /></a>
+                </div>
+            </div>
+            <ol>
+                <li><a href="#">Thể loại</a></li>
+                <li><a href="#">Xếp hạng</a></li>
+                <li><a href="#">Blog</a></li>
+            </ol>
+        </div>
+        <label for="check" class="bar">
+            <span><img id="bar_icon" src="../image/imvIcon/menu-bar.png" /></span>
+        </label>
+    </nav>
+
+    <!--Slide quote-->
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <p class="author"><b>_Colleen Mccullough_</b></p>
+            <q>Tất cả những gì đẹp nhất chỉ có thể có được khi ta chịu trả giá bằng nỗi đau vĩ đại</q>
+        </div>
+        <div class="mySlides">
+            <p class="author">_Kito Aya_</p>
+            <q>
+                Có những người mà sự tồn tại của họ giống như không khí, êm dịu, nhẹ nhàng, chỉ khi họ mất đi người ta mới nhận ra họ quan trọng
+                nhường nào. Mình muốn trở thành một sự tồn tại như thế.
+            </q>
+
+        </div>
+        <div class="mySlides">
+            <p class="author">_Thomas A. Edison_</p>
+            <q>
+                Khi bạn khao khát một điều gì đó, cả vũ trụ sẽ hợp lực giúp bạn đạt được điều đó.
+            </q>
+        </div>
+        <div class="mySlides">
+            <p class="author">_Antoine De Saint-Exupéry_</p>
+            <q>
+                Nếu bạn đã dành trọn thời gian để chăm sóc một đóa hồng, thì đóa hồng đó sẽ trở nên vô cùng quan trọng với bạn.
+            </q>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <!--Header-->
+
+    <div class="sachmoititle">
+        <div class="sachmoi">Sách mới</div>
+        <div class="sapxep">
+            <div id="sapxep">Sắp xếp</div>
+            <select id="filterlist" onchange="myFunction()" class="form-control">
+                <option>Tất cả</option>
+                <option>Được xem nhiều</option>
+                <option>Được mua nhiều</option>
+            </select>
+        </div>
+
+    </div>
+
+    <hr />
+
+    <!--List of book-->
+    <div id="large-th">
+        <div class="container" ng-controller="BookController">
+            <div id="list-th">
+                <div class="book" ng-repeat="book in books">
+                    <div class="cover">
+                        <img src="{{book.cover}}" alt="{{book.title}}">
+                    </div>
+                    <div class="description">
+                        <p class="title">
+                            {{book.title}}<br>
+                            <span class="author">{{book.author}}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4><b>Về chúng tôi</b></h4>
+                    <ul>
+                        <li><a href="#">Giới thiệu chung</a></li>
+                        <li><a href="#">Quy định về bản quyền</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><b>Chính sách</b></h4>
+                    <ul>
+                        <li><a href="#">Chính sách vận chuyển</a></li>
+                        <li><a href="#">Chính sách trả hàng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><b>Hỗ trợ khách hàng</b></h4>
+                    <ul>
+                        <li><a href="#">Hướng dẫn đặt hàng</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#">Hướng dẫn trả hàng</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><b>Theo dõi chúng tôi</b></h4>
+                    <div class="social-links">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4><b>Tải ứng dụng</b></h4>
+                    <ul>
+                        <li><a href="#"><img src="../image/imvIcon/ggplaylogo.png" width="135" height="45" /></a></li>
+                        <li><a href="#"><img src="../image/imvIcon/logoAppStore.png" width="140" height="50" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/slidequote.js"></script>
+</body>
+</html>
+
+
