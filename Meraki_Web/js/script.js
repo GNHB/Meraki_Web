@@ -61,3 +61,6 @@ function openTab(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
+
+

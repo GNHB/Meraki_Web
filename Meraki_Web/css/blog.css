@@ -1,0 +1,129 @@
+﻿:root {
+    --green: #487B72;
+    --yellow: #F7BB34;
+    --skin: #FBF1E1;
+    --light_skin: #FEFAF4;
+}
+
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+.banner-blog {
+    margin: auto;
+    background-color: var(--light_skin);
+    display: flex;
+    /*align-items: center;*/
+    flex-wrap: wrap;
+   
+    text-align:center;
+    margin:10px 150px;
+}
+    .banner-blog img {
+        border-radius: 30px;
+        margin-top: 10px;
+        height: 450px;
+      
+        text-align: center;
+        box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    }
+
+.row{
+    margin-top: 5%;
+    display:flex;
+    justify-content:space-between;
+}
+.banner-col{
+    flex-basis:31%;
+    background: var(--skin);
+    border-radius: 10px;
+    margin-bottom:5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition:0.5s;
+}
+    .banner-col h3 {
+        color: var(--green);
+        margin: 10px 0px;
+        font-size: 20px;
+    }
+    .banner-col p {
+       
+        margin: 10px 0px;
+        font-size: 16px;
+    }
+    .banner-col:hover{
+       box-shadow:0 0 20px 0px #F7BB34;
+
+    }
+
+@media(max-width:700px){
+    .row{
+        flex-direction:column;
+    }
+}
+.tintuc {
+    width:80%;
+    margin: auto;
+    background-color: var(--light_skin);
+    display: flex;
+    /*align-items: center;*/
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 50px 150px;
+}
+.tintuc h2{
+    margin:20px 250px 20px 20px;
+
+    }
+
+.tintuc-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:1rem 0 0px;
+}
+.tintuc-header a {
+   margin: 20px ;
+   color:white;
+   background-color:var(--green);
+}
+    .tintuc-header a:hover {
+        margin: 20px;
+        color: var(--yellow);
+        
+    }
+.col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    background-color: var(--skin);
+    text-align: left;
+}
+    .col img {
+        width: 100%;
+        border-radius: 10px;
+    }
+.col p{
+    padding:10px 10px;
+    text-align:center;
+    font-size:16px;
+
+}
+.col h3{
+    margin-top:16px;
+    margin-bottom:15px;
+    text-align:left;
+    text-align:center;
+}
+.col:hover {
+    box-shadow: 0 0 20px 0px #F7BB34;
+}

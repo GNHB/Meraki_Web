@@ -1,49 +1,46 @@
 ﻿[
   {
-    "Title": "Trên đường băng",
-    "Author": "Tony Buổi Sáng",
-    "Images": [
-      "\\image\\trenduongbang.jpg"
-    ]
-  },
+    "name": "Vòng tròn máu",
 
-  {
-    "Title": "Trước khi nhắm mắt",
-    "Author": "Keigo Hagashino",
-    "Images": [
-      "\\image\\truokhinhammat.jpg"
-    ]
-  },
-
-  {
-    "Title": "Truyện Kiều",
-    "Author": "Nguyễn Du",
-    "Images": [
-      "\\image\\truyenkieu.jpg"
-    ]
-  },
-
-  {
-    "Title": "Vòng tròn máu",
-    "Author": "Edgar Wallace",
-    "Images": [
-      "\\image\\vongtronmau.jpg"
-    ]
-  },
-
-  {
-    "Title": "Hỏa ngục",
     "Author": "Dan Brown",
-    "Images": [
-      "\\image\\hoanguc.jpg"
-    ]
+    "imgSrc": "../image/imvBook/vongtronmau.jpg"
   },
-
   {
-    "Title": "Kỳ án ánh trăng",
-    "Author": "Quỷ Cổ Nữ",
-    "Images": [
-      "\\image\\kyananhtrang.jpg"
-    ]
+    "name": "Trước khi nhắm mắt",
+
+    "Author": "Dan Brown",
+    "imgSrc": "../image/imvBook/truockhinhammat.jpg"
+  },
+  {
+    "name": "Trời sinh vụng về",
+
+    "Author": "Lư Tử Hạo",
+    "imgSrc": "../image/imvBook/tróiinhvungve.jpg"
+  },
+  {
+    "name": "Thiên thần và ác quỷ",
+
+    "Author": "Dan Brown",
+    "imgSrc": "../image/imvBook/thienthanacquy.jpg"
+  },
+  {
+    "name": "Thú Tội",
+
+    "Author": "kanae",
+    "imgSrc": "../image/imvBook/thutoi.jpg"
+  },
+  {
+    "name": "Tiếng chim hot trong bụi ngò gai",
+
+    "Author": "Dan Brown",
+    "imgSrc": "../image/imvBook/Tiengchimhot2012.jpg"
+  },
+  {
+    "name": "Tội lỗi không chứng cứ",
+
+    "Author": "Tử Kim Trần",
+    "imgSrc": "../image/imvBook/toiloikhongchungcu.jpg"
   }
+
+
 ]
