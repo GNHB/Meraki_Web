@@ -1,4 +1,22 @@
 ﻿
+:root {
+    --green: #487B72;
+    --yellow: #F7BB34;
+    --skin: #FBF1E1;
+    --light_skin: #FEFAF4;
+}
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
 nav {
     display: flex;
     background-color: #487B72;
@@ -7,60 +25,48 @@ nav {
     text-align: center;
     padding: 15px 30px;
 }
-
     nav * {
         font-family: Arial;
     }
-
     nav img.logo {
         display: flex;
         margin-left: 30px;
         height: 80px;
         width: 115px;
     }
-
-
     nav div.help_me {
         margin: auto;
         width: 80%;
         justify-content: space-around;
         align-items: center;
     }
-
     nav div.line1_navbar {
         display: flex;
         margin-bottom: 20px;
     }
-
     nav div.icon {
         display: flex;
     }
-
         nav div.icon a {
             margin-left: 20px;
         }
-
 #vip_icon {
     height: 48px;
     width: 55px;
 }
-
 #cart_icon {
     height: 48px;
     width: 50px;
 }
-
 #user_icon {
     height: 50px;
     width: 55px;
 }
-
 nav label #bar_icon {
     height: 30px;
     width: 30px;
     cursor: pointer;
 }
-
 nav ol {
     display: flex;
     list-style: none;
@@ -69,15 +75,12 @@ nav ol {
     height: 30px;
     align-items: center;
 }
-
     nav ol li {
         margin: auto;
         width: 100%;
         height: 100%;
         margin-top: 10px;
     }
-
-
         nav ol li a {
             color: white;
             font-size: 18px;
@@ -85,14 +88,11 @@ nav ol {
             text-transform: capitalize;
             letter-spacing: 1px;
         }
-
-
         nav ol li:hover {
             background: #F7BB34;
             color: #487B72;
             cursor: pointer;
         }
-
 nav div.search_box {
     display: flex;
     height: 40px;
@@ -101,21 +101,18 @@ nav div.search_box {
     border-radius: 5px;
     margin: auto;
 }
-
 nav span {
     height: 100%;
     padding: 8px;
     position: relative;
     z-index: 1;
 }
-
     nav span img.search_icon {
         float: right;
         height: 30px;
         width: 30px;
         vertical-align: middle;
     }
-
 nav input {
     height: 100%;
     width: 95%;
@@ -123,46 +120,38 @@ nav input {
     margin: 0;
     padding: 5px;
 }
-
 nav .bar {
     position: relative;
     margin: auto;
     display: none;
 }
-
     nav .bar span {
         position: absolute;
         color: white;
         font-size: 35px;
     }
-
 input[type="checkbox" ] {
     -webkit-appearance: none;
     display: none;
 }
-
 @media screen and (max-width: 900px) {
     nav {
         display: block;
         padding: 0;
     }
-
         nav img.logo {
             display: inline-flex;
             padding: 15px 30px;
         }
-
         nav div.search_box {
             width: 100%;
             display: inline-flex;
             justify-content: center;
             margin-bottom: 15px;
         }
-
             nav div.search_box input {
                 width: 100%;
             }
-
         nav ol {
             border-top: 3px solid white;
             display: flex;
@@ -171,35 +160,154 @@ input[type="checkbox" ] {
             visibility: hidden;
             transition: 0.3s;
         }
-
             nav ol li {
                 border-right: none;
                 text-align: center;
             }
-
-                nav ol li a {
-                    margin: 25px;
-                    display: block;
-                }
-
+                nav ol li a
         nav .bar {
             display: block;
             position: absolute;
             top: 20px;
             right: 80px;
         }
-
             nav.bar #bar_icon {
                 display: none;
             }
-
     #check:checked ~ nav.bar #bar_icon {
         display: block;
     }
-
     #check:checked ~ nav ol {
         visibility: visible;
         height: 50%;
+    }
+}
+/*Slide quote*/
+.slideshow-container {
+    position: relative;
+    background: var(--green);
+    margin: 0;
+    height: 150px;
+    margin-top: 10px;
+}
+.mySlides {
+    display: none;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+.author {
+    font-size: 32px;
+    margin: 5px 10px 10px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+    .prev:hover, .next:hover {
+        background-color: var(--green);
+        color: white;
+    }
+q {
+    font-style: italic;
+    text-align: center;
+}
+
+/*FOOTER*/
+.container-footer {
+    max-width: 1170px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+ul {
+    list-style: none;
+}
+.footer {
+    background-color: var(--green);
+    padding: 70px 0;
+}
+.footer-col {
+    width: 20%;
+    padding: 0 15px;
+}
+    .footer-col h4 {
+        font-size: 18px;
+        color: #000000;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: var(--yellow);
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #000000;
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+        transition: all 0.3s ease;
+    }
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+    .footer-col .social-links a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+/*responsive footer*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
     }
 }
 

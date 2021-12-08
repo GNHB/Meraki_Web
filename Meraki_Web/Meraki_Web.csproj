@@ -71,12 +71,14 @@
     <Content Include="css\GioHang.css" />
     <Content Include="css\navbar.css" />
     <Content Include="css\slickSlider.css" />
+    <Content Include="css\styles.css" />
     <Content Include="css\ThanhToan.css" />
     <Content Include="css\TheLoai.css" />
     <Content Include="html\DiaChiGiaoHang.html" />
     <Content Include="html\GioHang.html" />
     <Content Include="html\HtmlPage1.html" />
     <Content Include="html\ThanhToan.html" />
+    <Content Include="html\Newbooks.html" />
     <Content Include="html\TheLoai.html" />
     <Content Include="image\imvBanner\banner %281%29.jpg" />
     <Content Include="image\imvBanner\IU.jpg" />
@@ -112,6 +114,9 @@
     <Content Include="image\imvIcon\logoAppStore.png" />
     <Content Include="image\imvIcon\menu-bar.png" />
     <Content Include="js\angular.js" />
+    <Content Include="js\book.js" />
+    <Content Include="js\script.js" />
+    <Content Include="js\slidequote.js" />
     <Content Include="js\DiaChiGiaoHang.js" />
     <Content Include="js\Theloai.js" />
     <Content Include="js\theLoaiSlider.js" />
