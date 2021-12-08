@@ -76,7 +76,6 @@
     <Content Include="css\TheLoai.css" />
     <Content Include="html\DiaChiGiaoHang.html" />
     <Content Include="html\GioHang.html" />
-    <Content Include="html\HtmlPage1.html" />
     <Content Include="html\ThanhToan.html" />
     <Content Include="html\Newbooks.html" />
     <Content Include="html\TheLoai.html" />
