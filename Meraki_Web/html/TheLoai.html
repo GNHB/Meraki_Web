@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/TheLoai.css" />
 
-    <!----------------------FONT-------------------->
+    <!----------------------FONT-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
 </head>
@@ -55,7 +55,7 @@
     </nav>
 
     <!--SIDEBAR MENU-->
-    <div class="theloai_body">
+    <div class="theloai_body" >
         <p style=" margin: 20px auto 20px 160px; font-size: 18px;"><strong>Thể loại</strong></p>
 
 
@@ -93,7 +93,7 @@
 
 
         <!--NỘI DUNG-->
-        <div class="content">
+        <div class="content" >
             <p style="text-align: center; ">Khoa học</p>
             <hr style="width: 50%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom:5px;" />
             <a style="text-decoration: none;" href="#"><p style="color: #487B72; font-size:13px; text-align: end; margin-right: 10%; ">Xem tất cả</p></a>
@@ -262,6 +262,65 @@
 
                 </div>
             </div>
+            <!--<p style="text-align: center; margin-top: 70px;">Kinh dị</p>
+    <div class="wrap">
+        <div class="slider_second" id="carouselContent">
+            <div class="slider_box">
+                <div class="slider_img">
+                    <img src="image/trenduongbang.jpg" />
+                </div>
+                <div class="img_detail">
+                    <a href="#" class="title">Trên đường băng1</a>
+                    <p class="author">Tony Buổi Sáng</p>
+                </div>
+            </div>
+            <div class="slider_box">
+                <div class="slider_img">
+                    <img src="image/trenduongbang.jpg" />
+                </div>
+                <div class="img_detail">
+                    <a href="#" class="title">Trên đường băng1</a>
+                    <p class="author">Tony Buổi Sáng</p>
+                </div>
+            </div>
+            <div class="slider_box">
+                <div class="slider_img">
+                    <img src="image/trenduongbang.jpg" />
+                </div>
+                <div class="img_detail">
+                    <a href="#" class="title">Trên đường băng1</a>
+                    <p class="author">Tony Buổi Sáng</p>
+                </div>
+            </div>
+            <div class="slider_box">
+                <div class="slider_img">
+                    <img src="image/trenduongbang.jpg" />
+                </div>
+                <div class="img_detail">
+                    <a href="#" class="title">Trên đường băng1</a>
+                    <p class="author">Tony Buổi Sáng</p>
+                </div>
+            </div>
+            <div class="slider_box">
+                <div class="slider_img">
+                    <img src="image/trenduongbang.jpg" />
+                </div>
+                <div class="img_detail">
+                    <a href="#" class="title">Trên đường băng1</a>
+                    <p class="author">Tony Buổi Sáng</p>
+                </div>
+            </div>
+            <div class="slider_box">
+                <div class="slider_img">
+                    <img src="image/trenduongbang.jpg" />
+                </div>
+                <div class="img_detail">
+                    <a href="#" class="title">Trên đường băng1</a>
+                    <p class="author">Tony Buổi Sáng</p>
+                </div>
+            </div>
+        </div>-->
+            <!--</div>-->
             <p style="text-align: center; margin-top: 40px;">Tác giả trinh thám được yêu thích nhất</p>
             <hr style="width: 50%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom:5px;" />
             <a style="text-decoration: none;" href="#"><p style="color: #487B72; font-size:13px; text-align: end; margin-right: 10%; ">Xem tất cả</p></a>
@@ -329,8 +388,23 @@
         </div>
 
     </div>
-    <!--DROP DOWN----> 
-    <script type="text/javascript" src="../js/Theloai.js"></script>
+    <!--DROP DOWN-->
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown_btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
 
 </body>
 </html>
