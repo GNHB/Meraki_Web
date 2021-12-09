@@ -75,6 +75,7 @@
     <Content Include="css\styles.css" />
     <Content Include="css\ThanhToan.css" />
     <Content Include="css\TheLoai.css" />
+    <Content Include="html\Blog.html" />
     <Content Include="html\DiaChiGiaoHang.html" />
     <Content Include="html\GioHang.html" />
     <Content Include="html\ThanhToan.html" />
