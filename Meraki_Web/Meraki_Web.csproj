@@ -73,6 +73,7 @@
     <Content Include="css\TheLoai.css" />
     <Content Include="html\GioHang.html" />
     <Content Include="html\Newbooks.html" />
+    <Content Include="html\OrderManagement.html" />
     <Content Include="html\TheLoai.html" />
     <Content Include="image\imvBanner\banner %281%29.jpg" />
     <Content Include="image\imvBanner\IU.jpg" />

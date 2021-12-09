@@ -27,7 +27,7 @@ app.controller('BookController', function ($scope, $http) {
         });*/
 
 
-/*Save quote*/
+/*SAVE PROFILE QUOTE*/
 function saveQuote() {
 
     //get the editable element
@@ -46,8 +46,8 @@ function checkEdits() {
         document.getElementById("editquote").innerHTML = localStorage.userEdits;
 }
 
-/*Tab profile*/
-function openTab(evt, cityName) {
+/*VERTICAL PROFILE TAB*/
+function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -57,7 +57,20 @@ function openTab(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
+/*HORIZONTAL PROFILE TAB*/
+let tabPanes = document.getElementsByClassName("tab-header")[0].getElementsByTagName("div");
+
+for (let i = 0; i < tabPanes.length; i++) {
+    tabPanes[i].addEventListener("click", function () {
+        document.getElementsByClassName("tab-header")[0].getElementsByClassName("active")[0].classList.remove("active");
+        tabPanes[i].classList.add("active");
+
+        document.getElementsByClassName("tab-content")[0].getElementsByClassName("active")[0].classList.remove("active");
+        document.getElementsByClassName("tab-content")[0].getElementsByTagName("div")[i].classList.add("active");
+    })
+}
