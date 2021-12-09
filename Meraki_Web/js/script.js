@@ -74,3 +74,6 @@ for (let i = 0; i < tabPanes.length; i++) {
         document.getElementsByClassName("tab-content")[0].getElementsByTagName("div")[i].classList.add("active");
     })
 }
+
+
+
