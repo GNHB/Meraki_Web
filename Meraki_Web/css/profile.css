@@ -1,0 +1,486 @@
+﻿:root {
+    --green: #487B72;
+    --yellow: #F7BB34;
+    --skin: #FBF1E1;
+    --light_skin: #FEFAF4;
+}
+
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+@media (max-width: 941px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .book {
+        margin: 49px;
+    }
+
+    .writequote {
+        display: none;
+    }
+}
+
+@media (max-width: 730px) {
+    .book {
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .tab-text {
+        display: none;
+    }
+}
+/*Header*/
+.header {
+    font-size: 30px;
+    margin: 20px 0px 20px 160px;
+}
+
+/*Title Sach Moi*/
+.sachmoititle {
+    width: 100%;
+    height: 65px;
+    padding: 0 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sapxep {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    margin: 10px;
+}
+
+.sachmoititle .sachmoi {
+    display: flex;
+    float: left;
+    font-size: 32px;
+}
+
+#myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#filterlist {
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+
+hr {
+    margin: 10px 0px;
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+}
+
+h3 {
+    margin: 20px 0px;
+}
+/******************************************
+Book stuff
+*******************************************/
+.container {
+    margin: 50px;
+    display: block;
+    align-items: center;
+}
+
+#list-th {
+    text-align: center;
+}
+
+.book {
+    display: inline-block;
+    width: 160px;
+    height: 284.37px;
+    box-shadow: 0 0 20px #aaa;
+    margin: 25px;
+    padding: 10px 10px 0 10px;
+    vertical-align: top;
+    transition: height 1s;
+}
+
+.cover {
+    border: 2px solid gray;
+    height: 80%;
+    overflow: hidden;
+}
+
+    .cover img {
+        width: 100%;
+        height: 100%;
+    }
+
+.book p {
+    margin-top: 12px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.book .title {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.book .author {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+
+#list-th:target .book {
+    height: 100px;
+    width: 250px;
+    padding: 10px;
+    margin: 25px auto 25px auto;
+}
+
+#list-th:target .cover {
+    width: 246px;
+}
+
+#list-th:target img {
+    opacity: .1;
+}
+
+#list-th:target p {
+    margin-top: -62px;
+    margin-left: 20px;
+}
+
+#large-th:target .book {
+    height: 390px;
+}
+
+/*NAV BOOK*/
+.pagination {
+    margin: 30px;
+    text-align: center;
+}
+
+    .pagination a {
+        color: black;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+    }
+
+        .pagination a.active {
+            background-color: var(--yellow);
+            color: white;
+            border: 1px solid var(--yellow);
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: var(--yellow);
+        }
+
+/*ORDER MANAGEMENT*/
+/*PROFILE*/
+.profile-banner {
+    background-image: url("../image/imvBanner/banner (1).jpg");
+    height: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.img-profileinf {
+    float: left;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.avatar-profile {
+    background-image: url("../image/imvBanner/IU.jpg");
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 30px;
+}
+
+.name-profile a {
+    font-size: 32px;
+    color: #fff;
+}
+
+.img-profileinf .name-profile a:hover {
+    color: var(--yellow);
+}
+
+.writequote {
+    display: block;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.editquote {
+    display: block;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.edit {
+    width: 100%;
+    height: 80px;
+    overflow: auto;
+    font-size: 16px;
+}
+
+.btnsavequote {
+    float: right;
+    margin: 10px 20px 0px;
+    width: 50px;
+    height: 25px;
+    border: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .btnsavequote:hover {
+        background-color: var(--yellow);
+        color: white;
+    }
+
+
+/* VERTICAL PROFILE TAB */
+.content-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab {
+    float: left;
+    border: 1px solid #355C7D;
+    background-color: var(--green);
+    width: 20%;
+    height: inherit;
+    align-items: center;
+}
+
+    .tab button {
+        display: flex;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        color: white;
+        align-items: center;
+        text-align: center;
+    }
+
+        .tab button:hover {
+            background-color: #eee;
+            color: black;
+        }
+
+        .tab button.active {
+            background-color: white;
+            color: black;
+        }
+
+.tab-icon, table-text {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+    text-align: center;
+}
+
+.tab-text {
+    font-size: 16px;
+}
+
+.tabcontent {
+    display: none;
+    float: left;
+    padding: 0px 12px;
+    width: 80%;
+    border-left: none;
+    height: 300px;
+}
+
+
+/*HORIZONTAL PROFILE TAB*/
+.tabs {
+    width: 100%;
+    height: inherit;
+}
+
+.tab-header {
+    display: flex;
+    height: 50px;
+    background-color: var(--green);
+}
+
+.tabs .tab-header > div {
+    position: relative;
+    width: calc(100% / 3);
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+
+    .tabs .tab-header > div:before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 0%;
+        background: #f5f5f5;
+        z-index: -1;
+    }
+
+    .tabs .tab-header > div:hover:before {
+        transition: all 300ms ease-in-out;
+        height: 5%;
+    }
+
+    .tabs .tab-header > div.active {
+        color: var(--green);
+    }
+
+        .tabs .tab-header > div.active:before {
+            transition: all 300ms ease-in-out;
+            height: 100%;
+        }
+
+.tabs .active {
+    width: 100%;
+}
+
+.tabs .tab-content {
+    position: relative;
+}
+
+    .tabs .tab-content > div {
+        position: absolute;
+        transform: scale(0.5);
+        opacity: 0;
+        top: 200%;
+        padding: 20px;
+        transition: all 500ms ease-in-out;
+    }
+
+        .tabs .tab-content > div.active {
+            transform: scale(1);
+            opacity: 1;
+            top: 0%;
+        }
+
+/*ALL ORDER*/
+.order-item {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--skin);
+    border-spacing: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+    .order-item .order-img {
+        text-align: center;
+        align-items: center;
+        width: 100px;
+        height: 130px;
+    }
+
+        .order-item .order-img img {
+            width: 100px;
+            height: 130px;
+        }
+
+    .order-item .mo-ta {
+        text-align: left;
+        width: 50%;
+    }
+
+    .order-item .price-order {
+        text-align: center;
+        color: red;
+    }
+
+    .order-item hr {
+        width: 80%;
+        margin: auto;
+    }
+
+    .order-item .order-number {
+        border-bottom: 1px solid black;
+        text-align: left;
+        padding: 10px 0px;
+    }
+
+    .order-item button {
+        background-color: var(--yellow);
+        border: none;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 2px 2px #888888
+    }

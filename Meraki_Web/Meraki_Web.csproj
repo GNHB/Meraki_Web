@@ -68,10 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\navbar.css" />
+    <Content Include="css\profile.css" />
     <Content Include="css\slickSlider.css" />
     <Content Include="css\styles.css" />
     <Content Include="css\TheLoai.css" />
     <Content Include="html\GioHang.html" />
+    <Content Include="html\MyBook.html" />
     <Content Include="html\Newbooks.html" />
     <Content Include="html\OrderManagement.html" />
     <Content Include="html\TheLoai.html" />
