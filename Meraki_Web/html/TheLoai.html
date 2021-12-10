@@ -19,10 +19,12 @@
     <!-----------------------CSS CONTENT------------>
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/TheLoai.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
 
     <!----------------------FONT-------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+
 </head>
 <body style="font-family: Arial; font-size: 16px; background-color: #FEFAF4;" ng-app="myApp">
     <!--Navigation bar-->
@@ -54,12 +56,42 @@
         </label>
     </nav>
 
+    <!--Slide quote-->
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <p class="author"><b>_Colleen Mccullough_</b></p>
+            <q>Tất cả những gì đẹp nhất chỉ có thể có được khi ta chịu trả giá bằng nỗi đau vĩ đại</q>
+        </div>
+        <div class="mySlides">
+            <p class="author">_Kito Aya_</p>
+            <q>
+                Có những người mà sự tồn tại của họ giống như không khí, êm dịu, nhẹ nhàng, chỉ khi họ mất đi người ta mới nhận ra họ quan trọng
+                nhường nào. Mình muốn trở thành một sự tồn tại như thế.
+            </q>
+
+        </div>
+        <div class="mySlides">
+            <p class="author">_Thomas A. Edison_</p>
+            <q>
+                Khi bạn khao khát một điều gì đó, cả vũ trụ sẽ hợp lực giúp bạn đạt được điều đó.
+            </q>
+        </div>
+        <div class="mySlides">
+            <p class="author">_Antoine De Saint-Exupéry_</p>
+            <q>
+                Nếu bạn đã dành trọn thời gian để chăm sóc một đóa hồng, thì đóa hồng đó sẽ trở nên vô cùng quan trọng với bạn.
+            </q>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    
+    <p style=" margin: 20px auto 20px 160px; font-size: 18px;"><strong>Thể loại</strong></p>
+    
     <!--SIDEBAR MENU-->
     <div class="theloai_body">
-        <p style=" margin: 20px auto 20px 160px; font-size: 18px;"><strong>Thể loại</strong></p>
-
-
-        <!--SIDE BAR-->
+        
+    <!--SIDE BAR-->
         <div class="sidebar">
             <button class="dropdown_btn">Khoa học <i class="fa fa-caret-down"></i></button>
             <div class="dropdown-container">
@@ -92,7 +124,7 @@
 
 
 
-        <!--NỘI DUNG-->
+    <!--NỘI DUNG-->
         <div class="content">
             <p style="text-align: center; ">Khoa học</p>
             <hr style="width: 50%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom:5px;" />
@@ -262,6 +294,7 @@
 
                 </div>
             </div>
+
             <p style="text-align: center; margin-top: 40px;">Tác giả trinh thám được yêu thích nhất</p>
             <hr style="width: 50%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom:5px;" />
             <a style="text-decoration: none;" href="#"><p style="color: #487B72; font-size:13px; text-align: end; margin-right: 10%; ">Xem tất cả</p></a>
@@ -327,10 +360,77 @@
                 </div>
             </div>
         </div>
-
     </div>
-    <!--DROP DOWN----> 
+
+    <section class="slogan" id="logan" style="background-color: #487B72; height:50px;text-align:center; margin-top:50px">
+        <h3 style="color:white; align-items:center; padding:15px">
+            Meraki Book nơi cảm xúc bắt đầu
+        </h3>
+    </section>
+
+
+    <br />
+    <!--Header-->
+
+
+
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4><b>Về chúng tôi</b></h4>
+                    <ul>
+                        <li><a href="#">Giới thiệu chung</a></li>
+                        <li><a href="#">Quy định về bản quyền</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><b>Chính sách</b></h4>
+                    <ul>
+                        <li><a href="#">Chính sách vận chuyển</a></li>
+                        <li><a href="#">Chính sách trả hàng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><b>Hỗ trợ khách hàng</b></h4>
+                    <ul>
+                        <li><a href="#">Hướng dẫn đặt hàng</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#">Hướng dẫn trả hàng</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><b>Theo dõi chúng tôi</b></h4>
+                    <div class="social-links">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4><b>Tải ứng dụng</b></h4>
+                    <ul>
+                        <li><a href="#"><img src="../image/imvIcon/ggplaylogo.png" width="135" height="45" /></a></li>
+                        <li><a href="#"><img src="../image/imvIcon/logoAppStore.png" width="140" height="50" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--DROP DOWN---->
     <script type="text/javascript" src="../js/Theloai.js"></script>
+    <!--JS SliderQuote-->
+    <script src="../js/slidequote.js"></script>
 
 </body>
 </html>
