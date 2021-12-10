@@ -72,6 +72,7 @@
     <Content Include="css\GioHang.css" />
     <Content Include="css\lightslider.css" />
     <Content Include="css\navbar.css" />
+    <Content Include="css\profile.css" />
     <Content Include="css\slickSlider.css" />
     <Content Include="css\styles.css" />
     <Content Include="css\ThanhToan.css" />
@@ -80,8 +81,10 @@
     <Content Include="html\DiaChiGiaoHang.html" />
     <Content Include="html\GioHang.html" />
     <Content Include="html\index.html" />
+    <Content Include="html\MyBook.html" />
     <Content Include="html\ThanhToan.html" />
     <Content Include="html\Newbooks.html" />
+    <Content Include="html\OrderManagement.html" />
     <Content Include="html\TheLoai.html" />
     <Content Include="image\imvAuthor\annrand.jpg" />
     <Content Include="image\imvAuthor\khach1.png" />

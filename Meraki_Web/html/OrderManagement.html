@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!----------------------CSS CONTENT-->
+    <link rel="stylesheet" type="text/css" href="../css/profile.css" />
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../css/TheLoai.css" />
+    <!----------------------FONT-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body ng-app="myApp">
+    <!--Navigation bar-->
+    <input type="checkbox" id="check" />
+    <nav>
+        <a href="#">
+            <img class="logo" src="../image/imvBanner/logo.png" />
+        </a>
+        <div class="help_me">
+            <div class=" line1_navbar">
+                <div class="search_box">
+                    <input type="search" placeholder="search" />
+                    <span><a href="#"><img class="search_icon" src="../image/imvIcon/icon_search.png" /></a></span>
+                </div>
+                <div class="icon">
+                    <a href="#"><img id="vip_icon" src="../image/imvIcon/icon_vip.png" /></a>
+                    <a href="#"><img id="cart_icon" src="../image/imvIcon/icon_card_fontbar.png" /></a>
+                    <a href="#"><img id="user_icon" src="../image/imvIcon/icon_user.png" /></a>
+                </div>
+            </div>
+            <ol>
+                <li><a href="#">Thể loại</a></li>
+                <li><a href="#">Xếp hạng</a></li>
+                <li><a href="#">Blog</a></li>
+            </ol>
+        </div>
+        <label for="check" class="bar">
+            <span><img id="bar_icon" src="../image/imvIcon/menu-bar.png" /></span>
+        </label>
+    </nav>
+
+
+
+    <div class="header">Trang cá nhân</div>
+
+    <div class="profile-banner" onload="checkEdits()">
+        <div class="img-profileinf">
+            <div class="avatar-profile"></div>
+            <div class="name-profile"><a href="#">Nguyễn Thị Diu</a></div>
+        </div>
+        <div class="writequote">
+            <div class="editquote">
+                <div id="editquote" class="edit" contenteditable="true">
+                    Chỉ có một lý do khiến giấc mơ không thể trở thành sự thực: đó là nỗi sợ thất bại
+                    - Paulo Coelho -
+                </div>
+            </div>
+            <input class="btnsavequote" type="button" value="Lưu" onclick="saveQuote()" />
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="tab">
+            <button class="tablinks" type="button" onclick="openTab(event, 'Myaccount')  " id="defaultOpen">
+                <span class="tab-icon"><i class="far fa-user-circle fa-2x"></i></span>
+                <span class="tab-text">Tài khoản của tôi</span>
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'Mybook')">
+                <span class="tab-icon"><i class="fas fa-book-reader fa-2x"></i></span>
+                <span class="tab-text">Sách của tôi</span>
+
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'Myorder')">
+                <span class="tab-icon"><i class="fas fa-shopping-bag fa-2x"></i></span>
+                <span class="tab-text">Đơn hàng của tôi</span>
+
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'MyNoti')">
+                <span class="tab-icon"><i class="fas fa-bell fa-2x"></i></span>
+                <span class="tab-text">Thông báo</span>
+
+            </button>
+        </div>
+
+        <div id="Myaccount" class="tabcontent">
+            <h3>Lucknow</h3>
+            
+        </div>
+
+        <div id="Mybook" class="tabcontent">
+            <h3>Mumbai</h3>
+        </div>
+
+        <div id="Myorder" class="tabcontent">
+            <h3>Quản lý đơn hàng</h3>
+            <hr />
+            <div class="tabs">
+                <div class="tab-header">
+                    <div class="active">Ebook</div>
+                    <div>Gói VIP</div>
+                    <div>Sách in</div>
+                </div>
+                <div class="tab-content">
+                    <div class="active">
+                        <table class="order-item">
+                            <tr>
+                                <td class="order-number" colspan="3"><b>Đơn hàng #123</b></td>
+                            </tr>
+                            <tr>
+                                <td class="order-img" rowspan="5"><img src="../image/imvBook/kyananhtrang.jpg" /></td>
+                                <td colspan="2">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="mo-ta"><b>Kỳ án ánh trăng</b></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="price-order">40.000đ</td>
+                            </tr>
+                            <tr>
+                                <td class="mo-ta">Quỷ cổ nữ</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">&nbsp;</td>
+                            </tr>
+
+                        </table>
+
+                        <table class="order-item">
+                            <tr>
+                                <td class="order-number" colspan="3"><b>Đơn hàng #124</b></td>
+                            </tr>
+                            <tr>
+                                <td class="order-img" rowspan="5"><img src="../image/imvBook/truyenkieu.jpg" /></td>
+                                <td colspan="2">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="mo-ta"><b>Truyện Kiều</b></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="price-order">40.000đ</td>
+                            </tr>
+                            <tr>
+                                <td class="mo-ta">Nguyễn Du</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">&nbsp;</td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+                    <div>
+                        <table class="order-item">
+                            <tr>
+                                <td class="order-number" colspan="3"><b>Đơn hàng #125</b></td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="order-img" rowspan="5"><img src="../image/imvBook/kyananhtrang.jpg" /></td>
+                                <td colspan="2">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="mo-ta"><b>Combo 2</b></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="price-order">45.000đ</td>
+                            </tr>
+                            <tr>
+                                <td class="mo-ta">3 tháng</td>
+                                <td>Hết hạn</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table class="order-item">
+                            <tr>
+                                <td class="order-number" colspan="3"><b>Đơn hàng #126</b></td>
+
+                            </tr>
+                            <tr>
+                                <td class="order-img" rowspan="5"><img src="../image/imvBook/nhagiakim.jpg" /></td>
+                                <td>&nbsp;</td>
+                                <td>Giao hàng thành công</td>
+                            </tr>
+                            <tr>
+                                <td class="mo-ta"><b>Nhà giả kim</b></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: right">x1</td>
+                                <td class="price-order">70.000đ</td>
+                            </tr>
+                            <tr>
+                                <td class="mo-ta">Paulo Coelho</td>
+          
+                                <td><button>Mua lại</button></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div id="MyNoti" class="tabcontent">
+            <h3>Thông báo</h3>
+            <hr />
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
