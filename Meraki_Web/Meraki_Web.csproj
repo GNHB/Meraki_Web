@@ -117,6 +117,7 @@
     <Content Include="image\imvIcon\menu-bar.png" />
     <Content Include="js\angular.js" />
     <Content Include="js\book.js" />
+    <Content Include="js\linegarpbook.js" />
     <Content Include="js\script.js" />
     <Content Include="js\slidequote.js" />
     <Content Include="js\DiaChiGiaoHang.js" />

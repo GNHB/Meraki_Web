@@ -16,6 +16,7 @@
     text-transform: capitalize;
     transition: all .2s linear;
     transition: width none;
+    
 }
 
 @media (max-width: 941px) {
@@ -296,7 +297,8 @@ Book stuff
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 20px;
+    
 }
 
 .tab {
@@ -304,8 +306,9 @@ Book stuff
     border: 1px solid #355C7D;
     background-color: var(--green);
     width: 20%;
-    height: inherit;
+    height: 50%;
     align-items: center;
+    vertical-align: top;
 }
 
     .tab button {
@@ -334,7 +337,7 @@ Book stuff
             color: black;
         }
 
-.tab-icon, table-text {
+.tab-icon, tab-text {
     display: inline-flex;
     align-items: center;
     padding: 0 10px;
@@ -347,19 +350,19 @@ Book stuff
 }
 
 .tabcontent {
-    display: none;
     float: left;
     padding: 0px 12px;
     width: 80%;
     border-left: none;
-    height: 300px;
+    height: 100%;
+    
 }
 
 
 /*HORIZONTAL PROFILE TAB*/
 .tabs {
     width: 100%;
-    height: inherit;
+    height: 100%;
 }
 
 .tab-header {
@@ -407,10 +410,13 @@ Book stuff
 
 .tabs .active {
     width: 100%;
+    height: 100%;
 }
 
 .tabs .tab-content {
     position: relative;
+    height: 100%;
+    margin-bottom: 500px;
 }
 
     .tabs .tab-content > div {
@@ -420,12 +426,14 @@ Book stuff
         top: 200%;
         padding: 20px;
         transition: all 500ms ease-in-out;
+        
     }
 
         .tabs .tab-content > div.active {
             transform: scale(1);
             opacity: 1;
             top: 0%;
+            
         }
 
 /*ALL ORDER*/
@@ -502,4 +510,43 @@ Book stuff
 .order-status{
     float: right;
     padding-right: 20px;
+}
+
+/*MY ACCOUNT*/
+.my-account {
+    width: 100%;
+    height: inherit;
+    text-align: left;
+    border-spacing: 50px 10px;
+}
+    .my-account td {       
+        width: 50%;
+        text-align: left;
+        background-color: var(--skin);
+        padding: 10px;
+    }
+.my-account .account-title{
+    border-bottom: 1px solid black;
+}
+    .my-account td div {
+        display: inline-block;
+        
+        margin: 10px;
+        padding: 2px;
+    }
+.account-icon, account-text {
+    line-height: 16px;
+}
+.account-icon {
+    vertical-align: middle;
+    width: 30px;
+}
+.account-icon i{
+    width: 50px;
+    height: 16px;
+
+}
+.chart {
+    width: 100%; 
+    height: 500px;
 }
