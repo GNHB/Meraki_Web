@@ -406,6 +406,7 @@ Book stuff
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align:center;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
     border-radius: 10px;
     overflow: hidden;
@@ -418,6 +419,7 @@ Book stuff
     width: 100%;
     height: 235px;
     align-items: center;
+    text-align:center;
 }
 
     .book-box-img img {
@@ -425,6 +427,7 @@ Book stuff
         height: 230px;
         object-fit: cover;
         align-items:center;
+        text-align:center;
     }
 
         .book-box-img img:hover {
@@ -499,17 +502,7 @@ Book stuff
     color: var(--yellow)
 }
 
-.slogan {
-    background-color: var(--green);
-    height: 50px;
-}
 
-    .slogan h2 {
-        text-align: center;
-        color: white;
-        font-size: 20px;
-        padding: 10px;
-    }
 
 
 @media screen and (min-width: 1200px) {

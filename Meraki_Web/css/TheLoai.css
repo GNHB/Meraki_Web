@@ -21,10 +21,12 @@
     margin: auto;
     align-content: center;
     align-self: center;
+    display:flex;
+    flex-direction: row;
 }
 /*SIDEBAR*/
 .sidebar {
-    float: left;
+    /*float: left;*/
     width: 20%;
     z-index: 1;
     top: 0;
@@ -86,7 +88,7 @@
     top: 0;
     right: 0;
     width: 75%;
-    float: right;
+    /*float: right;*/
 }
 .slider {
     max-width: 85%;
@@ -101,12 +103,13 @@
 .wrap {
     display: flex;
     flex-direction: row;
-    max-width: 90%;
+    width: 90%;
     position: relative;
     padding-left: 20px;
     margin: auto;
 }
 .slider {
+    margin: auto;
    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;*/
@@ -160,7 +163,7 @@
 .tac_gia_yeu_thich {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 .sach_yeu_thich .slider_box{
     height: 250px;
