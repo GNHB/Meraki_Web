@@ -78,8 +78,11 @@
     <Content Include="css\ThanhToan.css" />
     <Content Include="css\TheLoai.css" />
     <Content Include="html\Blog.html" />
+    <Content Include="html\ChinhSach.html" />
+    <Content Include="html\DetailBook.html" />
     <Content Include="html\DiaChiGiaoHang.html" />
     <Content Include="html\GioHang.html" />
+    <Content Include="html\index.html" />
     <Content Include="html\ThanhToan.html" />
     <Content Include="html\Newbooks.html" />
     <Content Include="html\OrderManagement.html" />
