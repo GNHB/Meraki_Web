@@ -72,6 +72,7 @@
     <Content Include="css\GioHang.css" />
     <Content Include="css\lightslider.css" />
     <Content Include="css\navbar.css" />
+    <Content Include="css\Policy.css" />
     <Content Include="css\profile.css" />
     <Content Include="css\slickSlider.css" />
     <Content Include="css\SplashPage.css" />
@@ -84,6 +85,7 @@
     <Content Include="html\DiaChiGiaoHang.html" />
     <Content Include="html\GioHang.html" />
     <Content Include="html\index.html" />
+    <Content Include="html\Policy.html" />
     <Content Include="html\SplashPage.html" />
     <Content Include="html\ThanhToan.html" />
     <Content Include="html\Newbooks.html" />
