@@ -143,6 +143,10 @@ input[type="checkbox" ] {
             display: inline-flex;
             padding: 15px 30px;
         }
+        .line1_navbar{
+            display: flex;
+            flex-direction: row;
+        }
         nav div.search_box {
             width: 100%;
             display: inline-flex;
@@ -151,6 +155,10 @@ input[type="checkbox" ] {
         }
             nav div.search_box input {
                 width: 100%;
+            }
+            nar .icon{
+                display: inline-flex;
+
             }
         nav ol {
             border-top: 3px solid white;
