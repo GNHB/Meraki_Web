@@ -48,19 +48,23 @@ nav {
         display: flex;
     }
         nav div.icon a {
-            margin-left: 20px;
+            /*margin-left: 20px;*/
+            margin: auto;
         }
 #vip_icon {
     height: 48px;
     width: 55px;
+    margin-left:20px;
 }
 #cart_icon {
     height: 48px;
     width: 50px;
+    margin-left: 20px;
 }
 #user_icon {
     height: 50px;
     width: 55px;
+    margin-left: 20px;
 }
 nav label #bar_icon {
     height: 30px;
@@ -134,6 +138,7 @@ input[type="checkbox" ] {
     -webkit-appearance: none;
     display: none;
 }
+/*RESPONSIVE NAVBAR*/
 @media screen and (max-width: 900px) {
     nav {
         display: block;
@@ -143,13 +148,13 @@ input[type="checkbox" ] {
             display: inline-flex;
             padding: 15px 30px;
         }
-        .line1_navbar{
+        nav .line1_navbar {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            padding: 0;
         }
         nav div.search_box {
             width: 100%;
-            display: inline-flex;
             justify-content: center;
             margin-bottom: 15px;
         }
@@ -157,9 +162,12 @@ input[type="checkbox" ] {
                 width: 100%;
             }
             nar .icon{
-                display: inline-flex;
-
+                width: 100%;
+                display: flex;
             }
+                nar .icon a img {
+                    margin: auto;
+                }
         nav ol {
             border-top: 3px solid white;
             display: flex;
@@ -172,7 +180,11 @@ input[type="checkbox" ] {
                 border-right: none;
                 text-align: center;
             }
-                nav ol li a
+                nav ol li a {
+                    margin: 25px;
+                    display: block;
+                }
+
         nav .bar {
             display: block;
             position: absolute;
