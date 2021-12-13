@@ -74,6 +74,7 @@
     <Content Include="css\navbar.css" />
     <Content Include="css\profile.css" />
     <Content Include="css\slickSlider.css" />
+    <Content Include="css\SplashPage.css" />
     <Content Include="css\styles.css" />
     <Content Include="css\ThanhToan.css" />
     <Content Include="css\TheLoai.css" />
@@ -83,6 +84,7 @@
     <Content Include="html\DiaChiGiaoHang.html" />
     <Content Include="html\GioHang.html" />
     <Content Include="html\index.html" />
+    <Content Include="html\SplashPage.html" />
     <Content Include="html\ThanhToan.html" />
     <Content Include="html\Newbooks.html" />
     <Content Include="html\OrderManagement.html" />
@@ -138,6 +140,14 @@
     <Content Include="image\imvIcon\logo.png" />
     <Content Include="image\imvIcon\logoAppStore.png" />
     <Content Include="image\imvIcon\menu-bar.png" />
+    <Content Include="image\imvSplashPage\banner 3.png" />
+    <Content Include="image\imvSplashPage\banner2.png" />
+    <Content Include="image\imvSplashPage\bg-07.png" />
+    <Content Include="image\imvSplashPage\bg-08.png" />
+    <Content Include="image\imvSplashPage\logo_splash-09.png" />
+    <Content Include="image\imvSplashPage\pic_pic1.png" />
+    <Content Include="image\imvSplashPage\pic_pic2.png" />
+    <Content Include="image\imvSplashPage\pic_pic3.png" />
     <Content Include="img\controls.png" />
     <Content Include="js\angular.js" />
     <Content Include="js\book.js" />
