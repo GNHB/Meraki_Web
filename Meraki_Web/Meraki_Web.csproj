@@ -74,6 +74,7 @@
     <Content Include="css\navbar.css" />
     <Content Include="css\Policy.css" />
     <Content Include="css\profile.css" />
+    <Content Include="css\SignIn.css" />
     <Content Include="css\slickSlider.css" />
     <Content Include="css\SplashPage.css" />
     <Content Include="css\styles.css" />
@@ -86,6 +87,7 @@
     <Content Include="html\GioHang.html" />
     <Content Include="html\index.html" />
     <Content Include="html\Policy.html" />
+    <Content Include="html\SignIn.html" />
     <Content Include="html\SplashPage.html" />
     <Content Include="html\ThanhToan.html" />
     <Content Include="html\Newbooks.html" />
@@ -146,6 +148,7 @@
     <Content Include="image\imvSplashPage\banner2.png" />
     <Content Include="image\imvSplashPage\bg-07.png" />
     <Content Include="image\imvSplashPage\bg-08.png" />
+    <Content Include="image\imvSplashPage\logo1.1.png" />
     <Content Include="image\imvSplashPage\logo_splash-09.png" />
     <Content Include="image\imvSplashPage\pic_pic1.png" />
     <Content Include="image\imvSplashPage\pic_pic2.png" />
