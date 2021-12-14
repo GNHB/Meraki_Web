@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\AboutMeraki.css" />
     <Content Include="css\blog.css" />
     <Content Include="css\DiaChiGiaoHang.css" />
     <Content Include="css\GioHang.css" />
@@ -81,6 +82,7 @@
     <Content Include="css\ThanhToan.css" />
     <Content Include="css\TheLoai.css" />
     <Content Include="css\VIP.css" />
+    <Content Include="html\AboutMeraki.html" />
     <Content Include="html\Blog.html" />
     <Content Include="html\ChinhSach.html" />
     <Content Include="html\DetailBook.html" />
@@ -102,6 +104,7 @@
     <Content Include="image\imvBanner\banner %281%29.jpg" />
     <Content Include="image\imvBanner\banner3.jpg" />
     <Content Include="image\imvBanner\banner5.jpg" />
+    <Content Include="image\imvBanner\bg_aboutMeraki.png" />
     <Content Include="image\imvBanner\blog %282%29.png" />
     <Content Include="image\imvBanner\IU.jpg" />
     <Content Include="image\imvBanner\Lam-ban-voi-bau-troi-reviewsachonly.jpg" />
