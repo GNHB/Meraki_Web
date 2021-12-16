@@ -173,3 +173,86 @@
         align-items: center;
         cursor: pointer;
     }
+   /* RESPONSIVE*/
+
+@media screen and (max-width: 900px) {
+    * {
+        font-size: 14px;
+    }
+
+    .giohang_body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list_item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tbl_item .tbl_img img {
+        width: 80px;
+        height: 120px;
+    }
+
+    .tbl_item .tbl_img {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .tbl_item .mo_ta {
+        display: block;
+        font-size: 12px;
+        border-right: 1px solid;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .thanh_tien_box {
+        display: flex;
+        width: 80%;
+    }
+
+    .tbl_item input {
+        width: 20px;
+    }
+}
+@media screen and (max-width: 500px){
+    *{
+        font-size: 12px;
+    }
+    .giohang_body{
+        display: flex;
+        flex-direction: column;
+    }
+    .list_item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .tbl_item .tbl_img img {
+        width: 80px;
+        height: 120px;
+    }
+    .tbl_item .tbl_img{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .tbl_item .mo_ta {
+        display: block;
+        font-size: 12px;
+        border-right: 1px solid;
+        border-collapse: collapse;
+        border-spacing:0;
+    }
+    .thanh_tien_box {
+        display: flex;
+        width: 80%;
+    }
+    .tbl_item input{
+        width: 20px;
+    }
+}
