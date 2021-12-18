@@ -28,7 +28,6 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
 #target {
     position: relative;
     width: 120px;
@@ -112,16 +111,26 @@ nav img.logo {
     height: 46px;
 }
 
-.DiaChi_body{
-    width:80%;
-    margin:auto;
+.DiaChi_body {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.DiaChi_info{
+    width: 50%;
+    background-color: green;
 }
 .DiaChi_info td {
     border: 1px solid black;
 }
+.show{
+    width: 50%;
+    background-color: purple;
+}
 
 .form table {
-    width: 40%;
+    width: 100%;
     margin: auto;
     border-spacing: 10px 15px;
 }

@@ -83,13 +83,66 @@
     width: 150px;
     box-shadow: 2px 2px #888888;
     cursor: pointer;
-    margin: 20px 0 30px 30%;
+    margin: 20px 0 20px 0;
 }
 
 .list_Book{
-    width: 50%;
+    margin-top: 20px;
+    width: 50%;    
 }
-
+#list_Book_box {
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--skin);
+    margin: auto;
+}
+#list_Book_box tr{
+    border: 1px solid black;
+}
+.image{
+    width: 60%;
+}
+#list_Book_box img{
+    width: 65px;
+    height: 95px;
+    margin: auto 0;
+}
+.tamtinh{
+    width: 70%;
+    margin: 10px auto ;
+}
+.dathang {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    
+}
+/*----------------------------------------RESPONSIVE------------------------------------------*/
+@media screen and (max-width: 1140px){
+    .thanhtoan_body{
+        display: flex;
+        flex-direction: column;
+    }
+    .list_thanhtoan{
+        width: 100%;
+    }
+    .list_Book{
+        width: 100%;
+    }
+    .dathang{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .move_btn{
+        margin: 10px auto 10px auto;
+    }
+    .dathang p{
+        text-align: center;
+    }
+}
 
 
 
