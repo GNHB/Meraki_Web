@@ -1,0 +1,504 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>MERAKI BOOK</title>
+    <link rel="stylesheet" type="text/css" href="../css/BookChart.css" />
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slickSlider.css" />
+    <script type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/theLoaiSlider.js"></script>
+</head>
+<body>
+    <!--Navigation bar-->
+    <input type="checkbox" id="check" />
+    <nav>
+        <a href="#">
+            <img class="logo" src="../image/imvBanner/logo.png" />
+        </a>
+        <div class="help_me">
+            <div class=" line1_navbar">
+                <div class="search_box">
+                    <input type="search" placeholder="search" />
+                    <span><a href="#"><img class="search_icon" src="../image/imvIcon/icon_search.png" /></a></span>
+                </div>
+                <div class="icon">
+                    <a href="#"><img id="vip_icon" src="../image/imvIcon/icon_vip.png" /></a>
+                    <a href="#"><img id="cart_icon" src="../image/imvIcon/icon_card_fontbar.png" /></a>
+                    <a href="#"><img id="user_icon" src="../image/imvIcon/icon_user.png" /></a>
+                </div>
+            </div>
+            <ol>
+                <li><a href="#">Thể loại</a></li>
+                <li><a href="#">Xếp hạng</a></li>
+                <li><a href="#">Blog</a></li>
+            </ol>
+        </div>
+        <label for="check" class="bar">
+            <span><img id="bar_icon" src="../image/imvIcon/menu-bar.png" /></span>
+        </label>
+    </nav>
+
+    <!--Slide quote-->
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <p class="author"><b>_Colleen Mccullough_</b></p>
+            <q>Tất cả những gì đẹp nhất chỉ có thể có được khi ta chịu trả giá bằng nỗi đau vĩ đại</q>
+        </div>
+        <div class="mySlides">
+            <p class="author">_Kito Aya_</p>
+            <q>
+                Có những người mà sự tồn tại của họ giống như không khí, êm dịu, nhẹ nhàng, chỉ khi họ mất đi người ta mới nhận ra họ quan trọng
+                nhường nào. Mình muốn trở thành một sự tồn tại như thế.
+            </q>
+
+        </div>
+        <div class="mySlides">
+            <p class="author">_Thomas A. Edison_</p>
+            <q>
+                Khi bạn khao khát một điều gì đó, cả vũ trụ sẽ hợp lực giúp bạn đạt được điều đó.
+            </q>
+        </div>
+        <div class="mySlides">
+            <p class="author">_Antoine De Saint-Exupéry_</p>
+            <q>
+                Nếu bạn đã dành trọn thời gian để chăm sóc một đóa hồng, thì đóa hồng đó sẽ trở nên vô cùng quan trọng với bạn.
+            </q>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <!---------------CHART-------------->
+
+    <div class="main">
+        <div class="chart">
+
+            <p class="txt_chart">Bảng xếp hạng</p>
+            <hr />
+
+            <table class="chart_item">
+                <tr>
+                    <td>
+                        <table class="chart_table">
+                            <tr>
+                                <td rowspan="2" class="col_number" width="10%">
+                                    <img src="Image/chart-42.png" style="height:60px; width:60px" />
+                                </td>
+                                <td rowspan="2" class="col_imgBook" style="padding: 0px 30px;" width="10%">
+                                    <img src="Image/trenduongbang.jpg" style="height:180px; width:125px;" />
+                                </td>
+                                <td class="col_tittle" width="80%">
+                                    <div>
+                                        <p class="book_name">Chim cổ đỏ</p>
+                                        <p class="author_name">J.K.Rowling </p>
+                                        <p class="author_name">Lượt xem: 1K </p>
+
+                                        <img src="Image/fullstar-39.png" style="height:15px; width: 90px" />
+                                        <hr />
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="col_btn">
+                                    <button>Mua e-book</button>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table class="chart_table">
+                            <tr>
+                                <td rowspan="2" class="col_number" width="10%">
+                                    <img src="Image/chart-43.png" style="height:60px; width:60px" />
+                                </td>
+                                <td rowspan="2" class="col_imgBook" style="padding: 0px 30px;" width="10%">
+                                    <img src="Image/giangsang.jpg" style="height:180px; width:125px;" />
+                                </td>
+                                <td class="col_tittle" width="80%">
+                                    <div>
+                                        <p class="book_name">Chim cổ đỏ</p>
+                                        <p class="author_name">J.K.Rowling </p>
+                                        <p class="author_name">Lượt xem: 1K </p>
+
+                                        <img src="Image/fullstar-39.png" style="height:15px; width: 90px" />
+                                        <hr />
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="col_btn">
+                                    <button>Mua e-book</button>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table class="chart_table">
+                            <tr>
+                                <td rowspan="2" class="col_number" width="10%">
+                                    <img src="Image/chart-44.png" style="height:60px; width:60px" />
+                                </td>
+                                <td rowspan="2" class="col_imgBook" style="padding: 0px 30px;" width="10%">
+                                    <img src="Image/doimat.png" style="height:180px; width:125px;" />
+                                </td>
+                                <td class="col_tittle" width="80%">
+                                    <div>
+                                        <p class="book_name">Chim cổ đỏ</p>
+                                        <p class="author_name">J.K.Rowling </p>
+                                        <p class="author_name">Lượt xem: 1K </p>
+
+                                        <img src="Image/fullstar-39.png" style="height:15px; width: 90px" />
+                                        <hr />
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="col_btn">
+                                    <button>Mua e-book</button>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table class="chart_table">
+                            <tr>
+                                <td rowspan="2" class="col_number" width="10%">
+                                    <img src="Image/chart-45.png" style="height:60px; width:60px" />
+                                </td>
+                                <td rowspan="2" class="col_imgBook" style="padding: 0px 30px;" width="10%">
+                                    <img src="Image/dacnhantam.jpg" style="height:180px; width:125px;" />
+                                </td>
+                                <td class="col_tittle" width="80%">
+                                    <div>
+                                        <p class="book_name">Chim cổ đỏ</p>
+                                        <p class="author_name">J.K.Rowling </p>
+                                        <p class="author_name">Lượt xem: 1K </p>
+
+                                        <img src="Image/fullstar-39.png" style="height:15px; width: 90px" />
+                                        <hr />
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="col_btn">
+                                    <button>Mua e-book</button>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table class="chart_table">
+                            <tr>
+                                <td rowspan="2" class="col_number" width="10%">
+                                    <img src="Image/chart-46.png" style="height:60px; width:60px" />
+                                </td>
+                                <td rowspan="2" class="col_imgBook" style="padding: 0px 30px;" width="10%">
+                                    <img src="Image/harrypotter.jpg" style="height:180px; width:125px;" />
+                                </td>
+                                <td class="col_tittle" width="80%">
+                                    <div>
+                                        <p class="book_name">Chim cổ đỏ</p>
+                                        <p class="author_name">J.K.Rowling </p>
+                                        <p class="author_name">Lượt xem: 1K </p>
+
+                                        <img src="Image/fullstar-39.png" style="height:15px; width: 90px" />
+                                        <hr />
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="col_btn">
+                                    <button>Mua e-book</button>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-----------------------RECOMMEND----------------------->
+
+        <div class="recommend">
+            <p class="txt_tittle_yellow">Đề cử</p>
+            <table class="recommend_table">
+                <tr class="rcm_item">
+                    <td class="rcm_row_item">
+                        <table>
+                            <tr>
+                                <td style="width:fit-content">
+                                    <img src="Image/kyananhtrang.jpg" style="height:180px; width:125px;" />
+                                </td>
+                                <td style="">
+                                    <p class="book_name">Đứa trẻ hư </p>
+                                    <p class="author_name">Tử Kim Trần</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="rcm_row_item">
+                        <table>
+                            <tr>
+                                <td style="width:fit-content">
+                                    <img src="Image/haisophan.jpg" style="height:180px; width:125px;" />
+                                </td>
+                                <td style="">
+                                    <p class="book_name">Đứa trẻ hư </p>
+                                    <p class="author_name">Tử Kim Trần</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="rcm_row_item">
+                        <table>
+                            <tr>
+                                <td style="width:fit-content">
+                                    <img src="Image/phiasaunghicanx.jpg" style="height:180px; width:125px;" />
+                                </td>
+                                <td style="">
+                                    <p class="book_name">Đứa trẻ hư </p>
+                                    <p class="author_name">Tử Kim Trần</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!------------------------------------BEST SELLER------------------------->
+    <p class="txt_tittle_yellow">Best Sellers</p>
+
+    <div class="best_sellers">
+
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="box_best_sellers">
+                    <div class="box_img">
+                        <img src="Image/suimlangcuabaycuu.jpg" alt="1" />
+                    </div>
+                    <div class="box_tittle">
+                        <font style="font-size:16px"><strong>Truyện Kiều</strong></font>
+                        <font style="font-size:14px">40.000</font>
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-b">
+                <div class="box_best_sellers">
+                    <div class="box_img">
+                        <img src="Image/nhungvukyancuasherlockholmes.jpg" alt="1" />
+                    </div>
+                    <div class="box_tittle">
+                        <font style="font-size:16px"><strong>Truyện Kiều</strong></font>
+                        <font style="font-size:14px">40.000</font>
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-c">
+                <div class="box_best_sellers">
+                    <div class="box_img">
+                        <img src="Image/sutrathuhoanhao.jpg" alt="1" />
+                    </div>
+                    <div class="box_tittle">
+                        <font style="font-size:16px"><strong>Truyện Kiều</strong></font>
+                        <font style="font-size:14px">40.000</font>
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-d">
+                <div class="box_best_sellers">
+                    <div class="box_img">
+                        <img src="Image/truockhinhammat.jpg" alt="1" />
+                    </div>
+                    <div class="box_tittle">
+                        <font style="font-size:16px"><strong>Truyện Kiều</strong></font>
+                        <font style="font-size:14px">40.000</font>
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-e">
+                <div class="box_best_sellers">
+                    <div class="box_img">
+                        <img src="Image/truyenkieu.jpg" alt="1" />
+                    </div>
+                    <div class="box_tittle">
+                        <font style="font-size:16px"><strong>Truyện Kiều</strong></font>
+                        <font style="font-size:14px">40.000</font>
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-f">
+                <div class="box_best_sellers">
+                    <div class="box_img">
+                        <img src="Image/vongtronmau.jpg" alt="1" />
+                    </div>
+                    <div class="box_tittle">
+                        <font style="font-size:16px"><strong>Truyện Kiều</strong></font>
+                        <font style="font-size:14px">40.000</font>
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-g">
+                <div class="box_best_sellers">
+                    <div class="box_img">
+                        <img src="Image/tencuadoahong.jpg" alt="1" />
+                    </div>
+                    <div class="box_tittle">
+                        <font style="font-size:16px"><strong>Truyện Kiều</strong></font>
+                        <font style="font-size:14px">40.000</font>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="slider" id="carouselContent">
+        <div class="slider_box">
+            <div class="slider_img">
+                <img src="../image/imvBook/trenduongbang.jpg" />
+            </div>
+            <div class="img_detail">
+                <a href="#" class="title"><p>Trên đường băng</p> </a>
+                <p class="author">Tony Buổi Sáng</p>
+            </div>
+        </div>
+        <div class="slider_box">
+            <div class="slider_img">
+                <img src="../image/imvBook/trenduongbang.jpg" />
+            </div>
+            <div class="img_detail">
+                <a href="#" class="title"><p>Trên đường băng</p> </a>
+                <p class="author">Tony Buổi Sáng</p>
+            </div>
+        </div>
+        <div class="slider_box">
+            <div class="slider_img">
+                <img src="../image/imvBook/trenduongbang.jpg" />
+            </div>
+            <div class="img_detail">
+                <a href="#" class="title"><p>Trên đường băng</p> </a>
+                <p class="author">Tony Buổi Sáng</p>
+            </div>
+        </div>
+        <div class="slider_box">
+            <div class="slider_img">
+                <img src="../image/imvBook/trenduongbang.jpg" />
+            </div>
+            <div class="img_detail">
+                <a href="#" class="title"><p>Trên đường băng</p> </a>
+                <p class="author">Tony Buổi Sáng</p>
+            </div>
+        </div>
+        <div class="slider_box">
+            <div class="slider_img">
+                <img src="../image/imvBook/trenduongbang.jpg" />
+            </div>
+            <div class="img_detail">
+                <a href="#" class="title"><p>Trên đường băng</p> </a>
+                <p class="author">Tony Buổi Sáng</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4><b>Về chúng tôi</b></h4>
+                        <ul>
+                            <li><a href="#">Giới thiệu chung</a></li>
+                            <li><a href="#">Quy định về bản quyền</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4><b>Chính sách</b></h4>
+                        <ul>
+                            <li><a href="#">Chính sách vận chuyển</a></li>
+                            <li><a href="#">Chính sách trả hàng</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4><b>Hỗ trợ khách hàng</b></h4>
+                        <ul>
+                            <li><a href="#">Hướng dẫn đặt hàng</a></li>
+                            <li><a href="#">Hướng dẫn thanh toán</a></li>
+                            <li><a href="#">Hướng dẫn trả hàng</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4><b>Theo dõi chúng tôi</b></h4>
+                        <div class="social-links">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4><b>Tải ứng dụng</b></h4>
+                        <ul>
+                            <li><a href="#"><img src="../image/imvIcon/ggplaylogo.png" width="135" height="45" /></a></li>
+                            <li><a href="#"><img src="../image/imvIcon/logoAppStore.png" width="140" height="50" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/slidequote.js"></script>
+</body>
+</html>
