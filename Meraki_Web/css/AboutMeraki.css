@@ -136,6 +136,48 @@ hr {
 }
 
 
+#container_member {
+/*    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-row-gap: 2em;
+    justify-content:space-between;*/
+}
+
+.member{
+    text-align:center;
+    line-height:1.5;
+}
+
+table{
+    width:100%;
+    text-align: center;
+    line-height:1.5;
+
+}
+
+.tittle_member {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seeAll {
+    text-align: end;
+    background: none;
+    font-size: 20px;
+    color: var(--yellow);
+    margin-top: 2em;
+    margin-right:10px;
+}
+
+name[type='tittle_memberName'] {
+    color:var(--green);
+    font-weight: bold;
+}
+
+name[color='green'] {
+    background-color: #2f2;
+}
+
 @media screen and (max-width: 620px) {
     .vision {
         display: block;

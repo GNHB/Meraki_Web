@@ -5,6 +5,7 @@
     <title>MERAKI BOOK</title>
     <link type="text/css" rel="stylesheet" href="../css/AboutMeraki.css" />
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+   
 </head>
 <body>
 
@@ -36,7 +37,6 @@
             <span><img id="bar_icon" src="../image/imvIcon/menu-bar.png" /></span>
         </label>
     </nav>
-
     <!--Slide quote-->
     <div class="slideshow-container">
         <div class="mySlides">
@@ -111,10 +111,21 @@
                 </div>
             </div>
         </div>
+
+        <div class="tittle_member">
+            <div class="header">THÀNH VIÊN SÁNG LẬP</div>
+            <button class="seeAll" type="button" onclick="loadDoc()">Xem chi tiết</button>
+        </div> 
+        <table id="demo"></table>
+
+    </div>
+
+    <div id="display">
+
     </div>
 
     <footer class="footer">
-        <div class="container-footer">
+        <div id="container-footer">
             <div class="row">
                 <div class="footer-col">
                     <h4><b>Về chúng tôi</b></h4>
@@ -138,7 +149,7 @@
                         <li><a href="#">Hướng dẫn đặt hàng</a></li>
                         <li><a href="#">Hướng dẫn thanh toán</a></li>
                         <li><a href="#">Hướng dẫn trả hàng</a></li>
-
+                        
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -166,5 +177,123 @@
         </div>
     </footer>
     <script src="../js/slidequote.js"></script>
+
+    <!--<script>
+        let xmlContent = '';
+        let tableBooks = document.getElementById('member');
+        fetch('memberList.xml').then((response) => {
+            response.text().then((xml) => {
+                xmlContent = xml;
+
+                let parser = new DOMParser();
+                let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
+                let member = xmlDOM.querySelectorAll('member');
+
+                member.forEach(bookXmlNode => {
+
+                    let row = document.createElement('div');
+
+                    //author
+                    let td = document.createElement('p');
+                    td.innerText = bookXmlNode.children[0].innerHTML;
+                    row.appendChild(p);
+
+                    //  title
+                    td = document.createElement('p');
+                    td.innerText = bookXmlNode.children[1].innerHTML;
+                    row.appendChild(p);
+
+                    //price
+                    td = document.createElement('p');
+                    td.innerText = '$ ' + bookXmlNode.children[3].innerHTML;
+                    row.appendChild(p);
+
+                    //description
+                    td = document.createElement('img');
+                    td.innerText = bookXmlNode.children[5].innerHTML;
+                    row.appendChild(img);
+
+                    member.children[1].appendChild(row);
+
+                });
+
+            });
+        });
+    </script>
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "memberList.xml", true);
+        var html = "";
+        var member = document.getElementById('member');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+
+            } else {
+                html += "Không lấy được dữ liệu"
+            }
+            member.innerHTML = html;
+        }
+        xhr.send();
+
+        var xmlDoc = xhr.responseXML;
+        var x = xmlDoc.getElementByTagName("member");
+        for (i = 0; i < x.length; i++) {
+            html += "<div>";
+            html += "<img>" + x[i].getElementByTagName("photo")[0].childNodes[0].nodeValue;
+            html += "<p>" + x[i].getElementByTagName("name")[0].childNodes[0].nodeValue + "</p>";
+            html += "<p>" + x[i].getElementByTagName("position")[0].childNodes[0].nodeValue + "</p>";
+            html += "<p>" + x[i].getElementByTagName("id")[0].childNodes[0].nodeValue + "</p>";
+            html += "<p>" + x[i].getElementByTagName("quote")[0].childNodes[0].nodeValue + "</p>";
+        }
+        html += "</div>"
+    </script>-->
+
+    <script>
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    myFunction(this);
+                }
+            };
+            xhttp.open("GET", "../xml/membersList.xml", true);
+            xhttp.send();
+        }
+        function myFunction(xml) {
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table = "<tr>";
+            /*var div = "<div>";*/
+            var x = xmlDoc.getElementsByTagName("member");
+            for (i = 0; i < x.length; i++) {
+                table += "<tr><td><img src= " +
+                    x[i].getElementsByTagName("photo")[0].childNodes[0].nodeValue + "/>" +
+                    "</td><tr><td id =" + "tittle_name" +">" +
+                    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+                    "</td></tr><tr><td>" +
+                    x[i].getElementsByTagName("position")[0].childNodes[0].nodeValue +
+                    "</td></tr><tr><td>" +
+                    x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue +
+                    "</td></tr><tr><td>" +
+                    x[i].getElementsByTagName("quote")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+
+
+                //div += "<img src= " +
+                //    x[i].getElementsByTagName("photo")[0].childNodes[0].nodeValue + "/>" +
+                //    "</div><p>" +
+                //    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+                //    "</p><p>" +
+                //    x[i].getElementsByTagName("position")[0].childNodes[0].nodeValue +
+                //    "</p><p>" +
+                //    x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue +
+                //    "</p><p>" +
+                //    x[i].getElementsByTagName("quote")[0].childNodes[0].nodeValue +
+                //    "</p></div>";
+            }
+            document.getElementById("demo").innerHTML = table;
+        }
+    </script>
+
 </body>
-</html>
+</html >

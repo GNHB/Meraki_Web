@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="css\AboutMeraki.css" />
     <Content Include="css\blog.css" />
+    <Content Include="css\BookChart.css" />
     <Content Include="css\DiaChiGiaoHang.css" />
     <Content Include="css\GioHang.css" />
     <Content Include="css\lightslider.css" />
@@ -84,6 +85,7 @@
     <Content Include="css\VIP.css" />
     <Content Include="html\AboutMeraki.html" />
     <Content Include="html\Blog.html" />
+    <Content Include="html\BookChart.html" />
     <Content Include="html\ChinhSach.html" />
     <Content Include="html\DetailBook.html" />
     <Content Include="html\DiaChiGiaoHang.html" />
@@ -161,6 +163,10 @@
     <Content Include="image\imvIcon\logo.png" />
     <Content Include="image\imvIcon\logoAppStore.png" />
     <Content Include="image\imvIcon\menu-bar.png" />
+    <Content Include="image\imvMember\4-10.png" />
+    <Content Include="image\imvMember\4-11.png" />
+    <Content Include="image\imvMember\4-12.png" />
+    <Content Include="image\imvMember\4-13.png" />
     <Content Include="image\imvSplashPage\banner 3.png" />
     <Content Include="image\imvSplashPage\banner2.png" />
     <Content Include="image\imvSplashPage\bg-07.png" />
@@ -182,6 +188,7 @@
     <Content Include="js\Theloai.js" />
     <Content Include="js\theLoaiSlider.js" />
     <Content Include="Web.config" />
+    <Content Include="xml\membersList.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -196,6 +203,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
