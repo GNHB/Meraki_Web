@@ -193,8 +193,11 @@ nav img.logo {
         width: 100%;
         border: 1px solid black;
         
+        
     }
         #myTable tr td {
             line-height: 1.5;
+            padding: 10px;
         }
+
 

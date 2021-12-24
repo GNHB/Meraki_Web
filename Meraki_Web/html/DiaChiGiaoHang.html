@@ -55,31 +55,31 @@
                     <tr>
                         <th><strong>Tỉnh/Thành phố</strong></th>
                         <td>
-                          <input type="text" name="tinh" id="tinh" required/>
+                          <input type="text" name="tinh" id="tinh" />
                         </td>
                     </tr>
                     <tr>
                         <th><strong>Quận/ Huyện</strong></th>
                         <td>
-                            <input type="text" name="quan" id="quan" required/>
+                            <input type="text" name="quan" id="quan" />
                         </td>
                     </tr>
                     <tr>
                         <th><strong>Phường/ Xã</strong></th>
                         <td>
-                            <input type="text" name="phuong" id="phuong" required/>
+                            <input type="text" name="phuong" id="phuong" />
                         </td>
                     </tr>
                     <tr>
                         <th><strong>Địa chỉ</strong></th>
                         <td>
-                            <input type="text" name="diachi" id="diachi" required/>
+                            <input type="text" name="diachi" id="diachi" />
                         </td>
                     </tr>
                 </table>
                 <span style="display: table; margin: auto;"> <input class="checkbox" type="checkbox" name="macdinh" value="macdinh" onclick="onChecked()"/> <label for="macdinh">Sử dụng làm địa chỉ mặc định</label></span>
                 <p style="color: red; font-size: 12px; text-align: center; margin-top: 10px;">Lưu ý: Xin điền đầy đủ thông tin</p>
-                <span style="display: table; margin:  auto;"><button type="button" id="Luu_btn" class="btn" onclick="AddRow()" value="Add">Lưu thông tin</button> <button type="reset" id="Huy_btn" class="btn">Hủy bỏ</button></span>
+                <span style="display: table; margin:  auto;"><button type="button" id="Luu_btn" class="btn" onclick="AddRow()" value="Add" >Lưu thông tin</button> <button type="reset" id="Huy_btn" class="btn">Hủy bỏ</button></span>
             </form>
         </div>
     </div>
@@ -91,35 +91,42 @@
 
     <!--Add data to table-->
     <script>
+
         function AddRow() {
+            if (document.getElementById("ten").value.length == 0 || document.getElementById("phone").value.length == 0 || document.getElementById("tinh").value.length == 0 || document.getElementById("quan").value.length == 0 || document.getElementById("phuong").value.length == 0 || document.getElementById("diachi").value.length == 0 ) {
+                alert("Xin điền đầy đủ thông tin");
+            } else {
+                var table, tr, td, name, address, phone, txtName, txtAddress, txtPhone, br, tinh, quan, phuong, diachi;
+                table = document.getElementById("myTable");
+                br = document.createElement('br');
+                tr = document.createElement('tr');
+                td = document.createElement('td');
 
-            var table, tr, td, name, address, phone, txtName, txtAddress, txtPhone, br, tinh, quan, phuong, diachi;
-            table = document.getElementById("myTable");
-            br = document.createElement('br');
-            tr = document.createElement('tr');
-            td = document.createElement('td');
+                name = document.getElementById("ten").value;
+                txtName = document.createTextNode(name);
+                td.appendChild(txtName);
+                td.appendChild(br);
 
-            name = document.getElementById("ten").value;
-            txtName = document.createTextNode(name) ;
-            td.appendChild(txtName);
-            td.appendChild(br);
+                var br;
+                br = document.createElement('br');
+                phone = document.getElementById("phone").value;
+                txtPhone = document.createTextNode(phone);
+                td.appendChild(txtPhone);
+                td.appendChild(br);
 
-            var br;
-            br = document.createElement('br');
-            phone = document.getElementById("phone").value;
-            txtPhone = document.createTextNode(phone);
-            td.appendChild(txtPhone);
-            td.appendChild(br);
+                address = document.getElementById("diachi").value + ", " + document.getElementById("tinh").value + ", " + document.getElementById("quan").value + ", " + document.getElementById("phuong").value;
+                txtAddress = document.createTextNode(address);
+                td.appendChild(txtAddress);
 
-            address = document.getElementById("diachi").value + ", " + document.getElementById("tinh").value + ", " + document.getElementById("quan").value + ", " + document.getElementById("phuong").value;
-            txtAddress = document.createTextNode(address);
-            td.appendChild(txtAddress);
+                var hr;
+                hr = document.createElement('hr');
+                td.appendChild(hr);
+                tr.appendChild(td);
+                table.appendChild(tr);
 
-            var hr;
-            hr = document.createElement('hr');
-            td.appendChild(hr);
-            tr.appendChild(td);
-            table.appendChild(tr);
+                
+            }
+                
         }
 
     </script>
