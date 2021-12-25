@@ -67,23 +67,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\AboutMeraki.css" />
     <Content Include="css\blog.css" />
+    <Content Include="css\BookChart.css" />
     <Content Include="css\DiaChiGiaoHang.css" />
     <Content Include="css\GioHang.css" />
     <Content Include="css\lightslider.css" />
     <Content Include="css\navbar.css" />
+    <Content Include="css\Policy.css" />
     <Content Include="css\profile.css" />
+    <Content Include="css\SignIn.css" />
     <Content Include="css\slickSlider.css" />
+    <Content Include="css\SplashPage.css" />
     <Content Include="css\styles.css" />
     <Content Include="css\ThanhToan.css" />
     <Content Include="css\TheLoai.css" />
+    <Content Include="css\VIP.css" />
+    <Content Include="html\AboutMeraki.html" />
     <Content Include="html\Blog.html" />
+    <Content Include="html\BookChart.html" />
+    <Content Include="html\ChinhSach.html" />
+    <Content Include="html\DetailBook.html" />
     <Content Include="html\DiaChiGiaoHang.html" />
     <Content Include="html\GioHang.html" />
+    <Content Include="html\index.html" />
+    <Content Include="html\Policy.html" />
+    <Content Include="html\SignIn.html" />
+    <Content Include="html\SplashPage.html" />
     <Content Include="html\ThanhToan.html" />
     <Content Include="html\Newbooks.html" />
     <Content Include="html\OrderManagement.html" />
     <Content Include="html\TheLoai.html" />
+    <Content Include="html\VIP.html" />
     <Content Include="image\imvAuthor\annrand.jpg" />
     <Content Include="image\imvAuthor\khach1.png" />
     <Content Include="image\imvAuthor\khach2.png" />
@@ -91,6 +106,7 @@
     <Content Include="image\imvBanner\banner %281%29.jpg" />
     <Content Include="image\imvBanner\banner3.jpg" />
     <Content Include="image\imvBanner\banner5.jpg" />
+    <Content Include="image\imvBanner\bg_aboutMeraki.png" />
     <Content Include="image\imvBanner\blog %282%29.png" />
     <Content Include="image\imvBanner\IU.jpg" />
     <Content Include="image\imvBanner\Lam-ban-voi-bau-troi-reviewsachonly.jpg" />
@@ -130,11 +146,36 @@
     <Content Include="image\imvIcon\icon_drop_down.png" />
     <Content Include="image\imvIcon\icon_next.png" />
     <Content Include="image\imvIcon\icon_search.png" />
+    <Content Include="image\imvIcon\icon_smile.png" />
     <Content Include="image\imvIcon\icon_user.png" />
     <Content Include="image\imvIcon\icon_vip.png" />
+    <Content Include="image\imvIcon\ic_bank-01.png" />
+    <Content Include="image\imvIcon\ic_bank-02.png" />
+    <Content Include="image\imvIcon\ic_bank-03.png" />
+    <Content Include="image\imvIcon\ic_momo.png" />
+    <Content Include="image\imvIcon\ic_shopee pay.png" />
+    <Content Include="image\imvIcon\ic_viettelpay.png" />
+    <Content Include="image\imvIcon\ic_zalopay.png" />
+    <Content Include="image\imvIcon\logo-wallet-04.png" />
+    <Content Include="image\imvIcon\logo-wallet-05.png" />
+    <Content Include="image\imvIcon\logo-wallet-06.png" />
+    <Content Include="image\imvIcon\logo-wallet-07.png" />
     <Content Include="image\imvIcon\logo.png" />
     <Content Include="image\imvIcon\logoAppStore.png" />
     <Content Include="image\imvIcon\menu-bar.png" />
+    <Content Include="image\imvMember\4-10.png" />
+    <Content Include="image\imvMember\4-11.png" />
+    <Content Include="image\imvMember\4-12.png" />
+    <Content Include="image\imvMember\4-13.png" />
+    <Content Include="image\imvSplashPage\banner 3.png" />
+    <Content Include="image\imvSplashPage\banner2.png" />
+    <Content Include="image\imvSplashPage\bg-07.png" />
+    <Content Include="image\imvSplashPage\bg-08.png" />
+    <Content Include="image\imvSplashPage\logo1.1.png" />
+    <Content Include="image\imvSplashPage\logo_splash-09.png" />
+    <Content Include="image\imvSplashPage\pic_pic1.png" />
+    <Content Include="image\imvSplashPage\pic_pic2.png" />
+    <Content Include="image\imvSplashPage\pic_pic3.png" />
     <Content Include="img\controls.png" />
     <Content Include="js\angular.js" />
     <Content Include="js\book.js" />
@@ -147,6 +188,7 @@
     <Content Include="js\Theloai.js" />
     <Content Include="js\theLoaiSlider.js" />
     <Content Include="Web.config" />
+    <Content Include="xml\membersList.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -161,6 +203,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

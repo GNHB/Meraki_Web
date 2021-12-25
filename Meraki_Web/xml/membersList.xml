@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet href="../css/AboutMeraki.css" media="screen"
+  type="text/css"?>
+<memberList>
+	
+	<member id="1">
+		<id>K194111531</id>
+		<name color="green">Nguyễn Hoàng Bảo Giang</name>
+		<position>CEO</position>
+		<photo> "../image/imvMember/4-10.png" </photo>
+		<quote>
+			“Một cây làm chẳng nên non,
+			ba cây chụm lại nên hòn núi cao”
+		</quote>
+	</member>
+	
+	<member id="2">
+		<id>K194111536</id>
+		<name>Mai Thị Thúy Hậu</name>
+		<position>CCO</position> 
+		<photo> "../image/imvMember/4-11.png" </photo>
+		<quote>
+			“Một cây làm chẳng nên non,
+			ba cây chụm lại nên hòn núi cao”
+		</quote>
+	</member>
+
+	<member id="3">
+		<id>K194111540</id>
+		<name>Trần Hồng Kim</name>
+		<position>Trưởng phòng hành chính</position>
+		<photo> "../image/imvMember/4-12.png" </photo>
+		<quote>
+			“Một cây làm chẳng nên non,
+			ba cây chụm lại nên hòn núi cao”
+		</quote>
+	</member>
+
+	<member id="4">
+		<id>K194111592</id>
+		<name>Lê Thị Hoài Vi</name>
+		<position>Trưởng phòng Marketing</position>
+		<photo> "../image/imvMember/4-13.png" </photo>
+		<quote>
+			“Một cây làm chẳng nên non,
+			ba cây chụm lại nên hòn núi cao”
+		</quote>
+	</member>
+	
+</memberList>

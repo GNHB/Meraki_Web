@@ -1,36 +1,30 @@
 ﻿<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOMEPAGE</title>
+    <title>Homepage</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link type="text/css" rel="stylesheet" href="../css/lightslider.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../js/lightslider.js"></script>
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link type="text/css" rel="stylesheet" href="../css/lightslider.css" />
-    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
-    <script src="../js/lightslider.js"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-
-
-
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
 </head>
-<body ng-app="myApp">
+<body>
 
-    <!--Navigation bar-->
+    <!--thanh header-->
     <input type="checkbox" id="check" />
     <nav>
         <a href="#">
-            <img class="logo" src="../image/imvBanner/logo.png" />
+            <img class="logo" src="../image/imvIcon/logo.png" />
         </a>
         <div class="help_me">
             <div class=" line1_navbar">
@@ -47,14 +41,13 @@
             <ol>
                 <li><a href="#">Thể loại</a></li>
                 <li><a href="#">Xếp hạng</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#" id="Blog">Blog</a></li>
             </ol>
         </div>
         <label for="check" class="bar">
             <span><img id="bar_icon" src="../image/imvIcon/menu-bar.png" /></span>
         </label>
     </nav>
-
 
     <!--banner-->
     <section class="banner" id="banner">
@@ -73,10 +66,6 @@
             </div>
         </div>
     </section>
-
-
-
-
 
 
     <!--Slide quote-->
@@ -112,11 +101,9 @@
     <!--list sách-->
     <section class="listbook" id="listbook">
         <h1 class="listbook-heading"> Sách bán chạy</h1>
-        <div id="autoWidth" class=" swiper cs-hidden">
-
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide book-box">
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <!--<div class="book-box">
                     <div class="book-box-img">
                         <img src="../image/imvBook/tróiinhvungve.jpg" />
 
@@ -125,125 +112,26 @@
                         <strong> Trời sinh vụng về</strong>
                         <p> Lưu Tư Hạo</p>
                     </div>
-                </div>
+                </div>-->
 
-                <div class="swiper-slide book-box">
-                    <div class="book-box-img">
-                        <img src="../image/imvBook/tróiinhvungve.jpg" />
-
-                    </div>
-                    <div class="book-box-content">
-                        <strong> Trời sinh vụng về</strong>
-                        <p> Lưu Tư Hạo</p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide book-box">
-                    <div class="book-box-img">
-                        <img src="../image/imvBook/tróiinhvungve.jpg" />
-
-                    </div>
-                    <div class="book-box-content">
-                        <strong> Trời sinh vụng về</strong>
-                        <p> Lưu Tư Hạo</p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide book-box">
-                    <div class="book-box-img">
-                        <img src="../image/imvBook/tróiinhvungve.jpg" />
-
-                    </div>
-                    <div class="book-box-content">
-                        <strong> Trời sinh vụng về</strong>
-                        <p> Lưu Tư Hạo</p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide book-box">
-                    <div class="book-box-img">
-                        <img src="../image/imvBook/tróiinhvungve.jpg" />
-
-                    </div>
-                    <div class="book-box-content">
-                        <strong> Trời sinh vụng về</strong>
-                        <p> Lưu Tư Hạo</p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide book-box">
-                    <div class="book-box-img">
-                        <img src="../image/imvBook/tróiinhvungve.jpg" />
-
-                    </div>
-                    <div class="book-box-content">
-                        <strong> Trời sinh vụng về</strong>
-                        <p> Lưu Tư Hạo</p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide book-box">
-                    <div class="book-box-img">
-                        <img src="../image/imvBook/tróiinhvungve.jpg" />
-
-                    </div>
-                    <div class="book-box-content">
-                        <strong> Trời sinh vụng về</strong>
-                        <p> Lưu Tư Hạo</p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide book-box">
-                    <div class="book-box-img">
-                        <img src="../image/imvBook/tróiinhvungve.jpg" />
-
-                    </div>
-                    <div class="book-box-content">
-                        <strong> Trời sinh vụng về</strong>
-                        <p> Lưu Tư Hạo</p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide book-box">
-                    <div class="book-box-img">
-                        <img src="../image/imvBook/tróiinhvungve.jpg" />
-
-                    </div>
-                    <div class="book-box-content">
-                        <strong> Trời sinh vụng về</strong>
-                        <p> Lưu Tư Hạo</p>
-                    </div>
-                </div>
+            </li>
 
 
-                <div class="swiper-slide book-box">
-                    <div class="book-box-img">
-                        <img src="../image/imvBook/tróiinhvungve.jpg" />
-
-                    </div>
-                    <div class="book-box-content">
-                        <strong> Trời sinh vụng về</strong>
-                        <p> Lưu Tư Hạo</p>
-                    </div>
-                </div>
-
-
-                <div class="swiper-slide book-box">
-                    <div class="book-box-img">
-                        <img src="../image/imvBook/tróiinhvungve.jpg" />
-
-                    </div>
-                    <div class="book-box-content">
-                        <strong> Trời sinh vụng về</strong>
-                        <p> Lưu Tư Hạo</p>
-                    </div>
-                </div>
-
-            </div>
-          
-        </div>
+        </ul>
+    </section>
+    <section class="listbook" id="listbook">
+        <h1 class="listbook-heading"> Sách mới</h1>
+        <ul id="autoWidth2" class="cs-hidden2">
+        </ul>
     </section>
 
+    <section class="listbook" id="listbook">
+        <h1 class="listbook-heading"> Bản xếp hạng tuần</h1>
+        <ul id="autoWidth3" class="cs-hidden3">
+        </ul>
+    </section>
+
+    <!--banner-->
     <!--banner-->
     <section class="banner" id="banner">
         <div class="swiper books-slider">
@@ -261,11 +149,22 @@
             </div>
         </div>
     </section>
+    <!--list sách-->
+    <section class="listbook" id="listbook">
+        <h1 class="listbook-heading"> Đọc sách miễn phí</h1>
+        <ul id="autoWidth4" class="cs-hidden4">
+        </ul>
+    </section>
 
+    <section class="listbook" id="listbook">
+        <h1 class="listbook-heading">Sách nên đọc</h1>
+        <ul id="autoWidth5" class="cs-hidden5">
+        </ul>
+    </section>
 
     <!--tác giả-->
 
-    <section class="author-h" id="author-h" >
+    <section class="author-h" id="author-h">
         <h1 class="heading"> Tác giả </h1>
         <hr />
         <table>
@@ -295,7 +194,7 @@
                         </div>
                         <div class="content">
                             <h5 style="text-align:center">Suối nguồn</h5>
-                            <div class="stars"  >
+                            <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -397,11 +296,11 @@
 
 
 
-
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="../js/slidequote.js"></script>
+
+    <!-- custom js file link  -->
     <script src="../js/script1.js"></script>
+    <script src="../js/slidequote.js"></script>
 </body>
 </html>
-
 

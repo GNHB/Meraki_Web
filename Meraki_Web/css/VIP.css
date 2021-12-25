@@ -1,0 +1,310 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+:root {
+    --green: #487B72;
+    --yellow: #F7BB34;
+    --skin: #FBF1E1;
+    --light_skin: #FEFAF4;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: var(--light_skin);
+}
+
+.container_VIP {
+    max-width: 1000px;
+    display: flex;
+    margin: 2em auto 2em auto;
+    align-items: flex-start;
+}
+
+.VIP_option, .note, .Payment_Option {
+    background: var(--skin);
+    padding: 10px;
+    border: 1px solid #000000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.main {
+    flex: 4;
+}
+
+.Payment_Option {
+    margin-top: 2em;
+}
+
+.note {
+    flex: 1;
+    margin-left: 1em;
+    padding: 0.5em;
+    margin-top: 0;
+}
+
+.tittle_note {
+    font-size: 1rem;
+    color: var(--yellow);
+    padding: 0.5rem;
+    text-align: start;
+}
+
+.main .tittle {
+    font-size: 1.6rem;
+    color: var(--yellow);
+    font-weight: bold;
+    padding: 0.5em;
+    text-align: center
+}
+
+
+.card_all {
+    /*   display: flex;
+    padding: 10px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;*/
+    display: flex;
+    margin: 0 auto 0.5em auto;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 24%;
+    box-sizing: border-box;
+    padding: 1.2em 0.5em;
+    text-align: center;
+}
+
+.custom-radio {
+    transition: 0.5s ease;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+    .custom-radio input {
+        display: none;
+    }
+
+.radio-btn {
+    width: 100%;
+    padding: 0.6em 0.6em;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #c3c3c367;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background: var(--green);
+}
+
+    .radio-btn > i {
+        color: #ffffff;
+        background-color: var(--yellow);
+        font-size: 20px;
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%) scale(4);
+        border-radius: 50px;
+        padding: 3px;
+        transition: 0.2s;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+.custom-radio input:checked + .radio-btn {
+    border: 3px solid var(--yellow);
+}
+
+    .custom-radio input:checked + .radio-btn > i {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-icon {
+    align-items: center;
+    padding: 0.5em;
+}
+
+    .card-icon img {
+        height: 30px;
+        width: 30px;
+    }
+
+.card-text .date {
+    font-size: 1rem;
+    color: rgb(255 255 255);
+    text-align: center;
+    padding: 0.25em 0;
+}
+
+.card-text .price {
+    font-size: 1rem;
+    color: var(--yellow);
+    text-align: center;
+    font-weight: bold;
+    padding: 0.25em 0;
+}
+
+
+.note div p {
+    font-size: 16px;
+    padding: 0.5em 0.25em;
+}
+
+.e-wallets, .atm {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.atm {
+    margin-top: 1em;
+}
+
+.card-payment {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+.btnConfirm {
+    background: var(--yellow);
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 0.5em 1.5em;
+    border: 1px solid var(--yellow);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+    .btnConfirm:hover {
+        background: #ffd800;
+    }
+
+.btn {
+    width: 100%;
+    text-align: center;
+}
+
+
+.action {
+    width: 100%;
+    margin: auto;
+}
+
+.checkbox-giahan {
+    width: 100%;
+}
+
+.tittle-mini {
+    font-size: 1rem;
+    width: 20%;
+    text-align: center;
+    padding: 1.2em 0;
+}
+
+.card-icon-pay img {
+    align-items: center;
+    height: 60%;
+    width: 60%;
+}
+
+.card-icon-atm img {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.Payment_Option {
+    padding-bottom: 1em;
+}
+
+
+
+@media screen and (max-width: 620px) {
+    .main {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container_VIP {
+        display: block;
+    }
+
+    .e-wallets, atm {
+        flex-wrap: wrap;
+    }
+
+    .note {
+        margin-top: 2em;
+        margin-left: 0;
+    }
+
+    .card-text .date {
+        font-size: 16px;
+    }
+
+    .card-text .price {
+        font-size: 16px;
+    }
+
+    .Payment_Option .tittle-mini {
+        font-size: 16px;
+    }
+}
+
+input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em 1em;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+    input[type=checkbox] + label:before {
+        content: "\2714";
+        border: 0.1em solid #000;
+        border-radius: 0.2em;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        padding-left: 0.2em;
+        padding-bottom: 0.3em;
+        margin-right: 0.2em;
+        vertical-align: bottom;
+        color: transparent;
+        transition: .2s;
+    }
+
+    input[type=checkbox] + label:active:before {
+        transform: scale(0);
+    }
+
+    input[type=checkbox]:checked + label:before {
+        background-color: var(--green);
+        border-color: var(--green);
+        color: #fff;
+    }

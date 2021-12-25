@@ -90,7 +90,7 @@
     width: 75%;
     /*float: right;*/
 }
-.slider {
+.content .slider {
     max-width: 85%;
     display: flex;
     margin: 10px 20px 0;
@@ -100,94 +100,113 @@
     display: flex;
     margin: 10px 20px 0;
 }
-.wrap {
+.content .wrap {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     position: relative;
-    padding-left: 20px;
     margin: auto;
 }
-.slider {
+.content .slider {
+    width: 70%;
     margin: auto;
-   /* display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;*/
 }
-.slider_box {
+.content .slider_box {
     height: 284px;
-    width: 155px;
     border-radius: 10px;
     background-color: var(--skin);
     align-items: center;
     cursor: pointer;
 }
-.slider_box:hover .img_detail a {
+.content .slider_box:hover .img_detail a {
     color: var(--yellow);
 }
-.slider_img {
+.content .slider_img {
     height: 221px;
     width: 95%;
     margin: 0 auto;
-    
 }
-.slider_img img{
+.content .slider_img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     box-sizing:border-box;
     border-radius: 10px;
 }
-.img_detail {
+.content .img_detail {
     width: 100%;
     margin: 0 auto;
     text-align: center;
     margin-top: 5px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-.img_detail a{
+.content .img_detail a{
     text-decoration: none;
     font-weight:500;
     font-size: 16px;
     color:black;
 }
-.img_detail p{
+.wrap .slider .slider_box .img_detail p {
+    display: block;
+    width: 130px;
     font-size: 14px;
-    font-weight:lighter;
+    font-weight: lighter;
     text-align: center;
     margin-top: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
-
-
-/*TAC GIA YEU THICH*/
-.tac_gia_yeu_thich {
-    display: flex;
-    align-items: center;
-    margin: 20px auto;
+    .wrap .slider .slider_box .img_detail p.author{
+        text-align:center;
+    }
+    /*TAC GIA YEU THICH*/
+    .tac_gia_yeu_thich {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: 75%;
+    }
+.sach_yeu_thich{
+    flex:2;
+    width: 65%;
 }
-.sach_yeu_thich .slider_box{
+/*.sach_yeu_thich .slider_box{
     height: 250px;
-    width: 160px;
+    width: 65%;
     border-radius: 10px;
     background-color: var(--skin);
-    align-items: center;
     cursor: pointer;
-}
-.tac_gia{
-    margin-left: 10%;
+}*/
+.tac_gia {
+    flex:1;
+    margin-right: 5%;
+    width: 30%;
+    margin-bottom: 20px;
 }
 .tac_gia .slider_box {
     height: 300px;
-    width: 250px;
+    width: 100%;
     border-radius: 10px;
     background-color: var(--skin);
-    align-items: center;
     cursor: pointer;
 }
-
+.sach_yeu_thich .slider_box {
+    margin: auto;
+    width: 65%;
+}
+ 
+.first{
+    margin: auto;
+}
+table {
+   width: 100%;
+}
 /*---------------------------------------------GIỎ HÀNG--------------------------------------------------------------------------------------------*/
- /*NỘI DUNG*/
-
+/*NỘI DUNG*/
 .giohang_body {
     width: 80%;
     margin: auto;
@@ -208,9 +227,6 @@
 }
 .mo_ta {
     text-align: left;
-   
-}
-.item {
    
 }
 .list_item  table {
@@ -305,4 +321,219 @@
     border-bottom: 1px solid black;
     border-collapse: collapse;
     border-spacing: 0;
+}
+/*----------------------------------------RESPONSIVE------------------------------------------*/
+@media screen and (max-width: 1140px) {
+    .wrap .slider .slider_box .img_detail p {
+        display: block;
+        width: 100px;
+        font-size: 14px;
+        font-weight: lighter;
+        text-align: center;
+        margin-top: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+   
+    .tac_gia_yeu_thich {
+        width: 100%;
+        display: block;
+    }
+
+    .tac_gia {
+        width: 30%;
+        margin: auto;
+        display: block;
+    }
+
+    .sach_yeu_thich {
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+
+    table tr, td {
+        border: 1px solid;
+    }
+
+    table {
+        width: 70%;
+        margin: auto;
+    }
+
+    .sach_yeu_thich .slider_box {
+        margin: auto;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 900px){
+    .sidebar {
+        display: block;
+        margin: auto;
+        width: 80%;
+        border-left: 1px solid black;
+    }
+    .theloai_body{
+        display:block;
+        width: 100%;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .wrap {
+        flex:1;
+        width: 100%;
+    }
+    .slider {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .slider_box {
+        width: 45%;
+        margin: auto;
+        padding: 0;
+    }
+    .wrap .slider .slider_box .img_detail p {
+        display: block;
+        width: 130px;
+        font-size: 14px;
+        font-weight: lighter;
+        text-align: center;
+        margin-top: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .tac_gia_yeu_thich {
+        width: 100%;
+        display: block;
+    }
+    .tac_gia{
+        width: 30%;
+       margin: auto;
+        display: block;
+    }
+    .sach_yeu_thich {
+        width: 100%;
+        margin: auto;
+        display: block;
+        background-color: aqua;
+    }
+    table tr, td{
+        border: 1px solid;
+    }
+    table{
+        width: 70%;
+        margin:auto;
+    }
+    .sach_yeu_thich .slider_box{
+        margin: auto;
+        width: 90%;
+    }
+    .sach_yeu_thich .img_detail p {
+        display: block;
+        width: 150px;
+        font-size: 14px;
+        font-weight: lighter;
+        text-align: center;
+        margin-top: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        display: block;
+        margin: auto;
+        width: 80%;
+        border-left: 1px solid black;
+    }
+
+    .theloai_body {
+        display: block;
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrap {
+        flex: 1;
+        width: 100%;
+    }
+
+    .slider {    
+        margin: auto;
+    }
+
+    .slider_box {
+        margin: auto;
+        padding: 0;
+    }
+    .wrap .slider .slider_box .img_detail p {
+        display: block;
+        width: 130px;
+        font-size: 14px;
+        font-weight: lighter;
+        text-align: center;
+        margin-top: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .tac_gia_yeu_thich {
+        width: 100%;
+        display: block;
+    }
+
+    .tac_gia {
+        width: 70%;
+        margin: auto;
+        display: block;
+    }
+
+    .sach_yeu_thich {
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    table tr, td {
+        border: 1px solid;
+    }
+
+    table {
+        width: 90%;
+        margin: auto;
+    }
+
+    .sach_yeu_thich .slider_box {
+        margin: auto;
+        width: 90%;
+    }
+
+    .sach_yeu_thich .img_detail p {
+        display: block;
+        width: 130px;
+        font-size: 14px;
+        font-weight: lighter;
+        text-align: center;
+        margin-top: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
 }

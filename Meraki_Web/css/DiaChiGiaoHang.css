@@ -28,7 +28,6 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
 #target {
     position: relative;
     width: 120px;
@@ -112,16 +111,31 @@ nav img.logo {
     height: 46px;
 }
 
-.DiaChi_body{
-    width:80%;
-    margin:auto;
+.DiaChi_body {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.DiaChi_info {
+    width: 50%;
+    border: 1px solid black;
+    background-color: var(--skin);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .DiaChi_info td {
     border: 1px solid black;
 }
+.show {
+    width: 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 5%;
+}
 
 .form table {
-    width: 40%;
+    width: 100%;
     margin: auto;
     border-spacing: 10px 15px;
 }
@@ -162,10 +176,28 @@ nav img.logo {
     cursor: pointer;
     margin-top: 30px;
     box-shadow: 2px 2px #888888;
+    margin-bottom: 20px;
 }
 #Luu_btn{
     background-color: var(--green);
     color: white;
     margin-right:30px;
+   
 }
+#myTable{
+    width: 100%;
+    border-spacing: 10px;
+}
+    #myTable tr {
+        background-color: var(--skin);
+        width: 100%;
+        border: 1px solid black;
+        
+        
+    }
+        #myTable tr td {
+            line-height: 1.5;
+            padding: 10px;
+        }
+
 

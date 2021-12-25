@@ -338,3 +338,28 @@ detail*/
     border-radius:150px;
     text-align:center;
 }
+/*
+  chính sách*/
+.chinhsach1 {
+    background-color: var(--light_skin);
+}
+
+    .chinhsach1 h2 {
+        margin: 40px;
+        color: var(--yellow);
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .chinhsach1 h4 {
+        margin: 20px 180px;
+        color: var(--green);
+        font-size: 20px;
+    }
+
+    .chinhsach1 .v {
+        background: var(--skin);
+        font-size: 14px;
+        margin: 10px 150px;
+        padding: 50px;
+    }
