@@ -46,21 +46,7 @@ function checkEdits() {
         document.getElementById("editquote").innerHTML = localStorage.userEdits;
 }
 
-/*VERTICAL PROFILE TAB*/
-function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-document.getElementById("defaultOpen").click();
+
 
 /*HORIZONTAL PROFILE TAB*/
 let tabPanes = document.getElementsByClassName("tab-header")[0].getElementsByTagName("div");
@@ -74,6 +60,9 @@ for (let i = 0; i < tabPanes.length; i++) {
         document.getElementsByClassName("tab-content")[0].getElementsByTagName("div")[i].classList.add("active");
     })
 }
+
+
+
 
 
 

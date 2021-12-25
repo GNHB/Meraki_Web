@@ -1,17 +1,22 @@
-﻿var app = angular.module('myApp', []);
+﻿var app = angular.module('myApp', ['angularUtils.directives.dirPagination']);
 app.controller("BookController", function ($scope) {
+
     $scope.books = [
         {
+            
             "cover": "../image/imvBook/duttinh.jpg",
             "title": "Dứt tình",
             "author": "Vũ Trọng Phụng"
+
         },
         {
+            
             "cover": "../image/imvBook/nhagiakim.jpg",
             "title": "Nhà giả kim",
             "author": "Paulo Coelho"
         },
         {
+            
             "cover": "../image/imvBook/origin.jpg",
             "title": "Origin",
             "author": "Dan Brown"
@@ -77,4 +82,8 @@ app.controller("BookController", function ($scope) {
             "author": "Keigo Higashino"
         }
     ]
+    $scope.sort = function (keyname) {
+        $scope.sortBy = keyname;
+        $scope.reverse = !$scope.reverse;
+    }
 });
