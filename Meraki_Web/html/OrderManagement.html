@@ -3,22 +3,28 @@
 <head>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="../css/slickSlider.css" />
-    <script type="text/javascript"
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link type="text/css" rel="stylesheet" href="../css/lightslider.css" />
+   <script type="text/javascript"
             src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript"
             src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="../js/theLoaiSlider.js"></script>
+
+
+    <script src="../js/lightslider.js"></script>
+
 
     <!----------------------CSS CONTENT-->
     <link rel="stylesheet" type="text/css" href="../css/profile.css" />
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/TheLoai.css" />
 
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slickSlider.css" />
 
     <!----------------------FONT-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -29,6 +35,7 @@
 
 </head>
 <body ng-app="myApp">
+
     <!--Navigation bar-->
     <input type="checkbox" id="check" />
     <nav>
@@ -105,43 +112,43 @@
         <div id="Myaccount" class="tabcontent">
             <h3>Tài khoản của tôi</h3>
             <hr />
-            <table class="my-account">
-                <tr>
-                    <td class="account-title">Thông tin cá nhân</td>
-                    <td class="account-title">Hồ sơ của bạn</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div>
-                            <span class="account-icon"><i class="far fa-address-card fa-2x"></i></span>
-                            <span class="account-text">Nguyễn Thị Diu</span>
-                        </div>
-                        <div>
-                            <span class="account-icon"><i class="far fa-envelope fa-2x"></i></span>
-                            <span class="account-text">nguyenthidiu@gmail.com</span>
-                        </div>
-                        <div>
-                            <span class="account-icon"><i class="fas fa-phone-alt fa-2x"></i></span>
-                            <span class="account-text">0358428808</span>
-                        </div>
+            <div class="inf-container">
+                <div class="inf-content">
+                    <div class="account-title">
+                        <span><b>Thông tin cá nhân</b></span>
+                        <span class="edit-inf"><a href="#"><b>Chỉnh sửa</b></a></span>
+                    </div>
+                    <div>
+                        <span class="account-icon"><i class="far fa-address-card fa-2x"></i></span>
+                        <span class="account-text">Nguyễn Thị Diu</span>
+                    </div>
+                    <div>
+                        <span class="account-icon"><i class="far fa-envelope fa-2x"></i></span>
+                        <span class="account-text">nguyenthidiu@gmail.com</span>
+                    </div>
+                    <div>
+                        <span class="account-icon"><i class="fas fa-phone-alt fa-2x"></i></span>
+                        <span class="account-text">0358428808</span>
+                    </div>
 
-                    </td>
-                    <td>
-                        <div>
-                            <span class="account-icon"><i class="far fa-clock fa-2x"></i></span>
-                            <span class="account-text">Bạn đã đồng hành cùng chúng tôi 1 năm 2 tháng 13 ngày</span>
-                        </div>
-                        <div>
-                            <span class="account-icon"><i class="fas fa-book fa-2x"></i></span>
-                            <span class="account-text">Số sách đã đọc: 10 cuốn</span>
-                        </div>
-                        <div>
-                            <span class="account-icon"><i class="far fa-credit-card fa-2x"></i></span>
-                            <span class="account-text">Số giao dịch đã thực hiện: 4</span>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+                </div>
+                <div class="inf-content">
+                    <div class="account-title"><b>Hồ sơ của bạn</b></div>
+                    <div>
+                        <span class="account-icon"><i class="far fa-clock fa-2x"></i></span>
+                        <span class="account-text" id="reward">Bạn đã đồng hành cùng chúng tôi 1 năm 2 tháng 13 ngày</span>
+                    </div>
+                    <div>
+                        <span class="account-icon"><i class="fas fa-book fa-2x"></i></span>
+                        <span class="account-text">Số sách đã đọc: 10 cuốn</span>
+                    </div>
+                    <div>
+                        <span class="account-icon"><i class="far fa-credit-card fa-2x"></i></span>
+                        <span class="account-text">Số giao dịch đã thực hiện: 4</span>
+                    </div>
+                </div>
+            </div>
+
             <!--CHART-->
             <div id="curve_chart" class="chart"></div>
             <!--SLIDER-->
@@ -205,15 +212,169 @@
 
         <!--MY BOOK-->
         <div id="Mybook" class="tabcontent">
-            <h3>Thông báo</h3>
+            <h3>Tủ sách</h3>
             <hr />
             <div class="mybook-content">
-
                 <h4>Ebook đã mua</h4>
                 <hr />
+                <div class="slider" id="carouselContent">
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mybook-content">
+                <h4>Ebook yêu thích</h4>
+                <hr />
+                <div class="slider" id="carouselContent">
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="mybook-content">
+                <h4>Ebook xem gần đây</h4>
+                <hr />
+                <div class="slider" id="carouselContent">
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                    <div class="slider_box">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title">Trên đường băng </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
-
 
         <!--ORDER MANAGEMENT-->
         <div id="Myorder" class="tabcontent">
@@ -375,8 +536,6 @@
         </div>
     </div>
     <!--SLOGAN-->
-    
-    <script src="../js/script.js"></script>
     <!--FOOTER-->
     <footer class="footer">
         <div class="container-footer">
@@ -431,5 +590,9 @@
         </div>
     </footer>
 
+    <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../js/script1.js"></script>
+    <script src="../js/tabslider.js"></script>  
 </body>
 </html>
