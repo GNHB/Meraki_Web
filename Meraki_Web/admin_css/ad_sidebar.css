@@ -1,0 +1,122 @@
+﻿/*SIDEBAR*/
+:root {
+    --green: #487B72;
+    --yellow: #F7BB34;
+    --skin: #FBF1E1;
+    --light_skin: #FEFAF4;
+}
+
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    transition: width none;
+}
+.mybody{
+    display:flex;
+}
+
+/*-------------------------------------------SIDEBAR----------------------------------------------------*/
+.logo{
+    width:100%;
+    background-color: var(--green);
+    display:flex;
+    justify-content:center;
+}
+.logo img{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.sidebar {
+    top: 0px;
+    right: 0px;
+    width: 20%;
+    z-index: 1;
+    background-color: var(--skin);
+    border-right: 1px solid black;
+    height: 100vh;
+}
+
+    .sidebar a, .dropdown_btn {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        color: black;
+    }
+
+.dropdown-container {
+    display: block;
+    text-decoration: none;
+    background-color: var(--green);
+}
+
+    .dropdown-container a {
+        border: none;
+    }
+
+.sidebar a:hover, .dropdown-btn:hover {
+    color: var(--yellow);
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.giamua_btn {
+    background-color: var(--yellow);
+    border-radius: 10px;
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px #888888;
+}
+
+    .giamua_btn:hover {
+        background-color: var(--green);
+        color: white;
+    }
+
+   /*------------------------------------ HEADER---------------------------------------*/
+.content{
+    width:80%;
+    background-color: var(--light_skin);
+}
+.header {
+    height: 90px;
+    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+}
+.title{
+    color: var(--yellow);
+    font-size:32px;
+    margin-left:30px;
+}
+.fa-bell{
+    float:right;
+    color:var(--yellow);
+    margin-right: 60px;
+}
+.header p{
+    font-size:16px;
+    font-weight:700;
+    color:white;
+    margin-right:100px;
+}

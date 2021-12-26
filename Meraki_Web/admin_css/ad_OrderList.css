@@ -1,0 +1,46 @@
+﻿:root {
+    --green: #487B72;
+    --yellow: #F7BB34;
+    --skin: #FBF1E1;
+    --light_skin: #FEFAF4;
+}
+
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    transition: width none;
+}
+.mycontent{
+    width: 80%;
+    margin:auto;
+    background-color:  var(--skin);
+}
+div.search_box {
+    display: flex;
+    height: 40px;
+    width: 60%;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: auto;
+    background-color: white;
+}
+
+#search {
+    height: 100%;
+    width: 95%;
+    border-radius: 5px;
+    margin: 0;
+    padding: 5px;
+}
+span img.search_icon {
+    float: right;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
