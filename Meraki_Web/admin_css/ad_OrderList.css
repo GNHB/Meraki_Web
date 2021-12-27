@@ -15,27 +15,30 @@
     text-decoration: none;
     transition: all .2s linear;
     transition: width none;
-}
-div.search_box {
-    display: flex;
-    height: 40px;
-    width: 60%;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin: auto;
-    background-color: white;
+
 }
 
-#search {
-    height: 100%;
-    width: 95%;
-    border-radius: 5px;
-    margin: 0;
-    padding: 5px;
+/*-------------------MyTABLE----------------------*/
+.myTable {
+    width: 98%;
+    margin: auto;
+    border-spacing: 0;
+    line-height:2;
 }
-span img.search_icon {
-    float: right;
-    height: 30px;
-    width: 30px;
-    vertical-align: middle;
+.myTable th {
+    font-size: 16px;
+    font-weight: normal;
+    background-color:var(--yellow);
 }
+    .myTable td {
+        line-height: 2.5;
+    }
+    .myTable th, tr, td {
+        border-bottom: 1px solid black;
+        font-size: 16px;
+        text-align:center;
+    }
+.icon{
+    vertical-align:middle;
+}
+
