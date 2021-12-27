@@ -115,7 +115,8 @@
     align-items: center;*/
 }
 .content .slider_box {
-    height: 284px;
+    height: 240px;
+    width:160px;
     border-radius: 10px;
     background-color: var(--skin);
     align-items: center;
@@ -125,7 +126,7 @@
     color: var(--yellow);
 }
 .content .slider_img {
-    height: 221px;
+    height: 190px;
     width: 95%;
     margin: 0 auto;
 }
