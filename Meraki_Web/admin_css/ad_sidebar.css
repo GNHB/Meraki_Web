@@ -96,6 +96,10 @@
         background-color: var(--green);
         color: white;
     }
+    .fas{
+        width:24px;
+        height:24px;
+    }
 
    /*------------------------------------ HEADER---------------------------------------*/
 .content{
