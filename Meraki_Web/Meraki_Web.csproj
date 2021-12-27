@@ -70,6 +70,7 @@
     <Content Include="admin_css\ad_Category.css" />
     <Content Include="admin_css\ad_OrderList.css" />
     <Content Include="admin_css\ad_sidebar.css" />
+    <Content Include="admin_html\ad_Order.html" />
     <Content Include="admin_html\ad_Category.html" />
     <Content Include="admin_html\ad_OrderList.html" />
     <Content Include="admin_js\ad_sidebar.js" />
