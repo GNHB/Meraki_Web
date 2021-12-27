@@ -16,11 +16,6 @@
     transition: all .2s linear;
     transition: width none;
 }
-.mycontent{
-    width: 80%;
-    margin:auto;
-    background-color:  var(--skin);
-}
 div.search_box {
     display: flex;
     height: 40px;

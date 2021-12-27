@@ -19,19 +19,17 @@
 .thanhtoan_ebook_body{
     width:80%;
     margin:auto;
-    background-color: blue;
     display: flex;
 }
 /*----------------------INFORMATION------------------------------*/
 .information{
     width: 70%;
-    background-color: lightgreen;
     display:flex;
     flex-direction:column;
 }
 #ebook_list{
     width: 70%;
-    margin:0 auto 30px auto;
+    margin-bottom:50px;
 }
 .tbl_item {
     width: 100%;
@@ -47,47 +45,198 @@
 }
 
 /*--------------------------PHUONG THUC THANH TOAN-------------------*/
-.tbl_thanhtoan img {
-    width: 40px;
-    height: 40px;
-    margin-left: 40px;
+.thanhtoan {
+    width: 90%;
+    margin: auto;
+    background-color: var(--skin);
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.action{
+    display:flex;
+    margin:auto;
+    width:100px;
+    align-items:center;
+    justify-content:center;
 }
 
-.tbl_thanhtoan {
-    border: 1px solid black;
-    border-spacing: 50px;
-    background-color: var(--skin);
+.card_all {
+    /*   display: flex;
+    padding: 10px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;*/
+    display: flex;
+    margin: 0 auto 0.5em auto;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-#vietcom{
-    width:80px;
-}
-.tbl_thanhtoan{
-    margin: auto;
-}
-.xac_nhan{
-    width: 90%;
-    margin:auto;
-    justify-content:center;
-    text-align:center;
-}
-.thanh_toan_ebook{
+
+.card {
+    width: 24%;
+    box-sizing: border-box;
+    padding: 1.2em 0.5em;
     text-align: center;
 }
-.move_btn {
-    background-color: var(--yellow);
-    border-radius: 10px;
-    height: 50px;
-    width: 150px;
-    box-shadow: 2px 2px #888888;
+
+.custom-radio {
+    transition: 0.5s ease;
     cursor: pointer;
-    margin: 20px 0 20px 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+    .custom-radio input {
+        display: none;
+    }
+
+.radio-btn {
+    width: 100%;
+    padding: 0.6em 0.6em;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #c3c3c367;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background: var(--green);
+}
+
+    .radio-btn > i {
+        color: #ffffff;
+        background-color: var(--yellow);
+        font-size: 20px;
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%) scale(4);
+        border-radius: 50px;
+        padding: 3px;
+        transition: 0.2s;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+.custom-radio input:checked + .radio-btn {
+    border: 3px solid var(--yellow);
+}
+
+    .custom-radio input:checked + .radio-btn > i {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-icon {
+    align-items: center;
+    padding: 0.5em;
+}
+
+    .card-icon img {
+        height: 30px;
+        width: 30px;
+    }
+
+.card-text .date {
+    font-size: 1rem;
+    color: rgb(255 255 255);
+    text-align: center;
+    padding: 0.25em 0;
+}
+
+.card-text .price {
+    font-size: 1rem;
+    color: var(--yellow);
+    text-align: center;
+    font-weight: bold;
+    padding: 0.25em 0;
+}
+
+
+.note div p {
+    font-size: 16px;
+    padding: 0.5em 0.25em;
+}
+
+.e-wallets, .atm {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.atm {
+    margin-top: 1em;
+}
+
+.card-payment {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+.btnConfirm {
+    background: var(--yellow);
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 0.5em 1.5em;
+    border: 1px solid var(--yellow);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+    .btnConfirm:hover {
+        background: #ffd800;
+    }
+
+.btn {
+    width: 100%;
+    text-align: center;
+}
+
+
+.action {
+    width: 100%;
+    margin: auto;
+}
+
+.checkbox-giahan {
+    width: 100%;
+}
+
+.tittle-mini {
+    font-size: 1rem;
+    width: 20%;
+    text-align: center;
+    padding: 1.2em 0;
+}
+
+.card-icon-pay img {
+    align-items: center;
+    height: 60%;
+    width: 60%;
+}
+
+.card-icon-atm img {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.Payment_Option {
+    padding-bottom: 1em;
 }
 /*------------------------RECOMMEND------------------------------*/
 .recommend {
     width: 30%;
     background-color: var(--skin);
-    border: 2px solid var(--green);
-    /* margin-right: 160px;  */
+    border: 1px solid black;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .txt_tittle_yellow {
@@ -103,7 +252,7 @@
 }
 
 .recommend_table .book_name {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     margin-left: 20px;
 }
@@ -113,5 +262,133 @@
 
 .rcm_row_item {
         padding: 15px 15px;
+}
+.rcm_row_item img{
+    height:165px;
+    width:115px;
+}
 
+/*----------------------------RESPONSIVE------------------------------*/
+@media screen and (max-width: 1025px) {
+    * {
+        font-size: 14px;
+    }
+    .thanhtoan_ebook_body {
+        width: 100%;
+        display: flex;
+    }
+    .rcm_row_item img{
+        width:65px;
+        height:95px;
+    }
+    .recommend_table .book_name {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .recommend_table {
+        width: 100%;
+        margin: 0;
+    }
+    .recommend{
+        width: 35%;
+        margin:0;
+    }
+    .thanhtoan{
+        margin:0;
+        width:100%;
+    }
+    .information{
+        width:80%;
+    }
+}
+@media screen and (max-width: 600px){
+    * {
+        font-size: 14px;
+    }
+
+    .thanhtoan_ebook_body {
+        width: 100%;
+        display: flex;
+    }
+
+    .rcm_row_item img {
+        width: 65px;
+        height: 95px;
+    }
+
+    .recommend {
+        visibility:hidden;
+        width:0;
+        display:none;
+    }
+
+    .thanhtoan {
+        margin: auto;
+        width: 90%;
+    }
+
+    .information {
+        width: 100%;
+    }
+    .action{
+        width:80%;
+    }
+    .btnConfirm{
+        margin-left:20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    * {
+        font-size: 14px;
+    }
+
+    .thanhtoan_ebook_body {
+        width: 100%;
+        display: flex;
+    }
+
+    .rcm_row_item img {
+        width: 65px;
+        height: 95px;
+    }
+
+    .recommend {
+        visibility: hidden;
+        width: 0;
+        display: none;
+    }
+
+    .thanhtoan {
+        width: 100%;
+    }
+
+    .information {
+        width: 100%;
+    }
+
+    .action {
+        width: 100%;
+    }
+
+    .btnConfirm {
+        margin-left: 20px;
+    }
+    #ebook_list{
+        width:100%;
+    }
+    .tbl_item{
+        width:100%;
+    }
+    .tbl_item tr{
+        width:100%;
+    }
+    .card-icon-pay{
+        width:100%;
+        height:100%;
+    }
+    .card-icon-pay img {
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
 }

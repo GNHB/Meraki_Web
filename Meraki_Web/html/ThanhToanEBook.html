@@ -60,26 +60,99 @@
                     </tr>
                 </table>
             </div>
-            <p style="font-size: 20px; margin-bottom:20px; margin-top:20px;"><strong>LỰA CHỌN HÌNH THỨC THANH TOÁN</strong></p>
-            <div id="thanh_toan_ebook">
-                <table class="tbl_thanhtoan">
-                    <tr>
-                        <td> Ví điện tử</td>
-                        <td><img src="../image/imvLogo/MoMo.png" /></td>
-                        <td><img src="../image/imvLogo/AirPay.png" /></td>
-                        <td><img src="../image/imvLogo/ZaloPay.png" /></td>
-                    </tr>
-                    <tr style="margin-top: 50px;">
-                        <td> Thẻ nội địa</td>
-                        <td><img src="../image/imvLogo/vietcom.png" id="vietcom"/></td>
-                        <td><img src="../image/imvLogo/BIDV.png" /></td>
-                        <td><img src="../image/imvLogo/techcom.png" /></td>
-                    </tr>
-                </table>
-                <div class="xac_nhan">
-                    <a href="#" style="color: #F7BB34; text-decoration: none; ">Quay lại trang địa chỉ giao hàng</a>
-                    <button type="button" name="back" class="move_btn">Xác nhận</button>
+            <p style="font-size: 20px; margin-bottom:20px; "><strong>LỰA CHỌN HÌNH THỨC THANH TOÁN</strong></p>
+            <div class="thanhtoan">
+                <div class="e-wallets">
+                    <div class="tittle-mini">Ví điện tử:</div>
+                    <div class="card-payment">
+                        <div class="card">
+                            <label class="custom-radio">
+                                <input type="radio" name="radio-wallets" />
+                                <span class="radio-btn">
+                                    <i class="las la-check"></i>
+                                    <div class="card-icon-pay">
+                                        <img class="card-icon-pay-img" src="../image/imvIcon/logo-wallet-04.png" />
+                                    </div>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="card">
+                            <label class="custom-radio">
+                                <input type="radio" name="radio-wallets" />
+                                <span class="radio-btn">
+                                    <i class="las la-check"></i>
+                                    <div class="card-icon-pay">
+                                        <img class="card-icon-pay-img" src="../image/imvIcon/logo-wallet-05.png" />
+                                    </div>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="card">
+                            <label class="custom-radio">
+                                <input type="radio" name="radio-wallets" />
+                                <span class="radio-btn">
+                                    <i class="las la-check"></i>
+                                    <div class="card-icon-pay">
+                                        <img class="card-icon-pay-img" src="../image/imvIcon/logo-wallet-06.png" />
+                                    </div>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="card">
+                            <label class="custom-radio">
+                                <input type="radio" name="radio-wallets" />
+                                <span class="radio-btn">
+                                    <i class="las la-check"></i>
+                                    <div class="card-icon-pay">
+                                        <img class="card-icon-pay-img" src="../image/imvIcon/logo-wallet-07.png" />
+                                    </div>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
+                <div class="atm">
+                    <div class="tittle-mini">Thẻ nội địa: </div>
+                    <div class="card-payment">
+                        <div class="card">
+                            <label class="custom-radio">
+                                <input type="radio" name="radio-atm" />
+                                <span class="radio-btn">
+                                    <i class="las la-check"></i>
+                                    <div class="card-icon-atm">
+                                        <img src="../image/imvIcon/ic_bank-01.png" />
+                                    </div>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="card">
+                            <label class="custom-radio">
+                                <input type="radio" name="radio-atm" />
+                                <span class="radio-btn">
+                                    <i class="las la-check"></i>
+                                    <div class="card-icon-atm">
+                                        <img src="../image/imvIcon/ic_bank-02.png" />
+                                    </div>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="card">
+                            <label class="custom-radio">
+                                <input type="radio" name="radio-atm" />
+                                <span class="radio-btn">
+                                    <i class="las la-check"></i>
+                                    <div class="card-icon-atm">
+                                        <img src="../image/imvIcon/ic_bank-03.png" />
+                                    </div>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <span class="action">
+                            <input type="button" value="Xác nhận" class="btnConfirm" />
+                    </span>
+                </div>
+
             </div>
 
         </div>
@@ -91,9 +164,9 @@
                         <table>
                             <tr>
                                 <td style="width:fit-content">
-                                    <img src="../image/imvBook/haisophan.jpg" style="height:180px; width:125px;" />
+                                    <img src="../image/imvBook/haisophan.jpg"/>
                                 </td>
-                                <td style="">
+                                <td class="book_info">
                                     <p class="book_name">Đứa trẻ hư </p>
                                     <p class="author_name">Tử Kim Trần</p>
                                 </td>
@@ -107,9 +180,9 @@
                         <table>
                             <tr>
                                 <td style="width:fit-content">
-                                    <img src="../image/imvBook/haisophan.jpg" style="height:180px; width:125px;" />
+                                    <img src="../image/imvBook/haisophan.jpg" />
                                 </td>
-                                <td style="">
+                                <td class="book_info">
                                     <p class="book_name">Đứa trẻ hư </p>
                                     <p class="author_name">Tử Kim Trần</p>
                                 </td>
@@ -123,9 +196,9 @@
                         <table>
                             <tr>
                                 <td style="width:fit-content">
-                                    <img src="../image/imvBook/haisophan.jpg" style="height:180px; width:125px;" />
+                                    <img src="../image/imvBook/haisophan.jpg"  />
                                 </td>
-                                <td style="">
+                                <td class="book_info">
                                     <p class="book_name">Đứa trẻ hư </p>
                                     <p class="author_name">Tử Kim Trần</p>
                                 </td>
