@@ -67,6 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin_css\ad_Category.css" />
+    <Content Include="admin_css\ad_OrderList.css" />
+    <Content Include="admin_css\ad_sidebar.css" />
+    <Content Include="admin_html\ad_Category.html" />
+    <Content Include="admin_html\ad_OrderList.html" />
+    <Content Include="admin_js\ad_sidebar.js" />
     <Content Include="css\AboutMeraki.css" />
     <Content Include="css\blog.css" />
     <Content Include="css\BookChart.css" />
@@ -141,6 +147,7 @@
     <Content Include="image\imvBook\vongtronmau.jpg" />
     <Content Include="image\imvBook\whenbreathbecomesair.jpg" />
     <Content Include="image\imvIcon\ggplaylogo.png" />
+    <Content Include="image\imvIcon\icon-delete.png" />
     <Content Include="image\imvIcon\icon_back.png" />
     <Content Include="image\imvIcon\icon_card_fontbar.png" />
     <Content Include="image\imvIcon\icon_drop_down.png" />
