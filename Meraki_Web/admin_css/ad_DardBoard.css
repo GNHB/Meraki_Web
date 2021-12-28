@@ -1,0 +1,494 @@
+﻿:root {
+    --green: #487B72;
+    --yellow: #F7BB34;
+    --skin: #FBF1E1;
+    --light_skin: #FEFAF4;
+}
+
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+body{
+    background:var(--light_skin);
+}
+
+.container_Dardboard {
+    width: 95%;
+    margin: 1.5em auto;
+}
+
+.box_container {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+.box_1 {
+    width: 24%;
+    display: flex;
+    background: #96C7F8;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 20px;
+}
+
+.box_1_image {
+    width: 30%;
+    text-align:center;
+    margin:auto;
+}
+
+.box_1_image img{
+   margin:auto;
+}
+
+.box_1_content {
+    width:70%;
+    text-align:center;
+    margin:auto;
+}
+
+.box_1_tittle {
+    font-size: 16px;
+    margin-bottom: 0.5em;
+}
+
+.box_1_number {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.box_2 {
+    width: 24%;
+    display: flex;
+    background: #8DF4C7;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.box_3 {
+    width: 24%;
+    display: flex;
+    background: #FF7AC4;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 620px) {
+    .box_container {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .box_1, .box_2, .box_3 {
+        width: 100%;
+        margin-bottom:1rem;
+    }
+}
+    /*-----------------------OPTION BOX--------------------------------*/
+    .option_box {
+        display: flex;
+        width: 23%;
+        padding: 5px;
+        border-radius: 10px;
+        background: var(--yellow);
+    }
+
+    .card {
+        flex: 1;
+        box-sizing: border-box;
+        text-align: center;
+        background: var(--yellow);
+    }
+
+    .custom-radio {
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+
+        .custom-radio input {
+            display: none;
+        }
+
+    .radio-btn {
+        width: 100%;
+        padding: 0.3em 0.3em;
+        border: 3px solid transparent;
+        display: inline-block;
+        border-radius: 15px;
+        position: relative;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 10px;
+        background: var(--yellow);
+    }
+
+        .radio-btn > i {
+            color: #ffffff;
+            background-color: var(--yellow);
+            font-size: 20px;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%) scale(4);
+            border-radius: 50px;
+            padding: 3px;
+            transition: 0.1s;
+            pointer-events: none;
+            opacity: 0;
+        }
+
+    .custom-radio input:checked + .radio-btn {
+        background: var(--light_skin);
+    }
+
+        .custom-radio input:checked + .radio-btn > i {
+            opacity: 1;
+            transform: translateX(-50%) scale(1);
+        }
+
+@media screen and (max-width: 620px) {
+    .option_box {
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-top: 1em;
+    }
+}
+    /*-----------------------LINE CHART--------------------------------*/
+    #container_line_chart {
+        width: 100%;
+        margin: 1.5em auto;
+    }
+
+    /*-----------------------CONTAINER THREE BOX--------------------------------*/
+    .container_three_box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+.container_two_box {
+    width: 65%;
+}
+
+.container_one_box {
+    width: 33%;
+    background: var(--skin);
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding:1.5em;
+}
+
+.container_two_box_1 {
+    background: var(--skin);
+    padding: 1.5em;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.container_two_box_2 {
+    background: var(--skin);
+    margin: 2em 0;
+    padding: 1.5em;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.tittle_box {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+
+.db_tittle_box{
+    font-size: 24px;
+    font-weight:bold;
+    flex:1;
+}
+
+.tittle_box a input{
+    border-radius: 0.5em;
+    background: var(--yellow);
+    padding: 0.7em 1.5em;
+    font-size: 16px;
+    flex:1;
+}
+
+.table_order{
+    width:100%;
+    border-collapse:collapse;
+    margin:1em 0 0.1em;
+}
+
+    .table_order tr th {
+        border-bottom: 1px solid rgb(0 0 0);
+        border-top: 1px solid rgb(0 0 0);
+        padding: 1em;
+    }
+
+.table_order tr td{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 1em;
+}
+
+.table_order .last td{
+    border-bottom:none;    
+}
+
+.table_order .last {
+    border-bottom:none;
+}
+
+.table_order tr:hover{
+    background:var(--yellow);
+}
+
+/*-------------------------------BOX 2--------------------------------*/
+.option_month {
+    border-radius: 0.5em; 
+    padding: 0.7em 1em;
+    font-size: 16px;
+    background: var(--yellow);
+}
+
+.option_month select option{
+    padding:0.5em;
+    background: var(--skin);
+}
+
+.option_month select:focus{
+    border:1px solid var(--green);
+}
+
+            /*-------------PROGRESS PROFIT----------------*/
+.progress_profit {
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+    .progress_profit .bar {
+        margin: 25px 0 10px;
+        display:flex;
+        align-content:space-between;
+        align-items:center;
+    }
+
+        .progress_profit .bar:first-child {
+            margin-top: 0px;
+        }
+
+        .progress_profit .bar .info {
+            margin-bottom: 5px;
+            width:20%;
+        }
+
+            .progress_profit .bar .info span {
+                font-weight: 500;
+                font-size: 17px;
+                opacity: 0;
+                animation: showText 0.5s 1s linear forwards;
+            }
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress_profit .bar .progress-line {
+    height: 30px;
+    width: 80%;
+    background: white;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 1em;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05), 0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.bar .progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 1em;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #F7BB34;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.bar .progress-line.html span {
+    width: 90%;
+}
+
+.bar .progress-line.css span {
+    width: 60%;
+}
+
+.bar .progress-line.jquery span {
+    width: 85%;
+}
+
+.bar .progress-line.python span {
+    width: 50%;
+}
+
+.bar .progress-line.mysql span {
+    width: 75%;
+}
+
+.progress-line span::after {
+    position: absolute;
+    right: 0;
+    font-weight: 500;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-line.html span::after {
+    content: "90%";
+}
+
+.progress-line.css span::after {
+    content: "60%";
+}
+
+.progress-line.jquery span::after {
+    content: "85%";
+}
+
+.progress-line.python span::after {
+    content: "50%";
+}
+
+.progress-line.mysql span::after {
+    content: "75%";
+}
+
+/*------------------------------BOX NEW USER--------------------------------*/
+.img_new_user {
+    width: 50px;
+    height: 50px;
+}
+
+.img_new_user img {
+    width:100%;
+    border-radius: 50%;
+    object-fit:cover;
+}
+
+.table_new_user {
+    width: 100%;
+    border-collapse:collapse;
+    margin: 1em 0 0.5em;
+}
+
+    .table_new_user tr th {
+        border-bottom: 1px solid var(--skin);
+        border-top: 1px solid var(--skin);
+        padding: 0.5em;
+    }
+
+    .table_new_user tr td {
+        border-bottom: 1px solid var(--skin);
+        padding: 0.5em;
+    }
+
+    .table_new_user .last td {
+        border-bottom: none;
+    }
+
+    .table_new_user .last {
+        border-bottom: none;
+    }
+
+    .table_new_user tr:hover {
+        background: var(--yellow);
+    }
+
+/*------------------------------TOP TÌM KIẾM--------------------------------*/
+.container_top_search{
+    margin:1em auto 0;
+}
+
+.table_top_search {
+    width: 100%;
+    margin: 1em 0 0;
+    border-collapse:collapse;
+}
+
+    .table_top_search tr td {
+        padding: 0.5em;
+        text-align: start;
+        border-bottom: 1px solid var(--skin);
+    }
+
+.table_top_search tr:hover {
+    background: var(--yellow);
+}
+
+.top_1{
+    text-align:center;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.img_top_search {
+    width: 50px;
+    height: 80px;
+}
+
+.img_top_search img {
+    width: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.line_top{
+    border-top: 2px solid rgb(0 0 0);
+}
+
+.line_top td{
+    margin-top:5px;
+}
+
+@media screen and (max-width: 620px) {
+    .container_three_box{
+        display:block;
+    }
+
+    .container_two_box{
+        width:100%;
+    }
+
+    .container_one_box{
+        width:100%;
+    }
+}

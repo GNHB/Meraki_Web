@@ -38,7 +38,14 @@
         font-size: 16px;
         text-align:center;
     }
+    .myTable tr:hover {
+        background-color: var(--light_skin);
+    }
 .icon{
     vertical-align:middle;
+}
+.fas:hover {
+    cursor: pointer;
+    color: var(--yellow);
 }
 

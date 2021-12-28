@@ -16,6 +16,12 @@
     transition: all .2s linear;
     transition: width none;
 }
+
+body {
+    font-family: Arial;
+    font-size: 16px;
+    background-color: #FEFAF4;
+}
 .theloai_body {
     width: 80%;
     margin: auto;
@@ -108,14 +114,14 @@
     margin: auto;
 }
 .content .slider {
-    width: 70%;
+    width: 80%;
     margin: auto;
     /* display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;*/
 }
 .content .slider_box {
-    height: 240px;
+    height: 285px;
     width:160px;
     border-radius: 10px;
     background-color: var(--skin);
@@ -126,7 +132,7 @@
     color: var(--yellow);
 }
 .content .slider_img {
-    height: 190px;
+    height: 80%;
     width: 95%;
     margin: 0 auto;
 }
@@ -150,19 +156,21 @@
     font-size: 16px;
     color:black;
 }
-.wrap .slider .slider_box .img_detail p {
+.wrap .slider .slider_box .img_detail .title p {
     display: block;
-    width: 130px;
-    font-size: 14px;
+    width: 145px;
+    font-size: 16px;
     font-weight: lighter;
     text-align: center;
     margin-top: 5px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    font-weight: bold;
 }
-    .wrap .slider .slider_box .img_detail p.author{
+    .author{
         text-align:center;
+        font-size: 14px;
     }
     /*TAC GIA YEU THICH*/
     .tac_gia_yeu_thich {
@@ -195,10 +203,39 @@
     background-color: var(--skin);
     cursor: pointer;
 }
+    .tac_gia .slider_box p {
+        display: block;
+        width: 180px;
+        font-size: 18px;
+        font-weight: lighter;
+        text-align: center;
+        margin:auto;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-weight: bold;
+    }
 .sach_yeu_thich .slider_box {
     margin: auto;
-    width: 65%;
+    height: 285px;
+    width: 160px;
+    border-radius: 10px;
+    background-color: var(--skin);
+    align-items: center;
+    cursor: pointer;
 }
+    .sach_yeu_thich .slider_box p {
+        display: block;
+        width: 145px;
+        font-size: 16px;
+        font-weight: lighter;
+        text-align: center;
+        margin-top: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-weight: bold;
+    }
  
 .first{
     margin: auto;
@@ -324,10 +361,10 @@ table {
     border-spacing: 0;
 }
 /*----------------------------------------RESPONSIVE------------------------------------------*/
-@media screen and (max-width: 1140px) {
+@media screen and (min-width: 901px) and (max-width: 1140px) {
     .wrap .slider .slider_box .img_detail p {
         display: block;
-        width: 100px;
+        width: 120px;
         font-size: 14px;
         font-weight: lighter;
         text-align: center;
@@ -336,7 +373,7 @@ table {
         overflow: hidden;
         white-space: nowrap;
     }
-   
+
     .tac_gia_yeu_thich {
         width: 100%;
         display: block;
@@ -368,38 +405,41 @@ table {
         width: 90%;
     }
 }
-@media screen and (max-width: 900px){
+@media screen and (min-width: 501px) and (max-width: 900px) {
     .sidebar {
         display: block;
         margin: auto;
         width: 80%;
-        border-left: 1px solid black;
     }
-    .theloai_body{
-        display:block;
+
+    .theloai_body {
+        display: block;
         width: 100%;
     }
+
     .content {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 0;
+        margin: 30px auto 10px auto;
         padding: 0;
     }
+
     .wrap {
-        flex:1;
         width: 100%;
     }
+
     .slider {
         width: 100%;
         margin: 0;
         padding: 0;
     }
+
     .slider_box {
-        width: 45%;
         margin: auto;
         padding: 0;
     }
+
     .wrap .slider .slider_box .img_detail p {
         display: block;
         width: 130px;
@@ -416,28 +456,33 @@ table {
         width: 100%;
         display: block;
     }
-    .tac_gia{
-        width: 30%;
-       margin: auto;
+
+    .tac_gia {
+        width: 40%;
+        margin: auto;
         display: block;
     }
+
     .sach_yeu_thich {
         width: 100%;
         margin: auto;
         display: block;
-        background-color: aqua;
     }
-    table tr, td{
+
+    table tr, td {
         border: 1px solid;
     }
-    table{
+
+    table {
         width: 70%;
-        margin:auto;
+        margin: auto;
     }
-    .sach_yeu_thich .slider_box{
+
+    .sach_yeu_thich .slider_box {
         margin: auto;
         width: 90%;
     }
+
     .sach_yeu_thich .img_detail p {
         display: block;
         width: 150px;
@@ -450,8 +495,10 @@ table {
         white-space: nowrap;
     }
 }
-
 @media screen and (max-width: 500px) {
+    body{
+        font-size:14px;
+    }
     .sidebar {
         display: block;
         margin: auto;
@@ -477,7 +524,7 @@ table {
         width: 100%;
     }
 
-    .slider {    
+    .slider {
         margin: auto;
     }
 
@@ -485,17 +532,26 @@ table {
         margin: auto;
         padding: 0;
     }
-    .wrap .slider .slider_box .img_detail p {
+
+    .wrap .slider .slider_box .title p {
         display: block;
         width: 130px;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: lighter;
-        text-align: center;
-        margin-top: 5px;
+        margin:auto;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
     }
+    .content .slider_box {
+        height: 220px;
+        width: 160px;
+        border-radius: 10px;
+        background-color: var(--skin);
+        align-items: center;
+        cursor: pointer;
+    }
+
     .tac_gia_yeu_thich {
         width: 100%;
         display: block;
@@ -512,6 +568,7 @@ table {
         margin: auto;
         display: block;
     }
+
     table tr, td {
         border: 1px solid;
     }
@@ -525,11 +582,13 @@ table {
         margin: auto;
         width: 90%;
     }
-
+    .tac_gia .title{
+        font-size:14px;
+    }
     .sach_yeu_thich .img_detail p {
         display: block;
         width: 130px;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: lighter;
         text-align: center;
         margin-top: 5px;
@@ -538,3 +597,5 @@ table {
         white-space: nowrap;
     }
 }
+
+

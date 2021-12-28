@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>DANH SÁCH ĐƠN HÀNG</title>
+    <!---------------------------------------------my content css---------------------------------------->
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_OrderList.css" />
+
+    <!-----------------------------------------sidebar + header css-------------------------------------->
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_sidebar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-----------------------------------------csss Dardboard-------------------------------------->
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_DardBoard.css" />
+    <!-----------------------------------------LINE CHART-------------------------------------->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Month', 'Tổng lượt truy cập', 'Số người dùng mới','Tổng số đơn hàng'],
+                ['01', 1000, 400, 200],
+                ['02', 1170, 460, 1200],
+                ['03', 660, 1120, 856],
+                ['04', 1030, 540, 632],
+                ['05', 2000, 120, 90],
+                ['06', 900, 589, 632],
+                ['07', 100, 1000, 600],
+                ['08', 290, 900, 800],
+                ['09', 1030, 540, 632],
+                ['10', 400, 358, 147],
+                ['11', 652, 214, 123],
+                ['12', 852, 456, 258]
+            ]);
+
+            var options = {
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+</head>
+<body class="mybody">
+    <!---------------------------SIDEBAR-------------------------->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../image/imvBanner/logo.png" width="100" height="70" />
+        </div>
+        <a href="ad_DardBoard.html"><i class="fas fa-columns" style="margin-right:10px;"></i> DashBoard</a>
+        <button class="dropdown_btn"><i class="fas fa-user-circle" style="margin-right:10px;"></i>Khách hàng <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+            <a href="#">Đánh giá</a>
+            <a href="#">Danh sách khách hàng</a>
+        </div>
+
+        <button class="dropdown_btn"><i class="fas fa-book" style="margin-right:10px;"></i>Sách <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+            <a href="#">Dánh sách Sách</a>
+            <a href="#">Hàng tồn kho</a>
+        </div>
+        <a href="ad_Category.html"><i class="fas fa-list" style="margin-right:10px;"></i>Danh mục</a>
+        <a href="#"><i class="fas fa-pen-nib" style="margin-right:10px;"></i>Blog</a>
+        <a href="ad_OrderList.html"><i class="fas fa-shopping-cart" style="margin-right:10px;"></i>Danh sách đơn hàng</a>
+        <a href="#"><i class="fas fa-file-alt" style="margin-right:10px;"></i>Danh sách hóa đơn</a>
+        <a href="#"><i class="fas fa-truck" style="margin-right:10px;"></i>Vận chuyển </a>
+        <a href="#" style="border-top:1px solid black;"><i class="fas fa-user-cog" style="margin-right:10px;"></i>Giao diện</a>
+        <br />
+    </div>
+    <!---------------------------CONTENT-------------------------->
+    <div class="content">
+        <!--------------------------HEADER-------------------------->
+        <div class="header">
+            <a class="title">Dashboard</a>
+            <div style="display:flex;">
+                <a href="#"><i class="far fa-bell"></i></a>
+                <p>Hoài Vi</p>
+            </div>
+        </div>
+        <!-----------------MY CONTENT: DARDBOARD--------------------->
+        <div class="container_Dardboard">
+            <!-----------------------------------------------BOX DATA NUMBER--------------------------------------->
+            <div class="box_container">
+                <div class="box_1">
+                    <div class="box_1_image">
+                        <img src="../image/imvAdmin/ic_total_hits.png" />
+                    </div>
+                    <div class="box_1_content">
+                        <p class="box_1_tittle">Tổng lượt truy cập</p>
+                        <p class="box_1_number">150K</p>
+                    </div>
+                </div>
+                <div class="box_2">
+                    <div class="box_1_image">
+                        <img src="../image/imvAdmin/ic_new_user.png" />
+                    </div>
+                    <div class="box_1_content">
+                        <p class="box_1_tittle">Số người dùng mới</p>
+                        <p class="box_1_number">115K</p>
+                    </div>
+                </div>
+                <div class="box_3">
+                    <div class="box_1_image">
+                        <img src="../image/imvAdmin/ic_total_order.png" />
+                    </div>
+                    <div class="box_1_content">
+                        <p class="box_1_tittle">Tổng số đơn hàng</p>
+                        <p class="box_1_number">35K</p>
+                    </div>
+                </div>
+                <!-----------------------------------------------OPTION BOX--------------------------------------->
+                <div class="option_box">
+
+                    <div class="card">
+                        <label class="custom-radio">
+                            <input type="radio" name="radio" checked />
+                            <span class="radio-btn">
+                                <h6 class="week">Tuần</h6>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="card">
+                        <label class="custom-radio">
+                            <input type="radio" name="radio" />
+                            <span class="radio-btn">
+                                <h6 class="week">Tháng</h6>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="card">
+                        <label class="custom-radio">
+                            <input type="radio" name="radio" />
+                            <span class="radio-btn">
+                                <h6 class="week">Năm</h6>
+                            </span>
+                        </label>
+                    </div>
+
+                </div>
+                <!------------------------------------------------------------------------------------------------------------------->
+            </div>
+            <!--------------------------------------------------LINE CHART----------------------------------------------------------------->
+            <div id="container_line_chart">
+                <div id="curve_chart" style="height: 300px"></div>
+            </div>
+            <!--------------------------------------------------CONTAINER BODY 2----------------------------------------------------------------->
+            <div class="container_three_box">
+                <div class="container_two_box">
+                    <div class="container_two_box_1">
+                        <div class="tittle_box">
+                            <p class="db_tittle_box">Đơn hàng gần đây</p>
+                            <a href=""><input type="button" value="Xem tất cả" /></a>
+                            <hr />
+                        </div>
+                        <table class="table_order">
+                            <tr>
+                                <th>ID đơn hàng</th>
+                                <th>Giá</th>
+                                <th>Tình trạng</th>
+                            </tr>
+                            <tr>
+                                <td>12547</td>
+                                <td>57 000</td>
+                                <td>Chờ xác nhận</td>
+                            </tr>
+                            <tr>
+                                <td>75892</td>
+                                <td>115 000</td>
+                                <td>Chờ xác nhận</td>
+                            </tr>
+                            <tr>
+                                <td>25487</td>
+                                <td>115 000</td>
+                                <td>Yêu cầu hủy đơn</td>
+                            </tr>
+                            <tr>
+                                <td>35487</td>
+                                <td>45 000</td>
+                                <td>Yêu cầu hủy đơn</td>
+                            </tr>
+                            <tr class="last">
+                                <td>45897</td>
+                                <td>175 000</td>
+                                <td>Chờ xác nhận</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="container_two_box_2">
+                        <div class="tittle_box">
+                            <p class="db_tittle_box">Doanh thu</p>
+                            <select class="option_month">
+                                <option>Tháng 01</option>
+                                <option>Tháng 02</option>
+                                <option>Tháng 03</option>
+                                <option>Tháng 04</option>
+                                <option>Tháng 05</option>
+                                <option>Tháng 06</option>
+                                <option>Tháng 07</option>
+                                <option>Tháng 08</option>
+                                <option>Tháng 09</option>
+                                <option>Tháng 10</option>
+                                <option>Tháng 11</option>
+                                <option>Tháng 12</option>
+                            </select>
+                        </div>
+                        <!-------------------------PROGRESS PROFIT------------------>
+                        <div class="progress_profit">
+                            <div class="bar">
+                                <div class="info">
+                                    <span>Tuần 1</span>
+                                </div>
+                                <div class="progress-line html">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                    <span>Tuần 2</span>
+                                </div>
+                                <div class="progress-line css">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                    <span>Tuần 3</span>
+                                </div>
+                                <div class="progress-line jquery">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                    <span>Tuần 4</span>
+                                </div>
+                                <div class="progress-line python">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------------------->
+                    </div>
+                </div>
+                <!-------------------NEW USER------------------------>
+                <div class="container_one_box">
+                    <div class="container_new_user">
+                        <div class="tittle_box">
+                            <p class="db_tittle_box">Người dùng mới</p>
+                        </div>
+                        <table class="table_new_user">
+                            <tr class="line_top">
+                                <td>
+                                    <div class="img_new_user">
+                                        <img src="../image/imvAdmin/ic_user-14.png" />
+                                    </div>
+                                </td>
+                                <td>Anh Vũ</td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="img_new_user">
+                                        <img src="../image/imvAdmin/ic_user-15.png" />
+                                    </div>
+                                </td>
+                                <td>Anh Vũ</td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="img_new_user">
+                                        <img src="../image/imvAdmin/ic_user-16.png" />
+                                    </div>
+                                </td>
+                                <td>Anh Vũ</td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="img_new_user">
+                                        <img src="../image/imvAdmin/ic_user-17.png" />
+                                    </div>
+                                </td>
+                                <td>Anh Vũ</td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr class="last">
+                                <td>
+                                    <div class="img_new_user">
+                                        <img src="../image/imvAdmin/ic_user-18.png" />
+                                    </div>
+                                </td>
+                                <td>Anh Vũ</td>
+                                <td>1 phút trước</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-------------------TOP SEARCH------------------------>
+                    <div class="container_top_search">
+                        <div class="tittle_box">
+                            <p class="db_tittle_box">Top tìm kiếm</p>
+                            <select class="option_month">
+                                <option>Tháng 01</option>
+                                <option>Tháng 02</option>
+                                <option>Tháng 03</option>
+                                <option>Tháng 04</option>
+                                <option>Tháng 05</option>
+                                <option>Tháng 06</option>
+                                <option>Tháng 07</option>
+                                <option>Tháng 08</option>
+                                <option>Tháng 09</option>
+                                <option>Tháng 10</option>
+                                <option>Tháng 11</option>
+                                <option>Tháng 12</option>
+                            </select>
+                        </div>
+                        <div>
+                            <table class="table_top_search">
+                                <tr class="line_top">
+                                    <td class="top_1">01</td>
+                                    <td>
+                                        <div class="img_top_search">
+                                            <img src="../image/imvBook/laohac.jpg" />
+                                        </div>
+                                    </td>
+                                    <td>Lão Hạc</td>
+                                </tr>
+                                <tr>
+                                    <td class="top_1">02</td>
+                                    <td>
+                                        <div class="img_top_search">
+                                            <img src="../image/imvBook/thutoi.jpg" />
+                                        </div>
+                                    </td>
+                                    <td>Đắc nhân tâm</td>
+                                </tr>
+                                <tr>
+                                    <td class="top_1">03</td>
+                                    <td>
+                                        <div class="img_top_search">
+                                            <img src="../image/imvBook/harrypotter.jpg" />
+                                        </div>
+                                    </td>
+                                    <td>Harry Potter</td>
+                                </tr>
+                                <tr>
+                                    <td class="top_1">04</td>
+                                    <td>
+                                        <div class="img_top_search">
+                                            <img src="../image/imvBook/duttinh.jpg" />
+                                        </div>
+                                    </td>
+                                    <td>Nhà giả kim</td>
+                                <tr class="last">
+                                    <td class="top_1">05</td>
+                                    <td>
+                                        <div class="img_top_search">
+                                            <img src="../image/imvBook/phiasaunghicanx.png" />
+                                        </div>
+                                    </td>
+                                    <td>Phía sau nghi can X</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------------------------------------------------------------------------------------------------------->
+        </div>
+    </div>
+
+    <!-- https://developers.google.com/chart/interactive/docs/quick_start -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="../admin_js/ad_Dardboard_Chart.js"></script>
+    <script type="text/javascript" scr="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="../admin_js/ad_sidebar.js"></script>
+</body>
+</html>
+

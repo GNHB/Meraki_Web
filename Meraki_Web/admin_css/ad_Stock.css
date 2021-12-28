@@ -1,0 +1,152 @@
+﻿:root {
+    --green: #487B72;
+    --yellow: #F7BB34;
+    --skin: #FBF1E1;
+    --light_skin: #FEFAF4;
+}
+
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+body {
+    background: var(--light_skin);
+}
+
+.container_ListBook {
+    width: 95%;
+    margin: 1.5em auto;
+}
+
+.btn_ListBook {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 1.5em;
+}
+
+.btn_AddBook {
+    border-radius: 0.7em;
+    background: var(--yellow);
+    padding: 0.5em 1.5em;
+    font-size: 20px;
+    color: black;
+}
+
+    .btn_AddBook:hover {
+        background: #fcc52b;
+    }
+
+.option_book {
+    border-radius: 0.7em;
+    padding: 0.5em 1em;
+    font-size: 16px;
+    background: var(--green);
+    font-size: 20px;
+    color: white;
+}
+/*-------------------------------CONTENT LISTBOOK---------------------------------*/
+.content_listBook {
+    background: var(--skin);
+    padding: 1.5em 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.search_icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.table_list_book {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0 0.1em;
+}
+
+    .table_list_book tr th {
+        background: var(--yellow);
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 0.7em;
+        text-align: center;
+    }
+
+    .table_list_book tr td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        padding: 0.7em;
+        text-align: center;
+    }
+
+    .table_list_book .last td {
+        border-bottom: none;
+    }
+
+    .table_list_book .last {
+        border-bottom: none;
+    }
+
+    .table_list_book tr:hover {
+        background: var(--yellow);
+    }
+
+    .table_list_book tr td img {
+        text-align: center;
+    }
+
+/*-------------------------------------BOX------------------------------*/
+
+.box_container {
+    display: flex;
+    background: var(--yellow);
+    border-radius: 2em;
+    margin: 1.5em auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 0.5em;
+    align-items:center;
+    justify-content:center;
+}
+
+.box_1 {
+    width: 29%;
+    display: flex;
+/*    padding: 20px;*/
+}
+
+.box_1_image {
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+
+    .box_1_image img {
+        margin: auto;
+    }
+
+.box_1_content {
+    width: 70%;
+    text-align: center;
+    height:100px;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+}
+
+.box_1_tittle {
+    font-size: 16px;
+    margin: auto;
+}
+
+.box_1_number {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+}
