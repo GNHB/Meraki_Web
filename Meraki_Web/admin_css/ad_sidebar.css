@@ -154,7 +154,7 @@ span {
     color:black;
 }
 /*----------------------------RESPONSIVE---------------------------*/
-/*#check{
+#check{
     display:none;
 }
 label #btn, label #cancel{
@@ -162,7 +162,7 @@ label #btn, label #cancel{
     cursor:pointer;
     display:none;
 }
-label #btn{
+/*label #btn{
     left:40px;
     top:25px;
     color:white;
