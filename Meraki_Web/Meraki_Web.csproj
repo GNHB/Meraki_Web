@@ -69,9 +69,11 @@
   <ItemGroup>
     <Content Include="admin_css\ad_Category.css" />
     <Content Include="admin_css\ad_DardBoard.css" />
+    <Content Include="admin_css\ad_ListBook.css" />
     <Content Include="admin_html\ad_DardBoard.html" />
     <Content Include="admin_css\ad_OrderList.css" />
     <Content Include="admin_css\ad_sidebar.css" />
+    <Content Include="admin_html\ad_ListBook.html" />
     <Content Include="admin_html\ad_Order.html" />
     <Content Include="admin_html\ad_Category.html" />
     <Content Include="admin_html\ad_OrderList.html" />
@@ -108,6 +110,8 @@
     <Content Include="html\OrderManagement.html" />
     <Content Include="html\TheLoai.html" />
     <Content Include="html\VIP.html" />
+    <Content Include="image\imvAdmin\delete.png" />
+    <Content Include="image\imvAdmin\editing.png" />
     <Content Include="image\imvAdmin\ic_inventory.png" />
     <Content Include="image\imvAdmin\ic_new_user.png" />
     <Content Include="image\imvAdmin\ic_total_hits.png" />
@@ -118,6 +122,7 @@
     <Content Include="image\imvAdmin\ic_user-16.png" />
     <Content Include="image\imvAdmin\ic_user-17.png" />
     <Content Include="image\imvAdmin\ic_user-18.png" />
+    <Content Include="image\imvAdmin\visibility.png" />
     <Content Include="image\imvAuthor\annrand.jpg" />
     <Content Include="image\imvAuthor\khach1.png" />
     <Content Include="image\imvAuthor\khach2.png" />

@@ -94,7 +94,7 @@
     /*SEARCHBOX*/
 div.search_box {
     display: flex;
-    height: 30px;
+    height: 40px;
     width: 60%;
     border: 1px solid white;
     border-radius: 20px;
@@ -107,7 +107,7 @@ div.search_box {
     width: 95%;
     border-radius: 20px;
     margin: 0;
-    padding: 5px;
+    padding: 10px 20px;
 }
 
 span {
@@ -137,6 +137,7 @@ span {
     color: var(--yellow);
     font-size:32px;
     margin-left:30px;
+    font-style:normal;
 }
 .fa-bell{
     float:right;
@@ -149,3 +150,4 @@ span {
     color:white;
     margin-right:100px;
 }
+
