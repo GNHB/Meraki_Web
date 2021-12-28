@@ -536,28 +536,7 @@ Book stuff
 }
 
 /*MY ACCOUNT*/
-/*.my-account {
-    width: 100%;
-    height: inherit;
-    text-align: left;
-    border-spacing: 50px 10px;
-    display: flex;
-}
-    .my-account td {       
-        width: 50%;
-        text-align: left;
-        background-color: var(--skin);
-        padding: 10px;
-    }
-.my-account .account-title{
-    border-bottom: 1px solid black;
-}
-    .my-account td div {
-        display: inline-block;
-        
-        margin: 10px;
-        padding: 2px;
-    }*/
+
 .inf-container{
     margin: auto;
     align-items: stretch;
