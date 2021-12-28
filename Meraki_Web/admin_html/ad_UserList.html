@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>DANH SÁCH NGƯỜI DÙNG</title>
+    <!---------------------------------------------my content css---------------------------------------->
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_UserReview.css" />
+
+    <!-----------------------------------------sidebar + header css-------------------------------------->
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_sidebar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="mybody">
+    <!---------------------------SIDEBAR-------------------------->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../image/imvBanner/logo.png" width="100" height="70" />
+        </div>
+        <a href="#"><i class="fas fa-columns" style="margin-right:10px;"></i> DashBoard</a>
+        <button class="dropdown_btn"><i class="fas fa-user-circle" style="margin-right:10px;"></i>Khách hàng <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+            <a href="#">Đánh giá</a>
+            <a href="#">Danh sách khách hàng</a>
+        </div>
+
+        <button class="dropdown_btn"><i class="fas fa-book" style="margin-right:10px;"></i>Sách <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+            <a href="#">Dánh sách Sách</a>
+            <a href="#">Hàng tồn kho</a>
+        </div>
+        <a href="#"><i class="fas fa-list" style="margin-right:10px;"></i>Danh mục</a>
+        <a href="#"><i class="fas fa-pen-nib" style="margin-right:10px;"></i>Blog</a>
+        <a href="#"><i class="fas fa-shopping-cart" style="margin-right:10px;"></i>Danh sách đơn hàng</a>
+        <a href="#"><i class="fas fa-file-alt" style="margin-right:10px;"></i>Danh sách hóa đơn</a>
+        <a href="#"><i class="fas fa-truck" style="margin-right:10px;"></i>Vận chuyển </a>
+        <a href="#" style="border-top:1px solid black;"><i class="fas fa-user-cog" style="margin-right:10px;"></i>Giao diện</a>
+        <br />
+    </div>
+    <!---------------------------CONTENT-------------------------->
+    <div class="content">
+        <!--------------------------HEADER-------------------------->
+        <div class="header">
+            <a class="title">Đánh giá của người dùng</a>
+            <div style="display:flex;">
+                <a href="#"><i class="far fa-bell"></i></a>
+                <p>Hoài Vi</p>
+            </div>
+        </div>
+        <!-----------------MY CONTENT: ORDER LIST--------------------->
+        <div class="total">Tổng số lượng người dùng: 100</div>
+        <div class="mycontent">           
+            <div class="search_box">
+                <input type="search" placeholder="search" id="search" />
+                <span><a href="#"><i class="fas fa-search"></i></a></span>
+            </div>
+            <table class="myTable">
+
+                <tr class="usertitle">
+                    <td>Tên người dùng</td>
+                    <td>Số điện thoại</td>
+                    <td>Email</td>
+                    <td>Xem</td>
+                    <td>Xóa</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="username">
+                            <span class="userimg"><img src="../image/imvAuthor/khach2.png" /></span>
+                            <span class="account-text">Nguyễn Thị Diu</span>
+                        </div>
+                    </td>
+                    <td>0358428808</td>
+                    <td>nguyenthidiu@gmail.com</td>
+                    <td class="icon">
+                        <i class="fas fa-eye"></i>
+                    </td>
+                    <td class="icon"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="username">
+                            <span class="userimg"><img src="../image/imvAuthor/khach2 (2).png" /></span>
+                            <span class="account-text">Hoàng Hà</span>
+                        </div>
+                    </td>
+
+                    <td>N/A</td>
+                    <td>hoanghanguyen@gmail.com</td>
+                    <td class="icon">
+                        <i class="fas fa-eye"></i>
+                    </td>
+                    <td class="icon"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="username">
+                            <span class="userimg"><img src="../image/imvAuthor/khach2 (2).png" /></span>
+                            <span class="account-text">Thúy Loan</span>
+                        </div>
+                    </td>
+
+                    <td>035822995</td>
+                    <td>thuyloannguyen@gmail.com</td>
+                    <td class="icon">
+                        <i class="fas fa-eye"></i>
+                    </td>
+                    <td class="icon"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+
+            </table>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="../admin_js/ad_sidebar.js"></script>
+</body>
+</html>

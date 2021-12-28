@@ -49,10 +49,17 @@
         </div>
         <!-----------------MY CONTENT: ORDER LIST--------------------->
         <div class="mycontent">
-            <div class="search_box">
-                <input type="search" placeholder="search" id="search" />
-                <span><a href="#"><i class="fas fa-search"></i></a></span>
-            </div>
+                          
+                <div class="sapxep">
+                    <div id="sapxep" class="sapxeptext">Tổng lượt đánh giá: 2</div>
+                    <select id="filterlist" onchange="myFunction()" class="form-control">
+                        <option>Tất cả</option>
+                        <option>Số sao đánh giá</option>
+                        <option>Đánh giá spam</option>
+                        <option>Tình trạng</option>
+                    </select>
+                </div>
+           
             <table class="myTable">
 
                 <tr class="usertitle">
@@ -66,10 +73,10 @@
                     <td>
                         <div class="username">
                             <span class="userimg"><img src="../image/imvAuthor/khach2.png" /></span>
-                            <span class="account-text">Quang Sú</span>
+                            <span class="account-text"><a href="#">Quang Sú</a></span>
                         </div>
                     </td>
-                    <td class="bookname">Bạn đắt giá bao nhiêu</td>
+                    <td class="bookname"><a href="#">Bạn đắt giá bao nhiêu</a></td>
                     <td>24/10/2021</td>
                     <td>
                         <div class="stars" style="color: #F7BB34">
@@ -106,11 +113,11 @@
                     <td>
                         <div class="username">
                             <span class="userimg"><img src="../image/imvAuthor/khach2 (2).png" /></span>
-                            <span class="account-text">Hoàng Hà</span>
+                            <span class="account-text"><a href="#">Hoàng Hà</a></span>
                         </div>
                     </td>
 
-                    <td class="bookname">Lão Hạc</td>
+                    <td class="bookname"><a href="#">Lão Hạc</a></td>
                     <td>23/10/2021</td>
                     <td>
                         <div class="stars" style="color: #F7BB34">
@@ -124,7 +131,7 @@
                     <td>Đã mua sách</td>
                 </tr>
                 <tr class="review">
-                    <td colspan="5" >Chất lượng sản phẩm tốt, đóng gói chắc chắn, shop phục vụ nhiệt tình, thời gian giao hàng nhanh.</td>
+                    <td colspan="5">Chất lượng sản phẩm tốt, đóng gói chắc chắn, shop phục vụ nhiệt tình, thời gian giao hàng nhanh.</td>
                 </tr>
                 <tr class="reviewaction">
                     <td colspan="3"></td>
