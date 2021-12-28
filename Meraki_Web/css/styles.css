@@ -13,7 +13,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+   
     transition: all .2s linear;
     transition: width none;
 }
@@ -392,8 +392,10 @@ Book stuff
 
 .listbook {
     border-top: 1px solid #487B72;
-    margin: 50px 150px 10px;
+    width: 80%;
+    margin: 30px auto;
     background-color: var(--light_skin);
+    padding: 10px 50px 10px 50px;
 }
 
     .listbook .listbook-heading {
@@ -401,7 +403,12 @@ Book stuff
         font-weight: bold;
         font-size: 20px;
     }
-
+  /*  .myBook{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-gap:20px;
+        align-items:center;
+    }*/
 .book-box {
     display: flex;
     flex-direction: column;

@@ -183,6 +183,9 @@ tr td:last-child {
         border-bottom: 1px solid gray;
         position:relative;
     }
+        .table-body .table-row:hover {
+            background-color: var(--light_skin);
+        }
 .table-row > div {
     display: flex;
     align-items: center;
