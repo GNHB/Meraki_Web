@@ -18,7 +18,9 @@
 }
 .customer{
     display:flex;
-    margin:auto;
+    margin:20px auto 30px auto;
+    width:100%;
+    justify-content:space-evenly;
 }
 .customer_info {
     width: 35%;
@@ -26,7 +28,6 @@
     color: white;
     background-color: var(--green);
     padding: 10px;
-    margin-right:30px;
 }
 .invoice {
     width: 35%;
@@ -35,3 +36,42 @@
     background-color: var(--green);
     padding: 10px;
 }
+/*RESPONSIVE*/
+@media screen and (max-width: 900px) {
+    *{
+        font-size: 14px;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .information{
+        overflow-x:auto;
+    }
+    .header .title {
+        position: relative;
+        top: 10px;
+    }
+
+        .header .user {
+            position: relative;
+            bottom: 10px;
+            left: 50px;
+        }
+    .customer {
+        flex-direction: column;
+    }
+
+        .customer .customer_info {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .customer .invoice {
+            width: 100%;
+        }
+
+    .myTable {
+        overflow-x: auto;
+    }
+}
+

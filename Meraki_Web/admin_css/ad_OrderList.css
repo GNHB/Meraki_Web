@@ -23,7 +23,7 @@
     width: 98%;
     margin: auto;
     border-spacing: 0;
-    line-height:2;
+    line-height: 2;
 }
 .myTable th {
     font-size: 16px;
@@ -47,5 +47,42 @@
 .fas:hover {
     cursor: pointer;
     color: var(--yellow);
+}
+@media screen and (max-width: 900px) {
+    * {
+        font-size: 14px;
+    }
+    
+    .header {
+        flex-direction: column;
+    }
+
+        .header .title {
+            position: relative;
+            top: 10px;
+        }
+
+        .header .user {
+            position: relative;
+            bottom: 10px;
+            left: 50px;
+        }
+
+    .customer {
+        flex-direction: column;
+    }
+
+        .customer .customer_info {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .customer .invoice {
+            width: 100%;
+        }
+
+    .myTable {
+        overflow-x: auto;
+    }
 }
 
