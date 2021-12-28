@@ -21,7 +21,7 @@
     display:flex;
 }
 .mycontent {
-    width: 80%;
+    width: 100%;
     margin: auto;
     background-color: var(--skin);
     margin-top: 30px;

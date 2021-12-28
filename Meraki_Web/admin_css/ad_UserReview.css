@@ -1,0 +1,111 @@
+﻿:root {
+    --green: #487B72;
+    --yellow: #F7BB34;
+    --skin: #FBF1E1;
+    --light_skin: #FEFAF4;
+}
+
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    transition: width none;
+}
+/*-------------------MyTABLE----------------------*/
+.myTable {
+    width: 100%;
+    margin: auto;
+    border-spacing: 0;
+    line-height: 2;
+    margin-top: 20px;
+}
+
+    .myTable th {
+        font-size: 16px;
+        font-weight: normal;
+        background-color: var(--yellow);
+    }
+
+    .myTable td {
+        
+        
+    }
+
+    .myTable th, tr, td {
+        border-bottom: 1px solid black;
+        font-size: 16px;
+        text-align: center;
+    }
+.usertitle{
+    color: black;
+    background-color: var(--yellow);
+    font-weight: bold;
+}
+    .usertitle td {
+        border: none;
+    }
+.username {
+    display: flex;
+    padding: 10px 0px;
+}
+.userimg img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.userreview td {
+    border: none;
+}
+.review {
+    
+}
+    .review td {
+        border: none;
+        text-align: justify;
+    }
+.bookname{
+    color: var(--yellow);
+    font-weight: bolder;
+}
+.reply{
+    border: 1px solid black;
+    background-color: white;
+    width:100%;
+    height: 80px;
+    margin: 10px;
+    padding: 10px;
+}
+.reply_btn{
+    width: 80px;
+    height: 30px;
+    background-color: var(--green);
+    color: white;
+}
+    .reply_btn:hover {
+        color: white;
+        background-color: var(--yellow)
+    }
+.cancel {
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.reviewaction{
+    color: var(--green);
+    font-weight: bold;
+}
+
+.reviewaction p:hover{
+    color: var(--yellow)
+}
+
+
