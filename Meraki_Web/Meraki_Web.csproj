@@ -70,6 +70,7 @@
     <Content Include="admin_css\ad_Category.css" />
     <Content Include="admin_css\ad_DardBoard.css" />
     <Content Include="admin_css\ad_ListBook.css" />
+    <Content Include="admin_css\ad_Stock.css" />
     <Content Include="admin_html\ad_DardBoard.html" />
     <Content Include="admin_css\ad_OrderList.css" />
     <Content Include="admin_css\ad_sidebar.css" />
@@ -77,6 +78,7 @@
     <Content Include="admin_html\ad_Order.html" />
     <Content Include="admin_html\ad_Category.html" />
     <Content Include="admin_html\ad_OrderList.html" />
+    <Content Include="admin_html\ad_Stock.html" />
     <Content Include="admin_js\ad_sidebar.js" />
     <Content Include="css\AboutMeraki.css" />
     <Content Include="css\blog.css" />
@@ -110,6 +112,9 @@
     <Content Include="html\OrderManagement.html" />
     <Content Include="html\TheLoai.html" />
     <Content Include="html\VIP.html" />
+    <Content Include="image\imvAdmin\add.png" />
+    <Content Include="image\imvAdmin\alert.png" />
+    <Content Include="image\imvAdmin\check.png" />
     <Content Include="image\imvAdmin\delete.png" />
     <Content Include="image\imvAdmin\editing.png" />
     <Content Include="image\imvAdmin\ic_inventory.png" />
@@ -122,6 +127,7 @@
     <Content Include="image\imvAdmin\ic_user-16.png" />
     <Content Include="image\imvAdmin\ic_user-17.png" />
     <Content Include="image\imvAdmin\ic_user-18.png" />
+    <Content Include="image\imvAdmin\notification.png" />
     <Content Include="image\imvAdmin\visibility.png" />
     <Content Include="image\imvAuthor\annrand.jpg" />
     <Content Include="image\imvAuthor\khach1.png" />
