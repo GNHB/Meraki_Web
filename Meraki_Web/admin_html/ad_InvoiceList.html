@@ -3,6 +3,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DANH SÁCH ĐƠN HÀNG</title>
     <!---------------------------------------------my content css---------------------------------------->
     <link rel="stylesheet" type="text/css" href="../admin_css/ad_OrderList.css" />
@@ -13,6 +15,11 @@
 </head>
 <body class="mybody">
     <!---------------------------SIDEBAR-------------------------->
+    <input type="checkbox" id="check" />
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
     <div class="sidebar">
         <div class="logo">
             <img src="../image/imvBanner/logo.png" width="100" height="70" />
@@ -41,7 +48,7 @@
     <div class="content">
         <!--------------------------HEADER-------------------------->
         <div class="header">
-            <a class="title">Danh sách đơn hàng</a>
+            <a class="title">Danh sách hóa đơn</a>
             <div style="display:flex;">
                 <a href="#"><i class="far fa-bell"></i></a>
                 <p>Hoài Vi</p>
@@ -50,8 +57,8 @@
         <!-----------------MY CONTENT: ORDER LIST--------------------->
         <div class="mycontent">
             <div class="search_box">
-                <input type="search" placeholder="search" id="search"/>
-                <span><a href="#"><i class="fas fa-search"></i></a></span>      
+                <input type="search" placeholder="search" id="search" />
+                <span><a href="#"><i class="fas fa-search"></i></a></span>
             </div>
             <div class="information">
                 <table class="myTable">
