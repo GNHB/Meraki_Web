@@ -3,10 +3,10 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>CHI TIẾT ĐƠN HÀNG</title>
+    <title>BLOG</title>
     <!---------------------------------------------my content css---------------------------------------->
     <link rel="stylesheet" type="text/css" href="../admin_css/ad_OrderList.css" />
-    <link rel="stylesheet" type="text/css" href="../admin_css/ad_OrderDetail.css" />
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_Blog.css" />
 
     <!-----------------------------------------sidebar + header css-------------------------------------->
     <link rel="stylesheet" type="text/css" href="../admin_css/ad_sidebar.css" />
@@ -14,11 +14,6 @@
 </head>
 <body class="mybody">
     <!---------------------------SIDEBAR-------------------------->
-    <input type="checkbox" id="check" />
-    <label for="check">
-        <i class="fas fa-bars" id="btn"></i>
-        <i class="fas fa-times" id="cancel"></i>
-    </label>
     <div class="sidebar">
         <div class="logo">
             <img src="../image/imvBanner/logo.png" width="100" height="70" />
@@ -55,62 +50,61 @@
         </div>
         <!-----------------MY CONTENT: ORDER LIST--------------------->
         <div class="mycontent">
-            <div class="search_box">
-                <input type="search" placeholder="search" id="search" />
-                <span><a href="#"><i class="fas fa-search"></i></a></span>
+            <div class="content_header">
+                <button>
+                    <span><p>Thêm bài</p><i class="fas fa-plus-circle"></i></span>
+                </button>
+                <div class="search_box">
+                    <input type="search" placeholder="search" id="search" />
+                    <span><a href="#"><i class="fas fa-search"></i></a></span>
+                </div>
+                <select>
+                    <option>Tất cả</option>
+                    <option>Tin tức</option>
+                    <option>Review</option>
+                    <option>Chia sẻ</option>
+                </select>
             </div>
             <div class="information">
-                <div class="customer">
-                    <div class="customer_info">
-                        <p>
-                            NGƯỜI NHẬN <br />
-                            ID : 01<br />
-                            Nguyễn Văn Tân<br />
-                            tannguyen@gmail.com<br />
-                            0812345675<br />
-                            7A Nguyễn Đình Quân, Quận 7, TP HCM
-                        </p>
-                    </div>
-                    <div class="invoice">
-                        <p>
-                            THÔNG TIN HÓA ĐƠN<br />
-                            ID Hóa đơn:HD01<br />
-                            Ngày xuất: 19/02/2021<br />
-                        </p>
-                    </div>
-                </div>
                 <table class="myTable">
                     <tr>
                         <td colspan="6"><hr style="width: 100%; height: 1px; background-color: black; vertical-align:middle; margin-top:10px; margin-bottom:15px;" /></td>
                     </tr>
                     <tr>
-                        <th>ID sách</th>
-                        <th>Sách</th>
+                        <th>ID Blog</th>
+                        <th>Tên bài</th>
                         <th>Tác giả</th>
-                        <th>Số lượng</th>
-                        <th>Tiền đơn vị</th>
-                        <th>Tiền tổng</th>
+                        <th>Ngày viết</th>
+                        <th>Thể loại</th>
+                        <th>Hành động</th>
                     </tr>
                     <tr>
-                        <td>A01</td>
-                        <td>Chim cổ đỏ</td>
-                        <td>Jo Nesbo</td>
-                        <td>2</td>
-                        <td>40000</td>
-                        <td>80000</td>
+                        <td>001</td>
+                        <td>Đọc sách!!! Đọc sao cho đúng?</td>
+                        <td>Nguyễn Văn Tân</td>
+                        <td>19/02/2021</td>
+                        <td>Chia sẻ</td>
+                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
                     </tr>
                     <tr>
-                        <td>A02</td>
-                        <td>Đắc nhân tâm</td>
-                        <td>Dale Carnegie</td>
-                        <td>1</td>
-                        <td>45000</td>
-                        <td>45000</td>
+                        <td>002</td>
+                        <td>Truyện Lão Hạc- Cảm nhận của mình</td>
+                        <td>Lê Quang Su</td>
+                        <td>17/03/2021</td>
+                        <td>Review </td>
+                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
                     </tr>
                     <tr>
-                        <td colspan="5" style="text-align:right;">Tổng thanh toán</td>
-                        <td ><b>125000</b></td>
+                        <td>003</td>
+                        <td>
+                            Ngỡ ngàng về nơi J.K.Rowling ‘khai sinh’ ra Harry Potter
+                        </td>
+                        <td>Lý Thúy Loan</td>
+                        <td>19/05/2021</td>
+                        <td>Tin tức </td>
+                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
                     </tr>
+                  
                 </table>
             </div>
         </div>
