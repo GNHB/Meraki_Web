@@ -55,7 +55,15 @@
             </div>
         </div>
         <!-----------------MY CONTENT: ORDER LIST--------------------->
-        <div class="total">Tổng số lượng người dùng: 100</div>
+        <div class="sapxep">
+            <div id="sapxep" class="sapxeptext">Tổng lượt vận chuyển: 5</div>
+            <select id="filterlist" onchange="myFunction()" class="form-control">
+                <option>Tất cả</option>
+                <option>Nhà vận chuyển</option>
+                <option>Ngày tạo</option>
+                <option>Trạng thái</option>
+            </select>
+        </div>
         <div class="mycontent">
             <div class="search_box">
                 <input type="search" placeholder="search" id="search" />
@@ -64,59 +72,65 @@
             <table class="myTable">
 
                 <tr class="usertitle">
-                    <td>Tên người dùng</td>
-                    <td>Số điện thoại</td>
-                    <td>Email</td>
-                    <td>Xem</td>
-                    <td>Xóa</td>
+                    <td>Mã vận chuyển</td>
+                    <td>Mã đơn hàng</td>
+                    <td>Khách hàng</td>
+                    <td>Nhà vận chuyển</td>
+                    <td>Ngày tạo</td>
+                    <td>Trạng thái</td>
+                    <td>Tiền thu</td>
                 </tr>
                 <tr>
-                    <td>
-                        <div class="username">
-                            <span class="userimg"><img src="../image/imvAuthor/khach2.png" /></span>
-                            <span class="account-text">Nguyễn Thị Diu</span>
-                        </div>
-                    </td>
-                    <td>0358428808</td>
-                    <td>nguyenthidiu@gmail.com</td>
-                    <td class="icon">
-                        <i class="fas fa-eye"></i>
-                    </td>
-                    <td class="icon"><i class="fas fa-trash-alt"></i></td>
-                </tr>
+                    <td class="item">1029519711</td>
+                    <td class="item">#100001</td>
+                    <td>Nguyễn Thị Diu</td>
+                    <td class="item">Giao Hàng Nhanh</td>
+                    <td>20/12/2021 11:08 SA</td>
+                    <td>Đang giao</td>
+                    <td>120.000đ</td>
 
+                </tr>
                 <tr>
-                    <td>
-                        <div class="username">
-                            <span class="userimg"><img src="../image/imvAuthor/khach2 (2).png" /></span>
-                            <span class="account-text">Hoàng Hà</span>
-                        </div>
+                    <td class="item">1029519712</td>
+                    <td class="item">
+                        #100002
                     </td>
+                    <td>Thúy Loan</td>
+                    <td class="item">Giao Hàng Tiết Kiệm</td>
+                    <td>19/12/2021 11:08 CH</td>
+                    <td>Chờ giao</td>
+                    <td>120.000đ</td>
 
-                    <td>N/A</td>
-                    <td>hoanghanguyen@gmail.com</td>
-                    <td class="icon">
-                        <i class="fas fa-eye"></i>
-                    </td>
-                    <td class="icon"><i class="fas fa-trash-alt"></i></td>
                 </tr>
-
                 <tr>
-                    <td>
-                        <div class="username">
-                            <span class="userimg"><img src="../image/imvAuthor/khach2 (2).png" /></span>
-                            <span class="account-text">Thúy Loan</span>
-                        </div>
-                    </td>
+                    <td class="item">1029519713</td>
+                    <td class="item">#100003</td>
+                    <td>A Dẹo</td>
+                    <td class="item">ViettelPost</td>
+                    <td>18/12/2021 11:08 CH</td>
+                    <td>Đang lấy hàng</td>
+                    <td>120.000đ</td>
 
-                    <td>035822995</td>
-                    <td>thuyloannguyen@gmail.com</td>
-                    <td class="icon">
-                        <i class="fas fa-eye"></i>
-                    </td>
-                    <td class="icon"><i class="fas fa-trash-alt"></i></td>
                 </tr>
+                <tr>
+                    <td class="item">1029519714</td>
+                    <td class="item">#100004</td>
+                    <td>Ho</td>
+                    <td class="item">Giao Hàng Nhanh</td>
+                    <td>17/12/2021 11:08 SA</td>
+                    <td>Đã giao</td>
+                    <td>120.000đ</td>
 
+                </tr>
+                <tr>
+                    <td class="item">1029519711</td>
+                    <td class="item">#100001</td>
+                    <td>Nguyễn Thị Diu</td>
+                    <td class="item">Giao Hàng Nhanh</td>
+                    <td>16/12/2021 11:08 SA</td>
+                    <td>Chờ chuyển hoàn</td>
+                    <td>120.000đ</td>
+                </tr>
             </table>
         </div>
 
