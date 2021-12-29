@@ -132,6 +132,8 @@ body {
     color: var(--yellow);
 }
 .content .slider_img {
+    border: 2px solid gray;
+    border-radius:10px;
     height: 80%;
     width: 95%;
     margin: 0 auto;
@@ -544,8 +546,8 @@ table {
         white-space: nowrap;
     }
     .content .slider_box {
-        height: 220px;
-        width: 160px;
+        height: 240px;
+        width: 140px;
         border-radius: 10px;
         background-color: var(--skin);
         align-items: center;
@@ -559,8 +561,13 @@ table {
 
     .tac_gia {
         width: 70%;
+        height:300px;
         margin: auto;
         display: block;
+    }
+    #tac_gia_box {
+        width: 90%;
+        height: 300px;
     }
 
     .sach_yeu_thich {
@@ -569,9 +576,6 @@ table {
         display: block;
     }
 
-    table tr, td {
-        border: 1px solid;
-    }
 
     table {
         width: 90%;
