@@ -35,19 +35,19 @@
     }
 
     .myTable th, tr, td {
-        border-bottom: 1px solid black;
         font-size: 16px;
         text-align: center;
 
     }
+
 .usertitle{
     color: black;
     background-color: var(--yellow);
     font-weight: bold;
 }
-    .usertitle td {
-        border: none;
-    }
+.userlist{
+    border-bottom: 1px solid black;
+}
 .username {
     display: flex;
     padding: 10px 0px;
@@ -60,14 +60,9 @@
     background-position: center;
     margin-right: 10px;
 }
- .userreview td  {
-    border: none;
-}
-.review {
-    border: none;
-}
+
     .review td {
-        border: none;
+
         text-align: justify;
     }
 
@@ -75,6 +70,9 @@
         cursor: pointer;
         color: var(--yellow);
         font-weight: bolder;
+    }
+    .replyfield td{
+        border-bottom: 1px solid black;
     }
 .reply{
     border: 1px solid black;
@@ -105,12 +103,14 @@
 .reviewaction{
     color: var(--green);
     font-weight: bold;
+    border-bottom: 1px solid black;
 }
 
     .reviewaction p:hover {
         color: var(--yellow);
         cursor: pointer;
     }
+   
 .filter {
     display: flex;
     padding: 20px 20px 0px 20px;
