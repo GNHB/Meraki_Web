@@ -12,6 +12,7 @@ body {
     font-family: Arial;
     background-color: var(--light_skin);
     font-size: 20px;
+    text-transform: none;
 }
 
 ul {
@@ -22,37 +23,43 @@ a {
     text-decoration: none
 }
 
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;
+    text-align:center;
+    background-color: var(--green);
+    height: 1px;
+}
+
 /*------------------------BODY------------------------------*/
 
 .main {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin:1.5em auto;
     display: flex;
-    width: 100%
+    width: 100%;
+    max-width: 1000px;
+    justify-content:space-between;
+    align-items:flex-start;
 }
 
 .chart {
     background-color: var(--skin);
     border: 2px solid var(--green);
-    width: 70%;
-    float: left;
-    /*   margin-left: 160px;
-    margin-right: 30px;
-     */
-    margin: 1em 1em 1em 5em;
+    width: 65%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    text-transform: none;
 }
 
 .recommend {
     width: 30%;
     background-color: var(--skin);
     border: 2px solid var(--green);
-    /* margin-right: 160px;  */
-    margin: 1em 5em 1em 1em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
     .main {
         display: block;
         justify-content: space-between;
@@ -64,7 +71,7 @@ a {
     }
 
     .recommend {
-        display: flex;
+        display: block;
         width: 100%;
         margin: 1em;
     }
@@ -83,7 +90,7 @@ a {
     font-weight: bold;
     color: var(--green);
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .chart_table {
@@ -97,12 +104,26 @@ table {
     width: 100%;
 }
 
+.col_tittle div p {
+    padding: 0.5em 0;
+    text-transform: none;
+}
+
+.col_tittle div img{
+    width: 90px;
+    padding:0.5em 0;
+}
 
 button {
     background: var(--yellow);
-    border-radius: 10px;
+    border-radius: 15px;
     border: none;
-    padding: 7px 10px;
+    padding: 10px 15px;
+    text-transform: none;
+}
+
+button:hover{
+    background:#ffd54a;
 }
 
 .col_btn {
@@ -113,10 +134,17 @@ button {
 .book_name {
     font-size: 20px;
     font-weight: bold;
+    text-transform: none;
 }
 
 .author_name {
     font-size: 16px;
+    text-transform: none;
+}
+
+.see {
+    font-size: 16px;
+    text-transform: none;
 }
 /*------------------------RECOMMEND------------------------------*/
 .txt_tittle_yellow {
@@ -124,32 +152,38 @@ button {
     font-weight: bold;
     color: var(--yellow);
     text-align: center;
-    margin-bottom: 15px;
+    margin: 20px;
 }
 
 .recommend_table {
+    text-transform: none;
 }
 
 .rcm_row_item {
     padding: 15px 15px;
+    text-transform: none;
 }
 
 /*-------------------------BEST SELLERS---------------------------------*/
 .best_sellers {
     border: 2px solid var(--green);
-    margin: 20px 45px 45px;
+    margin: 1em auto;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    max-width:1000px;
+    justify-content:center;
+    height:auto;
+    padding:0 10px;
 }
 
 .box_best_sellers {
     width: 135px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 7px;
     overflow: hidden;
     background: var(--skin);
     padding: 7px;
     box-sizing: border-box;
-    margin: 20px;
+    margin: 1em 0 1em 15px;
 }
 
 .box_img {
@@ -164,7 +198,13 @@ button {
 .box_tittle {
     text-align: center;
     background: var(--skin);
-    margin-top: 5px;
+    margin-top: 10px;
+    text-transform:none;
+}
+
+.box_tittle p{
+    margin:5px;
+    text-transform:none;
 }
 
 ul li {
@@ -172,20 +212,78 @@ ul li {
 }
 
 /*responsive*/
-@media(max-width: 550px) {
+@media(max-width: 500px) {
     .footer-col {
         width: 50%;
         margin-bottom: 30px;
     }
 }
 
-@media(max-width: 550px) {
+@media(max-width: 500px) {
     .footer-col {
         width: 100%;
     }
 }
 
+/*---NEXT BUTTTON----*/
+.btn_next{
+    margin: 0.5em auto 1.5em;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+}
 
+.btn_next_page {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.4em;
+    padding: 0.5em;
+    border: 2px solid #487B72;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(0 0 0);
+    background: var(--light_skin);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
 
+.btn_previous_page {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.4em;
+    padding: 0.5em;
+    border: 2px solid #487B72;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(255 255 255);
+    background: var(--green);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    margin: 0 10px;
+}
 
--------------------------------------------------------------------------------------------------------
+.btn_next_page:hover{
+    background:var(--green);
+    color:rgb(255 255 255);
+}
+
+/*----------------*/
+.slick-prev{
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    background:var(--green);
+    z-index:2;
+    color:white;
+}
+
+.slick-next {
+    position: absolute;
+    right:0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--green);
+    z-index: 2;
+    color:rgb(255 255 255);
+}
