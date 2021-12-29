@@ -46,8 +46,6 @@ a{
     margin-bottom:10px;
 }
 .sidebar {
-    top: 0px;
-    right: 0px;
     width: 20%;
     z-index: 1;
     background-color: var(--skin);
@@ -153,5 +151,95 @@ span {
     font-weight:700;
     color:white;
     margin-right:100px;
+}
+.fa-search{
+    color:black;
+}
+/*----------------------------RESPONSIVE---------------------------*/
+#check{
+    display:none;
+}
+label #btn, label #cancel{
+    position:absolute;
+    cursor:pointer;
+}
+label #btn{
+    left:5px;
+    top:30px;
+    color:white;
+}
+
+#check:checked ~ .sidebar{
+    left:0;
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 900px){
+    .header .title {
+        margin: auto;
+    }
+    .content{
+        width:100%;
+        height:100vh;
+    }
+    .sidebar{
+        position:fixed;
+        left:-40%;
+        width: 40%;
+    }
+    #check:checked ~ label #btn {
+        left: 40%;
+        opacity: 0;
+        pointer-events: none;
+    }
+    label #cancel {
+        z-index: 1111;
+        left: -40%;
+        color: white;
+    }
+    #check:checked ~ label #cancel {
+        left: 37%;
+    }
+    
+
+}
+@media screen and (max-width: 399px) {
+    *{
+        font-size: 14px;
+    }
+    .content {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -90%;
+        width: 90%;
+    }
+
+    #check:checked ~ label #btn {
+        left: 90%;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    label #cancel {
+        z-index: 1111;
+        left: -90%;
+        color: white;
+    }
+
+    #check:checked ~ label #cancel {
+        left: 86%;
+    }
+    div.search_box{
+        width:90%;
+        height:25px;
+    }
+    .fas {
+        width: 20px;
+        height: 20px;
+    }
 }
 

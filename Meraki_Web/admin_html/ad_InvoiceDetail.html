@@ -3,9 +3,12 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>CHI TIẾT ĐƠN HÀNG</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHI TIẾT HÓA ĐƠN</title>
     <!---------------------------------------------my content css---------------------------------------->
     <link rel="stylesheet" type="text/css" href="../admin_css/ad_OrderList.css" />
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_InvoiceDetail.css" />
 
     <!-----------------------------------------sidebar + header css-------------------------------------->
     <link rel="stylesheet" type="text/css" href="../admin_css/ad_sidebar.css" />
@@ -13,6 +16,11 @@
 </head>
 <body class="mybody">
     <!---------------------------SIDEBAR-------------------------->
+    <input type="checkbox" id="check" />
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
     <div class="sidebar">
         <div class="logo">
             <img src="../image/imvBanner/logo.png" width="100" height="70" />
@@ -41,8 +49,8 @@
     <div class="content">
         <!--------------------------HEADER-------------------------->
         <div class="header">
-            <a class="title">Chi tiết đơn hàng</a>
-            <div style="display:flex;">
+            <a class="title">Chi tiết hóa đơn</a>
+            <div style="display:flex;" class="user">
                 <a href="#"><i class="far fa-bell"></i></a>
                 <p>Hoài Vi</p>
             </div>
@@ -54,65 +62,56 @@
                 <span><a href="#"><i class="fas fa-search"></i></a></span>
             </div>
             <div class="information">
+                <div class="customer">
+                    <div class="customer_info">
+                        <p>
+                            NGƯỜI NHẬN <br />
+                            ID : 01<br />
+                            Nguyễn Văn Tân<br />
+                            tannguyen@gmail.com<br />
+                            0812345675<br />
+                            7A Nguyễn Đình Quân, Quận 7, TP HCM
+                        </p>
+                    </div>
+                    <div class="invoice">
+                        <p>
+                            THÔNG TIN HÓA ĐƠN<br />
+                            ID Hóa đơn:HD01<br />
+                            Ngày xuất: 19/02/2021<br />
+                        </p>
+                    </div>
+                </div>
                 <table class="myTable">
                     <tr>
                         <td colspan="6"><hr style="width: 100%; height: 1px; background-color: black; vertical-align:middle; margin-top:10px; margin-bottom:15px;" /></td>
                     </tr>
                     <tr>
-                        <th>ID hóa đơn</th>
-                        <th>Tên khách hàng</th>
-                        <th>ID Khách hàng</th>
-                        <th>Ngày xuất</th>
-                        <th>Tổng tiền</th>
-                        <th>Hành động</th>
+                        <th>ID sách</th>
+                        <th>Sách</th>
+                        <th>Tác giả</th>
+                        <th>Số lượng</th>
+                        <th>Tiền đơn vị</th>
+                        <th>Tiền tổng</th>
                     </tr>
                     <tr>
-                        <td>15451</td>
-                        <td>Nguyễn Văn Tân</td>
-                        <td>001</td>
-                        <td>19/02/2021</td>
+                        <td>A01</td>
+                        <td>Chim cổ đỏ</td>
+                        <td>Jo Nesbo</td>
+                        <td>2</td>
                         <td>40000</td>
-                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                        <td>80000</td>
                     </tr>
                     <tr>
-                        <td>15452</td>
-                        <td>Sherlock Holmes</td>
-                        <td>002</td>
-                        <td>17/03/2021</td>
-                        <td>40000</td>
-                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                        <td>A02</td>
+                        <td>Đắc nhân tâm</td>
+                        <td>Dale Carnegie</td>
+                        <td>1</td>
+                        <td>45000</td>
+                        <td>45000</td>
                     </tr>
                     <tr>
-                        <td>15453</td>
-                        <td>Nguyễn Bảo Ngọc</td>
-                        <td>003</td>
-                        <td>19/05/2021</td>
-                        <td>130000</td>
-                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td>15454</td>
-                        <td>Trần Ngọc Hoàng</td>
-                        <td>004</td>
-                        <td>17/05/2021</td>
-                        <td>400000</td>
-                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td>15455</td>
-                        <td>Nguyễn Thị Diu</td>
-                        <td>005</td>
-                        <td>19/06/2021</td>
-                        <td>340000</td>
-                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td>15456</td>
-                        <td>Tạ Thúy Loan</td>
-                        <td>006</td>
-                        <td>17/03/2021</td>
-                        <td>540000</td>
-                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                        <td colspan="5" style="text-align:right;">Tổng thanh toán</td>
+                        <td ><b>125000</b></td>
                     </tr>
                 </table>
             </div>

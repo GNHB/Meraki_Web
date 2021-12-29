@@ -11,20 +11,21 @@ $(document).ready(function () {
                 breakpoint: 1140,
                 settings: {
                     slidesToShow: 3,
+                    slidesToScroll: 3
                 }
             },
             {
                 breakpoint: 700,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToScroll: 2
                 }
             },
             {
-                breakpoint: 400,
+                breakpoint: 300,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToScroll: 1
                 }
             }
         ]

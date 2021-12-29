@@ -14,7 +14,6 @@
             src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="../js/theLoaiSlider.js"></script>
 
     <!-----------------------CSS CONTENT------------>
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
@@ -26,7 +25,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
 
 </head>
-<body style="font-family: Arial; font-size: 16px; background-color: #FEFAF4;" ng-app="myApp">
+<body  ng-app="myApp">
     <!--Navigation bar-->
     <input type="checkbox" id="check" />
     <nav>
@@ -85,13 +84,13 @@
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
     </div>
-    
+
     <p style=" margin: 20px auto 20px 160px; font-size: 18px;"><strong>Thể loại</strong></p>
-    
+
     <!--SIDEBAR MENU-->
     <div class="theloai_body">
-        
-    <!--SIDE BAR-->
+
+        <!--SIDE BAR-->
         <div class="sidebar">
             <button class="dropdown_btn">Khoa học <i class="fa fa-caret-down"></i></button>
             <div class="dropdown-container">
@@ -124,12 +123,12 @@
 
 
 
-    <!--NỘI DUNG-->
+        <!--NỘI DUNG-->
         <div class="content">
             <p style="text-align: center; ">Khoa học</p>
             <hr style="width: 50%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom:5px;" />
             <a style="text-decoration: none;" href="#"><p style="color: #487B72; font-size:13px; text-align: end; margin-right: 10%; ">Xem tất cả</p></a>
-            <div class="wrap" >
+            <div class="wrap">
                 <div class="slider" id="carouselContent">
                     <div class="slider_box">
                         <div class="slider_img">
@@ -243,7 +242,7 @@
 
             <p style="text-align: center; margin-top: 40px;">Viễn tưởng</p>
             <hr style="width: 50%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom:5px;" />
-            <a  href="#"><p style="color: #487B72; font-size:13px; text-align: end; margin-right: 10%; ">Xem tất cả</p></a>
+            <a href="#"><p style="color: #487B72; font-size:13px; text-align: end; margin-right: 10%; ">Xem tất cả</p></a>
             <div class="wrap">
                 <div class="slider" id="carouselContent">
                     <div class="slider_box">
@@ -302,10 +301,10 @@
                 <div class="tac_gia" style="margin-bottom: 10px;">
                     <div class="slider_box" id="tac_gia_box">
                         <div class="slider_img">
-                            <img src="../image/imvBook/trenduongbang.jpg" />
+                            <img src="../image/imvAuthor/nguyennhatanh.jpg" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <a href="#" class="title"><p>Nguyễn Nhật Ánh</p> </a>
                         </div>
                     </div>
                 </div>
@@ -335,7 +334,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="slider_box first" >
+                                <div class="slider_box first">
                                     <div class="slider_img">
                                         <img src="../image/imvBook/truockhinhammat.jpg" />
                                     </div>
@@ -431,6 +430,6 @@
     <script type="text/javascript" src="../js/Theloai.js"></script>
     <!--JS SliderQuote-->
     <script src="../js/slidequote.js"></script>
-
+    <script src="../js/theLoaiSlider.js"></script>
 </body>
 </html>

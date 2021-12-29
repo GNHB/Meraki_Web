@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DANH SÁCH NGƯỜI DÙNG</title>
+    <!---------------------------------------------my content css---------------------------------------->
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_UserReview.css" />
+
+    <!-----------------------------------------sidebar + header css-------------------------------------->
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_sidebar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="mybody">
+    <!---------------------------SIDEBAR-------------------------->
+    <input type="checkbox" id="check" />
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../image/imvBanner/logo.png" width="100" height="70" />
+        </div>
+        <a href="#"><i class="fas fa-columns" style="margin-right:10px;"></i> DashBoard</a>
+        <button class="dropdown_btn"><i class="fas fa-user-circle" style="margin-right:10px;"></i>Khách hàng <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+            <a href="#">Đánh giá</a>
+            <a href="#">Danh sách khách hàng</a>
+        </div>
+
+        <button class="dropdown_btn"><i class="fas fa-book" style="margin-right:10px;"></i>Sách <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+            <a href="#">Dánh sách Sách</a>
+            <a href="#">Hàng tồn kho</a>
+        </div>
+        <a href="#"><i class="fas fa-list" style="margin-right:10px;"></i>Danh mục</a>
+        <a href="#"><i class="fas fa-pen-nib" style="margin-right:10px;"></i>Blog</a>
+        <a href="#"><i class="fas fa-shopping-cart" style="margin-right:10px;"></i>Danh sách đơn hàng</a>
+        <a href="#"><i class="fas fa-file-alt" style="margin-right:10px;"></i>Danh sách hóa đơn</a>
+        <a href="#"><i class="fas fa-truck" style="margin-right:10px;"></i>Vận chuyển </a>
+        <a href="#" style="border-top:1px solid black;"><i class="fas fa-user-cog" style="margin-right:10px;"></i>Giao diện</a>
+        <br />
+    </div>
+    <!---------------------------CONTENT-------------------------->
+    <div class="content">
+        <!--------------------------HEADER-------------------------->
+        <div class="header">
+            <a class="title">Đánh giá của người dùng</a>
+            <div style="display:flex;">
+                <a href="#"><i class="far fa-bell"></i></a>
+                <p>Hoài Vi</p>
+            </div>
+        </div>
+        <!-----------------MY CONTENT: ORDER LIST--------------------->
+        <div class="sapxep">
+            <div id="sapxep" class="sapxeptext">Tổng lượt vận chuyển: 5</div>
+            <select id="filterlist" onchange="myFunction()" class="form-control">
+                <option>Tất cả</option>
+                <option>Nhà vận chuyển</option>
+                <option>Ngày tạo</option>
+                <option>Trạng thái</option>
+            </select>
+        </div>
+        <div class="mycontent">
+            <div class="search_box">
+                <input type="search" placeholder="search" id="search" />
+                <span><a href="#"><i class="fas fa-search"></i></a></span>
+            </div>
+            <table class="myTable">
+
+                <tr class="usertitle">
+                    <td>Mã vận chuyển</td>
+                    <td>Mã đơn hàng</td>
+                    <td>Khách hàng</td>
+                    <td>Nhà vận chuyển</td>
+                    <td>Ngày tạo</td>
+                    <td>Trạng thái</td>
+                    <td>Tiền thu</td>
+                </tr>
+                <tr class="userlist">
+                    <td class="item">1029519711</td>
+                    <td class="item">#100001</td>
+                    <td>Nguyễn Thị Diu</td>
+                    <td class="item">Giao Hàng Nhanh</td>
+                    <td>20/12/2021 11:08 SA</td>
+                    <td>Đang giao</td>
+                    <td>120.000đ</td>
+
+                </tr>
+                <tr class="userlist">
+                    <td class="item">1029519712</td>
+                    <td class="item">
+                        #100002
+                    </td>
+                    <td>Thúy Loan</td>
+                    <td class="item">Giao Hàng Tiết Kiệm</td>
+                    <td>19/12/2021 11:08 CH</td>
+                    <td>Chờ giao</td>
+                    <td>120.000đ</td>
+
+                </tr>
+                <tr class="userlist">
+                    <td class="item">1029519713</td>
+                    <td class="item">#100003</td>
+                    <td>A Dẹo</td>
+                    <td class="item">ViettelPost</td>
+                    <td>18/12/2021 11:08 CH</td>
+                    <td>Đang lấy hàng</td>
+                    <td>120.000đ</td>
+
+                </tr>
+                <tr class="userlist">
+                    <td class="item">1029519714</td>
+                    <td class="item">#100004</td>
+                    <td>Ho</td>
+                    <td class="item">Giao Hàng Nhanh</td>
+                    <td>17/12/2021 11:08 SA</td>
+                    <td>Đã giao</td>
+                    <td>120.000đ</td>
+
+                </tr>
+                <tr class="userlist">
+                    <td class="item">1029519711</td>
+                    <td class="item">#100001</td>
+                    <td>Nguyễn Thị Diu</td>
+                    <td class="item">Giao Hàng Nhanh</td>
+                    <td>16/12/2021 11:08 SA</td>
+                    <td>Chờ chuyển hoàn</td>
+                    <td>120.000đ</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="../admin_js/ad_sidebar.js"></script>
+</body>
+</html>

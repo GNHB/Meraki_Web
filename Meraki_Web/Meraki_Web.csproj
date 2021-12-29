@@ -71,6 +71,7 @@
     <Content Include="admin_css\ad_DardBoard.css" />
     <Content Include="admin_css\ad_ListBook.css" />
     <Content Include="admin_css\ad_Stock.css" />
+    <Content Include="admin_css\ad_UserReview.css" />
     <Content Include="admin_html\ad_DardBoard.html" />
     <Content Include="admin_css\ad_OrderList.css" />
     <Content Include="admin_css\ad_sidebar.css" />
@@ -79,6 +80,8 @@
     <Content Include="admin_html\ad_Category.html" />
     <Content Include="admin_html\ad_OrderList.html" />
     <Content Include="admin_html\ad_Stock.html" />
+    <Content Include="admin_html\ad_UserList.html" />
+    <Content Include="admin_html\ad_UsersReview.html" />
     <Content Include="admin_js\ad_sidebar.js" />
     <Content Include="css\AboutMeraki.css" />
     <Content Include="css\blog.css" />
@@ -209,6 +212,7 @@
     <Content Include="image\imvIcon\logo.png" />
     <Content Include="image\imvIcon\logoAppStore.png" />
     <Content Include="image\imvIcon\menu-bar.png" />
+    <Content Include="image\imvIcon\open-book.png" />
     <Content Include="image\imvMember\4-10.png" />
     <Content Include="image\imvMember\4-11.png" />
     <Content Include="image\imvMember\4-12.png" />
@@ -225,6 +229,7 @@
     <Content Include="img\controls.png" />
     <Content Include="js\angular.js" />
     <Content Include="js\book.js" />
+    <Content Include="js\detailstyle.js" />
     <Content Include="js\linegarpbook.js" />
     <Content Include="js\lightslider.js" />
     <Content Include="js\script.js" />

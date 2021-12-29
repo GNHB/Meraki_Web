@@ -15,59 +15,48 @@
     text-decoration: none;
     transition: all .2s linear;
     transition: width none;
-
 }
-
-/*-------------------MyTABLE----------------------*/
-.myTable {
-    width: 98%;
-    margin: auto;
-    border-spacing: 0;
-    line-height: 2;
+.customer{
+    display:flex;
+    margin:20px auto 30px auto;
+    width:100%;
+    justify-content:space-evenly;
 }
-.myTable th {
-    font-size: 16px;
-    font-weight: normal;
-    background-color:var(--yellow);
+.customer_info {
+    width: 35%;
+    font-size: 15px;
+    color: white;
+    background-color: var(--green);
+    padding: 10px;
 }
-    .myTable td {
-        line-height: 2.5;
-    }
-    .myTable th, tr, td {
-        border-bottom: 1px solid black;
-        font-size: 16px;
-        text-align:center;
-    }
-    .myTable tr:hover {
-        background-color: var(--light_skin);
-    }
-.icon{
-    vertical-align:middle;
+.invoice {
+    width: 35%;
+    font-size: 15px;
+    color: white;
+    background-color: var(--green);
+    padding: 10px;
 }
-.fas:hover {
-    cursor: pointer;
-    color: var(--yellow);
-}
+/*RESPONSIVE*/
 @media screen and (max-width: 900px) {
-    * {
+    *{
         font-size: 14px;
     }
-    
     .header {
         flex-direction: column;
     }
-
-        .header .title {
-            position: relative;
-            top: 10px;
-        }
+    .information{
+        overflow-x:auto;
+    }
+    .header .title {
+        position: relative;
+        top: 10px;
+    }
 
         .header .user {
             position: relative;
             bottom: 10px;
             left: 50px;
         }
-
     .customer {
         flex-direction: column;
     }

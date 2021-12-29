@@ -85,22 +85,22 @@
                     <option ng-click="sort('')">Được mua nhiều</option>
                 </select>
             </div>
-
         </div>
-
         <hr />
 
         <!--List of book-->
         <div id="large-th">
             <div class="container">
                 <div id="list-th">
-                    <div class="book" dir-paginate="book in books | orderBy:orderBy:reverse | itemsPerPage:10">
+                    <div class="book" dir-paginate="book in books | orderBy:orderBy:reverse | itemsPerPage:15">
                         <div class="cover">
                             <img src="{{book.cover}}" alt="{{book.title}}">
                         </div>
                         <div class="description">
                             <p class="title">
-                                {{book.title}}<br>
+                                <span class="booktitle">
+                                {{book.title}}
+                                    </span><br>
                                 <span class="author">{{book.author}}</span>
                             </p>
                         </div>

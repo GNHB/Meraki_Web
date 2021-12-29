@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ĐÁNH GIÁ CỦA NGƯỜI DÙNG</title>
+    <title>DANH SÁCH NGƯỜI DÙNG</title>
     <!---------------------------------------------my content css---------------------------------------->
     <link rel="stylesheet" type="text/css" href="../admin_css/ad_UserReview.css" />
 
@@ -55,105 +55,68 @@
             </div>
         </div>
         <!-----------------MY CONTENT: ORDER LIST--------------------->
-
-        <div class="sapxep">
-            <div id="sapxep" class="sapxeptext">Tổng lượt đánh giá: 2</div>
-            <select id="filterlist" onchange="myFunction()" class="form-control">
-                <option>Tất cả</option>
-                <option>Số sao đánh giá</option>
-                <option>Đánh giá spam</option>
-                <option>Tình trạng</option>
-            </select>
-        </div>
+        <div class="total">Tổng số lượng người dùng: 100</div>
         <div class="mycontent">
+            <div class="search_box">
+                <input type="search" placeholder="search" id="search" />
+                <span><a href="#"><i class="fas fa-search"></i></a></span>
+            </div>
             <table class="myTable">
+
                 <tr class="usertitle">
                     <td>Tên người dùng</td>
-                    <td>Ebook</td>
-                    <td>Thời gian</td>
-                    <td>Đánh giá</td>
-                    <td>Tình trạng</td>
+                    <td>Số điện thoại</td>
+                    <td>Email</td>
+                    <td>Xem</td>
+                    <td>Xóa</td>
                 </tr>
-                <tr class="userreview">
+                <tr class="userlist">
                     <td>
                         <div class="username">
                             <span class="userimg"><img src="../image/imvAuthor/khach2.png" /></span>
-                            <span class="account-text"><a href="#">Quang Sú</a></span>
+                            <span class="account-text">Nguyễn Thị Diu</span>
                         </div>
                     </td>
-                    <td class="bookname"><a href="#">Bạn đắt giá bao nhiêu</a></td>
-                    <td>24/10/2021</td>
-                    <td>
-                        <div class="stars" style="color: #F7BB34">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
+                    <td>0358428808</td>
+                    <td>nguyenthidiu@gmail.com</td>
+                    <td class="icon">
+                        <i class="fas fa-eye"></i>
                     </td>
-                    <td>Đã mua sách</td>
-                </tr>
-                <tr class="review">
-                    <td colspan="5">Sách không chỉ đưa ra những tình huống thực tế về thế giới hôn nhân và cách giải quyết dưới góc nhìn của tác giả mà còn đưa ra nhũng lời khuyên hữu ích về cách yêu thương bản thân, trân trọng cuộc sống hiện tại, thực sự rất đáng đọc</td>
-                </tr>
-                <tr class="reviewaction">
-                    <td colspan="3"></td>
-                    <td>
-                        <p>Trả lời</p>
-                    </td>
-                    <td><p>Xóa đánh giá</p></td>
-                </tr>
-                <tr rowspan="2" class="replyfield">
-                    <td colspan="4">
-                        <input class="reply" type="text" />
-                    </td>
-                    <td>
-                        <button class="reply_btn">Trả lời</button><br />
-                        <button class="cancel">Hủy</button>
-                    </td>
+                    <td class="icon"><i class="fas fa-trash-alt"></i></td>
                 </tr>
 
-                <tr class="userreview">
+                <tr class="userlist">
                     <td>
                         <div class="username">
                             <span class="userimg"><img src="../image/imvAuthor/khach2 (2).png" /></span>
-                            <span class="account-text"><a href="#">Hoàng Hà</a></span>
+                            <span class="account-text">Hoàng Hà</span>
                         </div>
                     </td>
 
-                    <td class="bookname"><a href="#">Lão Hạc</a></td>
-                    <td>23/10/2021</td>
+                    <td>N/A</td>
+                    <td>hoanghanguyen@gmail.com</td>
+                    <td class="icon">
+                        <i class="fas fa-eye"></i>
+                    </td>
+                    <td class="icon"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+
+                <tr class="userlist">
                     <td>
-                        <div class="stars" style="color: #F7BB34">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+                        <div class="username">
+                            <span class="userimg"><img src="../image/imvAuthor/khach2 (2).png" /></span>
+                            <span class="account-text">Thúy Loan</span>
                         </div>
                     </td>
-                    <td>Đã mua sách</td>
-                </tr>
-                <tr class="review">
-                    <td colspan="5">Chất lượng sản phẩm tốt, đóng gói chắc chắn, shop phục vụ nhiệt tình, thời gian giao hàng nhanh.</td>
-                </tr>
-                <tr class="reviewaction">
-                    <td colspan="3"></td>
-                    <td>
-                        <p>Trả lời</p>
+
+                    <td>035822995</td>
+                    <td>thuyloannguyen@gmail.com</td>
+                    <td class="icon">
+                        <i class="fas fa-eye"></i>
                     </td>
-                    <td><p>Xóa đánh giá</p></td>
+                    <td class="icon"><i class="fas fa-trash-alt"></i></td>
                 </tr>
-                <tr rowspan="2" class="replyfield">
-                    <td colspan="4">
-                        <input class="reply" type="text" />
-                    </td>
-                    <td>
-                        <button class="reply_btn">Trả lời</button><br />
-                        <button class="cancel">Hủy</button>
-                    </td>
-                </tr>
+
             </table>
         </div>
 
