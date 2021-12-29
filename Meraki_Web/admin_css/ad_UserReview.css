@@ -17,13 +17,15 @@
     transition: width none;
 }
 /*-------------------MyTABLE----------------------*/
+
 .myTable {
-    width: 98%;
+    width: 100%;
     margin: auto;
     border-spacing: 0;
     line-height: 2;
     margin-top: 20px;
     border-collapse: collapse;
+    
 }
 
     .myTable th {
@@ -32,15 +34,11 @@
         background-color: var(--yellow);
     }
 
-    .myTable td {
-        
-        
-    }
-
     .myTable th, tr, td {
         border-bottom: 1px solid black;
         font-size: 16px;
         text-align: center;
+
     }
 .usertitle{
     color: black;
@@ -62,11 +60,11 @@
     background-position: center;
     margin-right: 10px;
 }
-.userreview td {
+ .userreview td  {
     border: none;
 }
 .review {
-    
+    border: none;
 }
     .review td {
         border: none;
@@ -144,21 +142,17 @@
     color: black;
     cursor: pointer;
 }
-.account-text a:hover {
-    color: var(--yellow);
-}
-.sachmoititle {
-    
-    height: 65px;
-    
-}
-
+    .account-text a:hover {
+        color: var(--yellow);
+        font-weight: bold;
+    }
 
 .sapxep {
     align-items: center;
     width: 100%;
     padding: 0 80px;
     align-items: center;
+    margin-top: 20px;
 }
 
 .sapxeptext {
@@ -166,7 +160,6 @@
 }
 
 .form-control {
-    margin: 10px;
     height: 100%;
     background-color: var(--green);
     color: white;
@@ -176,9 +169,16 @@
     font-size: 14px;
     padding: 10px;
     border: 1px solid #ddd;
-    margin-bottom: 12px;
     border-radius: 10px;
+
 }
+
+.item:hover{
+    color: var(--yellow);
+    cursor: pointer;
+    font-weight: bold;
+}
+
 @media (min-width: 900px) {
     
 
@@ -195,6 +195,7 @@
         width: 100%;
         overflow-x: auto;
     }
+
     td input{
         max-width: 90%;
     }
