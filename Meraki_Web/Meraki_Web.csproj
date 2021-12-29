@@ -83,6 +83,7 @@
     <Content Include="css\AboutMeraki.css" />
     <Content Include="css\blog.css" />
     <Content Include="css\BookChart.css" />
+    <Content Include="css\BookChart2.css" />
     <Content Include="css\DiaChiGiaoHang.css" />
     <Content Include="css\GioHang.css" />
     <Content Include="css\lightslider.css" />
@@ -99,6 +100,7 @@
     <Content Include="html\AboutMeraki.html" />
     <Content Include="html\Blog.html" />
     <Content Include="html\BookChart.html" />
+    <Content Include="html\BookChart2.html" />
     <Content Include="html\ChinhSach.html" />
     <Content Include="html\DetailBook.html" />
     <Content Include="html\DiaChiGiaoHang.html" />
@@ -170,6 +172,19 @@
     <Content Include="image\imvBook\tróiinhvungve.jpg" />
     <Content Include="image\imvBook\vongtronmau.jpg" />
     <Content Include="image\imvBook\whenbreathbecomesair.jpg" />
+    <Content Include="image\imvChart\chart-42.png" />
+    <Content Include="image\imvChart\chart-43.png" />
+    <Content Include="image\imvChart\chart-44.png" />
+    <Content Include="image\imvChart\chart-45.png" />
+    <Content Include="image\imvChart\chart-46.png" />
+    <Content Include="image\imvChart\chart-47.png" />
+    <Content Include="image\imvChart\chart-48.png" />
+    <Content Include="image\imvChart\chart-49.png" />
+    <Content Include="image\imvChart\chart-50.png" />
+    <Content Include="image\imvChart\chart-51.png" />
+    <Content Include="image\imvChart\left.png" />
+    <Content Include="image\imvChart\right.png" />
+    <Content Include="image\imvChart\saovang.png" />
     <Content Include="image\imvIcon\ggplaylogo.png" />
     <Content Include="image\imvIcon\icon-delete.png" />
     <Content Include="image\imvIcon\icon_back.png" />
