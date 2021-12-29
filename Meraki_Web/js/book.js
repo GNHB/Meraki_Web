@@ -10,6 +10,34 @@ app.controller("BookController", function ($scope) {
 
         },
         {
+
+            "cover": "../image/imvBook/chuchokhongnha.png",
+            "title": "Chú chó không nhà",
+            "author": "Sarah Lean"
+
+        },
+        {
+
+            "cover": "../image/imvBook/kyananhtrang.jpg",
+            "title": "Kỳ án ánh trăng",
+            "author": "Quỷ Cổ Nữ"
+
+        },
+        {
+
+            "cover": "../image/imvBook/suoinguon.jpg",
+            "title": "Suối nguồn",
+            "author": "Ayn Rand"
+
+        },
+        {
+
+            "cover": "../image/imvBook/tróiinhvungve.jpg",
+            "title": "Trời sinh vụng về",
+            "author": "Lư Tư Hạo"
+
+        },
+        {
             
             "cover": "../image/imvBook/nhagiakim.jpg",
             "title": "Nhà giả kim",
