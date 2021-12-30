@@ -6,6 +6,10 @@
     --light_skin: #FEFAF4;
 }
 
+a{
+    text-decoration:none;
+}
+
 * {
     font-family: Arial;
     margin: 0;

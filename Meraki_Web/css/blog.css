@@ -60,11 +60,7 @@
 
     }
 
-@media(max-width:700px){
-    .row{
-        flex-direction:column;
-    }
-}
+
 .tintuc {
     width: 80%;
     margin: auto;
@@ -129,6 +125,10 @@
     margin: 30px auto;
     background-color: var(--light_skin);
     padding: 10px 50px 10px 50px;
+}
+.review h5 {
+    font-size:20px;
+    font-weight:bold;
 }
 
     .review h2 {
@@ -195,7 +195,11 @@ hr {
     line-height:22px;
     font-size:14px;
 }
-
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
 
 /*
 detail*/
@@ -206,10 +210,10 @@ detail*/
     padding: 10px 50px 10px 50px;
 }
 .book-detail .row{
-   text-align:center;
-   align-items:center;
+    text-align:center;
+    align-items:center;
     margin: 30px auto;
- width:500px;
+    width:500px;
 }
     .book-detail .row img{
         text-align: center;
@@ -225,6 +229,7 @@ detail*/
     width: 190px;
     box-shadow: 2px 2px #888888;
     cursor: pointer;
+    margin-top:10px;
     margin-bottom: 10px;
 }
 .move_btn:hover {
@@ -401,10 +406,7 @@ detail*/
     }
 
 /*///detail-product*/
-.card{
-
-    width: 80%;
-    margin: 30px auto;
+.card-1{
     background-color: var(--light_skin);
     padding: 10px 50px 10px 50px;
 }
@@ -431,16 +433,12 @@ detail*/
 }
 
 .product-content {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
 }
 
 .product-title {
-    font-size: 2rem;
-    text-transform: capitalize;
-    font-weight: 700;
-    position: relative;
-    color: #12263a;
-    margin: 1rem 0;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 
@@ -456,31 +454,7 @@ detail*/
         background: #12263a;
     }
 
-.product-link {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 0.9rem;
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    background: #256eff;
-    color: #fff;
-    padding: 0 0.3rem;
-    transition: all 0.5s ease;
-}
 
-    .product-link:hover {
-        opacity: 0.9;
-    }
-
-.product-rating {
-    color: #ffc107;
-}
-
-    .product-rating span {
-        font-weight: 600;
-        color: #252525;
-    }
 
 .product-price {
     margin: 1rem 0;
@@ -494,46 +468,7 @@ detail*/
 del {
     text-decoration: line-through;
 }
-.last-price span {
-    color: #f64749;
-    text-decoration: line-through;
-}
 
-.new-price span {
-    color: #256eff;
-}
-
-.product-detail h2 {
-    text-transform: capitalize;
-    color: #12263a;
-    padding-bottom: 0.6rem;
-}
-
-.product-detail p {
-    font-size: 0.9rem;
-    padding: 0.3rem;
-    opacity: 0.8;
-}
-
-.product-detail ul {
-    margin: 1rem 0;
-    font-size: 0.9rem;
-}
-
-    .product-detail ul li {
-        margin: 0;
-        list-style: none;
-        background: url(shoes_images/checked.png) left center no-repeat;
-        background-size: 18px;
-        padding-left: 1.7rem;
-        margin: 0.4rem 0;
-        font-weight: 600;
-        opacity: 0.9;
-    }
-
-        .product-detail ul li span {
-            font-weight: 400;
-        }
 
 .purchase-info {
     margin: 1.5rem 0;
@@ -572,14 +507,13 @@ del {
 
 
 @media screen and (min-width: 992px) {
-    .card {
+    .card-1 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.5rem;
     }
 
     .card-wrapper {
-        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -596,6 +530,184 @@ del {
     }
 }
 
+
+
+
+
+.heading {
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+/* Individual bars */
+.bar-5 {
+    width: 60%;
+    height: 18px;
+    background-color: #04AA6D;
+}
+
+.bar-4 {
+    width: 30%;
+    height: 18px;
+    background-color: #2196F3;
+}
+
+.bar-3 {
+    width: 10%;
+    height: 18px;
+    background-color: #00bcd4;
+}
+
+.bar-2 {
+    width: 4%;
+    height: 18px;
+    background-color: #ff9800;
+}
+
+.bar-1 {
+    width: 15%;
+    height: 18px;
+    background-color: #f44336;
+}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .side, .middle {
+        width: 100%;
+    }
+    /* Hide the right column on small screens */
+    .right {
+        display: none;
+    }
+}
+
+
+.listbook {
+    margin: 1em auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    max-width: 1000px;
+    justify-content: center;
+    height: auto;
+    padding: 0 20px;
+}
+.cs-hidden{
+    width:100%;
+}
+.box_best_sellers {
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--skin);
+    padding: 7px;
+    box-sizing: border-box;
+    margin: 1em 0 1em 15px;
+}
+
+.box_img {
+    height: 200px;
+}
+
+    .box_img img {
+        cursor:pointer;
+        width: 100%;
+        height: 100%;
+        border-radius:10px;
+    }
+        .box_img img:hover {
+            transform: translateY(5%);
+        }
+
+.box_tittle {
+    text-align: center;
+    background: var(--skin);
+    margin-top: 10px;
+    text-transform: none;
+}
+
+    .box_tittle p {
+        margin: 5px;
+        text-transform: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 200px;
+    }
+    .box_tittle p:hover {
+      color:var(--yellow);
+    }
+
+.slick-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--green);
+    z-index: 2;
+    color: white;
+    padding: 10px;
+    border-radius:10px;
+}
+    .slick-prev:hover {
+        color: var(--green);
+        background-color:var(--yellow);
+    }
+.slick-next {
+    position: absolute;
+    right:0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--green);
+    z-index: 2;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.slick-next {
+    color: var(--green);
+    background-color: var(--yellow)
+}
 /*
   chính sách*/
 .chinhsach1 {

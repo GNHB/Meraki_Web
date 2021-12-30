@@ -1,0 +1,50 @@
+﻿:root {
+    --green: #487B72;
+    --yellow: #F7BB34;
+    --skin: #FBF1E1;
+    --light_skin: #FEFAF4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    background-color: var(--light_skin);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.btn_next_page_2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.4em;
+    padding: 0.5em;
+    border: 2px solid #487B72;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(255 255 255);
+    background: var(--green);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    margin: 0 10px;
+}
+
+.btn_previous_page_2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.4em;
+    padding: 0.5em;
+    border: 2px solid #487B72;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(0 0 0);
+    background: var(--light_skin);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.btn_previous_page_2:hover {
+    background: var(--green);
+    color: rgb(255 255 255);
+}

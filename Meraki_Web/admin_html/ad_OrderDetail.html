@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHI TIẾT HÓA ĐƠN</title>
+    <!---------------------------------------------my content css---------------------------------------->
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_OrderList.css" />
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_InvoiceDetail.css" />
+
+    <!-----------------------------------------sidebar + header css-------------------------------------->
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_sidebar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="mybody">
+    <!---------------------------SIDEBAR-------------------------->
+    <input type="checkbox" id="check" />
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../image/imvBanner/logo.png" width="100" height="70" />
+        </div>
+        <a href="#"><i class="fas fa-columns" style="margin-right:10px;"></i> DashBoard</a>
+        <button class="dropdown_btn"><i class="fas fa-user-circle" style="margin-right:10px;"></i>Khách hàng <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+            <a href="#">Đánh giá</a>
+            <a href="#">Danh sách khách hàng</a>
+        </div>
+
+        <button class="dropdown_btn"><i class="fas fa-book" style="margin-right:10px;"></i>Sách <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+            <a href="#">Dánh sách Sách</a>
+            <a href="#">Hàng tồn kho</a>
+        </div>
+        <a href="#"><i class="fas fa-list" style="margin-right:10px;"></i>Danh mục</a>
+        <a href="#"><i class="fas fa-pen-nib" style="margin-right:10px;"></i>Blog</a>
+        <a href="#"><i class="fas fa-shopping-cart" style="margin-right:10px;"></i>Danh sách đơn hàng</a>
+        <a href="#"><i class="fas fa-file-alt" style="margin-right:10px;"></i>Danh sách hóa đơn</a>
+        <a href="#"><i class="fas fa-truck" style="margin-right:10px;"></i>Vận chuyển </a>
+        <a href="#" style="border-top:1px solid black;"><i class="fas fa-user-cog" style="margin-right:10px;"></i>Giao diện</a>
+        <br />
+    </div>
+    <!---------------------------CONTENT-------------------------->
+    <div class="content">
+        <!--------------------------HEADER-------------------------->
+        <div class="header">
+            <a class="title">Chi tiết đơn hàng</a>
+            <div style="display:flex;" class="user">
+                <a href="#"><i class="far fa-bell"></i></a>
+                <p>Hoài Vi</p>
+            </div>
+        </div>
+        <!-----------------MY CONTENT: ORDER LIST--------------------->
+        <div class="mycontent">
+            <div class="search_box">
+                <input type="search" placeholder="search" id="search" />
+                <span><a href="#"><i class="fas fa-search"></i></a></span>
+            </div>
+            <div class="information">
+                <div class="customer">
+                    <div class="customer_info">
+                        <p>
+                            NGƯỜI NHẬN <br />
+                            ID : 01<br />
+                            Nguyễn Văn Tân<br />
+                            tannguyen@gmail.com<br />
+                            0812345675<br />
+                            7A Nguyễn Đình Quân, Quận 7, TP HCM
+                        </p>
+                    </div>
+                    <div class="invoice">
+                        <p>
+                            THÔNG TIN HÓA ĐƠN<br />
+                            ID Hóa đơn:HD01<br />
+                            Ngày xuất: 19/02/2021<br />
+                        </p>
+                    </div>
+                </div>
+                <table class="myTable">
+                    <tr>
+                        <td colspan="6"><hr style="width: 100%; height: 1px; background-color: black; vertical-align:middle; margin-top:10px; margin-bottom:15px;" /></td>
+                    </tr>
+                    <tr>
+                        <th>ID sách</th>
+                        <th>Sách</th>
+                        <th>Tác giả</th>
+                        <th>Số lượng</th>
+                        <th>Tiền đơn vị</th>
+                        <th>Tiền tổng</th>
+                    </tr>
+                    <tr>
+                        <td>A01</td>
+                        <td>Chim cổ đỏ</td>
+                        <td>Jo Nesbo</td>
+                        <td>2</td>
+                        <td>40000</td>
+                        <td>80000</td>
+                    </tr>
+                    <tr>
+                        <td>A02</td>
+                        <td>Đắc nhân tâm</td>
+                        <td>Dale Carnegie</td>
+                        <td>1</td>
+                        <td>45000</td>
+                        <td>45000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="text-align:right;">Tổng thanh toán</td>
+                        <td ><b>125000</b></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../admin_js/ad_sidebar.js"></script>
+</body>
+</html>

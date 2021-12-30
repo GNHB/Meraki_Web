@@ -70,7 +70,6 @@
                     - Paulo Coelho -
                 </div>
             </div>
-            <input class="btnsavequote" type="button" value="Lưu" onclick="saveQuote()" />
         </div>
     </div>
 
@@ -102,25 +101,32 @@
             <h3>Tài khoản của tôi</h3>
             <hr />
             <div class="inf-container">
-                <div class="inf-content">
+                <form class="inf-content">
                     <div class="account-title">
                         <span><b>Thông tin cá nhân</b></span>
-                        <span class="edit-inf"><a href="#"><b>Chỉnh sửa</b></a></span>
                     </div>
                     <div>
                         <span class="account-icon"><i class="far fa-address-card fa-2x"></i></span>
-                        <span class="account-text">Nguyễn Thị Diu</span>
+                        <span class="account-text">
+                            <input readonly type="text" value="Nguyễn Thị Diu" />
+                        </span>
                     </div>
                     <div>
                         <span class="account-icon"><i class="far fa-envelope fa-2x"></i></span>
-                        <span class="account-text">nguyenthidiu@gmail.com</span>
+                        <span class="account-text">
+                            <input readonly type="text" value="nguyenthidiu@gmail.com" />
+                        </span>
                     </div>
                     <div>
                         <span class="account-icon"><i class="fas fa-phone-alt fa-2x"></i></span>
-                        <span class="account-text">0358428808</span>
+                        <span class="account-text">
+                            <input readonly type="text" value="0358428808" />
+                        </span>
                     </div>
-
-                </div>
+                    <button>Lưu thông tin</button>
+                    <button>Hủy bỏ</button>
+                    <button>Chỉnh sửa</button>
+                </form>
                 <div class="inf-content">
                     <div class="account-title"><b>Hồ sơ của bạn</b></div>
                     <div>
