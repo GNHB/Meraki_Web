@@ -190,21 +190,21 @@ label #btn{
     }
     .sidebar{
         position:fixed;
-        left:-40%;
-        width: 40%;
+        left:-50%;
+        width: 50%;
     }
     #check:checked ~ label #btn {
-        left: 40%;
+        left: 50%;
         opacity: 0;
         pointer-events: none;
     }
     label #cancel {
         z-index: 1111;
-        left: -40%;
+        left: -50%;
         color: white;
     }
     #check:checked ~ label #cancel {
-        left: 37%;
+        left: 45%;
     }
 
 }
@@ -219,24 +219,24 @@ label #btn{
 
     .sidebar {
         position: fixed;
-        left: -90%;
-        width: 90%;
+        left: -80%;
+        width: 80%;
     }
 
     #check:checked ~ label #btn {
-        left: 90%;
+        left: 80%;
         opacity: 0;
         pointer-events: none;
     }
 
     label #cancel {
         z-index: 1111;
-        left: -90%;
+        left: -80%;
         color: white;
     }
 
     #check:checked ~ label #cancel {
-        left: 86%;
+        left: 76%;
     }
     div.search_box{
         width:90%;
