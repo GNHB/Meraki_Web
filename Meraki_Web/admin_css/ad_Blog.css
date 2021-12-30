@@ -60,9 +60,7 @@
     color:var(--yellow);
 }
 @media screen and (max-width: 500px) {
-    .mycontent{
-        background-color: var(--light_skin);
-    }
+
     .myTable {
         text-align: unset;
     }
