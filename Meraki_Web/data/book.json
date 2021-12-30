@@ -1,19 +1,29 @@
 ﻿[
   {
+    "name": "Kỳ án ánh trăng",
+
+    "Author": "Quỷ Cổ Nữ",
+    "imgSrc": "../image/imvBook/kyananhtrang.jpg"
+  },
+  {
+    "name": "Nhà giả kim",
+
+    "Author": "Paulo Coelho",
+    "imgSrc": "../image/imvBook/nhagiakim.jpg"
+  },
+  {
     "name": "Vòng tròn máu",
 
-    "Author": "Dan Brown",
+    "Author": "Edgar Wallace",
     "imgSrc": "../image/imvBook/vongtronmau.jpg"
   },
   {
     "name": "Trước khi nhắm mắt",
-
-    "Author": "Dan Brown",
+    "Author": "Higashino Keigo",
     "imgSrc": "../image/imvBook/truockhinhammat.jpg"
   },
   {
     "name": "Trời sinh vụng về",
-
     "Author": "Lư Tử Hạo",
     "imgSrc": "../image/imvBook/tróiinhvungve.jpg"
   },
@@ -24,7 +34,7 @@
     "imgSrc": "../image/imvBook/thienthanacquy.jpg"
   },
   {
-    "name": "Thú Tội",
+    "name": "Minato Kanae",
 
     "Author": "kanae",
     "imgSrc": "../image/imvBook/thutoi.jpg"
@@ -32,7 +42,7 @@
   {
     "name": "Tiếng chim hot trong bụi ngò gai",
 
-    "Author": "Dan Brown",
+    "Author": "Colleen McCullough",
     "imgSrc": "../image/imvBook/Tiengchimhot2012.jpg"
   },
   {
@@ -42,46 +52,46 @@
     "imgSrc": "../image/imvBook/toiloikhongchungcu.jpg"
   },
   {
-    "name": "Vòng tròn máu",
+    "name": "Suối nguồn",
+    "Author": "Ayn Rand",
+    "imgSrc": "../image/imvBook/suoinguon.jpg"
+  },
+  {
+    "name": "Chú chó không nhà",
+
+    "Author": "Sarah Lean",
+    "imgSrc": "../image/imvBook/chuchokhongnha.png"
+  },
+
+  {
+    "name": "Origin",
 
     "Author": "Dan Brown",
-    "imgSrc": "../image/imvBook/vongtronmau.jpg"
+    "imgSrc": "../image/imvBook/origin.jpg"
   },
   {
-    "name": "Trước khi nhắm mắt",
+    "name": "Lược sử loài người",
 
-    "Author": "Dan Brown",
-    "imgSrc": "../image/imvBook/truockhinhammat.jpg"
+    "Author": "Yuval Noah Harari",
+    "imgSrc": "../image/imvBook/luocsuloainguoi.jpg"
   },
   {
-    "name": "Trời sinh vụng về",
+    "name": "Dám bị ghét",
 
-    "Author": "Lư Tử Hạo",
-    "imgSrc": "../image/imvBook/tróiinhvungve.jpg"
+    "Author": "Kishimi Ichiro",
+    "imgSrc": "../image/imvBook/dambighet.jpg"
   },
   {
-    "name": "Thiên thần và ác quỷ",
+    "name": "Kỳ án ánh trăng",
 
-    "Author": "Dan Brown",
-    "imgSrc": "../image/imvBook/thienthanacquy.jpg"
+    "Author": "Quỷ Cổ Nữ",
+    "imgSrc": "../image/imvBook/kyananhtrang.jpg"
   },
   {
-    "name": "Thú Tội",
+    "name": "Nhà giả kim",
 
-    "Author": "kanae",
-    "imgSrc": "../image/imvBook/thutoi.jpg"
-  },
-  {
-    "name": "Tiếng chim hot trong bụi ngò gai",
-
-    "Author": "Dan Brown",
-    "imgSrc": "../image/imvBook/Tiengchimhot2012.jpg"
-  },
-  {
-    "name": "Tội lỗi không chứng cứ",
-
-    "Author": "Tử Kim Trần",
-    "imgSrc": "../image/imvBook/toiloikhongchungcu.jpg"
+    "Author": "Paulo Coelho",
+    "imgSrc": "../image/imvBook/nhagiakim.jpg"
   }
-
+ 
 ]

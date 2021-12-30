@@ -7,7 +7,7 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
     autoplay: {
-        delay: 9500,
+        delay: 4500,
         disableOnInteraction: false,
     },
 });
@@ -163,8 +163,8 @@ function loadJSON() {
             productList5.innerHTML = html;
             productList6.innerHTML = html;
         })
-        .catch(error => {
-            alert(`User live server or local server`);
+        //.catch(error => {
+        //    alert(`User live server or local server`);
             //URL scheme must be "http" or "https" for CORS request. You need to be serving your index.html locally or have your site hosted on a live server somewhere for the Fetch API to work properly.
-        });
+     
 }
