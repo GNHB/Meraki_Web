@@ -33,8 +33,10 @@
     .sapxeptext {
         display: none;
     }
-    
-    
+    .writequote {
+        display: none;
+    }
+
 }
 @media (max-width: 700px) {
     .book {
@@ -48,8 +50,12 @@
     .tab-text {
         display: none;
     }
+   .order-item div {
+        width: 100%;
+        overflow-x: auto;
+    }
 
-     
+ 
 }
 @media (min-width: 900px){
     .inf-container {
@@ -400,7 +406,7 @@ Book stuff
     float: left;
     padding: 0px 12px;
     width: 80%;
-    border-left: none;
+    border:none;
     height: 100%;
     
 }
@@ -463,7 +469,7 @@ Book stuff
 .tabs .tab-content {
     position: relative;
     height: 100%;
-    margin-bottom: 500px;
+    margin-bottom: 600px;
 }
 
     .tabs .tab-content > div {
@@ -493,6 +499,7 @@ Book stuff
     border-spacing: 10px;
     margin-top: 10px;
     border: 1px solid black;
+
 }
 
 
@@ -502,6 +509,7 @@ Book stuff
         width: 100px;
         height: 130px;
     }
+
 
         .order-item .order-img img {
             width: 100px;
@@ -608,7 +616,7 @@ Book stuff
     height: 500px;
 }
 .mybook-content {
-    margin: 20px;
+
     padding: 15px;
     box-shadow: 0 0 10px #aaa;
 }

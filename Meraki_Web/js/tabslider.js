@@ -16,14 +16,15 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 700,
+                breakpoint: 900,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 2,
                 }
             },
+            
             {
-                breakpoint: 400,
+                breakpoint: 700,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -31,36 +32,7 @@ $(document).ready(function () {
             }
         ]
     });
-    $('.slider2').slick({
-        slidesToShow: 4,
-        slidesToScroll: 2,
-        infinite: true,
-        prevArrow: "<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-        nextArrow: "<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
-        responsive: [
-            {
-                breakpoint: 1140,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 700,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                }
-            },
-            {
-                breakpoint: 400,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }
-        ]
-    });
-
+    
 });
 
 
@@ -76,7 +48,7 @@ function openTab(evt, tabName) {
     }
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
-    $('.slider2').slick('setPosition');
+    $('.slider').slick('setPosition');
     
 }
 document.getElementById("defaultOpen").click();
