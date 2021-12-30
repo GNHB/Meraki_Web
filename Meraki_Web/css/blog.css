@@ -660,6 +660,7 @@ del {
         }
 
 .box_tittle {
+    cursor: pointer;
     text-align: center;
     background: var(--skin);
     margin-top: 10px;
@@ -667,6 +668,7 @@ del {
 }
 
     .box_tittle p {
+        cursor:pointer;
         margin: 5px;
         text-transform: none;
         white-space: nowrap;
@@ -730,12 +732,220 @@ del {
     .chinhsach1 .v {
         background: var(--skin);
         font-size: 14px;
-        margin: 10px 150px;
+        width: 80%;
         padding: 50px;
+        margin: 30px auto;
+        align-items: center;
+        text-align: center;
+        padding: 10px 50px 10px 50px;
     }
 
 #tomtac{
     transform:translateX(0px);
 }
 
+
+/*------------------------------------------------------------Home*/
+
+.banner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+    .banner .books-slider {
+        flex: 1 1 10rem;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+        .banner .books-slider div img {
+            width:80%;
+        }
+
+        .banner .books-slider div:hover img {
+            transform: scale(.97);
+        }
+
+        .banner .books-slider .stand {
+            width: 80%;
+            margin-top: 0.2rem;
+        }
+
+/*sach index*/
+
+
+
+    .listbook .listbook-heading {
+        margin: 10px 30px 0px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+/*  .myBook{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-gap:20px;
+        align-items:center;
+    }*/
+.book-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 150px;
+    background-color: var(--skin);
+    margin: 20px;
+}
+
+.book-box-img {
+    width: 100%;
+    height: 235px;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+    .book-box-img img {
+       width:100%;
+        object-fit: cover;
+        align-items: center;
+        text-align: center;
+        border-radius:10px;
+    }
+
+        .book-box-img img:hover {
+            transform: translateY(5%);
+        }
+
+.book-box-content strong {
+    margin: 0px;
+    font-size: 14px;
+    text-align: center;
+    width: 150px;
+}
+
+.book-box-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+    .book-box-content p {
+        margin: 0px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+.w-author {
+    background-color: var(--light_skin);
+   
+
+}
+
+    .w-author img {
+        text-align: center;
+        align-items: center;
+        width:150px;
+    }
+
+    .w-author a {
+        text-align: center;
+        align-items: center;
+        width: 150px;
+    }
+
+    .w-author h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .w-author .stars i {
+        color: var(--yellow)
+    }
+
+.stars {
+    text-align: center;
+}
+
+
+
+.author-h .row .book .content .stars i {
+    color: var(--yellow)
+}
+
+.table right {
+    width: 500px;
+}
+
+.book-box .content .stars i {
+    color: var(--yellow)
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+
+
+   .authorbook-1{
+   
+    align-content:center;
+    grid-template-columns:repeat(2,1fr);
+    display:grid;
+}
+
+    .listbook {
+        border-top: 1px solid #487B72;
+        width: 80%;
+        margin: 30px auto;
+        background-color: var(--light_skin);
+        padding: 10px 50px 10px 50px;
+    }
+    .author-h {
+        width: 80%;
+        margin: 30px auto;
+        background-color: var(--light_skin);
+        align-items: center;
+        text-align: center;
+        padding: 10px 50px 10px 50px;
+        border-top: 1px solid #487B72;
+        box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+
+    .authorbook-1 {
+        align-content: center;
+
+     
+    }
+    .listbook {
+        border-top: 1px solid #487B72;
+        width: 100%;
+        margin: 30px auto;
+        background-color: var(--light_skin);
+        padding: 10px 50px 10px 50px;
+    }
+    .author-h {
+        width: 100%;
+        margin: 30px auto;
+        background-color: var(--light_skin);
+        align-items: center;
+        text-align: center;
+        padding: 10px 50px 10px 50px;
+        border-top: 1px solid #487B72;
+        box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    }
+}
 

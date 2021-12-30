@@ -40,7 +40,48 @@
 
     "Author": "Tử Kim Trần",
     "imgSrc": "../image/imvBook/toiloikhongchungcu.jpg"
-  }
+  },
+  {
+    "name": "Vòng tròn máu",
 
+    "Author": "Dan Brown",
+    "imgSrc": "../image/imvBook/vongtronmau.jpg"
+  },
+  {
+    "name": "Trước khi nhắm mắt",
+
+    "Author": "Dan Brown",
+    "imgSrc": "../image/imvBook/truockhinhammat.jpg"
+  },
+  {
+    "name": "Trời sinh vụng về",
+
+    "Author": "Lư Tử Hạo",
+    "imgSrc": "../image/imvBook/tróiinhvungve.jpg"
+  },
+  {
+    "name": "Thiên thần và ác quỷ",
+
+    "Author": "Dan Brown",
+    "imgSrc": "../image/imvBook/thienthanacquy.jpg"
+  },
+  {
+    "name": "Thú Tội",
+
+    "Author": "kanae",
+    "imgSrc": "../image/imvBook/thutoi.jpg"
+  },
+  {
+    "name": "Tiếng chim hot trong bụi ngò gai",
+
+    "Author": "Dan Brown",
+    "imgSrc": "../image/imvBook/Tiengchimhot2012.jpg"
+  },
+  {
+    "name": "Tội lỗi không chứng cứ",
+
+    "Author": "Tử Kim Trần",
+    "imgSrc": "../image/imvBook/toiloikhongchungcu.jpg"
+  }
 
 ]
