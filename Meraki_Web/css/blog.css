@@ -65,16 +65,22 @@
     width: 80%;
     margin: auto;
     background-color: var(--light_skin);
-    display: flex;
-    /*align-items: center;*/
+   /* display: flex;*/
     flex-wrap: wrap;
     text-align: center;
     padding: 10px 50px 10px 50px;
 }
-.tintuc h2{
-    margin:20px 250px 20px 20px;
-
-    }
+.tabreview {
+   
+   /* right:0;
+ 
+    transform: translateY(-50%);
+    z-index: 2;*/
+   
+}
+.tintuc h2 {
+    font-size: 20px;
+}
 
 .tintuc-header{
     display:flex;
@@ -938,7 +944,7 @@ del {
         padding: 10px 50px 10px 50px;
     }
     .author-h {
-        width: 100%;
+   
         margin: 30px auto;
         background-color: var(--light_skin);
         align-items: center;
