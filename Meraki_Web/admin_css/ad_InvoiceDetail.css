@@ -36,6 +36,9 @@
     background-color: var(--green);
     padding: 10px;
 }
+#sum {
+    text-align: right;
+}
 /*RESPONSIVE*/
 @media screen and (max-width: 900px) {
     *{
@@ -70,4 +73,80 @@
         overflow-x: auto;
     }
 }
+@media screen and (max-width: 500px) {
+    .mycontent {
+        background-color: var(--light_skin);
+    }
 
+    .myTable {
+        text-align: unset;
+    }
+
+        .myTable tr {
+            border: none;
+        }
+    thead {
+        display: none;
+    }
+
+    .myTable, .myTable tbody, .myTable tr, .myTable td {
+        display: block;
+        width: 100%;
+    }
+
+        .myTable tr {
+            margin-bottom: 15px;
+            border: 2px solid var(--yellow);
+            padding: 10px;
+            background-color: var(--skin);
+        }
+
+        .myTable td:first-child::before {
+            content: "ID Sách";
+        }
+
+        .myTable td:nth-child(2)::before {
+            content: "Tên Sách";
+        }
+
+        .myTable td:nth-child(3)::before {
+            content: "Tác giả";
+        }
+
+        .myTable td:nth-child(4)::before {
+            content: "Số lượng";
+        }
+
+        .myTable td:nth-child(5)::before {
+            content: "Tiền đơn vị";
+        }
+        .myTable td:nth-child(6)::before {
+            content: "Tổng tiền";
+        }
+        
+        .myTable tbody tr:last-child td::before{
+            content:"";
+        }
+        .myTable tbody tr:last-child{
+            border:0;
+        }
+
+        td {
+            text-align: right;
+        }
+
+        td::before {
+            float: left;
+            font-weight: bold;
+            margin-right: 10%;
+        }
+
+    .myTable th, tr, td {
+        border-bottom: 0;
+        font-size: 14px;
+    }
+
+    .myTable td:last-child {
+        width: 100%;
+    }
+}
