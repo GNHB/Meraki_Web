@@ -183,6 +183,7 @@
     .giohang_body {
         display: flex;
         flex-direction: column;
+        width:95%;
     }
 
     .list_item {
@@ -226,6 +227,7 @@
     .giohang_body{
         display: flex;
         flex-direction: column;
+        width:90%;
     }
     .list_item {
         display: flex;
