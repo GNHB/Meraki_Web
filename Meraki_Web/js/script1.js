@@ -1,13 +1,16 @@
 ﻿
-//var swiper = new Swiper(".mySwiper", {
-//    spaceBetween: 10,
-//    loop: true,
-//    pagination: {
-//        el: ".swiper-pagination",
-//        clickable: true,
-//    },
-
-//});
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 9500,
+        disableOnInteraction: false,
+    },
+});
 
 
 
