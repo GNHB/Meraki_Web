@@ -165,7 +165,7 @@ label #btn, label #cancel{
 }
 label #btn{
     left:5px;
-    top:30px;
+    top:5px;
     color:white;
 }
 
@@ -175,6 +175,12 @@ label #btn{
 
 
 @media screen and (min-width: 400px) and (max-width: 900px){
+    label .fa-bars {
+        font-size:25px;
+    }
+    .fa-times{
+        text-align:center;
+    }
     .header .title {
         margin: auto;
     }
@@ -200,7 +206,6 @@ label #btn{
     #check:checked ~ label #cancel {
         left: 37%;
     }
-    
 
 }
 @media screen and (max-width: 399px) {

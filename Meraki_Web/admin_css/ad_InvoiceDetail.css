@@ -47,10 +47,6 @@
     .information{
         overflow-x:auto;
     }
-    .header .title {
-        position: relative;
-        top: 10px;
-    }
 
         .header .user {
             position: relative;
