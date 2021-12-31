@@ -637,6 +637,17 @@ del {
     height: auto;
     padding: 0 20px;
 }
+    .listbook .all {
+        cursor:pointer;
+        top: 50%;
+        transform: translateY(-90%);
+        color: var(--green);
+        text-decoration:none;
+    }
+    .listbook .all:hover {
+        color: var(--yellow);
+       
+    }
 .cs-hidden {
     height: auto;
     justify-content: center;
