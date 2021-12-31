@@ -98,7 +98,7 @@
 
                         </div>
                     </div>
-                    <button type="button" name="doc" class="move_btn">Đọc thử</button>
+                    <button type="button" name="doc" class="move_btn" onclick="Open()">Đọc thử</button>
                 </div>
 
             </div>
@@ -318,7 +318,7 @@
 
     <section class="listbook" id="listbook">
         <h1 class="listbook-heading"> Các tác phẩm liên quan</h1>
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper2">
             <div class="swiper-wrapper cs-hidden">
 
 
@@ -535,7 +535,7 @@
     <script src="../js/detailstyle.js"></script>
     <script src="../js/script1.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".mySwiper2", {
             spaceBetween: 10,
             loop: true,
             centeredSlides: true,
@@ -562,6 +562,10 @@
                 },
             },
         });
+
+        function Open() {
+            window.open("https://www.dtv-ebook.com/doconline.php?hash=ODU3OQ==#epubcfi(/6/4[C0]!4/2/1:0)")
+        }
     </script>
 </body>
     </html>

@@ -697,10 +697,16 @@ del {
     margin-top: 10px;
     text-transform: none;
 }
-
+    .box_tittle a {
+        cursor: pointer;
+        color: black;
+        text-decoration:none;
+       
+    }
     .box_tittle p {
         cursor:pointer;
         margin: 5px;
+        color:black;
         text-transform: none;
         white-space: nowrap;
         overflow: hidden;
