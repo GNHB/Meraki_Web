@@ -22,10 +22,9 @@
 
     <!----------------------FONT-------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
 
 </head>
-<body  ng-app="myApp">
+<body>
     <!--Navigation bar-->
     <input type="checkbox" id="check" />
     <nav>
@@ -39,15 +38,15 @@
                     <span><a href="#"><img class="search_icon" src="../image/imvIcon/icon_search.png" /></a></span>
                 </div>
                 <div class="icon">
-                    <a href="#"><img id="vip_icon" src="../image/imvIcon/icon_vip.png" /></a>
-                    <a href="#"><img id="cart_icon" src="../image/imvIcon/icon_card_fontbar.png" /></a>
-                    <a href="#"><img id="user_icon" src="../image/imvIcon/icon_user.png" /></a>
+                    <a href="../html/VIP.html"><img id="vip_icon" src="../image/imvIcon/icon_vip.png" /></a>
+                    <a href="../html/GioHang.html"><img id="cart_icon" src="../image/imvIcon/icon_card_fontbar.png" /></a>
+                    <a href="../html/OrderManagement.html"><img id="user_icon" src="../image/imvIcon/icon_user.png" /></a>
                 </div>
             </div>
             <ol>
-                <li><a href="#">Thể loại</a></li>
-                <li><a href="#">Xếp hạng</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="../html/TheLoai.html">Thể loại</a></li>
+                <li><a href="../html/BookChart.html">Xếp hạng</a></li>
+                <li><a href="../html/Blog.html">Blog</a></li>
             </ol>
         </div>
         <label for="check" class="bar">
@@ -94,25 +93,26 @@
         <div class="sidebar">
             <button class="dropdown_btn">Khoa học <i class="fa fa-caret-down"></i></button>
             <div class="dropdown-container">
-                <a href="#">Thiên văn - Địa Lý</a>
-                <a href="#">Vật Lý - Công Nghệ</a>
+                <a href="#" data-tab-target="#tv_dl">Thiên văn - Địa Lý</a>
+                <a href="#" data-tab-target="#vl_cn">Vật Lý - Công Nghệ</a>
             </div>
             <a href="#">Kinh tế - Xã Hội</a>
             <button class="dropdown_btn">Tiểu Thuyết/ Văn học <i class="fa fa-caret-down"></i></button>
             <div class="dropdown-container">
-                <a href="#">Tình Cảm</a>
-                <a href="#">Trinh Thám</a>
-                <a href="#">Kinh Dị</a>
-                <a href="#">Viễn Tưởng</a>
-                <a href="#">Thơ</a>
-                <a href="#">Phương Tây</a>
+                <a href="#" data-tab-target="#tc">Tình Cảm</a>
+                <a href="#" data-tab-target="#tt">Trinh Thám</a>
+                <a href="#" data-tab-target="#kd">Kinh Dị</a>
+                <a href="#" data-tab-target="#vt">Viễn Tưởng</a>
+                <a href="#" data-tab-target="#t">Thơ</a>
+                <a href="#" data-tab-target="#pt">Phương Tây</a>
             </div>
-            <a href="#">Tâm Lý</a>
+            <a href="#" data-tab-target="#tl">Tâm Lý</a>
+            <a href="#" data-tab-target="#all">Tất cả</a>
             <br />
             <p>Đánh giá</p>
-            <a href="#" style="border: none;">5 sao</a>
-            <a href="#" style="border: none;">Từ 4 sao </a>
-            <a href="#" style="border: none;">Từ 5 sao</a>
+            <a href="#" style="border: none;" data-tab-target="#n_sao">5 sao</a>
+            <a href="#" style="border: none;" data-tab-target="#b_sao">Từ 4 sao </a>
+            <a href="#" style="border: none;" data-tab-target="#ba_sao">Từ 5 sao</a>
             <br />
             <p>Giá mua Ebook</p>
             <button class="giamua_btn">Từ 20.000đ - 45.000đ</button>
@@ -124,22 +124,22 @@
 
 
         <!--NỘI DUNG-->
-        <div class="content">
+        <div class="content active" data-tab-content>
             <p style="text-align: center; ">Tâm lý</p>
             <hr style="width: 100%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom: 5px;" />
             <a style="text-decoration: none;" href="#"><p class="all">Xem tất cả</p></a>
             <div class="wrap">
                 <div class="slider" id="carouselContent">
-                    <div class="slider_box" >
+                    <div class="slider_box">
                         <div class="slider_img">
-                            <img src="../image/imvBook/trenduongbang.jpg"  title="Trên đường băng"/>
+                            <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title" ><p >Trên đường băng</p> </a>
+                            <a href="#" class="title"><p>Trên đường băng</p> </a>
                             <p class="author">Tony Buổi Sáng</p>
                         </div>
                     </div>
-                    <div class="slider_box" >
+                    <div class="slider_box">
                         <div class="slider_img">
                             <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
                         </div>
@@ -150,7 +150,7 @@
                     </div>
                     <div class="slider_box">
                         <div class="slider_img">
-                            <img src="../image/imvBook/vongtronmau.jpg" title="Vòng tròn máu"/>
+                            <img src="../image/imvBook/vongtronmau.jpg" title="Vòng tròn máu" />
                         </div>
                         <div class="img_detail">
                             <a href="#" class="title"><p>Vòng tròn máu</p> </a>
@@ -159,7 +159,7 @@
                     </div>
                     <div class="slider_box">
                         <div class="slider_img">
-                            <img src="../image/imvBook/thienthanacquy.jpg" title="Thiên thần, ác quỷ"/>
+                            <img src="../image/imvBook/thienthanacquy.jpg" title="Thiên thần, ác quỷ" />
                         </div>
                         <div class="img_detail">
                             <a href="#" class="title"><p>Thiên thần, ác quỷ</p> </a>
@@ -168,7 +168,7 @@
                     </div>
                     <div class="slider_box">
                         <div class="slider_img">
-                            <img src="../image/imvBook/dapancuathoigian.jpg" title="Đáp án của thời gian"/>
+                            <img src="../image/imvBook/dapancuathoigian.jpg" title="Đáp án của thời gian" />
                         </div>
                         <div class="img_detail">
                             <a href="#" class="title"><p>Đáp án của thời gian</p> </a>
@@ -185,7 +185,7 @@
                 <div class="slider" id="carouselContent">
                     <div class="slider_box">
                         <div class="slider_img">
-                            <img src="../image/imvBook/thienthanacquy.jpg" title="Thiên thần, ác quỷ"/>
+                            <img src="../image/imvBook/thienthanacquy.jpg" title="Thiên thần, ác quỷ" />
                         </div>
                         <div class="img_detail">
                             <a href="#" class="title"><p>Thiên thần, ác quỷ</p> </a>
@@ -194,7 +194,7 @@
                     </div>
                     <div class="slider_box">
                         <div class="slider_img">
-                            <img src="../image/imvBook/dapancuathoigian.jpg" title="Đáp án của thời gian"/>
+                            <img src="../image/imvBook/dapancuathoigian.jpg" title="Đáp án của thời gian" />
                         </div>
                         <div class="img_detail">
                             <a href="#" class="title"><p>Đáp án của thời gian</p> </a>
@@ -203,7 +203,7 @@
                     </div>
                     <div class="slider_box">
                         <div class="slider_img">
-                            <img src="../image/imvBook/truockhinhammat.jpg" title="Trước khi nhắm mắt"/>
+                            <img src="../image/imvBook/truockhinhammat.jpg" title="Trước khi nhắm mắt" />
                         </div>
                         <div class="img_detail">
                             <a href="#" class="title"><p>Trước khi nhắm mắt</p> </a>
@@ -212,7 +212,7 @@
                     </div>
                     <div class="slider_box">
                         <div class="slider_img">
-                            <img src="../image/imvBook/harrypotter.jpg" title="Harry Potter"/>
+                            <img src="../image/imvBook/harrypotter.jpg" title="Harry Potter" />
                         </div>
                         <div class="img_detail">
                             <a href="#" class="title"><p>Harry Potter</p> </a>
@@ -221,7 +221,7 @@
                     </div>
                     <div class="slider_box">
                         <div class="slider_img">
-                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn"/>
+                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
                             <a href="#" class="title"><p>Suối nguồn</p> </a>
@@ -230,7 +230,7 @@
                     </div>
                     <div class="slider_box">
                         <div class="slider_img">
-                            <img src="../image/imvBook/truockhinhammat.jpg" title="Tiếng chim hót trong bụi mận gai"/>
+                            <img src="../image/imvBook/truockhinhammat.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
                             <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
@@ -274,7 +274,7 @@
                     </div>
                     <div class="slider_box">
                         <div class="slider_img">
-                            <img src="../image/imvBook/chuchokhongnha.png"  title="Chú chó không nhà"/>
+                            <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
                         </div>
                         <div class="img_detail">
                             <a href="#" class="title"><p>Chú chó không nhà</p> </a>
@@ -283,7 +283,7 @@
                     </div>
                     <div class="slider_box">
                         <div class="slider_img">
-                            <img src="../image/imvBook/laohac.jpg"  title="Lão Hạc"/>
+                            <img src="../image/imvBook/laohac.jpg" title="Lão Hạc" />
                         </div>
                         <div class="img_detail">
                             <a href="#" class="title"><p>Lão Hạc</p> </a>
@@ -314,7 +314,7 @@
                             <td>
                                 <div class="slider_box first" style="margin-bottom: 20px;">
                                     <div class="slider_img">
-                                        <img src="../image/imvBook/matbiec.png" title="Mắt biếc"/>
+                                        <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
                                     </div>
                                     <div class="img_detail">
                                         <a href="#" class="title"><p>Mắt Biếc</p> </a>
@@ -324,7 +324,7 @@
                             <td>
                                 <div class="slider_box first" style="margin-bottom: 20px;">
                                     <div class="slider_img">
-                                        <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua"/>
+                                        <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
                                     </div>
                                     <div class="img_detail">
                                         <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
@@ -336,7 +336,7 @@
                             <td>
                                 <div class="slider_box first">
                                     <div class="slider_img">
-                                        <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh"/>
+                                        <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
                                     </div>
                                     <div class="img_detail">
                                         <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
@@ -346,7 +346,7 @@
                             <td>
                                 <div class="slider_box first">
                                     <div class="slider_img">
-                                        <img src="../image/imvBook/chotoixinmotvedituoitho.png"  title="Cho tôi xin một vé đi tuổi thơ"/>
+                                        <img src="../image/imvBook/chotoixinmotvedituoitho.png" title="Cho tôi xin một vé đi tuổi thơ" />
                                     </div>
                                     <div class="img_detail">
                                         <a href="#" class="title"><p>Cho tôi xin một vé đi tuổi thơ</p> </a>
@@ -359,6 +359,981 @@
                 </div>
             </div>
         </div>
+
+
+
+        <div id="tv_dl" class="content" data-tab-content>
+            <p style="font-size:20px; font-weight:bold; text-align:center;">Thiên văn - Địa lý</p>
+            <div class="plot">
+                <div class="splot_sach">
+
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <p class="author">Ayn Rand</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <p class="author">Colleen McCulough</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <p class="author">Sarah Lean</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <p class="author">Vãn Tình</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="vl_cn" class="content" data-tab-content>
+            <p style="font-size:20px; font-weight:bold; text-align:center;">Vật lý - Công nghệ</p>
+            <div class="plot">
+                <div class="splot_sach">
+
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <p class="author">Ayn Rand</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <p class="author">Colleen McCulough</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <p class="author">Sarah Lean</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <p class="author">Vãn Tình</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tc" class="content" data-tab-content>
+            <p style="font-size:20px; font-weight:bold; text-align:center;">Tình cảm</p>
+            <div class="plot">
+                <div class="splot_sach">
+
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <p class="author">Ayn Rand</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <p class="author">Colleen McCulough</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <p class="author">Sarah Lean</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <p class="author">Vãn Tình</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tt" class="content" data-tab-content>
+            <p style="font-size:20px; font-weight:bold; text-align:center;">Trinh thám</p>
+            <div class="plot">
+                <div class="splot_sach">
+
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <p class="author">Ayn Rand</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <p class="author">Colleen McCulough</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <p class="author">Sarah Lean</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <p class="author">Vãn Tình</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="kd" class="content" data-tab-content>
+            <p style="font-size:20px; font-weight:bold; text-align:center;">Kinh dị</p>
+            <div class="plot">
+                <div class="splot_sach">
+
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <p class="author">Ayn Rand</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <p class="author">Colleen McCulough</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <p class="author">Sarah Lean</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <p class="author">Vãn Tình</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="vt" class="content" data-tab-content>
+            <p style="font-size:20px; font-weight:bold; text-align:center;">Viễn tưởng</p>
+            <div class="plot">
+                <div class="splot_sach">
+
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <p class="author">Ayn Rand</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <p class="author">Colleen McCulough</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <p class="author">Sarah Lean</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <p class="author">Vãn Tình</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="t" class="content" data-tab-content>
+            <p style="font-size:20px; font-weight:bold; text-align:center;">Thơ</p>
+            <div class="plot">
+                <div class="splot_sach">
+
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <p class="author">Ayn Rand</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <p class="author">Colleen McCulough</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <p class="author">Sarah Lean</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <p class="author">Vãn Tình</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pt" class="content" data-tab-content>
+            <p style="font-size:20px; font-weight:bold; text-align:center;">Phương tây</p>
+            <div class="plot">
+                <div class="splot_sach">
+
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <p class="author">Ayn Rand</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <p class="author">Colleen McCulough</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <p class="author">Sarah Lean</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <p class="author">Vãn Tình</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tl" class="content" data-tab-content>
+            <p style="font-size:20px; font-weight:bold; text-align:center;">Tâm lý</p>
+            <div class="plot">
+                <div class="splot_sach">
+
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <p class="author">Ayn Rand</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <p class="author">Colleen McCulough</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <p class="author">Sarah Lean</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <p class="author">Vãn Tình</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="n_sao" class="content" data-tab-content>
+            <p style="font-size:20px; font-weight:bold; text-align:center;">5 sao</p>
+            <div class="plot">
+                <div class="splot_sach">
+
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <p class="author">Ayn Rand</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <p class="author">Colleen McCulough</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <p class="author">Sarah Lean</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <p class="author">Vãn Tình</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="b_sao" class="content" data-tab-content>
+            <p style="font-size:20px; font-weight:bold; text-align:center;">Từ 4 sao</p>
+            <div class="plot">
+                <div class="splot_sach">
+
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <p class="author">Ayn Rand</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <p class="author">Colleen McCulough</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <p class="author">Sarah Lean</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <p class="author">Vãn Tình</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ba_sao" class="content" data-tab-content>
+            <p style="font-size:20px; font-weight:bold; text-align:center;">Từ 3 sao</p>
+            <div class="plot">
+                <div class="splot_sach">
+
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem" style="margin-bottom: 20px;">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <p class="author">Ayn Rand</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <p class="author">Nguyễn Nhật Ánh</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <p class="author">Colleen McCulough</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <p class="author">Sarah Lean</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <p class="author">Vãn Tình</p>
+                        </div>
+                    </div>
+                    <div class="slider_box myItem">
+                        <div class="slider_img">
+                            <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
+                        </div>
+                        <div class="img_detail">
+                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <p class="author">Tony Buổi Sáng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
     <section class="slogan" id="logan" style="background-color: #487B72; height:50px;text-align:center; margin-top:50px">
@@ -426,6 +1401,21 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        const tabs = document.querySelectorAll('[data-tab-target]')
+        const tabContent = document.querySelectorAll('[data-tab-content]')
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = document.querySelector(tab.dataset.tabTarget)
+                tabContent.forEach(tabContent => {
+                    tabContent.classList.remove('active')
+                })
+                target.classList.add('active')
+            })
+        })
+    </script>
     <!--DROP DOWN---->
     <script type="text/javascript" src="../js/Theloai.js"></script>
     <!--JS SliderQuote-->

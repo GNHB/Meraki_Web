@@ -22,12 +22,13 @@ body {
     font-size: 16px;
     background-color: #FEFAF4;
 }
+
 .theloai_body {
     width: 80%;
     margin: auto;
     align-content: center;
     align-self: center;
-    display:flex;
+    display: flex;
     flex-direction: row;
 }
 /*SIDEBAR*/
@@ -42,33 +43,37 @@ body {
     border-right: 1px solid black;
     margin-right: 5%;
 }
-.sidebar a, .dropdown_btn {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #818181;
-    display: block;
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-    color: black;
-    border: 1px solid black;
-}
+
+    .sidebar a, .dropdown_btn {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        color: black;
+        border: 1px solid black;
+    }
+
 .dropdown-container {
     display: block;
     text-decoration: none;
     background-color: var(--skin);
-    
 }
-.dropdown-container a{
-    border: none;
-}
+
+    .dropdown-container a {
+        border: none;
+    }
+
 .sidebar a:hover, .dropdown-btn:hover {
     color: var(--yellow);
 }
+
 .fa-caret-down {
     float: right;
     padding-right: 8px;
@@ -83,10 +88,11 @@ body {
     cursor: pointer;
     box-shadow: 2px 2px #888888;
 }
-.giamua_btn:hover {
-     background-color: var(--green);
-     color: white;
-}
+
+    .giamua_btn:hover {
+        background-color: var(--green);
+        color: white;
+    }
 
 /*---------------------------------------------THỂ LOẠI-----------------------------------------------------------------------------------------------/
 /*NỘI DUNG*/
@@ -96,16 +102,19 @@ body {
     width: 70%;
     /*float: right;*/
 }
-.content .slider {
-    max-width: 90%;
-    display: flex;
-    margin: 10px 20px 0;
-}
+
+    .content .slider {
+        max-width: 90%;
+        display: flex;
+        margin: 10px 20px 0;
+    }
+
 .slider_second {
     max-width: 85%;
     display: flex;
     margin: 10px 20px 0;
 }
+
 .content .wrap {
     display: flex;
     flex-direction: row;
@@ -113,6 +122,7 @@ body {
     position: relative;
     margin: 5px auto 5px auto;
 }
+
 .content .slider {
     width: 90%;
     margin: 5px auto 5px auto;
@@ -120,6 +130,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     align-items: center;*/
 }
+
 .content .slider_box {
     height: 285px;
     width: 160px;
@@ -127,29 +138,34 @@ body {
     background-color: var(--skin);
     align-items: center;
     cursor: pointer;
-    box-shadow: 0 1px 4px 1px  #aaa;
+    box-shadow: 0 1px 4px 1px #aaa;
     margin: 5px 7px 5px 7px;
 }
-.content .slider_box:hover .img_detail a {
-    color: var(--yellow);
-}
+
+    .content .slider_box:hover .img_detail a {
+        color: var(--yellow);
+    }
+
 .content .slider_img {
     border: 2px solid gray;
-    border-radius:10px;
+    border-radius: 10px;
     height: 80%;
     width: 95%;
     margin: 0 auto;
 }
-.content .slider_img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-sizing:border-box;
-    border-radius: 10px;
-}
+
+    .content .slider_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
 .content .slider_box:hover img {
     transform: translateY(3%);
 }
+
 .content .img_detail {
     width: 100%;
     margin: 0 auto;
@@ -157,12 +173,14 @@ body {
     margin-top: 5px;
     box-sizing: border-box;
 }
-.content .img_detail a{
-    text-decoration: none;
-    font-weight:500;
-    font-size: 16px;
-    color:black;
-}
+
+    .content .img_detail a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        color: black;
+    }
+
 .wrap .slider .slider_box .img_detail .title p {
     display: block;
     width: 160px;
@@ -175,24 +193,27 @@ body {
     white-space: nowrap;
     font-weight: bold;
 }
+
 .all {
     color: #487B72;
     font-size: 16px;
     text-align: right;
     margin-right: 5%;
 }
-    .author{
-        text-align:center;
-        font-size: 14px;
-    }
-    /*TAC GIA YEU THICH*/
-    .tac_gia_yeu_thich {
-        display: flex;
-        align-items: center;
-        margin: auto;
-        width: 90%;
-    }
-.sach_yeu_thich{
+
+.author {
+    text-align: center;
+    font-size: 14px;
+}
+/*TAC GIA YEU THICH*/
+.tac_gia_yeu_thich {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+}
+
+.sach_yeu_thich {
     width: 65%;
 }
 /*.sach_yeu_thich .slider_box{
@@ -208,27 +229,31 @@ body {
     width: 35%;
     margin-bottom: 20px;
 }
-.tac_gia .slider_box {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    background-color: var(--skin);
-}
-    .tac_gia .slider_box .slider_img{
-        height:85%;
+
+    .tac_gia .slider_box {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background-color: var(--skin);
     }
-    .tac_gia .slider_box p {
-        display: block;
-        width: 180px;
-        font-size: 18px;
-        font-weight: lighter;
-        text-align: center;
-        margin: auto;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        font-weight: bold;
-    }
+
+        .tac_gia .slider_box .slider_img {
+            height: 85%;
+        }
+
+        .tac_gia .slider_box p {
+            display: block;
+            width: 180px;
+            font-size: 18px;
+            font-weight: lighter;
+            text-align: center;
+            margin: auto;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
 .sach_yeu_thich .slider_box {
     margin: auto;
     height: 285px;
@@ -238,6 +263,7 @@ body {
     align-items: center;
     cursor: pointer;
 }
+
     .sach_yeu_thich .slider_box .title p {
         display: block;
         width: 160px;
@@ -250,13 +276,53 @@ body {
         white-space: nowrap;
         font-weight: bold;
     }
- 
-.first{
+
+.first {
     margin: auto;
 }
+
 table {
-   width: 100%;
+    width: 100%;
 }
+
+/*--------PLOT----------*/
+.plot {
+    height: 100%;
+    width: 100%;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.splot_sach {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.myItem {
+    flex: 2 0 21%; /* explanation below */
+    margin-left: 10px;
+}
+
+    .myItem .img_detail .title p {
+        display: block;
+        width: 160px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
 /*---------------------------------------------GIỎ HÀNG--------------------------------------------------------------------------------------------*/
 /*NỘI DUNG*/
 .giohang_body {
@@ -266,6 +332,7 @@ table {
     justify-content: center;
     align-items: center;
 }
+
 .list_item {
     float: left;
     width: 60%;
@@ -275,33 +342,36 @@ table {
     background-color: var(--light_skin);
     padding-top: 20px;
     margin-right: 5%;
-
 }
+
 .mo_ta {
     text-align: left;
-   
 }
-.list_item  table {
+
+.list_item table {
     width: 100%;
     margin-top: 10px;
     border-bottom: 1px solid black;
 }
+
 .list_item table, th, td {
     text-align: center;
 }
+
 .tbl_item .tbl_img {
     text-align: left;
 }
-.tbl_item .tbl_img img {
-    width: 117px;
-    height: 165px;
-    
-}
+
+    .tbl_item .tbl_img img {
+        width: 117px;
+        height: 165px;
+    }
 
 .tbl_item #soLuong {
     width: 40px;
 }
-.chi_tiet{
+
+.chi_tiet {
     vertical-align: bottom;
     text-decoration: underline;
     color: var(--green);
@@ -311,22 +381,23 @@ table {
 .tbl_item input {
     background-color: var(--green);
     color: white;
-    
 }
+
 .btnTiepTucMuaHang {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.btnTiepTucMuaHang button {
-    background-color: var(--green);
-    border-radius: 10px;
-    padding: 7px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    box-shadow: 2px 2px #888888;
-}
+
+    .btnTiepTucMuaHang button {
+        background-color: var(--green);
+        border-radius: 10px;
+        padding: 7px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        box-shadow: 2px 2px #888888;
+    }
 
 .thanh_tien_box {
     float: right;
@@ -342,6 +413,7 @@ table {
     border: 1px solid black;
     box-shadow: 2px 2px #888888;
 }
+
     .thanh_tien_box button {
         width: 60%;
         display: block;
@@ -352,30 +424,72 @@ table {
         margin-bottom: 5px;
         cursor: pointer;
         box-shadow: 2px 2px #888888;
-        
     }
-    .thanh_tien_box p{
+
+    .thanh_tien_box p {
         margin-bottom: 10px;
     }
+
     .thanh_tien_box span {
         width: 100%;
         margin: 20px;
     }
-.thanh_tien_box  td{
-   text-align: left;
-   padding: 5px 0 5px 20px;
-}
-.thanh_tien_box table{
-    margin-left: auto;
-  margin-right: auto;
-}
-#border_table td{
+
+    .thanh_tien_box td {
+        text-align: left;
+        padding: 5px 0 5px 20px;
+    }
+
+    .thanh_tien_box table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+#border_table td {
     border-bottom: 1px solid black;
     border-collapse: collapse;
     border-spacing: 0;
 }
 /*----------------------------------------RESPONSIVE------------------------------------------*/
 @media screen and (min-width: 901px) and (max-width: 1140px) {
+    .plot {
+        height: 100%;
+        width: 100%;
+    }
+
+    [data-tab-content] {
+        display: none;
+    }
+
+    .active[data-tab-content] {
+        display: block;
+    }
+
+    .splot_sach {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: right;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .myItem {
+        flex: 2 0 21%; /* explanation below */
+        margin-left: 10px;
+    }
+
+        .myItem .img_detail .title p {
+            display: block;
+            width: 160px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 5px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
     .wrap .slider .slider_box .img_detail p {
         display: block;
         width: 120px;
@@ -418,11 +532,51 @@ table {
         margin: auto;
         width: 90%;
     }
+
     .content .slider_box {
         margin: 5px 7px 5px 7px;
     }
 }
+
 @media screen and (min-width: 501px) and (max-width: 900px) {
+    .plot {
+        height: 100%;
+        width: 100%;
+    }
+
+    [data-tab-content] {
+        display: none;
+    }
+
+    .active[data-tab-content] {
+        display: block;
+    }
+
+    .splot_sach {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: right;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .myItem {
+        flex: 2 0 21%; /* explanation below */
+        margin-left: 10px;
+    }
+
+        .myItem .img_detail .title p {
+            display: block;
+            width: 160px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 5px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
     .sidebar {
         display: block;
         margin: auto;
@@ -511,14 +665,55 @@ table {
         overflow: hidden;
         white-space: nowrap;
     }
+
     .content .slider_box {
         margin: 5px 10px 5px 10px;
     }
 }
+
 @media screen and (max-width: 500px) {
-    body{
-        font-size:14px;
+    .plot {
+        height: 100%;
+        width: 100%;
     }
+
+    [data-tab-content] {
+        display: none;
+    }
+
+    .active[data-tab-content] {
+        display: block;
+    }
+
+    .splot_sach {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: right;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .myItem {
+        flex: 2 0 21%; /* explanation below */
+        margin-left: 10px;
+    }
+
+        .myItem .img_detail .title p {
+            display: block;
+            width: 160px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 5px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+    body {
+        font-size: 14px;
+    }
+
     .sidebar {
         display: block;
         margin: auto;
@@ -558,11 +753,12 @@ table {
         width: 120px;
         font-size: 12px;
         font-weight: lighter;
-        margin:auto;
+        margin: auto;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
     }
+
     .content .slider_box {
         height: 240px;
         width: 140px;
@@ -579,10 +775,11 @@ table {
 
     .tac_gia {
         width: 70%;
-        height:300px;
+        height: 300px;
         margin: auto;
         display: block;
     }
+
     #tac_gia_box {
         width: 90%;
         height: 300px;
@@ -604,9 +801,11 @@ table {
         margin: auto;
         width: 90%;
     }
-    .tac_gia .title{
-        font-size:14px;
+
+    .tac_gia .title {
+        font-size: 14px;
     }
+
     .sach_yeu_thich .img_detail p {
         display: block;
         width: 120px;
@@ -619,5 +818,3 @@ table {
         white-space: nowrap;
     }
 }
-
-
