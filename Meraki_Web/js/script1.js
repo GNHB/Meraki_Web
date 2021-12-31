@@ -7,7 +7,7 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
     autoplay: {
-        delay: 9500,
+        delay: 4500,
         disableOnInteraction: false,
     },
 });
@@ -121,7 +121,7 @@ const productList2 = document.querySelector('.cs-hidden2');
 const productList3 = document.querySelector('.cs-hidden3');
 const productList4 = document.querySelector('.cs-hidden4');
 const productList5 = document.querySelector('.cs-hidden5');
-const productList6 = document.querySelector('.cs-hidden6');
+/*const productList6 = document.querySelector('.cs-hidden6');*/
 eventListeners();
 
 function eventListeners() {
@@ -148,7 +148,10 @@ function loadJSON() {
                             <img src="${product.imgSrc}" alt = "product image" />
                         </div>
                         <div class="box_tittle">
-                            <p style="font-size:16px"><strong>${product.name}</strong></p>
+                            <a href="DetailBook.html" style="color: black;text-decoration:none;">
+                                <p style="font-size:16px"><strong>${product.name}</strong></p>
+                            </a>
+                            
                             <p style="font-size:14px">${product.Author}</p>
                         </div>
                     </div>
@@ -161,10 +164,10 @@ function loadJSON() {
             productList3.innerHTML = html;
             productList4.innerHTML = html;
             productList5.innerHTML = html;
-            productList6.innerHTML = html;
+          
         })
-        .catch(error => {
-            alert(`User live server or local server`);
+        //.catch(error => {
+        //    alert(`User live server or local server`);
             //URL scheme must be "http" or "https" for CORS request. You need to be serving your index.html locally or have your site hosted on a live server somewhere for the Fetch API to work properly.
-        });
+     
 }

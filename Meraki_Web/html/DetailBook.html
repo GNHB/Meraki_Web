@@ -24,7 +24,7 @@
     <!--Navigation bar-->
     <input type="checkbox" id="check" />
     <nav>
-        <a href="#">
+        <a href="index.html">
             <img class="logo" src="../image/imvBanner/logo.png" />
         </a>
         <div class="help_me">
@@ -40,9 +40,9 @@
                 </div>
             </div>
             <ol>
-                <li><a href="#">Thể loại</a></li>
-                <li><a href="#">Xếp hạng</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="TheLoai.html">Thể loại</a></li>
+                <li><a href="BookChart2.html">Xếp hạng</a></li>
+                <li><a href="Blog.html">Blog</a></li>
             </ol>
         </div>
         <label for="check" class="bar">
@@ -98,7 +98,7 @@
 
                         </div>
                     </div>
-                    <button type="button" name="doc" class="move_btn">Đọc thử</button>
+                    <button type="button" name="doc" class="move_btn" onclick="Open()">Đọc thử</button>
                 </div>
 
             </div>
@@ -209,9 +209,6 @@
                         </tr>
                     </table>
                 </div>
-
-
-
                 <div class="purchase-info">
                     <input type="number" min="0" value="1">
 
@@ -321,7 +318,11 @@
 
     <section class="listbook" id="listbook">
         <h1 class="listbook-heading"> Các tác phẩm liên quan</h1>
-        <div class="swiper mySwiper">
+        <a href="Newbooks.html" style="text-decoration:none">
+            <p align="right" class="all" >XEM TẤT CẢ</p>
+        </a>
+     
+        <div class="swiper mySwiper2">
             <div class="swiper-wrapper cs-hidden">
 
 
@@ -538,14 +539,14 @@
     <script src="../js/detailstyle.js"></script>
     <script src="../js/script1.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".mySwiper2", {
             spaceBetween: 10,
             loop: true,
             centeredSlides: true,
-            autoplay: {
-                delay: 9500,
-                disableOnInteraction: false,
-            },
+            //autoplay: {
+            //    delay: 9500,
+            //    disableOnInteraction: true,
+            //},
             navigation: {
                 nextEl: ".swiper-next",
                 prevEl: ".swiper-prev",
@@ -565,6 +566,11 @@
                 },
             },
         });
+
+        function Open() {
+            window.open("https://www.dtv-ebook.com/doconline.php?hash=ODU3OQ==#epubcfi(/6/4[C0]!4/2/1:0)")
+        }
+        
     </script>
 </body>
     </html>

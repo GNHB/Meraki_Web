@@ -140,6 +140,14 @@
     <Content Include="image\imvAuthor\khach2.png" />
     <Content Include="image\imvAuthor\khach3.png" />
     <Content Include="image\imvBanner\banner %281%29.jpg" />
+    <Content Include="image\imvBanner\Banner01.png" />
+    <Content Include="image\imvBanner\banner02.jpg" />
+    <Content Include="image\imvBanner\banner03.jpg" />
+    <Content Include="image\imvBanner\banner04.jpg" />
+    <Content Include="image\imvBanner\banner05.jpg" />
+    <Content Include="image\imvBanner\banner06.jpg" />
+    <Content Include="image\imvBanner\banner07.jpg" />
+    <Content Include="image\imvBanner\banner08.jpg" />
     <Content Include="image\imvBanner\banner3.jpg" />
     <Content Include="image\imvBanner\banner5.jpg" />
     <Content Include="image\imvBanner\bg_aboutMeraki.png" />
