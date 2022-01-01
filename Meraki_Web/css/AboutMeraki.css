@@ -15,7 +15,8 @@
 
 body {
     background: var(--light_skin);
-    text-transform: uppercase;
+    text-transform: none;
+    line-height:1.5;
 }
 
 .container_about {
@@ -45,6 +46,18 @@ hr {
 .about {
     margin-top: 2em;
 }
+
+.demo {
+    text-transform: uppercase;
+}
+
+.demo tr td{
+    padding:10px;
+}
+
+    .demo tr {
+        padding: 10px;
+    }
 
 .header {
     font-size: 1.35rem;
@@ -94,6 +107,11 @@ hr {
     margin: auto;
     text-transform: none;
     line-height: 1.5;
+    transition: all .2s ease-in-out;
+}
+
+.content_1:hover{
+    transform: scale(1.1);
 }
 
 .circle {
@@ -169,6 +187,14 @@ table{
     margin-right:10px;
 }
 
+.text_1 {
+    background: var(--skin);
+    padding: 1em 1.5em;
+    font-size: 1em;
+    margin-top: 0.5em;
+    text-transform: none;
+}
+
 name[type='tittle_memberName'] {
     color:var(--green);
     font-weight: bold;
@@ -184,31 +210,26 @@ name[color='green'] {
     }
 
     .container_vision {
-        display: flex;
+        display: block;
         flex-direction: row;
         width: 100%;
-        margin-top: 1em;
-        margin: 0 1em;
     }
-
-    .content_1 {
-        margin: 0 0.2em;
-    }
-
     .bg_about {
         width: 100%;
         height: 100%;
     }
 
+    .content_1{
+        margin-top:1em;
+    }
+
     .circle {
         border-radius: 1.5em;
         width: 70%;
-        top: 5%;
     }
 
     .circle_2 {
         border-radius: 1.5em;
         width: 70%;
-        top: 5%;
     }
 }
