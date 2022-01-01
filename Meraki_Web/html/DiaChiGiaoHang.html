@@ -52,7 +52,7 @@
                     </tr>
                     <tr>
                         <th><strong>Số điện thoại</strong></th>
-                        <td><input type="tel" name="phone" id="phone" maxlength="11" required /></td>
+                        <td><input type="tel" name="phone" id="phone" maxlength="11" required onkeypress="isInputNumber(event)"/></td>
                     </tr>
                     <tr>
                         <th><strong>Tỉnh/Thành phố</strong></th>
@@ -90,6 +90,18 @@
     </button>
 
     <!--Add data to table-->
+    <script type="text/javascript">
+        function isInputNumber(evt) {
+
+            var ch = String.fromCharCode(evt.which);
+
+            if (!(/[0-9]/.test(ch))) {
+                evt.preventDefault();
+                alert("Xin nhập Số điện thoại");
+            }
+
+        }
+    </script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
     <script type="text/javascript" src="../js/DiaChiGiaoHang.js"></script>
 </body>
