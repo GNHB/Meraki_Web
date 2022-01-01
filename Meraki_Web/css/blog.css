@@ -35,15 +35,16 @@
     display:flex;
     justify-content:space-between;
 }
-.banner-col{
-    cursor:pointer;
-    flex-basis:31%;
+.banner-col {
+    cursor: pointer;
+    flex-basis: 31%;
     background: var(--skin);
     border-radius: 10px;
-    margin-bottom:5%;
+    margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
-    transition:0.5s;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
     .banner-col h3 {
         color: var(--green);
@@ -106,6 +107,7 @@
     margin-bottom: 5%;
     background-color: var(--skin);
     text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
     .col img {
         width: 100%;
@@ -184,6 +186,7 @@ hr {
     border-radius: 6px;
     overflow: hidden;
     width: 85%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
     .small-img-row:hover {
         box-shadow: 0 0 20px 0px #F7BB34;
@@ -303,9 +306,9 @@ detail*/
         font-weight: bold;
         font-size: 20px;
     }
-    .tab-pane img {
+/*    .tab-pane img {
         width: 100px;
-    }
+    }*/
 .flex-grow-1 {
     font-size: 14px;
     margin:30px;
@@ -354,7 +357,7 @@ detail*/
         width: 0;
         height: 6px;
         border-radius: 15px;
-        background-color: var(--green);
+        background-color: var(--yellow);
         transition: all 0.2s ease;
     }
 
@@ -363,8 +366,8 @@ detail*/
     padding: 10px 20px 10px 20px;
     font-size: 16px;
     text-align: center;
-    color: var(--green);
-    background-color: #fff;
+    color: white;
+    background-color: var(--green);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom: 5px solid transparent;
@@ -447,21 +450,6 @@ detail*/
     font-weight: bold;
 }
 
-
-
-
-    .product-title::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 4px;
-        width: 80px;
-        background: #12263a;
-    }
-
-
-
 .product-price {
     margin: 1rem 0;
     font-size: 1rem;
@@ -473,6 +461,7 @@ detail*/
     }
 del {
     text-decoration: line-through;
+    font-size:16px;
 }
 
 

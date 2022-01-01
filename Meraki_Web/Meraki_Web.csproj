@@ -136,6 +136,7 @@
     <Content Include="image\imvAdmin\notification.png" />
     <Content Include="image\imvAdmin\visibility.png" />
     <Content Include="image\imvAuthor\annrand.jpg" />
+    <Content Include="image\imvAuthor\J.K.Rowling.png" />
     <Content Include="image\imvAuthor\khach1.png" />
     <Content Include="image\imvAuthor\khach2.png" />
     <Content Include="image\imvAuthor\khach3.png" />
@@ -152,6 +153,7 @@
     <Content Include="image\imvBanner\banner5.jpg" />
     <Content Include="image\imvBanner\bg_aboutMeraki.png" />
     <Content Include="image\imvBanner\blog %282%29.png" />
+    <Content Include="image\imvBanner\BN2.jpg" />
     <Content Include="image\imvBanner\IU.jpg" />
     <Content Include="image\imvBanner\Lam-ban-voi-bau-troi-reviewsachonly.jpg" />
     <Content Include="image\imvBanner\logo.png" />
