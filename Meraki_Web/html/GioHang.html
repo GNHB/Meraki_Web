@@ -13,7 +13,7 @@
 
 
 </head>
-<body style="font-family: Arial; font-size: 16px; background-color: #FEFAF4;">
+<body style="font-family: Arial; font-size: 16px; background-color: #FEFAF4;" onload="sum1(), sum2(), sum()">
     <!--Navigation bar-->
     <input type="checkbox" id="check" />
     <nav>
@@ -27,15 +27,15 @@
                     <span><a href="#"><img class="search_icon" src="../image/imvIcon/icon_search.png" /></a></span>
                 </div>
                 <div class="icon">
-                    <a href="#"><img id="vip_icon" src="../image/imvIcon/icon_vip.png" /></a>
-                    <a href="#"><img id="cart_icon" src="../image/imvIcon/icon_card_fontbar.png" /></a>
-                    <a href="#"><img id="user_icon" src="../image/imvIcon/icon_user.png" /></a>
+                    <a href="../html/VIP.html"><img id="vip_icon" src="../image/imvIcon/icon_vip.png" /></a>
+                    <a href="../html/GioHang.html"><img id="cart_icon" src="../image/imvIcon/icon_card_fontbar.png" /></a>
+                    <a href="../html/OrderManagement.html"><img id="user_icon" src="../image/imvIcon/icon_user.png" /></a>
                 </div>
             </div>
             <ol>
-                <li><a href="#">Thể loại</a></li>
-                <li><a href="#">Xếp hạng</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="../html/TheLoai.html">Thể loại</a></li>
+                <li><a href="../html/BookChart.html">Xếp hạng</a></li>
+                <li><a href="../html/Blog.html">Blog</a></li>
             </ol>
         </div>
         <label for="check" class="bar">
@@ -51,7 +51,7 @@
             <div class="item" style="border-top: 1px solid black;">
                 <p style="margin-top: 10px;"><strong>Truyện Kiều</strong> </p>
                 <p style="font-size: 14px;"> Nguyễn Du</p>
-                <table class="tbl_item">
+                <table class="tbl_item" id="tbl1">
                     <tr>
                         <td class="tbl_img" rowspan="3"><img src="../image/imvBook/truyenkieu.jpg" /></td>
                         <td class="mo_ta" style=" vertical-align: bottom;"> <p><strong>Bìa:</strong> cứng </p> </td>
@@ -61,9 +61,9 @@
                     </tr>
                     <tr>
                         <td class="mo_ta"> <p><strong>Nhà XB:</strong> NXB Kim Đồng </p> </td>
-                        <td class="gia">40.000đ</td>
-                        <td class="soluong"><span> <input min="0" type="number" id="soLuong" name="soLuong" /></span></td>
-                        <td class="tong">40.000đ</td>
+                        <td><input type="hidden"  id="gia1" value="40000" readonly />40.000đ</td>
+                        <td class="soluong"><span> <input min="0" type="number" class="soLuong" id="soLuong1" value="1" onchange="sum1(), sum()"/></span></td>
+                        <td><input class="tongunit" id="tong1"  readonly /></td>
                     </tr>
                     <tr>
                         <td class="mo_ta" style=" vertical-align: top;"> <p><strong>Mã số seri:</strong> 123 </p> </td>
@@ -74,7 +74,7 @@
             <div class="item">
                 <p style="margin-top: 10px;"><strong>Kỳ án ánh trăng</strong> </p>
                 <p style="font-size: 14px;"> Quỷ Cổ Nữ</p>
-                <table class="tbl_item">
+                <table class="tbl_item" id="tbl2">
                     <tr>
                         <td class="tbl_img" rowspan="3"><img src="../image/imvBook/kyananhtrang.jpg" /></td>
                         <td class="mo_ta" style=" vertical-align: bottom;"> <p><strong>Bìa:</strong> cứng </p> </td>
@@ -84,9 +84,9 @@
                     </tr>
                     <tr>
                         <td class="mo_ta"> <p><strong>Nhà XB:</strong> NXB Kim Đồng </p> </td>
-                        <td>40.000đ</td>
-                        <td><span> <input min="0" type="number" id="soLuong" name="soLuong" /></span></td>
-                        <td>40.000đ</td>
+                        <td><input type="hidden"  id="gia2" value="45000" readonly/>45000đ</td>
+                        <td><span> <input min="0" type="number" class="soLuong" id="soLuong2" value="1" onchange="sum2(), sum()" /></span></td>
+                        <td><input class="tongunit"   id="tong2" readonly /></td>
                     </tr>
                     <tr>
                         <td class="mo_ta" style=" vertical-align: top;"> <p><strong>Mã số seri:</strong>: 123 </p> </td>
@@ -103,7 +103,7 @@
             <table>
                 <tr>
                     <td>Tổng đơn hàng: </td>
-                    <td>80.000 </td>
+                    <td><input class="tongunit" id="tongTien" readonly /></td>
                 </tr>
                 <tr id="border_table">
                     <td>Giảm giá </td>
@@ -111,7 +111,7 @@
                 </tr>
                 <tr>
                     <td style="font-weight: 600;">Thành tiền </td>
-                    <td style="font-weight: 600;">80.000 </td>
+                    <td style="font-weight: 600;"><input class="tongunit" id="tongThanhToan" readonly /> </td>
                 </tr>
             </table>
             <button> Thanh toán</button>
@@ -182,5 +182,36 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        function sum1() {
+            var gia = parseFloat(document.getElementById("gia1").value);
+            var unit = parseFloat(document.getElementById("soLuong1").value);
+            var sum = gia * unit;
+            document.getElementById("tong1").value = sum + " đ";
+
+            return sum;
+        }
+
+        function sum2() {
+            var gia = parseFloat(document.getElementById("gia2").value);
+            var unit = parseFloat(document.getElementById("soLuong2").value);
+            var sum = gia * unit;
+            document.getElementById("tong2").value = sum + " đ";
+            return sum;
+        }
+
+        function sum() {
+            var gia1 = parseFloat(document.getElementById("gia1").value);
+            var unit1 = parseFloat(document.getElementById("soLuong1").value);
+            var gia2 = parseFloat(document.getElementById("gia2").value);
+            var unit2 = parseFloat(document.getElementById("soLuong2").value);
+            var sum = gia1 * unit1 + gia2 * unit2;
+
+            document.getElementById("tongTien").value = sum + " đ";
+            document.getElementById("tongThanhToan").value = sum + " đ";
+
+        }
+    </script>
 </body>
 </html>
