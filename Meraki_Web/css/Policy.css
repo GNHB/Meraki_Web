@@ -109,8 +109,8 @@ td{
     vertical-align:text-top;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 500px) {
     .container_policy {
-        margin: 10% 1em 10% 1em;
+        margin: 10% 0;
     }
 }

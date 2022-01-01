@@ -117,6 +117,7 @@
     <Content Include="html\Newbooks.html" />
     <Content Include="html\OrderManagement.html" />
     <Content Include="html\TheLoai.html" />
+    <Content Include="html\Tutorial.html" />
     <Content Include="html\VIP.html" />
     <Content Include="image\imvAdmin\add.png" />
     <Content Include="image\imvAdmin\alert.png" />
