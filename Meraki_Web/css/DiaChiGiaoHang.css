@@ -111,6 +111,13 @@ nav img.logo {
     height: 46px;
 }
 
+#title {
+    font-size: 28px;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .DiaChi_body {
     width: 80%;
     margin: auto;
@@ -200,4 +207,60 @@ nav img.logo {
             padding: 10px;
         }
 
-
+@media screen and (max-width: 900px){
+    *{
+        font-size:14px;
+    }
+    .DiaChi_body{
+        width:95%;
+        flex-direction:column;
+    }
+    .show{
+        width: 100%;
+    }
+    .myTable {
+        width: 80%;
+        margin: auto;
+    }
+    .DiaChi_info{
+        width:100%;
+    }
+    .form table input{
+        display:block;
+    }
+}
+@media screen and (max-width: 500px){
+    #title{
+        font-size:20px;
+    }
+    .nav_content{
+        flex-direction:column;
+        width:95%;
+    }
+    nav img.logo {
+        height: 35px;
+        width: 64px;
+    }
+    #a {
+        width:70px;
+        height:70px;
+    }
+    #target {
+        width: 70px;
+        height: 70px;
+    }
+    .phone{
+        height:18px;
+        background-color: var(--light_skin);
+        color: var(--yellow);
+        width:100%;
+        text-align:right;
+    }
+    .progress_container{
+        display:inline-block;
+        width:100%;
+    }
+        .progress_container li {
+            font-size: 14px;
+        }
+}

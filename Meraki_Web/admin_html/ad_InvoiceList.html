@@ -8,6 +8,7 @@
     <title>DANH SÁCH ĐƠN HÀNG</title>
     <!---------------------------------------------my content css---------------------------------------->
     <link rel="stylesheet" type="text/css" href="../admin_css/ad_OrderList.css" />
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_InvoiceList.css" />
 
     <!-----------------------------------------sidebar + header css-------------------------------------->
     <link rel="stylesheet" type="text/css" href="../admin_css/ad_sidebar.css" />
@@ -49,7 +50,7 @@
         <!--------------------------HEADER-------------------------->
         <div class="header">
             <a class="title">Danh sách hóa đơn</a>
-            <div style="display:flex;">
+            <div style="display:flex;"  class="user">
                 <a href="#"><i class="far fa-bell"></i></a>
                 <p>Hoài Vi</p>
             </div>
@@ -61,66 +62,69 @@
                 <span><a href="#"><i class="fas fa-search"></i></a></span>
             </div>
             <div class="information">
+                <hr style="width: 100%; height: 1px; background-color: black; vertical-align:middle; margin-top:10px; margin-bottom:15px;" />
                 <table class="myTable">
-                    <tr>
-                        <td colspan="6"><hr style="width: 100%; height: 1px; background-color: black; vertical-align:middle; margin-top:10px; margin-bottom:15px;" /></td>
-                    </tr>
-                    <tr>
-                        <th>ID hóa đơn</th>
-                        <th>Tên khách hàng</th>
-                        <th>ID Khách hàng</th>
-                        <th>Ngày xuất</th>
-                        <th>Tổng tiền</th>
-                        <th>Hành động</th>
-                    </tr>
-                    <tr>
-                        <td>15451</td>
-                        <td>Nguyễn Văn Tân</td>
-                        <td>001</td>
-                        <td>19/02/2021</td>
-                        <td>40000</td>
-                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td>15452</td>
-                        <td>Sherlock Holmes</td>
-                        <td>002</td>
-                        <td>17/03/2021</td>
-                        <td>40000</td>
-                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td>15453</td>
-                        <td>Nguyễn Bảo Ngọc</td>
-                        <td>003</td>
-                        <td>19/05/2021</td>
-                        <td>130000</td>
-                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td>15454</td>
-                        <td>Trần Ngọc Hoàng</td>
-                        <td>004</td>
-                        <td>17/05/2021</td>
-                        <td>400000</td>
-                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td>15455</td>
-                        <td>Nguyễn Thị Diu</td>
-                        <td>005</td>
-                        <td>19/06/2021</td>
-                        <td>340000</td>
-                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td>15456</td>
-                        <td>Tạ Thúy Loan</td>
-                        <td>006</td>
-                        <td>17/03/2021</td>
-                        <td>540000</td>
-                        <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>ID hóa đơn</th>
+                            <th>Tên khách hàng</th>
+                            <th>ID Khách hàng</th>
+                            <th>Ngày xuất</th>
+                            <th>Tổng tiền</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15451</td>
+                            <td>Nguyễn Văn Tân</td>
+                            <td>001</td>
+                            <td>19/02/2021</td>
+                            <td>40000</td>
+                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td>15452</td>
+                            <td>Sherlock Holmes</td>
+                            <td>002</td>
+                            <td>17/03/2021</td>
+                            <td>40000</td>
+                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td>15453</td>
+                            <td>Nguyễn Bảo Ngọc</td>
+                            <td>003</td>
+                            <td>19/05/2021</td>
+                            <td>130000</td>
+                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td>15454</td>
+                            <td>Trần Ngọc Hoàng</td>
+                            <td>004</td>
+                            <td>17/05/2021</td>
+                            <td>400000</td>
+                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td>15455</td>
+                            <td>Nguyễn Thị Diu</td>
+                            <td>005</td>
+                            <td>19/06/2021</td>
+                            <td>340000</td>
+                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td>15456</td>
+                            <td>Tạ Thúy Loan</td>
+                            <td>006</td>
+                            <td>17/03/2021</td>
+                            <td>540000</td>
+                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                    </tbody>
+                   
                 </table>
             </div>
         </div>

@@ -20,6 +20,11 @@
 </head>
 <body class="mybody">
     <!---------------------------SIDEBAR-------------------------->
+    <input type="checkbox" id="check" />
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
     <div class="sidebar">
         <div class="logo">
             <img src="../image/imvBanner/logo.png" width="100" height="70" />
@@ -49,7 +54,7 @@
         <!--------------------------HEADER-------------------------->
         <div class="header">
             <a class="title">Danh mục</a>
-            <div style="display:flex;">
+            <div style="display:flex;" class="user">
                 <a href="#"><i class="far fa-bell"></i></a>
                 <p>Hoài Vi</p>
             </div>
@@ -78,14 +83,14 @@
                             <div class="search_box">
                                 <input type="search" placeholder="search" id="search" />
                                 <span><a href="#"><img class="search_icon" src="../image/imvIcon/icon_search.png" /></a></span>
-                            </div>                     
+                            </div>
                             <select id="filterlist" onchange="myFunction()" class="form-control" style="width: 150px; background-color: #F7BB34;">
                                 <option ng-click="orderBy = 'title'">Tất cả</option>
                                 <option ng-click="sort('author')">Đã giao</option>
                                 <option ng-click="sort('')">Đang giao</option>
                                 <option ng-click="sort('')">Chưa giao</option>
-                            </select>                        
-                    </div>
+                            </select>
+                        </div>
                         <div class="row">
                             <div class="table-2">
                                 <div class="table-body">
@@ -147,15 +152,15 @@
 
                             </div>
                         </div>
-                        
+
 
                     </div>
                 </div>
             </div>
-           
+
         </div>
 
-
+    </div>
 
 
 

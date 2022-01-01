@@ -106,7 +106,7 @@ app.controller("BookController", function ($scope) {
         },
         {
             "cover": "../image/imvBook/phiasaunghicanx.png",
-            "title": "Phía sau nghi can x",
+            "title": "Phía sau nghi can X",
             "author": "Keigo Higashino"
         }
     ]

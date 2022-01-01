@@ -5,9 +5,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DANH SÁCH NGƯỜI DÙNG</title>
+    <title>CHI TIẾT HÓA ĐƠN</title>
     <!---------------------------------------------my content css---------------------------------------->
-    <link rel="stylesheet" type="text/css" href="../admin_css/ad_UserReview.css" />
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_OrderList.css" />
+    <link rel="stylesheet" type="text/css" href="../admin_css/ad_InvoiceDetail.css" />
 
     <!-----------------------------------------sidebar + header css-------------------------------------->
     <link rel="stylesheet" type="text/css" href="../admin_css/ad_sidebar.css" />
@@ -48,78 +49,77 @@
     <div class="content">
         <!--------------------------HEADER-------------------------->
         <div class="header">
-            <a class="title">Đánh giá của người dùng</a>
+            <a class="title">Chi tiết đơn hàng</a>
             <div style="display:flex;" class="user">
                 <a href="#"><i class="far fa-bell"></i></a>
                 <p>Hoài Vi</p>
             </div>
         </div>
         <!-----------------MY CONTENT: ORDER LIST--------------------->
-        <div class="total">Tổng số lượng người dùng: 100</div>
         <div class="mycontent">
             <div class="search_box">
                 <input type="search" placeholder="search" id="search" />
                 <span><a href="#"><i class="fas fa-search"></i></a></span>
             </div>
-            <table class="myTable">
+            <div class="information">
+                <div class="customer">
+                    <div class="customer_info">
+                        <p>
+                            NGƯỜI NHẬN <br />
+                            ID : 01<br />
+                            Nguyễn Văn Tân<br />
+                            tannguyen@gmail.com<br />
+                            0812345675<br />
+                            7A Nguyễn Đình Quân, Quận 7, TP HCM
+                        </p>
+                    </div>
+                    <div class="invoice">
+                        <p>
+                            THÔNG TIN HÓA ĐƠN<br />
+                            ID Hóa đơn:HD01<br />
+                            Ngày xuất: 19/02/2021<br />
+                        </p>
+                    </div>
+                </div>
+                <hr style="width: 100%; height: 1px; background-color: black; vertical-align:middle; margin-top:10px; margin-bottom:15px;" />
 
-                <tr class="usertitle">
-                    <td>Tên người dùng</td>
-                    <td>Số điện thoại</td>
-                    <td>Email</td>
-                    <td>Xem</td>
-                    <td>Xóa</td>
-                </tr>
-                <tr class="userlist">
-                    <td>
-                        <div class="username">
-                            <span class="userimg"><img src="../image/imvAuthor/khach2.png" /></span>
-                            <span class="account-text">Nguyễn Thị Diu</span>
-                        </div>
-                    </td>
-                    <td>0358428808</td>
-                    <td>nguyenthidiu@gmail.com</td>
-                    <td class="icon">
-                        <i class="fas fa-eye"></i>
-                    </td>
-                    <td class="icon"><i class="fas fa-trash-alt"></i></td>
-                </tr>
-
-                <tr class="userlist">
-                    <td>
-                        <div class="username">
-                            <span class="userimg"><img src="../image/imvAuthor/khach2 (2).png" /></span>
-                            <span class="account-text">Hoàng Hà</span>
-                        </div>
-                    </td>
-
-                    <td>N/A</td>
-                    <td>hoanghanguyen@gmail.com</td>
-                    <td class="icon">
-                        <i class="fas fa-eye"></i>
-                    </td>
-                    <td class="icon"><i class="fas fa-trash-alt"></i></td>
-                </tr>
-
-                <tr class="userlist">
-                    <td>
-                        <div class="username">
-                            <span class="userimg"><img src="../image/imvAuthor/khach2 (2).png" /></span>
-                            <span class="account-text">Thúy Loan</span>
-                        </div>
-                    </td>
-
-                    <td>035822995</td>
-                    <td>thuyloannguyen@gmail.com</td>
-                    <td class="icon">
-                        <i class="fas fa-eye"></i>
-                    </td>
-                    <td class="icon"><i class="fas fa-trash-alt"></i></td>
-                </tr>
-
-            </table>
+                <table class="myTable">
+                    <thead>
+                        <tr>
+                            <th>ID sách</th>
+                            <th>Sách</th>
+                            <th>Tác giả</th>
+                            <th>Số lượng</th>
+                            <th>Tiền đơn vị</th>
+                            <th>Tiền tổng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A01</td>
+                            <td>Chim cổ đỏ</td>
+                            <td>Jo Nesbo</td>
+                            <td>2</td>
+                            <td>40000</td>
+                            <td>80000</td>
+                        </tr>
+                        <tr>
+                            <td>A02</td>
+                            <td>Đắc nhân tâm</td>
+                            <td>Dale Carnegie</td>
+                            <td>1</td>
+                            <td>45000</td>
+                            <td>45000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" style="text-align:right;">Tổng thanh toán</td>
+                            <td><b>125000</b></td>
+                        </tr>
+                    </tbody>
+                  
+                </table>
+            </div>
         </div>
-
     </div>
     <script type="text/javascript" src="../admin_js/ad_sidebar.js"></script>
 </body>

@@ -28,24 +28,82 @@ app.controller('BookController', function ($scope, $http) {
 
 
 /*SAVE PROFILE QUOTE*/
-function saveQuote() {
+$('div').on('keydown', function (event) {
+    if ($(this).text().length === 243 && event.keyCode != 8) {
+        event.preventDefault();
+    }
+});
+let content = document.getElementsByClassName("edit"),
+    contentArray = Array.from(content);
 
-    //get the editable element
-    var editElem = document.getElementById("editquote");
+let localStore = {
+    saveLocalStorage: (item) => {
+        localStorage.setItem(item.id, item.innerHTML);
+    },
+    loadLocalStorage: (item) => {
+        let content = localStorage.getItem(item.id);
+        if (content) {
+            item.innerHTML = content;
+        }
+    }
+};
 
-    //get the edited element content
-    var userVersion = editElem.innerHTML;
+contentArray.forEach((item) => {
+    localStore.loadLocalStorage(item);
+    item.addEventListener(
+        "blur",
+        () => {
+            localStore.saveLocalStorage(item);
+        },
+        false
+    );
+});
+/*SAVE PROFILE INFORMATION*/
+(function (W) {
+    var D, form, bts, ipt;
 
-    //save the content to local storage
-    localStorage.userEdits = userVersion;
-}
-function checkEdits() {
+    function init() {
+        D = W.document, previous = [];
+        form = D.getElementsByTagName('form')[0];
+        bts = form.getElementsByTagName('button');
+        ipt = form.getElementsByTagName('input');
+        form.addEventListener('submit', save, false);
+        bts[1].addEventListener('click', cancel, false);
+        bts[2].addEventListener('click', edit, false);
+    }
 
-    //find out if the user has previously saved edits
-    if (localStorage.userEdits != null)
-        document.getElementById("editquote").innerHTML = localStorage.userEdits;
-}
+    function save(e) {
+        e.preventDefault();
+        form.classList.remove('invert');
+        var l = ipt.length;
+        while (l--) {
+            ipt[l].readOnly = true;
+        };
+        previous = [];
+        //send your info here 
+    }
 
+    function edit(e) {
+        e.preventDefault();
+        form.classList.add('invert');
+        var l = ipt.length;
+        while (l--) {
+            previous[l] = ipt[l].value;
+            ipt[l].readOnly = false;
+        }
+    }
+
+    function cancel(e) {
+        form.classList.remove('invert');
+        e.preventDefault();
+        var l = ipt.length;
+        while (l--) {
+            ipt[l].value = previous[l];
+            ipt[l].readOnly = true;
+        }
+    }
+    init();
+})(window)
 
 
 /*HORIZONTAL PROFILE TAB*/

@@ -62,8 +62,14 @@
         height: 165px;
     }
 
-.tbl_item #soLuong {
+.tbl_item .soLuong {
     width: 40px;
+}
+.tongunit {
+    width: 100px;
+    background-color: var(--light_skin);
+    color: black;
+    text-align: center;
 }
 
 .chi_tiet {
@@ -73,7 +79,7 @@
     font-weight: 500;
 }
 
-.tbl_item input {
+.tbl_item input.soLuong {
     background-color: var(--green);
     color: white;
 }
@@ -103,7 +109,7 @@
     background-color: var(--skin);
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     overflow-x: auto;
     border: 1px solid black;
     box-shadow: 2px 2px #888888;
@@ -134,10 +140,15 @@
         text-align: left;
         padding: 5px 0 5px 20px;
     }
+    .thanh_tien_box td input{
+        text-align:left;
+        background-color: var(--skin);
+    }
 
     .thanh_tien_box table {
         margin-left: auto;
         margin-right: auto;
+        width:100%;
     }
 
 #border_table td {
@@ -183,6 +194,7 @@
     .giohang_body {
         display: flex;
         flex-direction: column;
+        width:95%;
     }
 
     .list_item {
@@ -215,7 +227,7 @@
         width: 80%;
     }
 
-    .tbl_item input {
+    .tbl_item input.soLuong {
         width: 20px;
     }
 }
@@ -226,6 +238,7 @@
     .giohang_body{
         display: flex;
         flex-direction: column;
+        width:90%;
     }
     .list_item {
         display: flex;

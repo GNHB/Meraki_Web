@@ -1,0 +1,74 @@
+﻿@media screen and (max-width: 590px) {
+    .mycontent {
+        background-color: var(--light_skin);
+    }
+
+    .myTable {
+        text-align: unset;
+    }
+
+        .myTable tr {
+            border: none;
+        }
+
+    thead {
+        display: none;
+    }
+
+    .myTable, .myTable tbody, .myTable tr, .myTable td {
+        display: block;
+        width: 100%;
+    }
+
+        .myTable tr {
+            margin-bottom: 15px;
+            border: 2px solid var(--yellow);
+            padding: 10px;
+            background-color: var(--skin);
+        }
+
+        .myTable td:first-child::before {
+            content: "ID hóa đơn";
+        }
+
+        .myTable td:nth-child(2)::before {
+            content: "Tên khách hàng";
+        }
+
+        .myTable td:nth-child(3)::before {
+            content: "ID Khách hàng";
+        }
+
+        .myTable td:nth-child(4)::before {
+            content: "Ngày xuất";
+        }
+
+        .myTable td:nth-child(5)::before {
+            content: "Tổng tiền";
+        }
+
+        .myTable td:nth-child(6)::before {
+            content: "Hành động";
+        }
+
+        
+
+    td {
+        text-align: right;
+    }
+
+        td::before {
+            float: left;
+            font-weight: bold;
+            margin-right: 10%;
+        }
+
+    .myTable th, tr, td {
+        border-bottom: 0;
+        font-size: 14px;
+    }
+
+    .myTable td:last-child {
+        width: 100%;
+    }
+}

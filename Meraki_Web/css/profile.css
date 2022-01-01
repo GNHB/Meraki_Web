@@ -32,7 +32,11 @@
     }
     .sapxeptext {
         display: none;
-    }    
+    }
+    .writequote {
+        display: none;
+    }
+
 }
 @media (max-width: 700px) {
     .book {
@@ -46,7 +50,12 @@
     .tab-text {
         display: none;
     }
-     
+   .order-item div {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+ 
 }
 @media (min-width: 900px){
     .inf-container {
@@ -61,8 +70,12 @@
     .sapxep {
         display: flex;
     }
-    
+    .tabs .tab-content {
+        margin-bottom: 1000px;
+    }
+
 }
+
 /*Header*/
 .header {
     font-size: 30px;
@@ -257,8 +270,8 @@ Book stuff
     height: 300px;
     text-align: center;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
     width: 80%;
     margin: auto;
@@ -393,7 +406,7 @@ Book stuff
     float: left;
     padding: 0px 12px;
     width: 80%;
-    border-left: none;
+    border:none;
     height: 100%;
     
 }
@@ -456,7 +469,7 @@ Book stuff
 .tabs .tab-content {
     position: relative;
     height: 100%;
-    margin-bottom: 500px;
+    margin-bottom: 600px;
 }
 
     .tabs .tab-content > div {
@@ -486,7 +499,9 @@ Book stuff
     border-spacing: 10px;
     margin-top: 10px;
     border: 1px solid black;
+
 }
+
 
     .order-item .order-img {
         text-align: center;
@@ -494,6 +509,7 @@ Book stuff
         width: 100px;
         height: 130px;
     }
+
 
         .order-item .order-img img {
             width: 100px;
@@ -586,12 +602,13 @@ Book stuff
     padding: 10px;
     
 }
-.edit-inf a{
+.edit-inf {
     float: right;
     font-size: 13px;
     color: var(--yellow);    
+    text-decoration: none;
 }
-.edit-inf a:hover{
+.edit-inf :hover{
     color: var(--green);
 }
 .chart {
@@ -599,7 +616,66 @@ Book stuff
     height: 500px;
 }
 .mybook-content {
-    margin: 20px;
+
     padding: 15px;
     box-shadow: 0 0 10px #aaa;
+}
+
+/*FORM INFORMATION*/
+form input {
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: var(--skin);
+    font-size: 16px;
+}
+
+form.invert input {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    padding: 5px;
+}
+
+form > button:nth-of-type(1) {
+    display: none;
+}
+
+    form > button:nth-of-type(2) {
+    display: none;
+}
+
+form > button:nth-of-type(3) {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: var(--green);
+    color: white;
+    border-radius: 5px;
+}
+form > button:nth-of-type(3):hover {
+    background-color: var(--yellow);
+    
+}
+
+form.invert > button:nth-of-type(1) {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: var(--green);
+    color: white;
+    border-radius: 5px;
+}
+    form.invert > button:nth-of-type(1):hover {
+        background-color: var(--yellow);
+    }
+
+form.invert > button:nth-of-type(2) {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+form.invert > button:nth-of-type(3) {
+    display: none;
 }

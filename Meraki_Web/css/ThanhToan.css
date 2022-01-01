@@ -124,8 +124,20 @@
     .thanhtoan_body{
         display: flex;
         flex-direction: column;
+        width:100%;
     }
-    .list_thanhtoan{
+    .list_Book {
+        width: 100%;
+    }
+    .list_Book table{
+        width:100%;
+        text-align: center;
+    }
+    #list_Book_box{
+        width:90%;
+    }
+
+    .list_thanhtoan {
         width: 100%;
     }
     .list_Book{

@@ -5,35 +5,32 @@
     --skin: #FBF1E1;
     --light_skin: #FEFAF4;
 }
-
-* {
-    font-family: Arial;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    transition: all .2s linear;
-    transition: width none;
-}
 .myTable td:nth-child(2){
-    width:300px;
     line-height:1.5;
+}
+.myTable td:last-child{
+    width:150px;
 }
 .content_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-    .content_header button {
-        background: var(--yellow);
-        border-radius: 20px;
-        color: black;
-        font-weight: bold;
-        font-size: .8rem;
-        padding: .1rem 0.5rem;
-    }
+.myTable tr, td{
+    text-align:center;
+}
+.myTable td{
+    padding:10px;
+}
+.content_header button {
+    background: var(--yellow);
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: .8rem;
+    padding: .1rem 0.5rem;
+    margin-right: 20px;
+}
         .content_header button:hover {
             background: var(--green);
             box-shadow: 0 0 20px 0px #F7BB34;
@@ -61,4 +58,82 @@
 .fas:hover{
     cursor:pointer;
     color:var(--yellow);
+}
+@media screen and (max-width: 500px) {
+
+    .myTable {
+        text-align: unset;
+    }
+    .myTable tr{
+        border: none;
+    }
+    .header .user {
+        position: relative;
+        bottom: 10px;
+        left: 50px;
+    }
+    .content_header {
+        display: block;
+        position: relative;
+    }
+
+        .content_header button {
+            display: inline-block;
+            margin-top:10px;
+            margin-left:25%;
+        }
+        .content_header select {
+            display: inline-block;
+            margin: auto;
+            margin-top: 10px;
+        }
+     thead{
+         display:none;
+
+     }
+     .myTable, .myTable tbody, .myTable tr, .myTable td{
+         display:block;
+         width:100%;
+     }
+     .myTable tr{
+            margin-bottom:15px;
+            border:2px solid var(--yellow);
+            padding:10px;
+            background-color: var(--skin);
+     }
+
+        .myTable td:first-child::before {
+            content: "ID Blog";
+        }
+        .myTable td:nth-child(2)::before {
+            content: "Tên bài";
+        }
+        .myTable td:nth-child(3)::before {
+            content: "Tác giả";
+        }
+        .myTable td:nth-child(4)::before {
+            content: "Ngày viết";
+        }
+        .myTable td:nth-child(5)::before {
+            content: "Thể loại";
+        }
+        .myTable td:nth-child(6)::before {
+            content: "Hàng động";
+        }
+
+        td{
+            text-align:right;
+        }
+        td::before{
+            float:left;
+            font-weight:bold;
+            margin-right: 10%;
+        }
+    .myTable th, tr, td {
+        border-bottom: 0;
+        font-size: 14px;
+    }
+    .myTable td:last-child {
+        width: 100%;
+    }
 }

@@ -254,7 +254,6 @@ q {
 }
 .row {
     display: flex;
-    flex-wrap: wrap;
 }
 ul {
     list-style: none;
