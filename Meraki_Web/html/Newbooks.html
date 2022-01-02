@@ -24,7 +24,7 @@
         <div class="help_me">
             <div class=" line1_navbar">
                 <div class="search_box">
-                    <input type="search" placeholder="search" />
+                    <input type="search" placeholder="search" ng-model="searchKeyword"/>
                     <span><a href="#"><img class="search_icon" src="../image/imvIcon/icon_search.png" /></a></span>
                 </div>
                 <div class="icon">
@@ -80,28 +80,32 @@
             <div class="sachmoi">Sách mới</div>
             <div class="sapxep">
                 <div id="sapxep" class="sapxeptext">Sắp xếp</div>
-                <select id="filterlist" onchange="myFunction()" class="form-control">
-                    <option ng-click="orderBy = 'title'">Tất cả</option>
-                    <option ng-click="sort('view')">Được xem nhiều</option>
-                    <option ng-click="sort('')">Được mua nhiều</option>
+                <select id="filterlist" ng-model="listFilter" class="form-control">
+                    <option value="">Tất cả</option>
+                    <option value="-view">Được xem nhiều</option>
+                    <option value="-order">Được mua nhiều</option>
+                    <option value="-price">Giá từ cao đến thấp</option>
+                    <option value="price">Giá từ thấp đến cao</option>
+
+
                 </select>
+
             </div>
         </div>
         <hr />
-
         <!--List of book-->
         <div id="large-th">
             <div class="container">
                 <div id="list-th">
-                    <div class="book" dir-paginate="book in books | orderBy:orderBy:reverse | itemsPerPage:15">
+                    <div class="book" dir-paginate="book in books | filter: searchKeyword |orderBy: listFilter | itemsPerPage:15">
                         <div class="cover">
                             <img src="{{book.cover}}" alt="{{book.title}}">
                         </div>
                         <div class="description">
                             <p class="title">
                                 <span class="booktitle">
-                                {{book.title}}
-                                    </span><br>
+                                    {{book.title}}
+                                </span><br>
                                 <span class="author">{{book.author}}</span>
                             </p>
                         </div>
