@@ -16,6 +16,12 @@
     transition: all .2s linear;
     transition: width none;
 }
+#author{
+    font-size:32px;
+}
+.mySlides q{
+    font-size:20px;
+}
 
 body {
     font-family: Arial;
@@ -616,7 +622,7 @@ table {
 
     .wrap .slider .slider_box .img_detail p {
         display: block;
-        width: 130px;
+        width: 100px;
         font-size: 14px;
         font-weight: lighter;
         text-align: center;
@@ -675,6 +681,13 @@ table {
 }
 
 @media screen and (max-width: 500px) {
+    #author {
+        font-size: 20px;
+    }
+
+    .mySlides q {
+        font-size: 16px;
+    }
     .plot {
         height: 100%;
         width: 100%;

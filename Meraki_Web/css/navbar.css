@@ -332,6 +332,7 @@ ul {
 /*slogan*/
 
 .slogan {
+    width:100%;
     background-color: var(--green);
     height: 50px;
     align-items: center;
