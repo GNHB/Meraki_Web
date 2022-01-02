@@ -145,7 +145,7 @@ function loadJSON() {
                 <div class="item-a">
                     <div class="box_best_sellers">
                         <div class="box_img">
-                            <img src="${product.imgSrc}" alt = "product image" />
+                            <img src="${product.imgSrc}" title="${product.name}" />
                         </div>
                         <div class="box_tittle">
                             <a href="DetailBook.html" style="color: black;text-decoration:none;">
