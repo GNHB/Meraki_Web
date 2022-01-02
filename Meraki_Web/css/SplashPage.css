@@ -170,7 +170,7 @@ p {
 
 /*----------------------------*/
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 500px) {
 
     .content_1 {
         display: block;
