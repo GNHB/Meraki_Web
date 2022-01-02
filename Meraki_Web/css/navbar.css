@@ -41,7 +41,7 @@ nav {
     }
     nav div.line1_navbar {
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     nav div.icon {
         display: flex;
@@ -55,15 +55,15 @@ nav {
     width: 55px;
     margin-left:20px;
 }
-#cart_icon {
-    height: 48px;
-    width: 50px;
+.fa-shopping-cart {
+    font-size:35px;
     margin-left: 20px;
+    color: black;
 }
-#user_icon {
-    height: 50px;
-    width: 55px;
+.fa-user-circle {
+    font-size: 35px;
     margin-left: 20px;
+    color: black;
 }
 nav label #bar_icon {
     height: 30px;
@@ -75,14 +75,13 @@ nav ol {
     list-style: none;
     margin: auto;
     width: 90%;
-    height: 30px;
+    height: 45px;
     align-items: center;
 }
     nav ol li {
         margin: auto;
         width: 100%;
         height: 100%;
-        margin-top: 10px;
     }
         nav ol li a {
             color: white;
@@ -90,6 +89,7 @@ nav ol {
             text-decoration: none;
             text-transform: capitalize;
             letter-spacing: 1px;
+            line-height:2.5;
         }
         nav ol li:hover {
             background: #F7BB34;
