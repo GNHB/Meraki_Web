@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/SignIn.css" type="text/css" />
     <title>MERAKI BOOK</title>
+    <script type="text/javascript" src="../js/SignIn.js"></script>
 </head>
 <body>
     <div class="container">
@@ -34,17 +35,19 @@
             <div class="form-content">
                 <div class="login-form">
                     <div class="title">Đăng nhập</div>
-                    <form action="#">
+                    <form action="SignIn.html" method="get" id="formSignIn" onsubmit="return validated()">
                         <div class="input-boxes">
                             <div class="input-box">
-                                <input type="text" placeholder="Tên đăng nhập" required>
+                                <input type="text" name="nameSignIn" placeholder="Tên đăng nhập" required>
+                                <div id="errorName"></div>
                             </div>
                             <div class="input-box">
-                                <input type="password" placeholder="Mật khẩu" required>
+                                <input type="password" name="passwordSignIn" placeholder="Mật khẩu" required ">
+                                <div id="errorPassword" onload="validated()"></div>
                             </div>
                             <div class="text"><a href="#">Quên mật khẩu?</a></div>
                             <div class="button input-box">
-                                <input type="submit" value="Đăng nhập">
+                                <input class="submit" type="submit" value="Đăng nhập" id="login" style="border:none;">
                             </div>
                             <div class="text sign-up-text">Tạo tài khoản? <label for="flip">Đăng kí</label></div>
                         </div>
@@ -52,7 +55,7 @@
                 </div>
                 <div class="signup-form">
                     <div class="title">Đăng kí</div>
-                    <form action="#">
+                    <form action="#" method="get">
                         <div class="input-boxes">
                             <div class="input-box">
                                 <input type="text" placeholder="Tên đăng nhập" required>
@@ -64,17 +67,34 @@
                                 <input type="password" placeholder="Mật khẩu" required>
                             </div>
                             <div class="input-box">
-                                <input type="password" placeholder="Nhập lại mật khẩu" required>
+                                <input type="password" placeholder="Nhập lại mật khẩu" id="passwordAgain" required>
                             </div>
                             <div class="button input-box">
-                                <input type="submit" value="Đăng kí">
+                                <input type="button" class="submit" value="Đăng kí" id="register" style="border:none;" onClick="register()">
                             </div>
                             <div class="text sign-up-text">Bạn đã có tài khoản? <label for="flip">Đăng nhập ngay</label></div>
+                            
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        const name = document.formSignIn.nameSignIn.value;
+        const password = document.formSignIn.passwordSignIn.value;
+
+        const errorName = document.formSignIn.errorName.value;
+        const errorPassword = document.formSignIn.errorPassword.value;
+
+        function validated() {
+            if (password.length <= 6) {
+                document.formSignIn.errorPassword.value = "Mật khẩu phải có ít nhất 6 kí tự!";
+            } else {
+                location.href = "../html/AboutMeraki.html";
+            }
+        }
+   
 </body>
 </html>

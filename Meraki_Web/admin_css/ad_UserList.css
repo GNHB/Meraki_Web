@@ -4,8 +4,9 @@
     --skin: #FBF1E1;
     --light_skin: #FEFAF4;
 }
-body{
-    background-color: var(--light_skin)
+
+body {
+    background-color: var(--light_skin);
 }
 
 * {
@@ -28,7 +29,6 @@ body{
     line-height: 2;
     margin-top: 20px;
     border-collapse: collapse;
-    
 }
 
     .myTable th {
@@ -40,21 +40,23 @@ body{
     .myTable th, tr, td {
         font-size: 16px;
         text-align: center;
-
     }
 
-.usertitle{
+.usertitle {
     color: black;
     background-color: var(--yellow);
     font-weight: bold;
 }
-.userlist{
+
+.userlist {
     border-bottom: 1px solid black;
 }
+
 .username {
     display: flex;
     padding: 10px 0px;
 }
+
 .userimg img {
     width: 60px;
     height: 60px;
@@ -64,27 +66,29 @@ body{
     margin-right: 10px;
 }
 
-    .review td {
+.review td {
+    text-align: justify;
+}
 
-        text-align: justify;
-    }
+.bookname a {
+    cursor: pointer;
+    color: var(--yellow);
+    font-weight: bolder;
+}
 
-    .bookname a {
-        cursor: pointer;
-        color: var(--yellow);
-        font-weight: bolder;
-    }
-    .replyfield td{
-        border-bottom: 1px solid black;
-    }
-.reply{
+.replyfield td {
+    border-bottom: 1px solid black;
+}
+
+.reply {
     border: 1px solid black;
     background-color: white;
-    width:100%;
+    width: 100%;
     height: 80px;
     margin: 10px;
     padding: 10px;
 }
+
 .reply_btn {
     width: 80px;
     height: 30px;
@@ -92,10 +96,12 @@ body{
     color: white;
     cursor: pointer;
 }
+
     .reply_btn:hover {
         color: white;
         background-color: var(--yellow)
     }
+
 .cancel {
     width: 80px;
     height: 30px;
@@ -103,7 +109,8 @@ body{
     margin-top: 10px;
     cursor: pointer;
 }
-.reviewaction{
+
+.reviewaction {
     color: var(--green);
     font-weight: bold;
     border-bottom: 1px solid black;
@@ -113,7 +120,7 @@ body{
         color: var(--yellow);
         cursor: pointer;
     }
-   
+
 .filter {
     display: flex;
     padding: 20px 20px 0px 20px;
@@ -123,7 +130,6 @@ body{
 }
 
 .reviewoption select {
-  
     height: 40px;
     padding: 5px;
     border-radius: 10px;
@@ -137,14 +143,16 @@ body{
         background-color: var(--yellow);
     }
 
- .icon .fas:hover {
+.icon .fas:hover {
     cursor: pointer;
     color: var(--yellow);
 }
+
 .account-text a {
     color: black;
     cursor: pointer;
 }
+
     .account-text a:hover {
         color: var(--yellow);
         font-weight: bold;
@@ -167,36 +175,36 @@ body{
     background-color: var(--green);
     color: white;
 }
+
 #filterlist {
     background-repeat: no-repeat;
     font-size: 14px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 10px;
-
 }
 
-.item:hover{
+.item:hover {
     color: var(--yellow);
     cursor: pointer;
     font-weight: bold;
 }
 
-@media (min-width: 900px) {
 
 
-    .sapxep {
-        display: flex;
-        justify-content: space-between;
-    }
+.total {
+    padding: 20px 0px 0px 20px;
 }
-.total{
-    padding: 20px 0px 0px 20px ;
-}
+
 @media screen and (max-width: 900px) {
-    * {
-        font-size: 14px;
+    .myTable {
+        text-align: unset;
     }
+
+        .myTable tr {
+            border: none;
+        }
+
     .header {
         flex-direction: column;
     }
@@ -206,14 +214,63 @@ body{
             bottom: 10px;
             left: 50px;
         }
-
-   
-    .myTable {
-        overflow-x: auto;
+        .total{
+            text-align: center;
+        }
+    thead {
+        display: none;
     }
-    td input {
-        max-width: 90%;
-    }
-    
 
+    .myTable, .myTable tbody, .myTable tr, .myTable td {
+        display: block;
+        width: 100%;
+    }
+
+        .myTable tr {
+            margin-bottom: 15px;
+            border: 2px solid var(--yellow);
+            padding: 10px;
+            background-color: var(--skin);
+        }
+
+        .myTable td:first-child::before {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .myTable td:nth-child(2)::before {
+            content: "Số điện thoại";
+        }
+
+        .myTable td:nth-child(3)::before {
+            content: "Email";
+        }
+
+        .myTable td:nth-child(4)::before {
+            content: "Xem";
+        }
+
+        .myTable td:nth-child(5)::before {
+            content: "Xóa";
+        }
+
+
+    td {
+        text-align: right;
+    }
+
+        td::before {
+            float: left;
+            font-weight: bold;
+            margin-right: 10%;
+        }
+
+    .myTable th, tr, td {
+        border-bottom: 0;
+        font-size: 14px;
+    }
+
+    .myTable td:last-child {
+        width: 100%;
+    }
 }

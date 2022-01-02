@@ -1,20 +1,15 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Sách mới</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <!-- Angular JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/profile.css" />
+    <link rel="stylesheet" type="text/css" href="../css/Policy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/Tutorial.css" />
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="../css/Footer.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title>MERAKI BOOK</title>
 </head>
-<body  ng-app="myApp">
-
-
+<body>
     <!--Navigation bar-->
     <input type="checkbox" id="check" />
     <nav>
@@ -59,7 +54,7 @@
 
         </div>
         <div class="mySlides">
-            <p class="author">_Paulo Coelho_</p>
+            <p class="author">_Thomas A. Edison_</p>
             <q>
                 Khi bạn khao khát một điều gì đó, cả vũ trụ sẽ hợp lực giúp bạn đạt được điều đó.
             </q>
@@ -74,50 +69,70 @@
         <a class="next" onclick="plusSlides(1)">❯</a>
     </div>
 
-    <!--Header-->
-    <div  ng-controller="BookController">
-        <div class="sachmoititle">
-            <div class="sachmoi">Sách mới</div>
-            <div class="sapxep">
-                <div id="sapxep" class="sapxeptext">Sắp xếp</div>
-                <select id="filterlist" onchange="myFunction()" class="form-control">
-                    <option ng-click="orderBy = 'title'">Tất cả</option>
-                    <option ng-click="sort('view')">Được xem nhiều</option>
-                    <option ng-click="sort('')">Được mua nhiều</option>
-                </select>
+    <div class="container_policy">
+        <div class="tittle">HỖ TRỢ KHÁCH HÀNG</div>
+        <div class="content_1" id="HuongDanDatHang" name="HuongDanDatHang">
+            <div class="header_1">1. Hướng dẫn đặt hàng</div>
+            <div class="text_1">
+                <p>
+                    <strong>Mua sách in</strong>
+                    <br />
+                    Để đặt hàng sách in ở Meraki Book khách hàng chỉ cần vào giỏ hàng, chọn các sách muốn mua và ấn đặt hàng.
+                </p>
+                <p>
+                    <strong>Mua ebook</strong>
+                    <br />
+                    Để mua ebook khách hàng chỉ cần tìm kiếm quyển sách mình muốn mua, chọn mua ebook thì hệ thống sẽ chuyển qua trang thanh toán. Khi khách hàng thanh toán hoàn tất thì ebook sẽ được mở khóa và nằm trong tủ sách của khách hàng.
+                </p>
+                <p>
+                    <strong>Kích hoạt VIP</strong>
+                    <br />
+                    Để kích hoạt VIP khách hàng cần click vào icon VIP trên thanh điều hướng. Hệ thống sẽ chuyển sang trang VIP. Tại đây khách hàng có thể lựa chọn các gói VIP để kích hoạt. Khi hoàn thành thanh toán hệ thống sẽ kích hoạt tài khoản và mở khóa các ebook.
+                </p>
             </div>
         </div>
-        <hr />
+        <div class="content_1" id="HuongDanThanhToan" name="HuongDanThanhToan">
+            <div class="header_1">2. Hướng dẫn thanh toán</div>
+            <div class="text_1">
+                <p>
+                    Quý khách có thể thanh toán khi đặt mua ebook, sách in và VIP bằng những cách sau:
+                </p>
+                <p>
+                    <strong>1. Thanh toán tiền mặt COD</strong>
+                    <br />
+                    Khi nhân viên giao hàng giao phát, khách hàng kiểm tra sản phẩm về hình thức đảm bảo, khách hàng nhận hàng và thanh toán trực tiếp cho nhân viên giao hàng theo giá trị tiền trên hóa đơn. Ngoài ra khách hàng không phải thanh toán bất kỳ 1 chi phí nào khác.
+                </p>
+                <p>
+                    <strong>2. Thanh toán thông qua ví điện tử hoặc thẻ ngân hàng:</strong>
+                    <br />
+                    Khách hàng có thể chọn 2 hình thức ví điện tử hoặc thẻ ngân hàng để thanh toán không tiếp xúc. Khi thanh toán bằng hình thức này Meraki Book sẽ hiện mã QR code để khách hàng quét mã thanh toán.
+                    Thời gian cho mỗi mã QR là 30 phút, nếu hết thời gian đó khách hàng chưa thanh toán hệ thống sẽ tự động đổi mã QR code mới.
+                    Khi khách hàng thanh toán thành công thì đơn hàng sẽ được xác nhận.
+                </p>
+                <p>
+                    <i>
+                        Để biết thêm thông tin chi tiết, Quý khách vui lòng liên hệ trực tiếp với nhân viên tư vấn bán hàng hoặc liên hệ theo số tổng đài miễn phí 18006785 để được hỗ trợ.Xin trân trọng cảm ơn!
 
-        <!--List of book-->
-        <div id="large-th">
-            <div class="container">
-                <div id="list-th">
-                    <div class="book" dir-paginate="book in books | orderBy:orderBy:reverse | itemsPerPage:15">
-                        <div class="cover">
-                            <img src="{{book.cover}}" alt="{{book.title}}">
-                        </div>
-                        <div class="description">
-                            <p class="title">
-                                <span class="booktitle">
-                                {{book.title}}
-                                    </span><br>
-                                <span class="author">{{book.author}}</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
+                    </i>
+                </p>
             </div>
-
         </div>
-        <center>
-            <dir-pagination-controls max-size="5"
-                                     direction-links="true"
-                                     boundary-links="true">
-            </dir-pagination-controls>
-        </center>
+        <div class="content_1" id="HuongDanTraHang" name="HuongDanTraHang">
+            <div class="header_1">3. Hướng dẫn trả hàng</div>
+            <div class="text_1">
+                <p>
+                    Khi khách hàng muốn trả hàng, thì trong 3 ngày kể từ lúc xác nhận giao hàng thành công, thì khách hàng ấn vào nút trả hàng trong trang đơn hàng. Lúc này hệ thống sẽ xác nhận yêu cầu trả hàng.
+                </p>
+                <p>
+                    Trong 3 ngày hệ thống sẽ phản hồi xác nhận đồng ý trả hàng, nếu đồng ý thì lúc này khách hàng chọn đơn vị vận chuyển và gói trả lại hàng.
+                </p>
+                <p>
+                    Sau khi Meraki Book nhận lại hàng thành công thì tiền sẽ được gửi trả lại theo tài khoản ngân hàng của người mua.
+                </p>
+            </div>
+        </div>
     </div>
+
     <footer class="footer">
         <div id="container-footer">
             <div class="row">
@@ -125,7 +140,7 @@
                     <a href="AboutMeraki.html"><h4><b>Về chúng tôi</b></h4></a>
                     <ul>
                         <li><a href="AboutMeraki.html">Giới thiệu chung</a></li>
-                        <li><a href="AboutMeraki.html#QuyDinhBanQuyen">Quy định về bản quyền</a></li>
+                        <li><a href="AboutMeraki.html #QuyDinhBanQuyen">Quy định về bản quyền</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -171,7 +186,5 @@
         </div>
     </footer>
     <script src="../js/slidequote.js"></script>
-    <script src="../js/dirPagination.js"></script>
-    <script src="../js/book.js"></script>
 </body>
 </html>

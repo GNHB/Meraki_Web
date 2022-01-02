@@ -276,9 +276,13 @@ body {
     display: none;
 }
 
-@media (max-width: 700px) {
-    .container .cover  {
+@media (max-width: 500px) {
+    .container .cover .text {
         display: none;
+    }
+
+    .container .cover img {
+        display: block;
     }
 
     .form-content .login-form,
