@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Địa chỉ giao hàng</title>
+    <link rel="shortcut icon" type="img/png" href="../image/imvBanner/mylogo.png" />
     <!-----------------------CSS CONTENT------------>
     <link rel="stylesheet" type="text/css" href="../css/DiaChiGiaoHang.css" />
     <!----------------------FONT-------------------->
@@ -16,7 +17,7 @@
     <!--Navigation bar-->
     <nav>
         <div class="nav_content">
-            <a href="#" id="a">
+            <a href="../html/index.html" id="a">
                 <div id="target">
                     <img class="logo" src="../image/imvBanner/logo.png" />
                 </div>
@@ -85,24 +86,22 @@
             </form>
         </div>
     </div>
-    <button>
+       <div style="width:100%; justify-content:center; display:flex;"><button type="button" id="cont_btn"><a href="../html/ThanhToan.html" style="text-decoration:none;">Tiếp theo</a></button></div> 
 
-    </button>
+        <!--Add data to table-->
+        <script type="text/javascript">
+            function isInputNumber(evt) {
 
-    <!--Add data to table-->
-    <script type="text/javascript">
-        function isInputNumber(evt) {
+                var ch = String.fromCharCode(evt.which);
 
-            var ch = String.fromCharCode(evt.which);
+                if (!(/[0-9]/.test(ch))) {
+                    evt.preventDefault();
+                    alert("Xin nhập Số điện thoại");
+                }
 
-            if (!(/[0-9]/.test(ch))) {
-                evt.preventDefault();
-                alert("Xin nhập Số điện thoại");
             }
-
-        }
-    </script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-    <script type="text/javascript" src="../js/DiaChiGiaoHang.js"></script>
+        </script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <script type="text/javascript" src="../js/DiaChiGiaoHang.js"></script>
 </body>
 </html>

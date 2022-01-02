@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Thể loại</title>
+    <link rel="shortcut icon" type="img/png" href="../image/imvBanner/mylogo.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!----------------------CSS/JAVESCRIPT  SLIDER-->
@@ -19,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/TheLoai.css" />
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-
+    <link rel="stylesheet" type="text/css" href="../css/Footer.css" />
     <!----------------------FONT-------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -28,7 +29,7 @@
     <!--Navigation bar-->
     <input type="checkbox" id="check" />
     <nav>
-        <a href="#">
+        <a href="../html/index.html">
             <img class="logo" src="../image/imvBanner/logo.png" />
         </a>
         <div class="help_me">
@@ -39,8 +40,8 @@
                 </div>
                 <div class="icon">
                     <a href="../html/VIP.html"><img id="vip_icon" src="../image/imvIcon/icon_vip.png" /></a>
-                    <a href="../html/GioHang.html"><img id="cart_icon" src="../image/imvIcon/icon_card_fontbar.png" /></a>
-                    <a href="../html/OrderManagement.html"><img id="user_icon" src="../image/imvIcon/icon_user.png" /></a>
+                    <a href="../html/GioHang.html">  <i class="fas fa-shopping-cart" id="cart_icon"></i></a>
+                    <a href="../html/SignIn.html"><i class="fas fa-user-circle"></i></a>
                 </div>
             </div>
             <ol>
@@ -57,11 +58,11 @@
     <!--Slide quote-->
     <div class="slideshow-container">
         <div class="mySlides">
-            <p class="author"><b>_Colleen Mccullough_</b></p>
+            <p class="author" id="author"><b>_Colleen Mccullough_</b></p>
             <q>Tất cả những gì đẹp nhất chỉ có thể có được khi ta chịu trả giá bằng nỗi đau vĩ đại</q>
         </div>
-        <div class="mySlides">
-            <p class="author">_Kito Aya_</p>
+        <div class="mySlides" >
+            <p class="author" id="author">_Kito Aya_</p>
             <q>
                 Có những người mà sự tồn tại của họ giống như không khí, êm dịu, nhẹ nhàng, chỉ khi họ mất đi người ta mới nhận ra họ quan trọng
                 nhường nào. Mình muốn trở thành một sự tồn tại như thế.
@@ -69,13 +70,13 @@
 
         </div>
         <div class="mySlides">
-            <p class="author">_Thomas A. Edison_</p>
+            <p class="author" id="author">_Thomas A. Edison_</p>
             <q>
                 Khi bạn khao khát một điều gì đó, cả vũ trụ sẽ hợp lực giúp bạn đạt được điều đó.
             </q>
         </div>
         <div class="mySlides">
-            <p class="author">_Antoine De Saint-Exupéry_</p>
+            <p class="author" id="author">_Antoine De Saint-Exupéry_</p>
             <q>
                 Nếu bạn đã dành trọn thời gian để chăm sóc một đóa hồng, thì đóa hồng đó sẽ trở nên vô cùng quan trọng với bạn.
             </q>
@@ -134,7 +135,7 @@
                             <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Trên đường băng</p> </a>
                             <p class="author">Tony Buổi Sáng</p>
                         </div>
                     </div>
@@ -143,7 +144,7 @@
                             <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
                             <p class="author">Vãn Tình</p>
                         </div>
                     </div>
@@ -152,7 +153,7 @@
                             <img src="../image/imvBook/vongtronmau.jpg" title="Vòng tròn máu" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Vòng tròn máu</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Vòng tròn máu</p> </a>
                             <p class="author">Edgar Wallace</p>
                         </div>
                     </div>
@@ -161,7 +162,7 @@
                             <img src="../image/imvBook/thienthanacquy.jpg" title="Thiên thần, ác quỷ" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Thiên thần, ác quỷ</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Thiên thần, ác quỷ</p> </a>
                             <p class="author">Dan Brown</p>
                         </div>
                     </div>
@@ -170,7 +171,7 @@
                             <img src="../image/imvBook/dapancuathoigian.jpg" title="Đáp án của thời gian" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Đáp án của thời gian</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Đáp án của thời gian</p> </a>
                             <p class="author">Lư Tư Hạo</p>
                         </div>
                     </div>
@@ -187,7 +188,7 @@
                             <img src="../image/imvBook/thienthanacquy.jpg" title="Thiên thần, ác quỷ" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Thiên thần, ác quỷ</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Thiên thần, ác quỷ</p> </a>
                             <p class="author">Dan Brown</p>
                         </div>
                     </div>
@@ -196,7 +197,7 @@
                             <img src="../image/imvBook/dapancuathoigian.jpg" title="Đáp án của thời gian" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Đáp án của thời gian</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Đáp án của thời gian</p> </a>
                             <p class="author">Lư Tư Hạo</p>
                         </div>
                     </div>
@@ -205,7 +206,7 @@
                             <img src="../image/imvBook/truockhinhammat.jpg" title="Trước khi nhắm mắt" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Trước khi nhắm mắt</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Trước khi nhắm mắt</p> </a>
                             <p class="author">Higashino Keigo</p>
                         </div>
                     </div>
@@ -214,7 +215,7 @@
                             <img src="../image/imvBook/harrypotter.jpg" title="Harry Potter" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Harry Potter</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Harry Potter</p> </a>
                             <p class="author">J.K Rowling</p>
                         </div>
                     </div>
@@ -223,7 +224,7 @@
                             <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
                             <p class="author">Ayn Rand</p>
                         </div>
                     </div>
@@ -232,7 +233,7 @@
                             <img src="../image/imvBook/truockhinhammat.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
                             <p class="author">Colleen McCulough</p>
                         </div>
                     </div>
@@ -241,7 +242,7 @@
 
             <p style="text-align: center; margin-top: 40px;">Viễn tưởng</p>
             <hr style="width: 100%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom: 5px;" />
-            <a href="#"><p class="all">Xem tất cả</p></a>
+            <a href="../html/Newbooks.html"><p class="all">Xem tất cả</p></a>
             <div class="wrap">
                 <div class="slider" id="carouselContent">
                     <div class="slider_box">
@@ -249,7 +250,7 @@
                             <img src="../image/imvBook/harrypotter.jpg" title="Harry Potter" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Harry Potter</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Harry Potter</p> </a>
                             <p class="author">J.K Rowling</p>
                         </div>
                     </div>
@@ -258,7 +259,7 @@
                             <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
                             <p class="author">Ayn Rand</p>
                         </div>
                     </div>
@@ -267,7 +268,7 @@
                             <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
                             <p class="author">Colleen McCulough</p>
                         </div>
                     </div>
@@ -276,7 +277,7 @@
                             <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Chú chó không nhà</p> </a>
                             <p class="author">Sarah Lean</p>
                         </div>
                     </div>
@@ -285,7 +286,7 @@
                             <img src="../image/imvBook/laohac.jpg" title="Lão Hạc" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Lão Hạc</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Lão Hạc</p> </a>
                             <p class="author">Nam Cao</p>
                         </div>
                     </div>
@@ -316,8 +317,8 @@
                                         <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
                                     </div>
                                     <div class="img_detail">
-                                        <a href="#" class="title"><p>Mắt Biếc</p> </a>
-                                        <img src="../image/imvChart/saovang.png" class="sao"/>
+                                        <a href="../html/DetailBook.html" class="title"><p>Mắt Biếc</p> </a>
+                                        <img src="../image/imvChart/saovang.png" class="sao" />
                                     </div>
                                 </div>
                             </td>
@@ -327,7 +328,7 @@
                                         <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
                                     </div>
                                     <div class="img_detail">
-                                        <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                                        <a href="../html/DetailBook.html" class="title"><p>Cô gái đến từ hôm qua</p> </a>
                                         <img src="../image/imvChart/saovang.png" class="sao" />
                                     </div>
                                 </div>
@@ -340,7 +341,7 @@
                                         <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
                                     </div>
                                     <div class="img_detail">
-                                        <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                                        <a href="../html/DetailBook.html" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
                                         <img src="../image/imvChart/saovang.png" class="sao" />
                                     </div>
                                 </div>
@@ -351,7 +352,7 @@
                                         <img src="../image/imvBook/chotoixinmotvedituoitho.png" title="Cho tôi xin một vé đi tuổi thơ" />
                                     </div>
                                     <div class="img_detail">
-                                        <a href="#" class="title"><p>Cho tôi xin một vé đi tuổi thơ</p> </a>
+                                        <a href="../html/DetailBook.html" class="title"><p>Cho tôi xin một vé đi tuổi thơ</p> </a>
                                         <img src="../image/imvChart/saovang.png" class="sao" />
 
                                     </div>
@@ -376,7 +377,7 @@
                             <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Mắt Biếc</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -385,7 +386,7 @@
                             <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Cô gái đến từ hôm qua</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -394,7 +395,7 @@
                             <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
                             <p class="author">Ayn Rand</p>
                         </div>
                     </div>
@@ -403,7 +404,7 @@
                             <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -412,7 +413,7 @@
                             <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
                             <p class="author">Colleen McCulough</p>
                         </div>
                     </div>
@@ -421,7 +422,7 @@
                             <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Chú chó không nhà</p> </a>
                             <p class="author">Sarah Lean</p>
                         </div>
                     </div>
@@ -430,7 +431,7 @@
                             <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
                             <p class="author">Vãn Tình</p>
                         </div>
                     </div>
@@ -439,7 +440,7 @@
                             <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Trên đường băng</p> </a>
                             <p class="author">Tony Buổi Sáng</p>
                         </div>
                     </div>
@@ -457,7 +458,7 @@
                             <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Mắt Biếc</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -466,7 +467,7 @@
                             <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Cô gái đến từ hôm qua</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -475,7 +476,7 @@
                             <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
                             <p class="author">Ayn Rand</p>
                         </div>
                     </div>
@@ -484,7 +485,7 @@
                             <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -493,7 +494,7 @@
                             <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
                             <p class="author">Colleen McCulough</p>
                         </div>
                     </div>
@@ -502,7 +503,7 @@
                             <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Chú chó không nhà</p> </a>
                             <p class="author">Sarah Lean</p>
                         </div>
                     </div>
@@ -511,7 +512,7 @@
                             <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
                             <p class="author">Vãn Tình</p>
                         </div>
                     </div>
@@ -520,7 +521,7 @@
                             <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Trên đường băng</p> </a>
                             <p class="author">Tony Buổi Sáng</p>
                         </div>
                     </div>
@@ -538,7 +539,7 @@
                             <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Mắt Biếc</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -547,7 +548,7 @@
                             <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Cô gái đến từ hôm qua</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -556,7 +557,7 @@
                             <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
                             <p class="author">Ayn Rand</p>
                         </div>
                     </div>
@@ -565,7 +566,7 @@
                             <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -574,7 +575,7 @@
                             <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
                             <p class="author">Colleen McCulough</p>
                         </div>
                     </div>
@@ -583,7 +584,7 @@
                             <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Chú chó không nhà</p> </a>
                             <p class="author">Sarah Lean</p>
                         </div>
                     </div>
@@ -592,7 +593,7 @@
                             <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
                             <p class="author">Vãn Tình</p>
                         </div>
                     </div>
@@ -601,7 +602,7 @@
                             <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Trên đường băng</p> </a>
                             <p class="author">Tony Buổi Sáng</p>
                         </div>
                     </div>
@@ -619,7 +620,7 @@
                             <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Mắt Biếc</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -628,7 +629,7 @@
                             <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Cô gái đến từ hôm qua</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -637,7 +638,7 @@
                             <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
                             <p class="author">Ayn Rand</p>
                         </div>
                     </div>
@@ -646,7 +647,7 @@
                             <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -655,7 +656,7 @@
                             <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
                             <p class="author">Colleen McCulough</p>
                         </div>
                     </div>
@@ -664,7 +665,7 @@
                             <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Chú chó không nhà</p> </a>
                             <p class="author">Sarah Lean</p>
                         </div>
                     </div>
@@ -673,7 +674,7 @@
                             <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
                             <p class="author">Vãn Tình</p>
                         </div>
                     </div>
@@ -682,7 +683,7 @@
                             <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Trên đường băng</p> </a>
                             <p class="author">Tony Buổi Sáng</p>
                         </div>
                     </div>
@@ -700,7 +701,7 @@
                             <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Mắt Biếc</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -709,7 +710,7 @@
                             <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Cô gái đến từ hôm qua</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -718,7 +719,7 @@
                             <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
                             <p class="author">Ayn Rand</p>
                         </div>
                     </div>
@@ -727,7 +728,7 @@
                             <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -736,7 +737,7 @@
                             <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
                             <p class="author">Colleen McCulough</p>
                         </div>
                     </div>
@@ -745,7 +746,7 @@
                             <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Chú chó không nhà</p> </a>
                             <p class="author">Sarah Lean</p>
                         </div>
                     </div>
@@ -754,7 +755,7 @@
                             <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
                             <p class="author">Vãn Tình</p>
                         </div>
                     </div>
@@ -763,7 +764,7 @@
                             <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Trên đường băng</p> </a>
                             <p class="author">Tony Buổi Sáng</p>
                         </div>
                     </div>
@@ -781,7 +782,7 @@
                             <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Mắt Biếc</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -790,7 +791,7 @@
                             <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Cô gái đến từ hôm qua</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -799,7 +800,7 @@
                             <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
                             <p class="author">Ayn Rand</p>
                         </div>
                     </div>
@@ -808,7 +809,7 @@
                             <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -817,7 +818,7 @@
                             <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
                             <p class="author">Colleen McCulough</p>
                         </div>
                     </div>
@@ -826,7 +827,7 @@
                             <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Chú chó không nhà</p> </a>
                             <p class="author">Sarah Lean</p>
                         </div>
                     </div>
@@ -862,7 +863,7 @@
                             <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Mắt Biếc</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -871,7 +872,7 @@
                             <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Cô gái đến từ hôm qua</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -880,7 +881,7 @@
                             <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
                             <p class="author">Ayn Rand</p>
                         </div>
                     </div>
@@ -889,7 +890,7 @@
                             <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -898,7 +899,7 @@
                             <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
                             <p class="author">Colleen McCulough</p>
                         </div>
                     </div>
@@ -907,7 +908,7 @@
                             <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Chú chó không nhà</p> </a>
                             <p class="author">Sarah Lean</p>
                         </div>
                     </div>
@@ -916,7 +917,7 @@
                             <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
                             <p class="author">Vãn Tình</p>
                         </div>
                     </div>
@@ -925,7 +926,7 @@
                             <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Trên đường băng</p> </a>
                             <p class="author">Tony Buổi Sáng</p>
                         </div>
                     </div>
@@ -942,7 +943,7 @@
                             <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Mắt Biếc</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -951,7 +952,7 @@
                             <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Cô gái đến từ hôm qua</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -960,7 +961,7 @@
                             <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
                             <p class="author">Ayn Rand</p>
                         </div>
                     </div>
@@ -969,7 +970,7 @@
                             <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -978,7 +979,7 @@
                             <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
                             <p class="author">Colleen McCulough</p>
                         </div>
                     </div>
@@ -987,7 +988,7 @@
                             <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Chú chó không nhà</p> </a>
                             <p class="author">Sarah Lean</p>
                         </div>
                     </div>
@@ -996,7 +997,7 @@
                             <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
                             <p class="author">Vãn Tình</p>
                         </div>
                     </div>
@@ -1005,7 +1006,7 @@
                             <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Trên đường băng</p> </a>
                             <p class="author">Tony Buổi Sáng</p>
                         </div>
                     </div>
@@ -1023,7 +1024,7 @@
                             <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Mắt Biếc</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -1032,7 +1033,7 @@
                             <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Cô gái đến từ hôm qua</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -1041,7 +1042,7 @@
                             <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
                             <p class="author">Ayn Rand</p>
                         </div>
                     </div>
@@ -1050,7 +1051,7 @@
                             <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -1059,7 +1060,7 @@
                             <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
                             <p class="author">Colleen McCulough</p>
                         </div>
                     </div>
@@ -1068,7 +1069,7 @@
                             <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Chú chó không nhà</p> </a>
                             <p class="author">Sarah Lean</p>
                         </div>
                     </div>
@@ -1077,7 +1078,7 @@
                             <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
                             <p class="author">Vãn Tình</p>
                         </div>
                     </div>
@@ -1086,7 +1087,7 @@
                             <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Trên đường băng</p> </a>
                             <p class="author">Tony Buổi Sáng</p>
                         </div>
                     </div>
@@ -1104,7 +1105,7 @@
                             <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Mắt Biếc</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -1113,7 +1114,7 @@
                             <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Cô gái đến từ hôm qua</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -1122,7 +1123,7 @@
                             <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
                             <p class="author">Ayn Rand</p>
                         </div>
                     </div>
@@ -1131,7 +1132,7 @@
                             <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -1140,7 +1141,7 @@
                             <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
                             <p class="author">Colleen McCulough</p>
                         </div>
                     </div>
@@ -1149,7 +1150,7 @@
                             <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Chú chó không nhà</p> </a>
                             <p class="author">Sarah Lean</p>
                         </div>
                     </div>
@@ -1158,7 +1159,7 @@
                             <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
                             <p class="author">Vãn Tình</p>
                         </div>
                     </div>
@@ -1167,7 +1168,7 @@
                             <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Trên đường băng</p> </a>
                             <p class="author">Tony Buổi Sáng</p>
                         </div>
                     </div>
@@ -1185,7 +1186,7 @@
                             <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Mắt Biếc</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -1194,7 +1195,7 @@
                             <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Cô gái đến từ hôm qua</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -1203,7 +1204,7 @@
                             <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
                             <p class="author">Ayn Rand</p>
                         </div>
                     </div>
@@ -1212,7 +1213,7 @@
                             <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -1221,7 +1222,7 @@
                             <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
                             <p class="author">Colleen McCulough</p>
                         </div>
                     </div>
@@ -1230,7 +1231,7 @@
                             <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Chú chó không nhà</p> </a>
                             <p class="author">Sarah Lean</p>
                         </div>
                     </div>
@@ -1239,7 +1240,7 @@
                             <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
                             <p class="author">Vãn Tình</p>
                         </div>
                     </div>
@@ -1248,7 +1249,7 @@
                             <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Trên đường băng</p> </a>
                             <p class="author">Tony Buổi Sáng</p>
                         </div>
                     </div>
@@ -1266,7 +1267,7 @@
                             <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Mắt Biếc</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Mắt Biếc</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -1275,7 +1276,7 @@
                             <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Cô gái đến từ hôm qua</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Cô gái đến từ hôm qua</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -1284,7 +1285,7 @@
                             <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Suối nguồn</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
                             <p class="author">Ayn Rand</p>
                         </div>
                     </div>
@@ -1293,7 +1294,7 @@
                             <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
                             <p class="author">Nguyễn Nhật Ánh</p>
                         </div>
                     </div>
@@ -1302,7 +1303,7 @@
                             <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
                             <p class="author">Colleen McCulough</p>
                         </div>
                     </div>
@@ -1311,7 +1312,7 @@
                             <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Chú chó không nhà</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Chú chó không nhà</p> </a>
                             <p class="author">Sarah Lean</p>
                         </div>
                     </div>
@@ -1320,7 +1321,7 @@
                             <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
                             <p class="author">Vãn Tình</p>
                         </div>
                     </div>
@@ -1329,7 +1330,7 @@
                             <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
                         </div>
                         <div class="img_detail">
-                            <a href="#" class="title"><p>Trên đường băng</p> </a>
+                            <a href="../html/DetailBook.html" class="title"><p>Trên đường băng</p> </a>
                             <p class="author">Tony Buổi Sáng</p>
                         </div>
                     </div>
@@ -1354,30 +1355,30 @@
 
 
     <footer class="footer">
-        <div class="container-footer">
+        <div id="container-footer">
             <div class="row">
                 <div class="footer-col">
-                    <h4><b>Về chúng tôi</b></h4>
+                    <a href="AboutMeraki.html"><h4><b>Về chúng tôi</b></h4></a>
                     <ul>
-                        <li><a href="#">Giới thiệu chung</a></li>
-                        <li><a href="#">Quy định về bản quyền</a></li>
+                        <li><a href="AboutMeraki.html">Giới thiệu chung</a></li>
+                        <li><a href="AboutMeraki.html#QuyDinhBanQuyen">Quy định về bản quyền</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4><b>Chính sách</b></h4>
+                    <a href="Policy.html"><h4><b>Chính sách</b></h4></a>
                     <ul>
-                        <li><a href="#">Chính sách vận chuyển</a></li>
-                        <li><a href="#">Chính sách trả hàng</a></li>
-                        <li><a href="#">Chính sách bảo mật</a></li>
-                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="Policy.html#ChinhSachVanChuyen">Chính sách vận chuyển</a></li>
+                        <li><a href="Policy.html#ChinhSachTraHang">Chính sách trả hàng</a></li>
+                        <li><a href="Policy.html#ChinhSachBaoMat">Chính sách bảo mật</a></li>
+                        <li><a href="Policy.html#DieuKhoanSuDung">Điều khoản sử dụng</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4><b>Hỗ trợ khách hàng</b></h4>
+                    <a href="Tutorial.html"><h4><b>Hỗ trợ khách hàng</b></h4></a>
                     <ul>
-                        <li><a href="#">Hướng dẫn đặt hàng</a></li>
-                        <li><a href="#">Hướng dẫn thanh toán</a></li>
-                        <li><a href="#">Hướng dẫn trả hàng</a></li>
+                        <li><a href="Tutorial.html#HuongDanDatHang">Hướng dẫn đặt hàng</a></li>
+                        <li><a href="Tutorial.html#HuongDanThanhToan">Hướng dẫn thanh toán</a></li>
+                        <li><a href="Tutorial.html#HuongDanTraHang">Hướng dẫn trả hàng</a></li>
 
                     </ul>
                 </div>

@@ -90,7 +90,7 @@
     align-items: center;
 }
 
-    #btnTiepTucMuaHang button {
+    #btnTiepTucMuaHang a input {
         background-color: var(--green);
         border-radius: 10px;
         padding: 7px;
@@ -115,8 +115,8 @@
     box-shadow: 2px 2px #888888;
 }
 
-    .thanh_tien_box button {
-        width: 60%;
+    .thanh_tien_box .btn {
+        width: 100%;
         display: block;
         background-color: var(--yellow);
         border-radius: 10px;

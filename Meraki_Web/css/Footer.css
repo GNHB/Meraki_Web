@@ -1,6 +1,6 @@
 ﻿/*FOOTER*/
 .container-footer {
-    max-width: 1170px;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -84,11 +84,22 @@ ul {
     .footer-col {
         width: 50%;
         margin-bottom: 30px;
+        text-align: center;
     }
+        .footer-col h4::before {
+            position: absolute;
+            left: 40%;
+        }
 }
 
 @media(max-width: 574px) {
     .footer-col {
         width: 100%;
+        text-align: center;
     }
+
+        .footer-col h4::before {
+            position: absolute;
+            left: 40%;
+        }
 }
