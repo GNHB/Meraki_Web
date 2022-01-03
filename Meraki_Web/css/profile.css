@@ -582,9 +582,11 @@ Book stuff
 
     /*MY ACCOUNT*/
 
-    .inf-container {
-        margin: auto;
-        align-items: stretch;
+.inf-container {
+    margin: auto;
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
     }
 
     .inf-content {
@@ -735,6 +737,11 @@ Book stuff
     .inf-content {
         margin: 10px;
     }
+    .inf-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
     .book {
         margin: 49px;
     }
@@ -775,6 +782,11 @@ Book stuff
         width: 100%;
         overflow-x: auto;
     }
+    .inf-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -786,6 +798,11 @@ Book stuff
     }
     .profile-banner{
         width:100%;
+    }
+    .inf-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
     .book {
         width: 140px;
@@ -825,10 +842,10 @@ Book stuff
         font-size:25px;
     }
     .sachmoititle{
-        background-color:pink;
+        background-color:var(--skin);
         width:100%;
-
     }
+
     #large-th{
         width:100%;
         padding:0;
@@ -843,5 +860,12 @@ Book stuff
     }
     .book{
         margin:25px auto 25px auto;
+        height:inherit;
     }
+    
+
+
+}
+@media (min-width: 900px) {
+    
 }
