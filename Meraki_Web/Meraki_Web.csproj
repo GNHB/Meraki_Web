@@ -120,6 +120,7 @@
     <Content Include="html\ThanhToan.html" />
     <Content Include="html\Newbooks.html" />
     <Content Include="html\OrderManagement.html" />
+    <Content Include="html\ThanhToanEBook.html" />
     <Content Include="html\TheLoai.html" />
     <Content Include="html\Tutorial.html" />
     <Content Include="html\VIP.html" />
