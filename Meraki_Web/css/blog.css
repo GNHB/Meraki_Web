@@ -15,6 +15,10 @@
     transition: all .2s linear;
     transition: width none;
 }
+.footer {
+    background-color: var(--green);
+    padding: 10px 0;
+}
 .banner-blog {
     width: 80%;
     margin: 30px auto;
@@ -31,7 +35,7 @@
     }
 
 .row{
-    margin-top: 5%;
+  /*  margin-top: 5%;*/
     display:flex;
     justify-content:space-between;
 }
@@ -743,7 +747,7 @@ del {
     padding: 10px;
     border-radius: 10px;
 }
-.slick-next {
+.slick-next:hover {
     color: var(--green);
     background-color: var(--yellow)
 }
@@ -987,3 +991,13 @@ del {
     }
 }
 
+.fa-book {
+    font-size: 20px;
+    margin-left: 5px;
+
+}
+.fa-cart-plus {
+    font-size: 20px;
+    margin-left: 5px;
+
+}
