@@ -40,17 +40,17 @@
                     <form action="SignIn.html" method="get" >
                         <div class="input-boxes">
                             <div class="input-box">
-                                <input type="text" name="nameSignIn" placeholder="Tên đăng nhập" required>
+                                <input type="text" name="nameSignIn" placeholder="Tên đăng nhập" id="name" required>
                             </div>
                             <div class="input-box">
-                                <input type="password" name="passwordSignIn" placeholder="Mật khẩu" required ">
+                                <input type="password" name="passwordSignIn" placeholder="Mật khẩu" id="password" required >
                             </div>
                             <div class="text"><a href="#">Quên mật khẩu?</a></div>
-                            <a href="index.html">
+                            <!--<a href="index.html">-->
                                 <div class="button input-box">
-                                    <input type="button" class="submit" value="Đăng nhập" id="register" style="border:none;">
+                                    <input type="button" class="submit" value="Đăng nhập" id="signIn" style="border:none;" onclick="SignIn()">
                                 </div>
-                            </a>
+                            <!--</a>-->
                             <div class="text sign-up-text">Tạo tài khoản? <label for="flip">Đăng kí</label></div>
                         </div>
                     </form>
@@ -60,22 +60,22 @@
                     <form action="#" method="get">
                         <div class="input-boxes">
                             <div class="input-box">
-                                <input type="text" placeholder="Tên đăng nhập" required>
+                                <input type="text" placeholder="Tên đăng nhập" id="resName" required>
                             </div>
                             <div class="input-box">
-                                <input type="text" placeholder="Số điện thoại hoặc email" required>
+                                <input type="text" placeholder="Số điện thoại hoặc email" id="resPhone" required>
                             </div>
                             <div class="input-box">
-                                <input type="password" placeholder="Mật khẩu" required>
+                                <input type="password" placeholder="Mật khẩu" id="resPassword" required >
                             </div>
                             <div class="input-box">
-                                <input type="password" placeholder="Nhập lại mật khẩu" id="passwordAgain" required>
+                                <input type="password" placeholder="Nhập lại mật khẩu" id="resPasswordAgain" required>
                             </div>
-                            <a href="index.html">
+                            <!--<a href="index.html">-->
                                 <div class="button input-box">
-                                    <input type="button" class="submit" value="Đăng kí" id="register" style="border:none;" onClick="register()">
+                                    <input type="button" class="submit" value="Đăng kí" id="btnRegister" style="border:none;" onClick="register()">
                                 </div>
-                            </a>                          
+                            <!--</a>-->                          
                             <div class="text sign-up-text">Bạn đã có tài khoản? <label for="flip">Đăng nhập ngay</label></div>
                             
                         </div>
@@ -84,5 +84,38 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function SignIn() {
+            var name = document.getElementById("name").value;
+            var password = document.getElementById("password").value;
+            var button = document.getElementById("signIn");
+            button.addEventListener('click', function dangnhap() {
+                if (password == "" || name == "") {
+                    alert("Vui lòng điền đủ thông tin");
+                } else {
+                    window.location.href = 'index.html';
+                }
+            });
+        }
+        function register() {
+            var name = document.getElementById("resName").value;
+            var phone = document.getElementById("resPhone").value;
+            var password = document.getElementById("resPassword").value;
+            var paswordAgain = document.getElementById("resPasswordAgain").value;
+            var button = document.getElementById("btnRegister");
+            button.addEventListener('click', function dangki() {
+                if (password != paswordAgain) {
+                    alert("Mật khẩu không trùng khớp vui lòng nhập lại!");
+                    if (password == "" || passwordAgain == "" || name == "" || phone == "") {
+                        alert("Vui lòng điền đủ thông tin");
+                    }
+                }
+                else {
+                    window.location.href = 'index.html';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
