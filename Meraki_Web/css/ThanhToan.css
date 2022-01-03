@@ -270,6 +270,15 @@
     .dathang p{
         text-align: center;
     }
+    .modal-content {
+        bottom: 40%;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+    }
+    .modal-body p {
+        font-size: 14px;
+    }
 }
 
 
