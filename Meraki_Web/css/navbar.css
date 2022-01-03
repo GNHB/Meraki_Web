@@ -328,6 +328,12 @@ ul {
         width: 100%;
     }
 }
+@media screen and (max-width: 500px) {
+    .slideshow-container {
+        width: 100%;
+        height: 100%;
+    }
+}
 
 /*slogan*/
 
