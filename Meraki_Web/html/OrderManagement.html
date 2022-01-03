@@ -1,8 +1,11 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8" />
     <title>Tài khoản của bạn</title>
     <link rel="shortcut icon" type="img/png" href="../image/imvBanner/mylogo.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <!----------------------SLIDER BOOK-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -14,8 +17,9 @@
 
     <!----------------------CSS CONTENT-->
     <link rel="stylesheet" type="text/css" href="../css/profile.css" />
-    <link rel="stylesheet" type="text/css" href="../css/Footer.css" />
+
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../css/Footer.css" />
     <link rel="stylesheet" type="text/css" href="../css/TheLoai.css" />
 
 
@@ -59,7 +63,7 @@
 
 
     <!--PROFILE BANNER-->
-    <div class="header">Trang cá nhân</div>
+    <div class="header"><p>Trang cá nhân</p></div>
 
     <div class="profile-banner" onload="checkEdits()">
         <div class="img-profileinf">
@@ -80,7 +84,7 @@
     <div class="content-container">
         <div class="tab">
             <button class="tablinks" type="button" onclick="openTab(event, 'Myaccount')  " id="defaultOpen">
-                <span class="tab-icon"><i class="far fa-user-circle fa-2x"></i></span>
+                <span class="tab-icon"><i class="far fa-address-card fa-2x"></i></span>
                 <span class="tab-text">Tài khoản của tôi</span>
             </button>
             <button class="tablinks" onclick="openTab(event, 'Mybook')">
@@ -176,7 +180,7 @@
                         <div class="description">
                             <p class="titlebook">
                                 <span class="titlename">Chú chó không nhà</span><br>
-                                                 <span class="authorbook">Sarah Lean</span>
+                                <span class="authorbook">Sarah Lean</span>
                             </p>
                         </div>
                     </div>
@@ -198,7 +202,7 @@
                         <div class="description">
                             <p class="titlebook">
                                 <span class="titlename">Kỳ án ánh trăng</span><br>
-                                               <span class="authorbook">Quỷ Cổ Nữ</span>
+                                <span class="authorbook">Quỷ Cổ Nữ</span>
                             </p>
                         </div>
                     </div>
@@ -209,7 +213,7 @@
                         <div class="description">
                             <p class="titlebook">
                                 <span class="titlename">Suối nguồn</span><br>
-                                          <span class="authorbook">Ayn Rand</span>
+                                <span class="authorbook">Ayn Rand</span>
                             </p>
                         </div>
                     </div>
@@ -220,7 +224,7 @@
                         <div class="description">
                             <p class="titlebook">
                                 <span class="titlename">Trước khi nhắm mắt</span><br>
-                                                 <span class="authorbook">Lư Tư Hạo</span>
+                                <span class="authorbook">Lư Tư Hạo</span>
                             </p>
                         </div>
                     </div>
@@ -231,7 +235,7 @@
                         <div class="description">
                             <p class="titlebook">
                                 <span class="titlename">Nhà giả kim</span><br>
-                                           <span class="authorbook">Paulo Coelho</span>
+                                <span class="authorbook">Paulo Coelho</span>
                             </p>
                         </div>
                     </div>
@@ -256,7 +260,7 @@
                         <div class="description">
                             <p class="titlebook">
                                 <span class="titlename">Origin</span><br>
-                                      <span class="authorbook">Dan Brown</span>
+                                <span class="authorbook">Dan Brown</span>
                             </p>
                         </div>
                     </div>
@@ -289,7 +293,7 @@
                         <div class="description">
                             <p class="titlebook">
                                 <span class="titlename">Trước khi nhắm mắt</span><br>
-                                                  <span class="authorbook">Keigo Higashino</span>
+                                <span class="authorbook">Keigo Higashino</span>
                             </p>
                         </div>
                     </div>
@@ -300,7 +304,7 @@
                         <div class="description">
                             <p class="titlebook">
                                 <span class="titlename">Truyện Kiều</span><br>
-                                           <span class="authorbook">Nguyễn Du</span>
+                                <span class="authorbook">Nguyễn Du</span>
                             </p>
                         </div>
                     </div>
@@ -311,11 +315,11 @@
                         <div class="description">
                             <p class="titlebook">
                                 <span class="titlename">Vòng tròn máu</span><br>
-                                             <span class="authorbook">Edgar Wallace</span>
+                                <span class="authorbook">Edgar Wallace</span>
                             </p>
                         </div>
                     </div>
-                    
+
 
                 </div>
 
@@ -332,7 +336,7 @@
                         <div class="description">
                             <p class="titlebook">
                                 <span class="titlename">Hỏa ngục</span><br>
-                                        <span class="authorbook">Dan Brown</span>
+                                <span class="authorbook">Dan Brown</span>
                             </p>
                         </div>
                     </div>
@@ -343,7 +347,7 @@
                         <div class="description">
                             <p class="titlebook">
                                 <span class="titlename">Harry Potter</span> <br>
-                                            <span class="authorbook">J.K.Rowling</span>
+                                <span class="authorbook">J.K.Rowling</span>
                             </p>
                         </div>
                     </div>
@@ -393,7 +397,7 @@
                     </div>
                     <div class="bookview">
                         <div class="coverbook">
-                            <img src="../image/imvBook/phiasaunghicanx.png"" />
+                            <img src="../image/imvBook/phiasaunghicanx.png" "  />
                         </div>
                         <div class="description">
                             <p class="titlebook">
@@ -720,6 +724,6 @@
     </footer>
 
     <script src="../js/script.js"></script>
-    <script src="../js/tabslider.js"></script>    
+    <script src="../js/tabslider.js"></script>
 </body>
 </html>

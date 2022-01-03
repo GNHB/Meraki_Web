@@ -21,7 +21,11 @@ body {
     background-color: var(--light_skin)
 }
 
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
+    body{
+        width:100%;
+        background-color: blue;
+    }
     .container {
         max-width: 700px;
     }
@@ -47,7 +51,8 @@ body {
         margin: 0 auto;
         margin-top: 50px;
         height: 240px;
-        width: 140px;
+        width: 100%;
+        background-color: blue;
     }
 
     .tab-text {
@@ -59,11 +64,16 @@ body {
     }
 }
 @media (max-width: 500px) {
-    body{
+    body {
         width: 100%;
+        background-color: blue;
+    }
+    .book{
+        width:140px;
+        height:240px;
     }
 }
-    @media (min-width: 900px) {
+*/   /* @media (min-width: 900px) {
         .inf-container {
             display: flex;
             justify-content: space-between;
@@ -81,7 +91,7 @@ body {
         .tabs .tab-content {
             margin-bottom: 1000px;
         }
-    }
+    }*/
 
     /*Header*/
     .header {
@@ -91,35 +101,31 @@ body {
 
     /*Title Sach Moi*/
     .sachmoititle {
-        width: 100%;
+        width: 80%;
         height: 65px;
-        padding: 0 165px;
         align-items: center;
+        display:flex;
+        justify-content:space-between;
+        margin:auto;
     }
-
-    .sachmoi {
-        flex: 2;
-    }
-
     .sapxep {
+        display:flex;
         align-items: center;
-        flex: 1;
     }
 
     .sapxeptext {
-        flex: 1;
+        flex:1;
         font-size: 16px;
     }
 
     .form-control {
+        flex:2;
         margin: 10px;
-        flex: 1;
         height: 100%;
         background-color: var(--skin)
     }
 
     .sachmoititle .sachmoi {
-        display: flex;
         float: left;
         font-size: 32px;
     }
@@ -243,12 +249,15 @@ Book stuff
     #large-th:target .book {
         height: 390px;
     }
-
-    /*NAV BOOK*/
-    .pagination {
-        margin: 20px;
-        text-align: center;
-    }
+#large-th{
+    width:80%;
+    margin:auto;
+}
+/*NAV BOOK*/
+.pagination {
+    margin: 20px;
+    text-align: center;
+}
 
         .pagination a {
             color: black;
@@ -573,9 +582,11 @@ Book stuff
 
     /*MY ACCOUNT*/
 
-    .inf-container {
-        margin: auto;
-        align-items: stretch;
+.inf-container {
+    margin: auto;
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
     }
 
     .inf-content {
@@ -622,6 +633,7 @@ Book stuff
     .chart {
         width: 100%;
         height: 500px;
+        background-color: blue;
     }
 
     .mybook-content {
@@ -688,3 +700,172 @@ Book stuff
     form.invert > button:nth-of-type(3) {
         display: none;
     }
+@media (max-width: 900px) {
+    body {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+
+    .profile-banner {
+        width: 100%;
+    }
+
+    .book {
+        width: 140px;
+        height: 240px;
+    }
+
+    .header {
+        width: 100%;
+        margin: auto;
+    }
+
+        .header p {
+            text-align: center;
+        }
+
+    .content-container {
+        width: 100%;
+    }
+
+        .tabcontent h3 {
+            text-align: center;
+        }
+
+    .inf-content {
+        margin: 10px;
+    }
+    .inf-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .book {
+        margin: 49px;
+    }
+
+    .sachmoititle {
+        margin-bottom: 50px;
+        align-items: center;
+    }
+
+    .sapxeptext {
+        display: none;
+    }
+
+    .writequote {
+        display: none;
+    }
+    .sapxep {
+        display: flex;
+    }
+}
+
+@media (max-width: 700px) {
+    .book {
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+        height: 240px;
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .tab-text {
+        display: none;
+    }
+
+    .order-item div {
+        width: 100%;
+        overflow-x: auto;
+    }
+    .inf-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .profile-banner{
+        width:100%;
+    }
+    .inf-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .book {
+        width: 140px;
+        height: 240px;
+        margin: 10px 0 10px 0;
+    }
+    .header{
+        width:100%;
+        margin:auto;
+    }
+    .header p{
+        text-align:center;
+    }
+    .content-container{
+        flex-direction:column;
+        width:100%;
+    }
+    .tab{
+        display:flex;
+        flex-direction:row;
+        width:100%;
+    }
+    .tabcontent{
+        width:100%;
+    }
+    .tabcontent h3{
+        text-align:center;
+    }
+    .inf-content{
+        margin:10px;
+    }
+    .avatar-profile{
+        width:100px;
+        height:100px;
+    }
+    .name-profile a{
+        font-size:25px;
+    }
+    .sachmoititle{
+        background-color:var(--skin);
+        width:100%;
+    }
+
+    #large-th{
+        width:100%;
+        padding:0;
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    #list-th{
+        width:100%;
+        padding:0;
+    }
+    .book{
+        margin:25px auto 25px auto;
+        height:inherit;
+    }
+    
+
+
+}
+@media (min-width: 900px) {
+    
+}

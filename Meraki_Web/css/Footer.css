@@ -1,12 +1,13 @@
 ﻿/*FOOTER*/
 .container-footer {
-    max-width: 100%;
-    margin: auto;
+    width: 100%;
+    margin: 0;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 ul {
@@ -19,8 +20,9 @@ ul {
 }
 
 .footer-col {
-    width: 20%;
+    width: 17%;
     padding: 0 15px;
+    margin-left: 3%
 }
 
     .footer-col h4 {
@@ -86,6 +88,7 @@ ul {
         margin-bottom: 30px;
         text-align: center;
     }
+
         .footer-col h4::before {
             position: absolute;
             left: 40%;
