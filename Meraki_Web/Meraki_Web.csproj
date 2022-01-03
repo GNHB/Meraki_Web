@@ -71,10 +71,14 @@
     <Content Include="admin_css\ad_DardBoard.css" />
     <Content Include="admin_css\ad_ListBook.css" />
     <Content Include="admin_css\ad_Stock.css" />
+    <Content Include="admin_css\ad_UserList.css" />
     <Content Include="admin_css\ad_UserReview.css" />
+    <Content Include="admin_html\ad_Blog.html" />
     <Content Include="admin_html\ad_DardBoard.html" />
     <Content Include="admin_css\ad_OrderList.css" />
     <Content Include="admin_css\ad_sidebar.css" />
+    <Content Include="admin_html\ad_Delivery.html" />
+    <Content Include="admin_html\ad_InvoiceList.html" />
     <Content Include="admin_html\ad_ListBook.html" />
     <Content Include="admin_html\ad_Order.html" />
     <Content Include="admin_html\ad_Category.html" />

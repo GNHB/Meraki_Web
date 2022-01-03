@@ -30,8 +30,8 @@
         <a href="ad_DardBoard.html"><i class="fas fa-columns" style="margin-right:10px;"></i> DashBoard</a>
         <button class="dropdown_btn"><i class="fas fa-user-circle" style="margin-right:10px;"></i>Khách hàng <i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
-            <a href="#">Đánh giá</a>
-            <a href="#">Danh sách khách hàng</a>
+            <a href="ad_UsersReview.html">Đánh giá</a>
+            <a href="ad_UserList.html">Danh sách khách hàng</a>
         </div>
 
         <button class="dropdown_btn"><i class="fas fa-book" style="margin-right:10px;"></i>Sách <i class="fa fa-caret-down"></i></button>
@@ -40,10 +40,10 @@
             <a href="ad_Stock.html">Hàng tồn kho</a>
         </div>
         <a href="ad_Category.html"><i class="fas fa-list" style="margin-right:10px;"></i>Danh mục</a>
-        <a href="#"><i class="fas fa-pen-nib" style="margin-right:10px;"></i>Blog</a>
-        <a href="ad_OrderList.html"><i class="fas fa-shopping-cart" style="margin-right:10px;"></i>Danh sách đơn hàng</a>
-        <a href="#"><i class="fas fa-file-alt" style="margin-right:10px;"></i>Danh sách hóa đơn</a>
-        <a href="#"><i class="fas fa-truck" style="margin-right:10px;"></i>Vận chuyển </a>
+        <a href="ad_Blog.html"><i class="fas fa-pen-nib" style="margin-right:10px;"></i>Blog</a>
+        <a href="ad_Order.html"><i class="fas fa-shopping-cart" style="margin-right:10px;"></i>Danh sách đơn hàng</a>
+        <a href="ad_InvoiceList.html"><i class="fas fa-file-alt" style="margin-right:10px;"></i>Danh sách hóa đơn</a>
+        <a href="ad_Delivery.html"><i class="fas fa-truck" style="margin-right:10px;"></i>Vận chuyển </a>
         <a href="#" style="border-top:1px solid black;"><i class="fas fa-user-cog" style="margin-right:10px;"></i>Giao diện</a>
         <br />
     </div>
@@ -120,7 +120,7 @@
                         <col span="1" style="width: 10%;">
                         <col span="1" style="width: 10%;">
                     </colgroup>
-                    <tbody>
+                    <thead>
                         <tr>
                             <th>ID Sách</th>
                             <th>Tên sách</th>
@@ -129,6 +129,8 @@
                             <th>Tình trạng</th>
                             <th>Tạo đơn</th>
                         </tr>
+                    </thead>
+                    <tbody>    
                         <tr>
                             <td>#00211</td>
                             <td>Lão Hạc</td>
@@ -237,7 +239,7 @@
                                 <img src="../image/imvAdmin/add.png" />
                             </td>
                         </tr>
-                        <tr class="last">
+                        <tr>
                             <td>#00219</td>
                             <td>Đắc nhân tâm</td>
                             <td>NXB Trẻ</td>
@@ -255,7 +257,7 @@
             </div>
             <!------------------------------------------------------------>
         </div>
-        </div>>
+        </div>
     <!------------------------------------------------------------>
     <script type="text/javascript" src="../admin_js/ad_sidebar.js"></script>
 </body>

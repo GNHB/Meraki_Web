@@ -150,3 +150,94 @@ body {
     color: white;
     margin: auto;
 }
+
+@media screen and (max-width: 900px) {
+    .table_list_book {
+        text-align: unset;
+    }
+
+        .table_list_book tr {
+            border: none;
+            text-align:end;
+        }
+
+    .header {
+        flex-direction: column;
+    }
+
+        .header .user {
+            position: relative;
+            bottom: 10px;
+            left: 50px;
+        }
+
+    .total {
+        text-align: center;
+    }
+
+    thead {
+        display: none;
+    }
+
+    .table_list_book, .table_list_book tbody, .table_list_book tr, .table_list_book td {
+        display: block;
+        width: 100%;
+    }
+
+        .table_list_book tr {
+            margin-bottom: 15px;
+            border: 2px solid var(--yellow);
+            padding: 10px;
+            background-color: var(--skin);
+        }
+
+        .table_list_book td:first-child::before {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .table_list_book td:nth-child(2)::before {
+            content: "Sách";
+        }
+
+        .table_list_book td:nth-child(3)::before {
+            content: "Nhà cung cấp";
+        }
+
+        .table_list_book td:nth-child(4)::before {
+            content: "Số lượng";
+        }
+
+    
+
+
+    td {
+        text-align: right;
+    }
+
+        td::before {
+            float: left;
+            font-weight: bold;
+            margin-right: 10%;
+        }
+
+    .table_list_book th, tr, td {
+        border-bottom: 0;
+        font-size: 14px;
+    }
+
+    .table_list_book td:last-child {
+        width: 100%;
+    }
+
+    .box_container{
+        display:block;
+    }
+    .box_1{
+        width:100%;
+    }
+
+    .btn_AddBook {
+        padding: 0.5em 1em;
+    }
+}
