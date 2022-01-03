@@ -9,6 +9,7 @@
     <!----------------------CSS CONTENT-->
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/ThanhToanEBook.css" />
+    <link rel="stylesheet" type="text/css" href="../css/Footer.css" />
 
     <!----------------------FONT-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -150,7 +151,7 @@
                         </div>
                     </div>
                     <span class="action">
-                            <input type="button" value="Xác nhận" class="btnConfirm" />
+                        <input type="button" value="Xác nhận" class="btnConfirm" id="btnConfirm" onclick="PopUp()" />
                     </span>
                 </div>
 
@@ -165,7 +166,7 @@
                         <table>
                             <tr>
                                 <td style="width:fit-content">
-                                    <img src="../image/imvBook/haisophan.jpg"/>
+                                    <img src="../image/imvBook/haisophan.jpg" />
                                 </td>
                                 <td class="book_info">
                                     <p class="book_name">Hai số phận </p>
@@ -197,7 +198,7 @@
                         <table>
                             <tr>
                                 <td style="width:fit-content">
-                                    <img src="../image/imvBook/harrypotter.jpg"  />
+                                    <img src="../image/imvBook/harrypotter.jpg" />
                                 </td>
                                 <td class="book_info">
                                     <p class="book_name">Harry Potter </p>
@@ -211,6 +212,22 @@
         </div>
 
     </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>THANH TOÁN THÀNH CÔNG</h2>
+            </div>
+            <div class="modal-body">
+                <p style="text-align: center; margin-bottom: 10px; font-weight: 700; color: #F7BB34;">Cảm ơn bạn đã mua hàng tại Meraki Book</p>
+                <p>Chi tiết đơn hàng xin kiểm tra tại <a href="../html/OrderManagement.html"><b>Đơn hàng của tôi</b></a> trong trang cá nhân của bạn</p>
+            </div>
+        </div>
+
+    </div>
+
     <section class="slogan" id="logan" style="background-color: #487B72; height:50px;text-align:center; margin-top:50px">
         <h3 style="color:white; align-items:center; padding:15px">
             Meraki Book nơi cảm xúc bắt đầu
@@ -274,5 +291,24 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        function PopUp() {
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("btnConfirm");
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+        
+    </script>
 </body>
 </html>
