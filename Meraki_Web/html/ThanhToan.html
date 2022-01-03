@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body style="font-family: Arial; font-size: 16px; background-color: #FEFAF4; " autocorrect=" off">
+<body style="font-family: Arial; font-size: 16px; background-color: #FEFAF4; " autocorrect=" off" >
     <!--Navigation bar-->
     <nav>
         <div class="nav_content">
@@ -44,9 +44,9 @@
                     <td>Giao hàng nhanh</td>
                     <td>25.000đ</td>
                 </tr>
-                <tr>
+                <tr >
                     <td>Nhận hàng vào 14/11 - 17/11</td>
-                    <td><input type="checkbox" name="giaohangnhanh" id="giaohangnhanh" /></td>
+                    <td class="checkinfo"><input type="radio" id="giaohangnhanh" class="giaohang" value="25000" name="fooby[1][]" onclick="if(this.checked){myFunction1(), sum()}"/></td>
                 </tr>
                 <tr>
                     <td>Giao Hàng Tiết Kiệm</td>
@@ -54,7 +54,7 @@
                 </tr>
                 <tr>
                     <td>Nhận hàng vào 15/11 - 18/11</td>
-                    <td><input type="checkbox" name="giaohangtietkiem" id="giaohangtietkiem" /></td>
+                    <td class="checkinfo"><input type="radio"id="giaohangtietkiem" class="giaohang" value="30000" name="fooby[1][]" onclick="if(this.checked){myFunction2(), sum()}"/></td>
                 </tr>
                 <tr>
                     <td>Giao hàng Viettel Post</td>
@@ -62,32 +62,38 @@
                 </tr>
                 <tr>
                     <td>Nhận hàng vào 14/11 - 18/11</td>
-                    <td><input type="checkbox" name="viettelpost" id="viettelpost" /></td>
+                    <td class="checkinfo"><input type="radio" id="viettelpost"  class="giaohang" value="35000" name="fooby[1][]" onclick="if(this.checked){myFunction3(), sum()}"/></td>
                 </tr>
             </table>
             <p style="font-size: 20px; margin-top:20px;">2. Chọn phương thức thanh toán</p>
             <span>
-                <input type="radio" name="tienmat" id="tienmat" /> <i class="fas fa-money-bill-wave"></i> Thanh toán bằng tiền mặt
+                <input type="radio" name="thanhtoan" id="tienmat" class="thanhtoan" value="1" />
+                <i class="fas fa-money-bill-wave"></i>
+                <label for="thanhtoan">Thanh toán bằng tiền mặt</label>
                 <br />
-                <input type="radio" name="ATM" id="ATM" /> <i class="far fa-credit-card"></i> Thẻ ATM nội địa
+                <input type="radio" name="thanhtoan" id="ATM" class="thanhtoan" value="1" />
+                <i class="far fa-credit-card"></i>
+                <label for="thanhtoan">Thẻ ATM nội địa</label>
                 <br />
-                <input type="radio" name="VISA" id="VISA" /> <i class="fab fa-cc-visa"></i> Thẻ quốc tế (visa,..)
+                <input type="radio" name="thanhtoan" id="VISA" class="thanhtoan" value="1" />
+                <i class="fab fa-cc-visa"></i> 
+                <label for="thanhtoan">Thẻ quốc tế (visa,..)</label>
             </span>
         </div>
         <div class="list_Book">
             <table id="list_Book_box" style="border: 1px solid black; font-size: 14px;">
                 <tr>
                     <td rowspan="3">
-                        <img src="../image/imvBook/whenbreathbecomesair.jpg" />
+                        <img src="../image/imvBook/truyenkieu.jpg" />
                     </td>
 
                 </tr>
                 <tr>
-                    <td class="image"><strong>When breath becomes air</strong></td>
-                    <td>70000</td>
+                    <td class="image"><strong>Truyện Kiều</strong></td>
+                    <td>40000đ</td>
                 </tr>
                 <tr>
-                    <td class="image" style="vertical-align: top;">Paul Kalanithi</td>
+                    <td class="image" style="vertical-align: top;">Nguyễn Du</td>
                     <td style="vertical-align: bottom; text-align: right;">x1</td>
                 </tr>
 
@@ -95,50 +101,34 @@
             <table id="list_Book_box" style="border: 1px solid black; font-size: 14px; margin-top: 10px;">
                 <tr>
                     <td rowspan="3">
-                        <img src="../image/imvBook/haisophan.jpg" />
+                        <img src="../image/imvBook/kyananhtrang.jpg" />
                     </td>
 
                 </tr>
                 <tr>
-                    <td class="image"><strong>Hai số phận</strong></td>
-                    <td>90000</td>
+                    <td class="image"><strong>Kỳ án ánh trăng</strong></td>
+                    <td>125000đ</td>
                 </tr>
                 <tr>
-                    <td class="image" style="vertical-align: top;">Jeffrey Archer</td>
-                    <td style="vertical-align: bottom; text-align: right;">x1</td>
-                </tr>
-            </table>
-            <table id="list_Book_box" style="border: 1px solid black; font-size: 14px; margin-top: 10px;">
-                <tr>
-                    <td rowspan="3">
-                        <img src="../image/imvBook/dapancuathoigian.jpg" />
-                    </td>
-
-                </tr>
-                <tr>
-                    <td class="image"><strong>Đáp án của thời gian</strong></td>
-                    <td>100000</td>
-                </tr>
-                <tr>
-                    <td class="image" style="vertical-align: top;">Lư Tư Hạo</td>
+                    <td class="image" style="vertical-align: top;">Quỷ Cổ Nữ</td>
                     <td style="vertical-align: bottom; text-align: right;">x1</td>
                 </tr>
             </table>
             <table class="tamtinh">
                 <tr>
                     <td>Tạm tính</td>
-                    <td>Tạm tính</td>
+                    <td><input class="tongunit" id="tamTinh" readonly value="165000" /> </td>
                 </tr>
                 <tr>
                     <td>Phí vận chuyển</td>
-                    <td>Phí vận chuyển</td>
+                    <td><input class="tongunit" id="phiVanChuyen" readonly  /></td>
                 </tr>
                 <tr>
                     <td style="height: 2px;" colspan="2"><hr style="width: 100%; height: 1px; background-color: black; vertical-align:top;" /></td>
                 </tr>
                 <tr>
                     <td>Tổng cộng</td>
-                    <td>Tổng cộng</td>
+                    <td><input class="tongunit" id="tong" readonly /></td>
                 </tr>
             </table>
 
@@ -148,7 +138,22 @@
     <div class="dathang">
         <p>Bằng việc tiến hành đặt mua, bạn đồng ý với <a href="Policy.html#DieuKhoanSuDung" id="dieukhoan">Điều khoản dịch vụ</a></p>
         <a href="../html/DiaChiGiaoHang.html" style="color: #F7BB34; text-decoration: none; text-align: center;">Quay lại trang địa chỉ giao hàng</a>
-        <button type="button" name="back" class="move_btn">Đặt hàng</button>
+        <button type="button" name="back" class="move_btn" id="btnDatHang" onclick="move()">Đặt hàng</button>
+    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 >ĐẶT HÀNG THÀNH CÔNG</h2>
+            </div>
+            <div class="modal-body">
+                <p style="text-align: center; margin-bottom: 10px; font-weight: 700; color: #F7BB34;">Cảm ơn bạn đã mua hàng tại Meraki Book</p>
+                <p>Chi tiết đơn hàng xin kiểm tra tại <a href="../html/OrderManagement.html"><b>Đơn hàng của tôi</b></a> trong trang cá nhân của bạn</p>
+            </div>
+        </div>
+
     </div>
 
 
@@ -208,5 +213,54 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        function myFunction1() {
+            document.getElementById("phiVanChuyen").value = document.getElementById("giaohangnhanh").value;
+        }
+        function myFunction2() {
+            document.getElementById("phiVanChuyen").value = document.getElementById("giaohangtietkiem").value;
+        }
+        function myFunction3() {
+            document.getElementById("phiVanChuyen").value = document.getElementById("viettelpost").value;
+        }
+        function sum() {
+            var vanChuyen = parseFloat(document.getElementById("phiVanChuyen").value);
+            var tien = 165000;
+            document.getElementById("tong").value = vanChuyen + tien + " đ";
+        }
+        function move() {
+            var ghN = document.getElementById("giaohangnhanh").checked;
+            var ghTK = document.getElementById("giaohangtietkiem").checked;
+            var viettel = document.getElementById("viettelpost").checked;
+
+            var tm = document.getElementById("tienmat").checked;
+            var atm = document.getElementById("ATM").checked;
+            var visa = document.getElementById("VISA").checked;
+            if (ghN == false & ghTK == false & viettel == false) {
+                alert("Xin chọn đơn vị vận chuyển");
+            } else {
+                if (tm == false & atm == false & visa == false) {
+                    alert("Xin chọn phương thức thanh toán");
+                } else {
+                    var modal = document.getElementById("myModal");
+                    var btn = document.getElementById("btnDatHang");
+                    var span = document.getElementsByClassName("close")[0];
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                }
+            }
+
+        }
+    </script>
 </body>
 </html>
