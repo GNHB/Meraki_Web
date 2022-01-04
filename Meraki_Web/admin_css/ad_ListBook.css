@@ -20,6 +20,9 @@
 body {
     background: var(--light_skin);
 }
+.title{
+    text-decoration:none;
+}
 
 .container_ListBook {
     width: 95%;
@@ -69,6 +72,7 @@ body {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5em 0 0.1em;
+    font-size: 16px;
 }
 
 .table_list_book tr th {

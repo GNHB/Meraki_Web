@@ -20,10 +20,14 @@
 body {
     background: var(--light_skin);
 }
+.title{
+    text-decoration:none;
+}
 
 .container_ListBook {
     width: 95%;
     margin: 1.5em auto;
+    font-size:16px;
 }
 
 .btn_ListBook {
