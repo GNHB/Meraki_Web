@@ -40,7 +40,7 @@ app.controller("BookController", function ($scope) {
         },
         {
 
-            "cover": "../image/imvBook/tróiinhvungve.jpg",
+            "cover": "../image/imvBook/troisinhvungve.jpg",
             "title": "Trời sinh vụng về",
             "author": "Lư Tư Hạo",
             "view": 4023,

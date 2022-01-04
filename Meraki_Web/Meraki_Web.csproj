@@ -161,7 +161,7 @@
     <Content Include="image\imvBanner\blog %282%29.png" />
     <Content Include="image\imvBanner\BN2.jpg" />
     <Content Include="image\imvBanner\IU.jpg" />
-    <Content Include="image\imvBanner\Lam-ban-voi-bau-troi-reviewsachonly.jpg" />
+    <Content Include="image\imvBanner\Hinh01.jpg" />
     <Content Include="image\imvBanner\logo.png" />
     <Content Include="image\imvBanner\News_01 1.png" />
     <Content Include="image\imvBanner\nguyennhatanh.jpg" />
@@ -186,10 +186,10 @@
     <Content Include="image\imvBook\Tiengchimhot2012.jpg" />
     <Content Include="image\imvBook\toiloikhongchungcu.jpg" />
     <Content Include="image\imvBook\trenduongbang.jpg" />
+    <Content Include="image\imvBook\troisinhvungve.jpg" />
     <Content Include="image\imvBook\truockhinhammat %282%29.jpg" />
     <Content Include="image\imvBook\truockhinhammat.jpg" />
     <Content Include="image\imvBook\truyenkieu.jpg" />
-    <Content Include="image\imvBook\tróiinhvungve.jpg" />
     <Content Include="image\imvBook\vongtronmau.jpg" />
     <Content Include="image\imvBook\whenbreathbecomesair.jpg" />
     <Content Include="image\imvChart\chart-42.png" />
