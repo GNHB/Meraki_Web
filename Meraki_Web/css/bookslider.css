@@ -50,12 +50,14 @@
         text-align: center;
     }
 
-.bookview .titlebook a {
+.bookview .titlebook  {
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 200px;
+}
+.bookview .titlename a {
     color: black;
     text-decoration: none;
 }
