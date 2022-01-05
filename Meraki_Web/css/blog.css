@@ -619,6 +619,20 @@ del {
     .right {
         display: none;
     }
+    .tabs{
+        width:100%;
+    }
+    .infor {
+        width: 100%;
+        padding:15px;
+    }
+    .review {
+        width: 100%;
+        padding: 15px;
+    }
+    .all{
+        margin-top:20px;
+    }
 }
 
 
