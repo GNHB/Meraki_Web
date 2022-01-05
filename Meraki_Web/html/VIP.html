@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MERAKI BOOK</title>
     <link rel="shortcut icon" type="img/png" href="../image/imvBanner/mylogo.png" />
+    <link rel="stylesheet" type="text/css" href="../css/ThanhToanEbook.css" />
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/Footer.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -82,10 +83,10 @@
         <div class="main">
             <div class="VIP_option">
                 <div class="tittle">LỰA CHỌN GÓI VIP</div>
-                <div class="card_all">
+                <div class="card_all" id="vip">
                     <div class="card">
                         <label class="custom-radio">
-                            <input type="radio" name="radio" />
+                            <input type="radio" name="radio" id="vip1"/>
                             <span class="radio-btn">
                                 <i class="las la-check"></i>
                                 <div class="card-icon">
@@ -100,7 +101,7 @@
                     </div>
                     <div class="card">
                         <label class="custom-radio">
-                            <input type="radio" name="radio" />
+                            <input type="radio" name="radio" id="vip2"/>
                             <span class="radio-btn">
                                 <i class="las la-check"></i>
                                 <div class="card-icon">
@@ -115,7 +116,7 @@
                     </div>
                     <div class="card">
                         <label class="custom-radio">
-                            <input type="radio" name="radio" />
+                            <input type="radio" name="radio" id="vip3"/>
                             <span class="radio-btn">
                                 <i class="las la-check"></i>
                                 <div class="card-icon">
@@ -130,7 +131,7 @@
                     </div>
                     <div class="card">
                         <label class="custom-radio">
-                            <input type="radio" name="radio" />
+                            <input type="radio" name="radio" id="vip4"/>
                             <span class="radio-btn">
                                 <i class="las la-check"></i>
                                 <div class="card-icon">
@@ -153,7 +154,7 @@
                     <div class="card-payment">
                         <div class="card">
                             <label class="custom-radio">
-                                <input type="radio" name="radio-wallets" />
+                                <input type="radio" name="radio-wallets" id="wallet1"/>
                                 <span class="radio-btn">
                                     <i class="las la-check"></i>
                                     <div class="card-icon-pay">
@@ -164,7 +165,7 @@
                         </div>
                         <div class="card">
                             <label class="custom-radio">
-                                <input type="radio" name="radio-wallets" />
+                                <input type="radio" name="radio-wallets" id="wallet2"/>
                                 <span class="radio-btn">
                                     <i class="las la-check"></i>
                                     <div class="card-icon-pay">
@@ -175,7 +176,7 @@
                         </div>
                         <div class="card">
                             <label class="custom-radio">
-                                <input type="radio" name="radio-wallets" />
+                                <input type="radio" name="radio-wallets" id="wallet3"/>
                                 <span class="radio-btn">
                                     <i class="las la-check"></i>
                                     <div class="card-icon-pay">
@@ -186,7 +187,7 @@
                         </div>
                         <div class="card">
                             <label class="custom-radio">
-                                <input type="radio" name="radio-wallets" />
+                                <input type="radio" name="radio-wallets" id="wallet4"/>
                                 <span class="radio-btn">
                                     <i class="las la-check"></i>
                                     <div class="card-icon-pay">
@@ -202,7 +203,7 @@
                     <div class="card-payment">
                         <div class="card">
                             <label class="custom-radio">
-                                <input type="radio" name="radio-atm" />
+                                <input type="radio"  name="radio-wallets" id="atm1" />
                                 <span class="radio-btn">
                                     <i class="las la-check"></i>
                                     <div class="card-icon-atm">
@@ -213,7 +214,7 @@
                         </div>
                         <div class="card">
                             <label class="custom-radio">
-                                <input type="radio" name="radio-atm" />
+                                <input type="radio"  name="radio-wallets" id="atm2"/>
                                 <span class="radio-btn">
                                     <i class="las la-check"></i>
                                     <div class="card-icon-atm">
@@ -224,7 +225,7 @@
                         </div>
                         <div class="card">
                             <label class="custom-radio">
-                                <input type="radio" name="radio-atm" />
+                                <input type="radio"  name="radio-wallets" id="atm3" />
                                 <span class="radio-btn">
                                     <i class="las la-check"></i>
                                     <div class="card-icon-atm">
@@ -236,15 +237,18 @@
                     </div>
                     <div class="action">
                         <form>
-                            <div class="checkbox-giahan">
+                            <div class="checkbox-giahan" style="text-align:left; align-items:start; justify-items:start">
                                 <input type="checkbox" id="giahan" name="giahan-1" class="checkbox_tick" value="Tự động gia hạn">
                                 <label for="giahan" class="txtGiaHan" style="font-size:16px">Tự động gia hạn</label>
                             </div>
-                            <a href="index.html">
+                            <!--<a href="index.html">
                                 <div class="btn">
-                                    <input type="button" value="Xác nhận" class="btnConfirm" />
+                                    <input type="button" value="Xác nhận" class="btnConfirm" id="btnConfirm" onclick="PopUp()" />
                                 </div>
-                            </a>
+                            </a>-->
+                            <span class="action">
+                                <input type="button" value="Xác nhận" class="btnConfirm" id="btnConfirm" onclick="PopUp()" />
+                            </span>
                         </form>
                     </div>
                 </div>
@@ -260,6 +264,31 @@
             </div>
         </div>
     </div>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>THANH TOÁN THÀNH CÔNG</h2>
+            </div>
+            <div class="modal-body">
+                <p style="text-align: center; margin-bottom: 10px; font-weight: 700; color: #F7BB34;">Cảm ơn bạn đã đăng kí trở thành VIP của Meraki Book</p>
+                <p>Chi tiết đơn hàng xin kiểm tra tại <a href="../html/OrderManagement.html"><b>Đơn hàng của tôi</b></a> trong trang cá nhân của bạn</p>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="slogan" id="logan" style="background-color: #487B72; height:50px;text-align:center; margin-top:50px">
+        <h3 style="color:white; align-items:center; padding:15px">
+            Meraki Book nơi cảm xúc bắt đầu
+        </h3>
+    </section>
+
+
+    <br />
 
     <footer class="footer">
         <div id="container-footer">
@@ -314,5 +343,38 @@
         </div>
     </footer>
     <script src="../js/slidequote.js"></script>
+    <script type="text/javascript">
+        function PopUp() {
+            var vip1 = document.getElementById("vip1");
+            var vip2 = document.getElementById("vip2");
+            var vip3 = document.getElementById("vip3");
+            var vip4 = document.getElementById("vip4");
+            var wallet1 = document.getElementById("wallet1");
+            var atm1 = document.getElementById("atm1");
+            var atm2 = document.getElementById("atm2");
+            var atm3 = document.getElementById("atm3");
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("btnConfirm");
+            var span = document.getElementsByClassName("close")[0];
+            if (vip1.checked == false && vip2.checked == false && vip3.checked == false && vip4.checked == false ) {
+                alert("Vui lòng chọn gói VIP trước khi xác nhận thanh toán!");
+            } else if (wallet1.checked == false && wallet2.checked == false && wallet3.checked == false && wallet4.checked == false && atm1.checked == false && atm2.checked == false && atm3.checked == false) {
+                alert("Vui lòng lựa chọn hình thức thanh toán trước khi xác nhận thanh toán!");
+            } else {
+                btn.onclick = function () {
+                    modal.style.display = "block";
+                }
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            } 
+        }
+
+    </script>
 </body>
 </html>
