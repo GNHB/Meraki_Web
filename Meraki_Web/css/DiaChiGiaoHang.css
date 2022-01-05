@@ -209,7 +209,7 @@ nav img.logo {
     border-spacing: 10px;
 }
     #myTable tr {
-        background-color: var(--skin);
+        background-color: white;
         width: 100%;
         border: 1px solid black;
         
