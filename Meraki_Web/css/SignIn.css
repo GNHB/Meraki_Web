@@ -275,6 +275,15 @@ body {
     display: none;
 }
 
+/*Admin*/
+.admin{
+    margin-top:10px;
+}
+.myadmin{
+    text-decoration:none;
+    font-style: italic;
+    font-size:14px;
+}
 @media (max-width: 500px) {
     .container .cover .text {
         display: none;
@@ -301,3 +310,5 @@ body {
         display: none;
     }
 }
+
+
