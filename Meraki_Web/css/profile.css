@@ -213,8 +213,13 @@ Book stuff
         text-overflow: ellipsis;
         max-width: 200px;
     }
+    .book .booktitle a{
+        text-decoration: none;
+        color: black;
 
-    .book .booktitle:hover {
+    }
+
+    .book .booktitle a:hover {
         color: var(--yellow);
         cursor: pointer;
     }
