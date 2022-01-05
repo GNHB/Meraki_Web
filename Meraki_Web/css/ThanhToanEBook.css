@@ -267,6 +267,14 @@
     height:165px;
     width:115px;
 }
+.rcm_row_item:hover{
+   background-color:var(--yellow);
+   cursor:pointer;
+}
+.click{
+    text-decoration:none;
+    color:black;
+}
 
 .modal {
     display: none;

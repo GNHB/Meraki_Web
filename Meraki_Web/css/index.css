@@ -1,0 +1,29 @@
+﻿:root {
+    --green: #487B72;
+    --yellow: #F7BB34;
+    --skin: #FBF1E1;
+    --light_skin: #FEFAF4;
+}
+
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    transition: width none;
+}
+.item-a{
+    width:160px;
+    height:285px;
+}
+.box_best_sellers{
+    margin:auto;
+}
+div.swiper-slide{
+    width:160px;
+}
+
