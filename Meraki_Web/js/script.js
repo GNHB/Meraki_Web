@@ -1,30 +1,5 @@
 ﻿var app = angular.module('myApp', []);
 
-/*app.controller('BookController', function ($scope, $http) {
-
-    $http.get('hm.json').success(function (data) {
-        $scope.books = data;
-        console.log(data);
-    });
-
-});*/
-
-
-/*
-app.controller('BookController', function ($scope, $http) {
-    $http.get('data/book.json')
-        .then(function (result) {
-            $scope.books = result.data;
-        });
-});*/
-/* app.controller('BookController', function ($scope, $http) {
-    $http.get('hm.json')
-           
-        .then(function (result) {
-            $scope.books = result.data;
-        });
-            
-        });*/
 
 
 /*SAVE PROFILE QUOTE*/
@@ -80,7 +55,7 @@ contentArray.forEach((item) => {
             ipt[l].readOnly = true;
         };
         previous = [];
-        //send your info here 
+
     }
 
     function edit(e) {

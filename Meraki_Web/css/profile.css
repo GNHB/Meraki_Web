@@ -525,10 +525,15 @@ Book stuff
                 height: 130px;
             }
 
-        .order-item .mo-ta {
+        .order-item .mo-ta, .author-mota {
             text-align: left;
             width: 50%;
         }
+        .order-item .mo-ta:hover{
+            color: var(--yellow);
+            cursor: pointer;
+        }
+        
 
         .order-item .price-order {
             text-align: center;
@@ -546,7 +551,7 @@ Book stuff
             padding: 10px 0px;
         }
 
-        .order-item button {
+        .order-item tr input {
             background-color: var(--yellow);
             border: none;
             padding: 10px;
