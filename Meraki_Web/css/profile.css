@@ -530,14 +530,19 @@ Book stuff
                 height: 130px;
             }
 
-        .order-item .mo-ta, .author-mota {
+        .order-item .mo-ta, .author-mota, .mo-ta a {
             text-align: left;
             width: 50%;
+            color: black;
         }
         .order-item .mo-ta:hover{
             color: var(--yellow);
             cursor: pointer;
         }
+            .order-item .mo-ta a:hover {
+                color: var(--yellow);
+                cursor: pointer;
+            }
         
 
         .order-item .price-order {
