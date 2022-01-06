@@ -317,14 +317,14 @@ table {
 }
 
 .myItem {
-    flex: 2 0 21%; /* explanation below */
-    margin-left: 10px;
+    flex: 2 0 19%; /* explanation below */
+    margin-left: 20px;
 }
 
     .myItem .img_detail .title p {
         display: block;
         width: 200px;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: bold;
         text-align: center;
         margin-top: 5px;
@@ -460,7 +460,7 @@ table {
     border-spacing: 0;
 }
 /*----------------------------------------RESPONSIVE------------------------------------------*/
-@media screen and (min-width: 901px) and (max-width: 1140px) {
+@media screen and (min-width: 901px) and (max-width: 1281px) {
     .plot {
         height: 100%;
         width: 100%;
