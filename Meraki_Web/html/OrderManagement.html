@@ -98,8 +98,8 @@
 
             </button>
             <button class="tablinks" onclick="openTab(event, 'Myupdate')">
-                <span class="tab-icon"><i class="fas fa-shopping-bag fa-2x"></i></span>
-                <span class="tab-text">Cập nhật đơn hàng</span>
+                <span class="tab-icon"><i class="fas fa-car-alt fa-2x"></i></span>
+                <span class="tab-text">Cập nhật đơn mua</span>
 
             </button>
             <button class="tablinks" onclick="openTab(event, 'MyNoti')">
@@ -120,13 +120,13 @@
                     <div>
                         <span class="account-icon"><i class="far fa-address-card fa-2x"></i></span>
                         <span class="account-text">
-                            <input readonly type="text" value="Nguyễn Thị Diu" />
+                            <input readonly type="text" value="Nguyễn Thị Diu" name="server" id="saveServer" />
                         </span>
                     </div>
                     <div>
                         <span class="account-icon"><i class="far fa-envelope fa-2x"></i></span>
                         <span class="account-text">
-                            <input readonly type="text" value="nguyenthidiu@gmail.com" />
+                            <input readonly type="text" value="nguyenthidiu@gmail.com" name="server" id="saveServer" />
                         </span>
                     </div>
                     <div>
@@ -135,7 +135,7 @@
                             <input readonly type="tel" name="phone" id="phone" maxlength="10" required onkeypress="isInputNumber(event)" value="0358428808" />
                         </span>
                     </div>
-                    <button>Lưu thông tin</button>
+                    <button onclick="SaveInf()">Lưu thông tin</button>
                     <button>Hủy bỏ</button>
                     <button>Chỉnh sửa</button>
                 </form>
@@ -636,24 +636,24 @@
                         </table>
                         <table class="order-item">
                             <tr>
-                                <td class="order-number" colspan="3"><b>Đơn hàng #126</b><span class="order-status">Giao hàng thành công</span></td>
+                                <td class="order-number" colspan="3"><b>Đơn hàng #125</b><span class="order-status">Giao hàng thành công</span></td>
 
                             </tr>
                             <tr>
-                                <td class="order-img" rowspan="5"><img src="../image/imvBook/nhagiakim.jpg" /></td>
+                                <td class="order-img" rowspan="5"><img src="../image/imvBook/troisinhvungve.jpg" /></td>
                                 <td colspan="2">&nbsp;</td>
 
                             </tr>
                             <tr>
-                                <td class="mo-ta"><b>Nhà giả kim</b></td>
+                                <td class="mo-ta"><b>Trời sinh vụng về</b></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td style="text-align: right">x1</td>
-                                <td class="price-order">70.000đ</td>
+                                <td class="price-order">85.000đ</td>
                             </tr>
                             <tr>
-                                <td class="author-mota">Paulo Coelho</td>
+                                <td class="author-mota">Lưu Tư Hạo</td>
 
                                 <td><a href="../html/GioHang.html"><input type="button" value="Mua lại" /></a></td>
                             </tr>
@@ -661,6 +661,7 @@
                                 <td colspan="2">&nbsp;</td>
                             </tr>
                         </table>
+                        
                     </div>
 
                 </div>
@@ -671,158 +672,185 @@
         <div id="Myupdate" class="tabcontent">
             <h3>Cập nhật đơn hàng</h3>
             <hr />
-            <div class="tabs">
-                <div class="tab-header">
-                    <div class="active">Ebook</div>
-                    <div>Gói VIP</div>
-                    <div>Sách in</div>
-                </div>
-                <div class="tab-content">
-                    <div class="active">
-                        <table class="order-item">
-                            <tr>
-                                <td class="order-number" colspan="3"><b>Đơn hàng #123</b></td>
-                            </tr>
-                            <tr>
-                                <td class="order-img" rowspan="5"><img src="../image/imvBook/kyananhtrang.jpg" /></td>
-                                <td colspan="2">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="mo-ta"><b>Kỳ án ánh trăng</b></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td class="price-order">40.000đ</td>
-                            </tr>
-                            <tr>
-                                <td class="author-mota">Quỷ cổ nữ</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">&nbsp;</td>
-                            </tr>
-
-                        </table>
-
-                        <table class="order-item">
-                            <tr>
-                                <td class="order-number" colspan="3"><b>Đơn hàng #124</b></td>
-                            </tr>
-                            <tr>
-                                <td class="order-img" rowspan="5"><img src="../image/imvBook/truyenkieu.jpg" /></td>
-                                <td colspan="2">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="mo-ta"><b>Truyện Kiều</b></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td class="price-order">40.000đ</td>
-                            </tr>
-                            <tr>
-                                <td class="author-mota">Nguyễn Du</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">&nbsp;</td>
-                            </tr>
-
-                        </table>
-
-                    </div>
-                    <div>
-                        <table class="order-item">
-                            <tr>
-                                <td class="order-number" colspan="3"><b>Đơn hàng #125</b><span class="order-status">Hết hạn</span></td>
-
-                            </tr>
-                            <tr>
-                                <td class="order-img" rowspan="5"><img src="../image/imvIcon/logo_VIP.png" /></td>
-                                <td colspan="2">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="mo-ta"><b><a href="../html/VIP.html">Combo 2</a></b></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td class="price-order">45.000đ</td>
-                            </tr>
-                            <tr>
-                                <td class="mo-ta">3 tháng</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">&nbsp;</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div>
-                        <table class="order-item">
-                            <tr>
-                                <td class="order-number" colspan="3"><b>Đơn hàng #125</b><span class="order-status">Giao hàng thành công</span></td>
-
-                            </tr>
-                            <tr>
-                                <td class="order-img" rowspan="5"><img src="../image/imvBook/bandatgiabaonhieu.jpg" /></td>
-                                <td colspan="2">&nbsp;</td>
-
-                            </tr>
-                            <tr>
-                                <td class="mo-ta"><b>Bạn đắt giá bao nhiêu</b></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: right">x1</td>
-                                <td class="price-order">65.000đ</td>
-                            </tr>
-                            <tr>
-                                <td class="author-mota">Vãn Tình</td>
-
-                                <td><a href="../html/GioHang.html"><input type="button" value="Mua lại" /></a></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">&nbsp;</td>
-                            </tr>
-                        </table>
-                        <table class="order-item">
-                            <tr>
-                                <td class="order-number" colspan="3"><b>Đơn hàng #126</b><span class="order-status">Giao hàng thành công</span></td>
-
-                            </tr>
-                            <tr>
-                                <td class="order-img" rowspan="5"><img src="../image/imvBook/nhagiakim.jpg" /></td>
-                                <td colspan="2">&nbsp;</td>
-
-                            </tr>
-                            <tr>
-                                <td class="mo-ta"><b>Nhà giả kim</b></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: right">x1</td>
-                                <td class="price-order">70.000đ</td>
-                            </tr>
-                            <tr>
-                                <td class="author-mota">Paulo Coelho</td>
-
-                                <td><a href="../html/GioHang.html"><input type="button" value="Mua lại" /></a></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">&nbsp;</td>
-                            </tr>
-                        </table>
-                    </div>
-
-                </div>
+            <div class="tab-order">
+                <button class="tablinks-order" onclick="openUpdate(event, 'Confirm')" id="defaultOpen2">Chờ xác nhận</button>
+                <button class="tablinks-order" onclick="openUpdate(event, 'Delivering')">Đang giao</button>
+                <button class="tablinks-order" onclick="openUpdate(event, 'Delivered')">Đã giao</button>
             </div>
+
+            <div id="Confirm" class="tabcontent-order">
+                <table class="order-item">
+                    <tr>
+                        <td class="order-number" colspan="3"><b>Đơn hàng #128</b></td>
+
+                    </tr>
+                    <tr>
+                        <td class="order-img" rowspan="5"><img src="../image/imvBook/haisophan.jpg" /></td>
+                        <td colspan="2">&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td class="mo-ta"><b>Hai số phận</b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">x1</td>
+                        <td class="price-order">70.000đ</td>
+                    </tr>
+                    <tr>
+                        <td class="author-mota">Ngày đặt hàng: 20/12/2021</td>
+
+                        <td><a href="../html/OrderManagement.html"><input type="button" value="Hủy đơn" /></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                </table>
+                <table class="order-item">
+                    <tr>
+                        <td class="order-number" colspan="3"><b>Đơn hàng #345 được đặt thành công</b></td>
+
+                    </tr>
+                    <tr>
+                        <td class="order-img" rowspan="5"><img src="../image/imvBook/chuchokhongnha.png" /></td>
+                        <td colspan="2">&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td class="mo-ta"><b>Chú chó không nhà</b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">x1</td>
+                        <td class="price-order">85.000đ</td>
+                    </tr>
+                    <tr>
+                        <td class="author-mota">Ngày đặt hàng: 19/12/2021</td>
+
+                        <td><a href="../html/OrderManagement.html"><input type="button" value="Hủy đơn" /></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="Delivering" class="tabcontent-order">
+                <table class="order-item">
+                    <tr>
+                        <td class="order-number" colspan="3"><b>Đơn hàng #628</b></td>
+
+                    </tr>
+                    <tr>
+                        <td class="order-img" rowspan="5"><img src="../image/imvBook/truockhinhammat.jpg" /></td>
+                        <td colspan="2">&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td class="mo-ta"><b>Trước khi nhắm mắt</b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">x1</td>
+                        <td class="price-order">95.000đ</td>
+                    </tr>
+                    <tr>
+                        <td class="author-mota" colspan="2">Dự kiến nhận: 25/12/2021</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                </table>
+                <table class="order-item">
+                    <tr>
+                        <td class="order-number" colspan="3"><b>Đơn hàng #718</b></td>
+
+                    </tr>
+                    <tr>
+                        <td class="order-img" rowspan="5"><img src="../image/imvBook/suoinguon.jpg" /></td>
+                        <td colspan="2">&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td class="mo-ta"><b>Suối nguồn</b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">x1</td>
+                        <td class="price-order">105.000đ</td>
+                    </tr>
+                    <tr>
+                        <td class="author-mota" colspan="2">Dự kiến nhận: 24/12/2021</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="Delivered" class="tabcontent-order">
+                <table class="order-item">
+                    <tr>
+                        <td class="order-number" colspan="3"><b>Đơn hàng #125</b></td>
+
+                    </tr>
+                    <tr>
+                        <td class="order-img" rowspan="5"><img src="../image/imvBook/bandatgiabaonhieu.jpg" /></td>
+                        <td colspan="2">&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td class="mo-ta"><b>Bạn đắt giá bao nhiêu</b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">x1</td>
+                        <td class="price-order">65.000đ</td>
+                    </tr>
+                    <tr>
+                        <td class="author-mota">Ngày nhận hàng: 15/12/2021</td>
+
+                        <td><a href="../html/GioHang.html"><input type="button" value="Mua lại" /></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                </table>
+                <table class="order-item">
+                    <tr>
+                        <td class="order-number" colspan="3"><b>Đơn hàng #126</b></td>
+
+                    </tr>
+                    <tr>
+                        <td class="order-img" rowspan="5"><img src="../image/imvBook/troisinhvungve.jpg" /></td>
+                        <td colspan="2">&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td class="mo-ta"><b>Trời sinh vụng về</b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">x1</td>
+                        <td class="price-order">85.000đ</td>
+                    </tr>
+                    <tr>
+                        <td class="author-mota">Ngày nhận hàng: 13/12/2021</td>
+
+                        <td><a href="../html/GioHang.html"><input type="button" value="Mua lại" /></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
-        <!--NOTIFICATION-->
+            <!--NOTIFICATION-->
         <div id="MyNoti" class="tabcontent">
             <h3>Thông báo</h3>
             <hr />
+
             <table class="order-item">
                 <tr>
                     <td class="order-number" colspan="3"><b>Đơn hàng #128 được đặt thành công</b></td>
@@ -842,9 +870,35 @@
                     <td class="price-order">70.000đ</td>
                 </tr>
                 <tr>
-                    <td class="author-mota">Dự kiến nhận: 2/1/2021</td>
+                    <td class="author-mota" colspan="2">Ngày đặt hàng: 20/12/2021</td>
 
-                    <td><a href="../html/OrderManagement.html"><input type="button" value="Hủy đơn" /></a></td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">&nbsp;</td>
+                </tr>
+            </table>
+
+            <table class="order-item">
+                <tr>
+                    <td class="order-number" colspan="3"><b>Đơn hàng #345</b></td>
+
+                </tr>
+                <tr>
+                    <td class="order-img" rowspan="5"><img src="../image/imvBook/chuchokhongnha.png" /></td>
+                    <td colspan="2">&nbsp;</td>
+
+                </tr>
+                <tr>
+                    <td class="mo-ta"><b>Chú chó không nhà</b></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">x1</td>
+                    <td class="price-order">85.000đ</td>
+                </tr>
+                <tr>
+                    <td class="author-mota" colspan="2">Ngày đặt hàng: 19/12/2021</td>
                 </tr>
                 <tr>
                     <td colspan="2">&nbsp;</td>
@@ -877,7 +931,7 @@
                 </tr>
             </table>
         </div>
-    </div>
+        </div>
         <!--SLOGAN-->
         <!--FOOTER-->
         <footer class="footer">

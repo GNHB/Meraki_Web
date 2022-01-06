@@ -881,6 +881,41 @@ Book stuff
 
 
 }
-@media (min-width: 900px) {
+
+.tab-order {
+    overflow: hidden;
+    background-color: var(--green);
+    display: flex;
     
 }
+
+    .tab-order button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        flex: 1;
+        color: white;
+        font-weight: bold;
+    }
+.tab-order button:hover {
+
+}
+
+
+.tab-order button.active {
+    background-color: #f5f5f5;
+    color: var(--green);
+    font-weight: bold;
+}
+
+.tabcontent-order {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
