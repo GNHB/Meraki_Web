@@ -52,7 +52,6 @@
 .list_item table, th, td {
     text-align: center;
 }
-
 .tbl_item .tbl_img {
     text-align: left;
 }
@@ -194,7 +193,7 @@
     .giohang_body {
         display: flex;
         flex-direction: column;
-        width:95%;
+        width:100%;
     }
 
     .list_item {
@@ -238,7 +237,8 @@
     .giohang_body{
         display: flex;
         flex-direction: column;
-        width:90%;
+        width:95%;
+        margin:auto;
     }
     .list_item {
         display: flex;
@@ -260,12 +260,12 @@
         border-right: 1px solid;
         border-collapse: collapse;
         border-spacing:0;
+        width:80%;
+        margin:0;
     }
     .thanh_tien_box {
         display: flex;
         width: 100%;
     }
-    .tbl_item input{
-        width: 20px;
-    }
+
 }
