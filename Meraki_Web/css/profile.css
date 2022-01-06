@@ -20,7 +20,12 @@
 body {
     background-color: var(--light_skin)
 }
-
+.fas {
+    font-size: 2em;
+}
+#card {
+    font-size: 2em;
+}
 /*@media (max-width: 900px) {
     body{
         width:100%;
@@ -594,15 +599,27 @@ Book stuff
         float: right;
         padding-right: 20px;
     }
-
-    /*MY ACCOUNT*/
-
+.slider{
+    height:305px;
+    width:95%;
+    margin:auto;
+}
+.slick-list{
+    height:100%;
+}
+.slick-track{
+    height:100%;
+}
+.bookview{
+    height:100%;
+}
+/*MY ACCOUNT*/
 .inf-container {
     margin: auto;
     align-items: stretch;
     display: flex;
     justify-content: space-between;
-    }
+}
 
     .inf-content {
         flex: 1;
@@ -877,9 +894,30 @@ Book stuff
         margin:25px auto 25px auto;
         height:inherit;
     }
-    
 
+    .slider {
+        height: 200px;
+        width: 100%;
+        margin:auto;
+    }
 
+    .slick-list {
+        height: 100%;
+    }
+
+    .slick-track {
+        height: 100%;
+    }
+
+    .bookview {
+        height: 100%;
+    }
+    .fas {
+        font-size: 1em;
+    }
+    #card {
+        font-size: 1em;
+    }
 }
 
 .tab-order {
