@@ -81,6 +81,7 @@ contentArray.forEach((item) => {
 })(window)
 
 
+
 /*HORIZONTAL PROFILE TAB*/
 let tabPanes = document.getElementsByClassName("tab-header")[0].getElementsByTagName("div");
 
@@ -93,6 +94,8 @@ for (let i = 0; i < tabPanes.length; i++) {
         document.getElementsByClassName("tab-content")[0].getElementsByTagName("div")[i].classList.add("active");
     })
 }
+
+
 
 
 

@@ -53,7 +53,20 @@ function openTab(evt, tabName) {
 }
 document.getElementById("defaultOpen").click();
 
-
+function openUpdate(evt, OrderName) {
+    var i, tabcontent2, tablinks2;
+    tabcontent2 = document.getElementsByClassName("tabcontent-order");
+    for (i = 0; i < tabcontent2.length; i++) {
+        tabcontent2[i].style.display = "none";
+    }
+    tablinks2 = document.getElementsByClassName("tablinks-order");
+    for (i = 0; i < tablinks2.length; i++) {
+        tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+    }
+    document.getElementById(OrderName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen2").click();
 
 
 

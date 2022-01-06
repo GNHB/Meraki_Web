@@ -228,6 +228,7 @@
     <Content Include="image\imvIcon\logo-wallet-07.png" />
     <Content Include="image\imvIcon\logo.png" />
     <Content Include="image\imvIcon\logoAppStore.png" />
+    <Content Include="image\imvIcon\logo_VIP.png" />
     <Content Include="image\imvIcon\menu-bar.png" />
     <Content Include="image\imvIcon\open-book.png" />
     <Content Include="image\imvMember\4-10.png" />
