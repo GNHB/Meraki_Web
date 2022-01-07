@@ -60,9 +60,7 @@
 .fa-money-bill-wave{
     color: var(--green);
 }
-.fa-credit-card{
-    color: red;
-}
+
 .fa-cc-visa{
     color: dodgerblue;
 }
@@ -143,15 +141,15 @@
 .modal-content {
     position: fixed;
     bottom: 40%;
-    left:35%;
-    right:35%;
+    left: 35%;
+    right: 35%;
     background-color: #fefefe;
     width: 30%;
-    height:150px;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    background-color: var(--skin);
 }
 
 /* The Close Button */
@@ -183,12 +181,14 @@
 
         .modal-body {
             padding: 2px 16px;
-            background-color: var(--skin);
             height: 80%;
+            margin: 10px 20px;
         }
-.modal-body p{
-    font-size: 18px;
-}
+            .modal-body p {
+                font-size: 18px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
 
 
 @-webkit-keyframes slideIn {

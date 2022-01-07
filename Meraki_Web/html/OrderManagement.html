@@ -17,11 +17,9 @@
 
     <!----------------------CSS CONTENT-->
     <link rel="stylesheet" type="text/css" href="../css/profile.css" />
-
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/Footer.css" />
-    <link rel="stylesheet" type="text/css" href="../css/TheLoai.css" />
-
+    <link rel="stylesheet" type="text/css" href="../css/ThanhToan.css" />
 
     <!----------------------FONT-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -402,7 +400,7 @@
                     </div>
                     <div class="bookview">
                         <div class="coverbook">
-                            <img src="../image/imvBook/phiasaunghicanx.png" "     />
+                            <img src="../image/imvBook/phiasaunghicanx.png" "      />
                         </div>
                         <div class="description">
                             <p class="titlebook">
@@ -661,7 +659,7 @@
                                 <td colspan="2">&nbsp;</td>
                             </tr>
                         </table>
-                        
+
                     </div>
 
                 </div>
@@ -700,7 +698,7 @@
                     <tr>
                         <td class="author-mota">Ngày đặt hàng: 20/12/2021</td>
 
-                        <td><a href="../html/OrderManagement.html"><input type="button" value="Hủy đơn" /></a></td>
+                        <td><input type="button" value="Hủy đơn" id="btnHuyDon" onclick="move()" /></td>
                     </tr>
                     <tr>
                         <td colspan="2">&nbsp;</td>
@@ -726,13 +724,45 @@
                     </tr>
                     <tr>
                         <td class="author-mota">Ngày đặt hàng: 19/12/2021</td>
-
-                        <td><a href="../html/OrderManagement.html"><input type="button" value="Hủy đơn" /></a></td>
+                        <td><input type="button" value="Hủy đơn" id="btnHuyDon" onclick="move()" /></td>
                     </tr>
                     <tr>
                         <td colspan="2">&nbsp;</td>
                     </tr>
                 </table>
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>LÝ DO HỦY ĐƠN HÀNG</h2>
+                        </div>
+                        <div class="modal-body" >
+                            <input type="radio" name="reason" id="tienmat" class="huydon" value="1" />
+
+                            <label>Thay đổi địa chỉ giao hàng</label>
+                            <br />
+                            <input type="radio" name="reason" id="quantity" class="huydon" value="1" />
+                            <label for="huydon">Thay đổi số lượng sản phẩm</label>
+                            <br />
+                            <input type="radio" name="reason" id="time" class="huydon" value="1" />
+                            <label for="huydon">Thời gian giao hàng quá lâu/sớm</label>
+                            <br />
+                            <input type="radio" name="reason" id="same" class="huydon" value="1" />
+                            <label for="huydon">Đặt trùng</label>
+                            <br />
+                            <input type="radio" name="reason" id="type" class="huydon" value="1" />
+                            <label for="huydon">Thay đổi hình thức thanh toán</label>
+                            <br />
+                            <input type="radio" name="reason" id="need" class="huydon" value="1" />
+                            <label for="huydon">Không còn nhu cầu</label>
+                            <br />
+
+                        </div>
+                        <input type="button" value="HỦY ĐƠN HÀNG" class="btnXacNhan"  onclick="huy()"/>                        
+                    </div>
+                </div>
             </div>
 
             <div id="Delivering" class="tabcontent-order">
@@ -846,7 +876,7 @@
             </div>
 
         </div>
-            <!--NOTIFICATION-->
+        <!--NOTIFICATION-->
         <div id="MyNoti" class="tabcontent">
             <h3>Thông báo</h3>
             <hr />
@@ -931,64 +961,95 @@
                 </tr>
             </table>
         </div>
-        </div>
-        <!--SLOGAN-->
-        <!--FOOTER-->
-        <footer class="footer">
-            <div id="container-footer">
-                <div class="row">
-                    <div class="footer-col">
-                        <a href="AboutMeraki.html"><h4><b>Về chúng tôi</b></h4></a>
-                        <ul>
-                            <li><a href="AboutMeraki.html">Giới thiệu chung</a></li>
-                            <li><a href="AboutMeraki.html#QuyDinhBanQuyen">Quy định về bản quyền</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <a href="Policy.html"><h4><b>Chính sách</b></h4></a>
-                        <ul>
-                            <li><a href="Policy.html#ChinhSachVanChuyen">Chính sách vận chuyển</a></li>
-                            <li><a href="Policy.html#ChinhSachTraHang">Chính sách trả hàng</a></li>
-                            <li><a href="Policy.html#ChinhSachBaoMat">Chính sách bảo mật</a></li>
-                            <li><a href="Policy.html#DieuKhoanSuDung">Điều khoản sử dụng</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <a href="Tutorial.html"><h4><b>Hỗ trợ khách hàng</b></h4></a>
-                        <ul>
-                            <li><a href="Tutorial.html#HuongDanDatHang">Hướng dẫn đặt hàng</a></li>
-                            <li><a href="Tutorial.html#HuongDanThanhToan">Hướng dẫn thanh toán</a></li>
-                            <li><a href="Tutorial.html#HuongDanTraHang">Hướng dẫn trả hàng</a></li>
+    </div>
+    <!--SLOGAN-->
+    <!--FOOTER-->
+    <footer class="footer">
+        <div id="container-footer">
+            <div class="row">
+                <div class="footer-col">
+                    <a href="AboutMeraki.html"><h4><b>Về chúng tôi</b></h4></a>
+                    <ul>
+                        <li><a href="AboutMeraki.html">Giới thiệu chung</a></li>
+                        <li><a href="AboutMeraki.html#QuyDinhBanQuyen">Quy định về bản quyền</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <a href="Policy.html"><h4><b>Chính sách</b></h4></a>
+                    <ul>
+                        <li><a href="Policy.html#ChinhSachVanChuyen">Chính sách vận chuyển</a></li>
+                        <li><a href="Policy.html#ChinhSachTraHang">Chính sách trả hàng</a></li>
+                        <li><a href="Policy.html#ChinhSachBaoMat">Chính sách bảo mật</a></li>
+                        <li><a href="Policy.html#DieuKhoanSuDung">Điều khoản sử dụng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <a href="Tutorial.html"><h4><b>Hỗ trợ khách hàng</b></h4></a>
+                    <ul>
+                        <li><a href="Tutorial.html#HuongDanDatHang">Hướng dẫn đặt hàng</a></li>
+                        <li><a href="Tutorial.html#HuongDanThanhToan">Hướng dẫn thanh toán</a></li>
+                        <li><a href="Tutorial.html#HuongDanTraHang">Hướng dẫn trả hàng</a></li>
 
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4><b>Theo dõi chúng tôi</b></h4>
-                        <div class="social-links">
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer-col">
-                        <h4><b>Tải ứng dụng</b></h4>
-                        <ul>
-                            <li><a href="#"><img src="../image/imvIcon/ggplaylogo.png" width="135" height="45" /></a></li>
-                            <li><a href="#"><img src="../image/imvIcon/logoAppStore.png" width="140" height="50" /></a></li>
-                        </ul>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><b>Theo dõi chúng tôi</b></h4>
+                    <div class="social-links">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
+                <div class="footer-col">
+                    <h4><b>Tải ứng dụng</b></h4>
+                    <ul>
+                        <li><a href="#"><img src="../image/imvIcon/ggplaylogo.png" width="135" height="45" /></a></li>
+                        <li><a href="#"><img src="../image/imvIcon/logoAppStore.png" width="140" height="50" /></a></li>
+                    </ul>
+                </div>
             </div>
-        </footer>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function move() {
 
-        <script src="../js/script.js"></script>
-        <script src="../js/tabslider.js"></script>
-        <script src="../js/DiaChiGiaoHang.js"></script>
+                var modal = document.getElementById("myModal");
+                var btn = document.getElementById("btnHuyDon");
+                var span = document.getElementsByClassName("close")[0];
+                btn.onclick = function () {
+                    modal.style.display = "block";
+                }
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+            }
+            
+        }
+        function huy() {
+            var quantity = document.getElementById("quantity").checked;
+            var time = document.getElementById("time").checked;
+            var same = document.getElementById("same").checked;
+            var type = document.getElementById("type").checked;
+            var need = document.getElementById("need").checked;
+            if (quantity == false & time == false & same == false & type == false & need == false) {
+                alert("Xin chọn lý do hủy đơn");
+            } else {
+                location.reload();
+            }
+        }
+    </script>
+    <script src="../js/script.js"></script>
+    <script src="../js/tabslider.js"></script>
+    <script src="../js/DiaChiGiaoHang.js"></script>
 </body>
 </html>

@@ -957,3 +957,20 @@ Book stuff
     border-top: none;
 }
 
+/*HỦY ĐƠN*/
+.btnXacNhan {
+    background-color: var(--yellow);
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px #888888;
+    margin: auto;
+    display: flex;
+    margin-bottom: 20px   
+}
+.huydon{
+    margin-bottom: 15px;
+}
