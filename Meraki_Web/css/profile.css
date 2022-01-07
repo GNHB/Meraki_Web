@@ -599,20 +599,7 @@ Book stuff
         float: right;
         padding-right: 20px;
     }
-.slider{
-    height:305px;
-    width:95%;
-    margin:auto;
-}
-.slick-list{
-    height:100%;
-}
-.slick-track{
-    height:100%;
-}
-.bookview{
-    height:100%;
-}
+
 /*MY ACCOUNT*/
 .inf-container {
     margin: auto;
