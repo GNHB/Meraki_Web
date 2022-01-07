@@ -51,7 +51,7 @@
         <!--------------------------HEADER-------------------------->
         <div class="header">
             <a class="title">Danh sách hóa đơn</a>
-            <div style="display:flex;"  class="user">
+            <div style="display:flex;" class="user">
                 <a href="#"><i class="far fa-bell"></i></a>
                 <p>Hoài Vi</p>
             </div>
@@ -82,7 +82,7 @@
                             <td>001</td>
                             <td>19/02/2021</td>
                             <td>40000</td>
-                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"onclick="openDetail()"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
                         </tr>
                         <tr>
                             <td>15452</td>
@@ -90,7 +90,7 @@
                             <td>002</td>
                             <td>17/03/2021</td>
                             <td>40000</td>
-                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"onclick="openDetail()"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
                         </tr>
                         <tr>
                             <td>15453</td>
@@ -98,7 +98,7 @@
                             <td>003</td>
                             <td>19/05/2021</td>
                             <td>130000</td>
-                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;" onclick="openDetail()"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
                         </tr>
                         <tr>
                             <td>15454</td>
@@ -106,7 +106,7 @@
                             <td>004</td>
                             <td>17/05/2021</td>
                             <td>400000</td>
-                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"onclick="openDetail()"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
                         </tr>
                         <tr>
                             <td>15455</td>
@@ -114,7 +114,7 @@
                             <td>005</td>
                             <td>19/06/2021</td>
                             <td>340000</td>
-                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px; " onclick="openDetail()"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
                         </tr>
                         <tr>
                             <td>15456</td>
@@ -122,14 +122,19 @@
                             <td>006</td>
                             <td>17/03/2021</td>
                             <td>540000</td>
-                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
+                            <td class="icon"><i class="fas fa-eye" style="margin-right: 20px;" onclick="openDetail()"></i><i class="fas fa-paper-plane" style="margin-right: 20px;"></i><i class="fas fa-trash-alt"></i></td>
                         </tr>
                     </tbody>
-                   
+
                 </table>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="../admin_js/ad_sidebar.js"></script>
+    <script type="text/javascript">
+        function openDetail() {
+            window.location.href = "ad_InvoiceDetail.html";
+        }
+    </script>
 </body>
 </html>
