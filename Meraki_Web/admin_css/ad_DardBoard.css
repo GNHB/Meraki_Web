@@ -20,6 +20,9 @@
 body{
     background:var(--light_skin);
 }
+.sidebar{
+    height: 85em;
+}
 
 .container_Dardboard {
     width: 95%;
