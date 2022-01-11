@@ -1,0 +1,78 @@
+﻿
+.mycontent button {
+background: var(--yellow);
+border-radius: 20px;
+color: black;
+font-weight: bold;
+font-size: .8rem;
+padding: .4rem ;
+}
+
+.mycontent button:hover {
+background: var(--green);
+box-shadow: 0 0 20px 0px #F7BB34;
+color: white;
+    }
+
+
+
+@media screen and (max-width: 590px) {
+    .mycontent {
+        background-color: var(--light_skin);
+    }
+
+    .myTable {
+        text-align: unset;
+    }
+
+        .myTable tr {
+            border: none;
+        }
+
+    thead {
+        display: none;
+    }
+
+    .myTable, .myTable tbody, .myTable tr, .myTable td {
+        display: block;
+        width: 100%;
+    }
+
+        .myTable tr {
+            margin-bottom: 15px;
+            border: 2px solid var(--yellow);
+            padding: 10px;
+            background-color: var(--skin);
+        }
+
+        .myTable td:first-child::before {
+            content: "STT";
+        }
+
+        .myTable td:nth-child(2)::before {
+            content: "Thể loại";
+        }
+
+        .myTable td:nth-child(3)::before {
+            content: "Hành động";
+        }    
+
+    td {
+        text-align: right;
+    }
+
+        td::before {
+            float: left;
+            font-weight: bold;
+            margin-right: 10%;
+        }
+
+    .myTable th, tr, td {
+        border-bottom: 0;
+        font-size: 14px;
+    }
+
+    .myTable td:last-child {
+        width: 100%;
+    }
+}
