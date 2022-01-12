@@ -8,24 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!----------------------CSS/JAVESCRIPT  SLIDER-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="../css/slickSlider.css" />
     <script type="text/javascript"
             src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript"
-            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/bookslider.css" />
 
     <!-----------------------CSS CONTENT------------>
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/TheLoai.css" />
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/Footer.css" />
+    <link rel="stylesheet" type="text/css" href="../css/profile.css" />
     <!----------------------FONT-------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body>
+<body ng-app="myApp" ng-controller="BookController">
     <!--Navigation bar-->
     <input type="checkbox" id="check" />
     <nav>
@@ -61,7 +60,7 @@
             <p class="author" id="author"><b>_Colleen Mccullough_</b></p>
             <q>Tất cả những gì đẹp nhất chỉ có thể có được khi ta chịu trả giá bằng nỗi đau vĩ đại</q>
         </div>
-        <div class="mySlides" >
+        <div class="mySlides">
             <p class="author" id="author">_Kito Aya_</p>
             <q>
                 Có những người mà sự tồn tại của họ giống như không khí, êm dịu, nhẹ nhàng, chỉ khi họ mất đi người ta mới nhận ra họ quan trọng
@@ -128,170 +127,245 @@
             <p style="text-align: center; ">Tâm lý</p>
             <hr style="width: 100%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom: 5px;" />
             <a style="text-decoration: none;" href="../html/Newbooks.html"><p class="all">Xem tất cả</p></a>
-            <div class="wrap">
-                <div class="slider" id="carouselContent">
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/trenduongbang.jpg" title="Trên đường băng" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Trên đường băng</p> </a>
-                            <p class="author">Tony Buổi Sáng</p>
-                        </div>
-                    </div>
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/bandatgiabaonhieu.jpg" title="Bạn đắt giá bao nhiêu" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Bạn đắt giá bao nhiêu</p> </a>
-                            <p class="author">Vãn Tình</p>
-                        </div>
-                    </div>
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/vongtronmau.jpg" title="Vòng tròn máu" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Vòng tròn máu</p> </a>
-                            <p class="author">Edgar Wallace</p>
-                        </div>
-                    </div>
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/thienthanacquy.jpg" title="Thiên thần, ác quỷ" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Thiên thần, ác quỷ</p> </a>
-                            <p class="author">Dan Brown</p>
-                        </div>
-                    </div>
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/dapancuathoigian.jpg" title="Đáp án của thời gian" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Đáp án của thời gian</p> </a>
-                            <p class="author">Lư Tư Hạo</p>
-                        </div>
-                    </div>
 
+            <div class="slider">
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/trenduongbang.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Trên đường băng</a></span>
+                            <br>
+                            <span class="authorbook">Tony buổi sáng</span>
+                        </p>
+                    </div>
                 </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/chuchokhongnha.png" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Chú chó không nhà</a></span><br>
+                            <span class="authorbook">Sarah Lean</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/duttinh.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Dứt tình</a></span><br>
+                            <span class="authorbook">Vũ Trọng Phụng</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/kyananhtrang.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Kỳ án ánh trăng</a></span><br>
+                            <span class="authorbook">Quỷ Cổ Nữ</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/suoinguon.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Suối nguồn</a></span><br>
+                            <span class="authorbook">Ayn Rand</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/troisinhvungve.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Trước khi nhắm mắt</a></span><br>
+                            <span class="authorbook">Lư Tư Hạo</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/nhagiakim.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Nhà giả kim</a></span><br>
+                            <span class="authorbook">Paulo Coelho</span>
+                        </p>
+                    </div>
+                </div>
+
             </div>
+
             <p style="text-align: center; margin-top: 40px;">Tiểu thuyết/ Văn học</p>
             <hr style="width: 100%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom: 5px;" />
             <a style="text-decoration: none;" href="../html/Newbooks.html"><p class="all">Xem tất cả</p></a>
-            <div class="wrap">
-                <div class="slider" id="carouselContent">
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/thienthanacquy.jpg" title="Thiên thần, ác quỷ" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Thiên thần, ác quỷ</p> </a>
-                            <p class="author">Dan Brown</p>
-                        </div>
+            <div class="slider">
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/origin.jpg" />
                     </div>
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/dapancuathoigian.jpg" title="Đáp án của thời gian" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Đáp án của thời gian</p> </a>
-                            <p class="author">Lư Tư Hạo</p>
-                        </div>
-                    </div>
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/truockhinhammat.jpg" title="Trước khi nhắm mắt" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Trước khi nhắm mắt</p> </a>
-                            <p class="author">Higashino Keigo</p>
-                        </div>
-                    </div>
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/harrypotter.jpg" title="Harry Potter" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Harry Potter</p> </a>
-                            <p class="author">J.K Rowling</p>
-                        </div>
-                    </div>
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
-                            <p class="author">Ayn Rand</p>
-                        </div>
-                    </div>
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/truockhinhammat.jpg" title="Tiếng chim hót trong bụi mận gai" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
-                            <p class="author">Colleen McCulough</p>
-                        </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Origin</a></span><br>
+                            <span class="authorbook">Dan Brown</span>
+                        </p>
                     </div>
                 </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/thutoi.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Thú tội</a></span><br>
+                            <span class="authorbook">Minato Kanae</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/trenduongbang.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Trên đường băng</a></span><br>
+                            <span class="authorbook">Tony buổi sáng</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/truockhinhammat.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Trước khi nhắm mắt</a></span><br>
+                            <span class="authorbook">Keigo Higashino</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/truyenkieu.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Truyện Kiều</a></span><br>
+                            <span class="authorbook">Nguyễn Du</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/vongtronmau.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Vòng tròn máu</a></span><br>
+                            <span class="authorbook">Edgar Wallace</span>
+                        </p>
+                    </div>
+                </div>
+
+
             </div>
 
             <p style="text-align: center; margin-top: 40px;">Viễn tưởng</p>
             <hr style="width: 100%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom: 5px;" />
             <a href="../html/Newbooks.html"><p class="all">Xem tất cả</p></a>
-            <div class="wrap">
-                <div class="slider" id="carouselContent">
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/harrypotter.jpg" title="Harry Potter" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Harry Potter</p> </a>
-                            <p class="author">J.K Rowling</p>
-                        </div>
+            <div class="slider">
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/hoanguc.jpg" />
                     </div>
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/suoinguon.jpg" title="Suối nguồn" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Suối nguồn</p> </a>
-                            <p class="author">Ayn Rand</p>
-                        </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Hỏa ngục</a></span><br>
+                            <span class="authorbook">Dan Brown</span>
+                        </p>
                     </div>
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/Tiengchimhot2012.jpg" title="Tiếng chim hót trong bụi mận gai" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Tiếng chim hót trong bụi mận gai</p> </a>
-                            <p class="author">Colleen McCulough</p>
-                        </div>
-                    </div>
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/chuchokhongnha.png" title="Chú chó không nhà" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Chú chó không nhà</p> </a>
-                            <p class="author">Sarah Lean</p>
-                        </div>
-                    </div>
-                    <div class="slider_box">
-                        <div class="slider_img">
-                            <img src="../image/imvBook/laohac.jpg" title="Lão Hạc" />
-                        </div>
-                        <div class="img_detail">
-                            <a href="../html/DetailBook.html" class="title"><p>Lão Hạc</p> </a>
-                            <p class="author">Nam Cao</p>
-                        </div>
-                    </div>
-
                 </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/harrypotter.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Harry Potter</a></span> <br>
+                            <span class="authorbook">J.K.Rowling</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/luocsuloainguoi.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Lược sử loài người</a></span> <br>
+                            <span class="authorbook">Yuval Noah Harari</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/haisophan.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Hai số phận</a></span> <br>
+                            <span class="authorbook">Jeffrey Archer</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/bandatgiabaonhieu.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Bạn đắt giá bao nhiêu</a></span>  <br>
+                            <span class="authorbook">Vãn Tình</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/dambighet.jpg" />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Dám bị ghét</a></span> <br>
+                            <span class="authorbook">Kishimi Ichiro</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bookview">
+                    <div class="coverbook">
+                        <img src="../image/imvBook/phiasaunghicanx.png" "        />
+                    </div>
+                    <div class="description">
+                        <p class="titlebook">
+                            <span class="titlename"><a href="../html/DetailBook.html">Phía sau nghi can X</a></span>  <br>
+                            <span class="authorbook">Keigo Higashino</span>
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
             <p style="text-align: center; margin-top: 40px;">Tác giả được yêu thích nhất</p>
@@ -299,64 +373,79 @@
             <a style="text-decoration: none;" href="../html/Newbooks.html"><p class="all">Xem tất cả</p></a>
             <div class="tac_gia_yeu_thich">
                 <div class="tac_gia" style="margin-bottom: 10px;">
-                    <div class="slider_box" id="tac_gia_box">
-                        <div class="slider_img">
+                    <div class="bookview" style="width: 180px; height: 240px">
+                        <div class="coverbook">
                             <img src="../image/imvAuthor/nguyennhatanh.jpg" />
                         </div>
-                        <div class="img_detail">
-                            <a href="#" class="title"><p>Nguyễn Nhật Ánh</p> </a>
+                        <div class="description">
+                            <p class="titlebook">
+                                <span class="titlename"><a href="../html/DetailBook.html">Nguyễn Nhật Ánh</a></span>  <br>
+
+                            </p>
                         </div>
                     </div>
+
                 </div>
                 <div class="sach_yeu_thich">
                     <table>
                         <tr>
                             <td>
-                                <div class="slider_box first" style="margin-bottom: 20px;">
-                                    <div class="slider_img">
-                                        <img src="../image/imvBook/matbiec.png" title="Mắt biếc" />
+                                <div class="bookview" style="margin-bottom: 20px">
+                                    <div class="coverbook">
+                                        <img src="../image/imvBook/matbiec.png" />
                                     </div>
-                                    <div class="img_detail">
-                                        <a href="../html/DetailBook.html" class="title"><p>Mắt Biếc</p> </a>
-                                        <img src="../image/imvChart/saovang.png" class="sao" />
+                                    <div class="description">
+                                        <p class="titlebook">
+                                            <span class="titlename"><a href="../html/DetailBook.html">Mắt biếc</a></span>  <br>
+                                            <span class="authorbook"><img src="../image/imvChart/saovang.png" class="sao" /></span>
+                                        </p>
                                     </div>
                                 </div>
+
                             </td>
                             <td>
-                                <div class="slider_box first" style="margin-bottom: 20px;">
-                                    <div class="slider_img">
-                                        <img src="../image/imvBook/cogaidentuhomqua.png" title="Cô gái đến từ hôm qua" />
+                                <div class="bookview" style="margin-bottom: 20px">
+                                    <div class="coverbook">
+                                        <img src="../image/imvBook/cogaidentuhomqua.png" />
                                     </div>
-                                    <div class="img_detail">
-                                        <a href="../html/DetailBook.html" class="title"><p>Cô gái đến từ hôm qua</p> </a>
-                                        <img src="../image/imvChart/saovang.png" class="sao" />
+                                    <div class="description">
+                                        <p class="titlebook">
+                                            <span class="titlename"><a href="../html/DetailBook.html">Cô gái đến từ hôm qua</a></span>  <br>
+                                            <span class="authorbook"><img src="../image/imvChart/saovang.png" class="sao" /></span>
+                                        </p>
                                     </div>
                                 </div>
+
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="slider_box first">
-                                    <div class="slider_img">
-                                        <img src="../image/imvBook/toithayhoavangtrencoxanh.png" title="Tôi thấy hoa vàng trên cỏ xanh" />
+                                <div class="bookview" style="margin-bottom: 20px">
+                                    <div class="coverbook">
+                                        <img src="../image/imvBook/toithayhoavangtrencoxanh.png" />
                                     </div>
-                                    <div class="img_detail">
-                                        <a href="../html/DetailBook.html" class="title"><p>Tôi thấy hoa vàng trên cỏ xanh</p> </a>
-                                        <img src="../image/imvChart/saovang.png" class="sao" />
+                                    <div class="description">
+                                        <p class="titlebook">
+                                            <span class="titlename"><a href="../html/DetailBook.html">Tôi thấy hoa vàng trên cỏ xanh</a></span>  <br>
+                                            <span class="authorbook"><img src="../image/imvChart/saovang.png" class="sao" /></span>
+                                        </p>
                                     </div>
                                 </div>
+
                             </td>
                             <td>
-                                <div class="slider_box first">
-                                    <div class="slider_img">
-                                        <img src="../image/imvBook/chotoixinmotvedituoitho.png" title="Cho tôi xin một vé đi tuổi thơ" />
+                                <div class="bookview" style="margin-bottom: 20px">
+                                    <div class="coverbook">
+                                        <img src="../image/imvBook/chotoixinmotvedituoitho.png" />
                                     </div>
-                                    <div class="img_detail">
-                                        <a href="../html/DetailBook.html" class="title"><p>Cho tôi xin một vé đi tuổi thơ</p> </a>
-                                        <img src="../image/imvChart/saovang.png" class="sao" />
-
+                                    <div class="description">
+                                        <p class="titlebook">
+                                            <span class="titlename"><a href="../html/DetailBook.html">Cho tôi xin một vé đi tuổi thơ</a></span>  <br>
+                                            <span class="authorbook"><img src="../image/imvChart/saovang.png" class="sao" /></span>
+                                        </p>
                                     </div>
                                 </div>
+
                             </td>
                         </tr>
 
@@ -446,6 +535,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div id="vl_cn" class="content" data-tab-content>
@@ -1426,5 +1516,6 @@
     <!--JS SliderQuote-->
     <script src="../js/slidequote.js"></script>
     <script src="../js/theLoaiSlider.js"></script>
+    <script src="../js/book.js"></script>
 </body>
 </html>
