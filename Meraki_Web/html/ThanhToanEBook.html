@@ -45,7 +45,7 @@
     </nav>
 
     <!--CONTENT-->
-    <div class="thanhtoan_ebook_body">
+    <div class="thanhtoan_ebook_body" style="margin-top:10px;">
         <div class="information">
             <p style="font-size: 20px; margin-bottom:20px;"><strong>EBOOK ĐÃ CHỌN</strong></p>
             <div id="ebook_list">
@@ -67,7 +67,7 @@
                     <div class="card-payment">
                         <div class="card">
                             <label class="custom-radio">
-                                <input type="radio" name="radio-wallets" />
+                                <input type="radio" name="radio-wallets" id="wallet1" />
                                 <span class="radio-btn">
                                     <i class="las la-check"></i>
                                     <div class="card-icon-pay">
@@ -78,7 +78,7 @@
                         </div>
                         <div class="card">
                             <label class="custom-radio">
-                                <input type="radio" name="radio-wallets" />
+                                <input type="radio" name="radio-wallets" id="wallet2" />
                                 <span class="radio-btn">
                                     <i class="las la-check"></i>
                                     <div class="card-icon-pay">
@@ -89,7 +89,7 @@
                         </div>
                         <div class="card">
                             <label class="custom-radio">
-                                <input type="radio" name="radio-wallets" />
+                                <input type="radio" name="radio-wallets" id="wallet3" />
                                 <span class="radio-btn">
                                     <i class="las la-check"></i>
                                     <div class="card-icon-pay">
@@ -100,7 +100,7 @@
                         </div>
                         <div class="card">
                             <label class="custom-radio">
-                                <input type="radio" name="radio-wallets" />
+                                <input type="radio" name="radio-wallets" id="wallet4" />
                                 <span class="radio-btn">
                                     <i class="las la-check"></i>
                                     <div class="card-icon-pay">
@@ -116,7 +116,7 @@
                     <div class="card-payment">
                         <div class="card">
                             <label class="custom-radio">
-                                <input type="radio" name="radio-atm" />
+                                <input type="radio" name="radio-wallets" id="atm1" />
                                 <span class="radio-btn">
                                     <i class="las la-check"></i>
                                     <div class="card-icon-atm">
@@ -127,7 +127,7 @@
                         </div>
                         <div class="card">
                             <label class="custom-radio">
-                                <input type="radio" name="radio-atm" />
+                                <input type="radio" name="radio-wallets" id="atm2" />
                                 <span class="radio-btn">
                                     <i class="las la-check"></i>
                                     <div class="card-icon-atm">
@@ -138,7 +138,7 @@
                         </div>
                         <div class="card">
                             <label class="custom-radio">
-                                <input type="radio" name="radio-atm" />
+                                <input type="radio" name="radio-wallets" id="atm3" />
                                 <span class="radio-btn">
                                     <i class="las la-check"></i>
                                     <div class="card-icon-atm">
@@ -298,6 +298,16 @@
     </footer>
     <script type="text/javascript">
         function PopUp() {
+            var wallet1 = document.getElementById("wallet1");
+            var atm1 = document.getElementById("atm1");
+            var atm2 = document.getElementById("atm2");
+            var atm3 = document.getElementById("atm3");
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("btnConfirm");
+            var span = document.getElementsByClassName("close")[0];
+            if (wallet1.checked == false && wallet2.checked == false && wallet3.checked == false && wallet4.checked == false && atm1.checked == false && atm2.checked == false && atm3.checked == false) {
+                alert("Vui lòng lựa chọn hình thức thanh toán trước khi xác nhận thanh toán!");
+            }
             var modal = document.getElementById("myModal");
             var btn = document.getElementById("btnConfirm");
             var span = document.getElementsByClassName("close")[0];
