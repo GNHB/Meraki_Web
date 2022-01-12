@@ -1,69 +1,4 @@
-﻿
-/*:root {
-    --green: #487B72;
-    --yellow: #F7BB34;
-    --skin: #FBF1E1;
-    --light_skin: #FEFAF4;
-}
-
-* {
-    font-family: Arial;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    transition: all .2s linear;
-    transition: width none;
-}
-.mycontent {
-    width: 100%;
-    margin: auto;
-    background-color: var(--skin);
-}
-.mycontent h5 {
-   margin:10px 20px 0px;
-   font-size:20px;
-   color:black;
-   padding:10px;
-}
-.progress{
-    background-color:var(--skin);
-}
-.title{
-    text-decoration:none;
-}
-.recent-grid{
-    font-size:16px;
-}
-div.search_box {
-    display: flex;
-    height: 30px;
-    width: 60%;
-    border: 1px solid white;
-    border-radius: 20px;
-    margin: auto;
-    background-color: white;
-}
-#search {
-    height: 100%;
-    width: 95%;
-    border-radius:20px;
-    margin: 0;
-    padding: 5px;
-}
-
-span img.search_icon {
-    float: right;
-    height: 15px;
-    width: 15px;
-    vertical-align: middle;
-    margin-top: 8px;
-    margin-right: 10px;
-    : root
-
-{
+﻿:root {
     --green: #487B72;
     --yellow: #F7BB34;
     --skin: #FBF1E1;
@@ -85,15 +20,14 @@ span img.search_icon {
 body {
     background: var(--light_skin);
 }
-
-.title {
-    text-decoration: none;
+.title{
+    text-decoration:none;
 }
 
 .container_ListBook {
     width: 95%;
     margin: 1.5em auto;
-    font-size: 16px;
+    font-size:16px;
 }
 
 .btn_ListBook {
@@ -121,9 +55,9 @@ body {
     background: var(--green);
     font-size: 20px;
     color: white;
-}*/
+}
 /*-------------------------------CONTENT LISTBOOK---------------------------------*/
-/*.content_listBook {
+.content_listBook {
     background: var(--skin);
     padding: 1.5em 0;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -169,26 +103,26 @@ body {
 
     .table_list_book tr td img {
         text-align: center;
-    }*/
+    }
 
 /*-------------------------------------BOX------------------------------*/
 
-/*.box_container {
+.box_container {
     display: flex;
     background: var(--yellow);
     border-radius: 2em;
     margin: 1.5em auto;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     padding: 0.5em;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:center;
 }
 
 .box_1 {
     width: 29%;
-    display: flex;*/
-    /*    padding: 20px;*/
-/*}
+    display: flex;
+/*    padding: 20px;*/
+}
 
 .box_1_image {
     width: 30%;
@@ -203,10 +137,10 @@ body {
 .box_1_content {
     width: 70%;
     text-align: center;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    height:100px;
+    justify-content:center;
+    align-items:center;
+    display:flex;
 }
 
 .box_1_tittle {
@@ -228,7 +162,7 @@ body {
 
         .table_list_book tr {
             border: none;
-            text-align: end;
+            text-align:end;
         }
 
     .header {
@@ -267,32 +201,18 @@ body {
         }
 
         .table_list_book td:nth-child(2)::before {
-            content: "Mã đơn hàng";
+            content: "Sách";
         }
 
         .table_list_book td:nth-child(3)::before {
-            content: "Đơn hàng";
+            content: "Nhà cung cấp";
         }
 
         .table_list_book td:nth-child(4)::before {
-            content: "Khách hàng";
+            content: "Số lượng";
         }
 
-        .table_list_book td:nth-child(5)::before {
-            content: "Địa chỉ";
-        }
-
-        .table_list_book td:nth-child(6)::before {
-            content: "Tình trạng";
-        }
-
-        .table_list_book td:nth-child(7)::before {
-            content: "Thanh toán";
-        }
-        .table_list_book td:nth-child(8)::before {
-            content: "Gía";
-        }
-
+    
 
 
     td {
@@ -314,16 +234,14 @@ body {
         width: 100%;
     }
 
-    .box_container {
-        display: block;
+    .box_container{
+        display:block;
     }
-
-    .box_1 {
-        width: 100%;
+    .box_1{
+        width:100%;
     }
 
     .btn_AddBook {
         padding: 0.5em 1em;
     }
-}*/
-
+}

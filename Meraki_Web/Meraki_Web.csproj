@@ -78,6 +78,7 @@
     <Content Include="admin_css\ad_OrderList.css" />
     <Content Include="admin_css\ad_sidebar.css" />
     <Content Include="admin_html\ad_Delivery.html" />
+    <Content Include="admin_html\ad_InvoiceList - Copy.html" />
     <Content Include="admin_html\ad_InvoiceList.html" />
     <Content Include="admin_html\ad_ListBook.html" />
     <Content Include="admin_html\ad_Order.html" />
