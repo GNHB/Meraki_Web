@@ -311,11 +311,13 @@ table {
     text-align: right;
     padding: 10px;
     margin-top: 20px;
+    justify-content:center;
 }
 
 .myItem {
-    flex: 2 0 19%; /* explanation below */
-    margin-left: 20px;
+    flex: 0 0 20%; /* explanation below */
+    margin: auto auto 20px auto;
+    
 }
 
     .myItem .img_detail .title p {
