@@ -7,7 +7,7 @@
 		<id>K194111531</id>
 		<name color="green">Nguyễn Hoàng Bảo Giang</name>
 		<position>CEO</position>
-		<photo> "../image/imvMember/4-10.png" </photo>
+		<photo> "../image/imvMember/Giang.jpg" </photo>
 		<quote>
 			“Một cây làm chẳng nên non,
 			ba cây chụm lại nên hòn núi cao”
@@ -18,7 +18,7 @@
 		<id>K194111536</id>
 		<name>Mai Thị Thúy Hậu</name>
 		<position>CCO</position> 
-		<photo> "../image/imvMember/4-11.png" </photo>
+		<photo> "../image/imvMember/Hậu.jpg" </photo>
 		<quote>
       “Every struggle in your life has shaped you into the person you are today. Be thankful for the hard times, they can only make you stronger.”
     </quote>
@@ -28,7 +28,7 @@
 		<id>K194111540</id>
 		<name>Trần Hồng Kim</name>
 		<position>Trưởng phòng hành chính</position>
-		<photo> "../image/imvMember/4-12.png" </photo>
+		<photo> "../image/imvMember/Kim.jpg" </photo>
 		<quote>
 			“Một cây làm chẳng nên non,
 			ba cây chụm lại nên hòn núi cao”
@@ -39,7 +39,7 @@
 		<id>K194111592</id>
 		<name>Lê Thị Hoài Vi</name>
 		<position>Trưởng phòng Marketing</position>
-		<photo> "../image/imvMember/4-13.png" </photo>
+		<photo> "../image/imvMember/Vi.jpg" </photo>
 		<quote>
 			“Một cây làm chẳng nên non,
 			ba cây chụm lại nên hòn núi cao”
