@@ -204,11 +204,115 @@ name[color='green'] {
     background-color: #2f2;
 }
 
+/*-------------------------------------------*/
+.member_container{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0 0 0;
+}
+
+.member {
+    width: 23%;
+}
+
+.member_card {
+    background: var(--skin);
+    width: 23%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 1em;
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+}
+
+    .member_card img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 40%;
+        top: 50%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background: #FBF1E1;
+        border: 2px solid var(--yellow)
+    }
+
+    .name{
+        font-size:18px;
+        font-weight:bold;
+        color: var(--yellow);
+    }
+
+    .quote{
+        font-size: 16px;
+        font-style:italic;
+    }
+
+.line {
+    border-top: 1px solid var(--yellow);
+    margin: 0.2em 0 0.2em 0;
+    width: 100%;
+    text-align:center;
+    margin:10px 0;
+}
+
+.member_card:hover {
+    transform: scale(1.05);
+}
+
+/*---------------------------------------------*/
+.card {
+    width: 23%;
+    display: grid;
+    grid-template-areas: "image" "text" "stats";
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 1em;
+    background: white;
+    text-align: center;
+}
+
+.card-image {
+    grid-area: image;
+    margin-top: 20px;
+}
+
+    .card-image img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 50%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background: #FBF1E1;
+        border: 2px solid var(--yellow)
+    }
+
+.card-text {
+    grid-area: text;
+    margin: 20px;
+}
+
+.card-stats {
+    grid-area: stats;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background:var(--yellow);
+    padding:10px;
+}
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+/*-------------------------------------------*/
 @media screen and (max-width: 500px) {
     .vision {
         display: block;
     }
 
+    .member_container{
+        display:block;
+    }
+
+    .card{
+        margin:20px auto;
+        width:60%;
+    }
     .container_vision {
         display: block;
         flex-direction: row;

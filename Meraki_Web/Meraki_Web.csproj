@@ -236,10 +236,10 @@
     <Content Include="image\imvMember\4-11.png" />
     <Content Include="image\imvMember\4-12.png" />
     <Content Include="image\imvMember\4-13.png" />
-    <Content Include="image\imvMember\Giang.jpg" />
-    <Content Include="image\imvMember\Hậu.jpg" />
-    <Content Include="image\imvMember\Kim.jpg" />
-    <Content Include="image\imvMember\Vi.jpg" />
+    <Content Include="image\imvMember\giang.png" />
+    <Content Include="image\imvMember\hau.png" />
+    <Content Include="image\imvMember\kim.png" />
+    <Content Include="image\imvMember\vi.png" />
     <Content Include="image\imvSplashPage\banner 3.png" />
     <Content Include="image\imvSplashPage\banner2.png" />
     <Content Include="image\imvSplashPage\bg-07.png" />
