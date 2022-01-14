@@ -44,7 +44,31 @@
 
     "Author": "Đỗ Quang Tuấn Hoàng",
     "imgSrc": "../image/imvBook/vatquanhungnganmay.jpg"
+  },
+  {
+    "name": "Đêm nay con có mơ không?",
+
+    "Author": "Trương Gia Hòa",
+    "imgSrc": "../image/imvBook/demnayconcomokhong.jpg"
+  },
+  {
+    "name": "Những nụ hôn tạm biệt",
+
+    "Author": "Tùng Leo",
+    "imgSrc": "../image/imvBook/nhungnuhontambiet.jpg"
+  },
+  {
+    "name": "Những năm tháng ấy cùng Radio",
+
+    "Author": "Thu Thanh",
+    "imgSrc": "../image/imvBook/nhungnamthangaycungradio.jpg"
+  },
+  {
+    "name": "Bên này thương bên kia",
+
+    "Author": "Tùng Leo",
+    "imgSrc": "../image/imvBook/bennaythuongbenkia.jpg"
   }
- 
+
 
 ]

@@ -44,7 +44,33 @@
 
     "Author": "Võng Lạc Hắc Hiệp",
     "imgSrc": "../image/imvBook/luatkiemtoancau.jpg"
+  },
+
+  {
+    "name": "Ngày của người chết",
+
+    "Author": " Đằng Bình",
+    "imgSrc": "../image/imvBook/ngaycuanguoichet.jpg"
+  },
+  {
+    "name": "Những màu cánh thiên thần",
+
+    "Author": "Trương Thanh Thùy",
+    "imgSrc": "../image/imvBook/nhungdoicachthienthan.jpg"
+  },
+  {
+    "name": "Tuyệt đỉnh cổ vật",
+
+    "Author": "Nhung Hà",
+    "imgSrc": "../image/imvBook/tuyetdichcovat.jpg"
+  },
+  {
+    "name": "Percy Jackson",
+
+    "Author": "Rick Riordan",
+    "imgSrc": "../image/imvBook/bienquaivat.jpg"
   }
-  
+
+
 
 ]

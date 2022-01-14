@@ -172,12 +172,15 @@
     <Content Include="image\imvBook\batrumotbangmay.jpg" />
     <Content Include="image\imvBook\battri.jpg" />
     <Content Include="image\imvBook\bayongbienmat.jpg" />
+    <Content Include="image\imvBook\bennaythuongbenkia.jpg" />
+    <Content Include="image\imvBook\bienquaivat.jpg" />
     <Content Include="image\imvBook\bonghinhcuagio.jpg" />
     <Content Include="image\imvBook\buongkhu.jpg" />
     <Content Include="image\imvBook\chuchokhongnha.png" />
     <Content Include="image\imvBook\dambighet.jpg" />
     <Content Include="image\imvBook\dapancuathoigian.jpg" />
     <Content Include="image\imvBook\demcuakedanhcaphon.jpg" />
+    <Content Include="image\imvBook\demnayconcomokhong.jpg" />
     <Content Include="image\imvBook\doinhugiacmong.jpg" />
     <Content Include="image\imvBook\dulieututhan.jpg" />
     <Content Include="image\imvBook\duttinh.jpg" />
@@ -199,8 +202,12 @@
     <Content Include="image\imvBook\matmadavinci.jpg" />
     <Content Include="image\imvBook\matnamau.jpg" />
     <Content Include="image\imvBook\muusat.jpg" />
+    <Content Include="image\imvBook\ngaycuanguoichet.jpg" />
     <Content Include="image\imvBook\ngonngucualua.jpg" />
     <Content Include="image\imvBook\nhagiakim.jpg" />
+    <Content Include="image\imvBook\nhungdoicachthienthan.jpg" />
+    <Content Include="image\imvBook\nhungnamthangaycungradio.jpg" />
+    <Content Include="image\imvBook\nhungnuhontambiet.jpg" />
     <Content Include="image\imvBook\nhungthuthachcuaapollo.jpg" />
     <Content Include="image\imvBook\origin.jpg" />
     <Content Include="image\imvBook\peterpan.jpg" />
@@ -219,6 +226,7 @@
     <Content Include="image\imvBook\truockhinhammat %282%29.jpg" />
     <Content Include="image\imvBook\truockhinhammat.jpg" />
     <Content Include="image\imvBook\truyenkieu.jpg" />
+    <Content Include="image\imvBook\tuyetdichcovat.jpg" />
     <Content Include="image\imvBook\vatquanhungnganmay.jpg" />
     <Content Include="image\imvBook\vongtronmau.jpg" />
     <Content Include="image\imvBook\whenbreathbecomesair.jpg" />

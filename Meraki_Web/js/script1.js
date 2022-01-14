@@ -42,7 +42,7 @@ function loadJSON() {
             let html = '';
             data.forEach(product => {
                 html += `
-            <div class="swiper-slide ">
+            <div class="swiper-slide" style="flex-shrink: 2;">
                 <div class="item-a">
                     <div class="box_best_sellers">
                         <div class="box_img">
@@ -76,7 +76,7 @@ function kinhdiJSON() {
             let html = '';
             data.forEach(product => {
                 html += `
-            <div class="swiper-slide ">
+            <div class="swiper-slide" style="flex-shrink: 2;">
                 <div class="item-a">
                     <div class="box_best_sellers">
                         <div class="box_img">
@@ -109,7 +109,7 @@ function vientuongJSON() {
             let html = '';
             data.forEach(product => {
                 html += `
-            <div class="swiper-slide ">
+            <div class="swiper-slide " style="flex-shrink: 2;">
                 <div class="item-a">
                     <div class="box_best_sellers">
                         <div class="box_img">
@@ -142,7 +142,7 @@ function thoJSON() {
             let html = '';
             data.forEach(product => {
                 html += `
-            <div class="swiper-slide ">
+            <div class="swiper-slide " style="flex-shrink: 2;">
                 <div class="item-a">
                     <div class="box_best_sellers">
                         <div class="box_img">
@@ -175,7 +175,7 @@ function trinhthamJSON() {
             let html = '';
             data.forEach(product => {
                 html += `
-            <div class="swiper-slide ">
+            <div class="swiper-slide " style="flex-shrink: 2;">
                 <div class="item-a">
                     <div class="box_best_sellers">
                         <div class="box_img">
