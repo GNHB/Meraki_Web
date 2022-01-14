@@ -1,0 +1,50 @@
+﻿[
+  {
+    "name": "Hà nội vắng em",
+
+    "Author": "Bành Thế Đoàn",
+    "imgSrc": "../image/imvBook/hanovanem.jpg"
+  },
+  {
+    "name": "Hà Nội Cũ Nằm Đây",
+
+    "Author": "Ngọc Giao",
+    "imgSrc": "../image/imvBook/hanoicunamday.jpg"
+  },
+  {
+    "name": "Trần gian muôn nỗi",
+
+    "Author": "Văn Giá",
+    "imgSrc": "../image/imvBook/trangianmuonnoi.jpg"
+  },
+  {
+    "name": "Răng mà thương mà nhớ",
+    "Author": "Lê Công Sơn",
+    "imgSrc": "../image/imvBook/rangmathuongmanho.jpg"
+  },
+  {
+    "name": "Ngôn ngữ của lửa",
+    "Author": "Jidi Majia",
+    "imgSrc": "../image/imvBook/ngonngucualua.jpg"
+  },
+  {
+    "name": "Thơ mới - Những chuyện chưa bao giờ cũ",
+
+    "Author": "TS. Nguyễn Hữu Sơn",
+    "imgSrc": "../image/imvBook/thomoi.jpg"
+  },
+  {
+    "name": "Đời như giấc mộng",
+
+    "Author": "Lê Đình Phương",
+    "imgSrc": "../image/imvBook/doinhugiacmong.jpg"
+  },
+  {
+    "name": "Vắt qua những ngàn mây",
+
+    "Author": "Đỗ Quang Tuấn Hoàng",
+    "imgSrc": "../image/imvBook/vatquanhungnganmay.jpg"
+  }
+ 
+
+]
