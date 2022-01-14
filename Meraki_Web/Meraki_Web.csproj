@@ -174,7 +174,9 @@
     <Content Include="image\imvBook\bayongbienmat.jpg" />
     <Content Include="image\imvBook\bonghinhcuagio.jpg" />
     <Content Include="image\imvBook\buongkhu.jpg" />
+    <Content Include="image\imvBook\caycamngotcuatoi.jpg" />
     <Content Include="image\imvBook\chuchokhongnha.png" />
+    <Content Include="image\imvBook\codedaokysu.jpg" />
     <Content Include="image\imvBook\dambighet.jpg" />
     <Content Include="image\imvBook\dapancuathoigian.jpg" />
     <Content Include="image\imvBook\demcuakedanhcaphon.jpg" />
@@ -193,6 +195,7 @@
     <Content Include="image\imvBook\khoidautucaichet.jpg" />
     <Content Include="image\imvBook\kyananhtrang.jpg" />
     <Content Include="image\imvBook\laohac.jpg" />
+    <Content Include="image\imvBook\lieuITdahetthoi.jpg" />
     <Content Include="image\imvBook\longlauyeuquat.jpg" />
     <Content Include="image\imvBook\luatkiemtoancau.jpg" />
     <Content Include="image\imvBook\luocsuloainguoi.jpg" />
@@ -221,6 +224,7 @@
     <Content Include="image\imvBook\truyenkieu.jpg" />
     <Content Include="image\imvBook\vatquanhungnganmay.jpg" />
     <Content Include="image\imvBook\vongtronmau.jpg" />
+    <Content Include="image\imvBook\vutrutronghatvode.jpg" />
     <Content Include="image\imvBook\whenbreathbecomesair.jpg" />
     <Content Include="image\imvChart\chart-42.png" />
     <Content Include="image\imvChart\chart-43.png" />
@@ -312,6 +316,7 @@
     <Content Include="data\namsao.json" />
     <Content Include="data\bonsao.json" />
     <Content Include="data\basao.json" />
+    <Content Include="data\kinhtexahoi.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

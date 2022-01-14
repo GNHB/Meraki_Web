@@ -1,4 +1,5 @@
 ﻿
+
 const productList = document.querySelector('.splot_sach1');
 const productList1 = document.querySelector('.splot_sach3');
 const productList2 = document.querySelector('.splot_sach4');
@@ -11,6 +12,7 @@ const productList9 = document.querySelector('.splot_sach9');
 const productList10 = document.querySelector('.splot_sach10');
 const productList11 = document.querySelector('.splot_sach11');
 const productList12 = document.querySelector('.splot_sach12');
+const productList0 = document.querySelector('.splot_sach0');
 eventListeners();
 
 function eventListeners() {
@@ -28,6 +30,7 @@ function eventListeners() {
         namsaoJSON();
         bonsaoJSON();
         basaoJSON();
+        kinhtexahoiJSON();
     });
 
 }
@@ -445,6 +448,42 @@ function basaoJSON() {
             });
 
             productList12.innerHTML = html;
+
+        })
+    ////.catch(error => {
+    ////    alert(`User live server or local server`);
+    //    /*    URL scheme must be "http" or "https" for CORS request. You need to be serving your index.html locally or have your site hosted on a live server somewhere for the Fetch API to work properly.*/
+    //})
+}
+
+function kinhtexahoiJSON() {
+    fetch('../data/kinhtexahoi.json')
+        .then(response => response.json())
+        .then(data => {
+            let html = '';
+            data.forEach(product => {
+                html += `
+
+          <div class="swiper-slide ">
+                <div class="item-a">
+                    <div class="box_best_sellers">
+                        <div class="box_img">
+                            <img src="${product.imgSrc}" title="${product.name}" />
+                        </div>
+                        <div class="box_tittle">
+                            <a href="../html/DetailBook.html" style="color: black;text-decoration:none;">
+                                <p style="font-size:16px"><strong>${product.name}</strong></p>
+                            </a>
+                            
+                            <p style="font-size:14px">${product.Author}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+            });
+
+            productList0.innerHTML = html;
 
         })
     ////.catch(error => {
