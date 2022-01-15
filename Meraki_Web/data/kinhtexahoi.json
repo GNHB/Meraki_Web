@@ -1,0 +1,47 @@
+﻿[
+  {
+    "name": "Bong bóng kinh tế và làn sóng vỡ nợ quốc gia",
+    "Author": "Michael Lewis",
+    "imgSrc": "../image/imvBook/bongbongkinhte.jpg"
+  },
+  {
+    "name": "Tư duy phản biện",
+    "Author": "Zoe McKey",
+    "imgSrc": "../image/imvBook/tuduyphanbien.jpg"
+  },
+  {
+    "name": "Tiếp thị 5.0: công nghệ vị nhân sinh",
+    "Author": "Philip Kotler, Hermawan Kartajaya, Iwan Setiawan",
+    "imgSrc": "../image/imvBook/tiepthi50.jpg"
+  },
+  {
+    "name": "Think and grow rich - 13 nguyên tắc nghĩ giàu, làm giàu",
+    "Author": "Napoleon Hill",
+    "imgSrc": "../image/imvBook/thinkandgrow.jpg"
+  },
+  {
+    "name": "Xã hội việt nam",
+    "Author": "Lương Đức Thiệp",
+    "imgSrc": "../image/imvBook/xahoivietnam.jpg"
+  },
+  {
+    "name": "Súng, vi trùng và thép",
+    "Author": "Jared Diamond",
+    "imgSrc": "../image/imvBook/sungvitrungvathep.jpg"
+  },
+  {
+    "name": "Nhà giả kim",
+    "Author": "Paulo Coelho",
+    "imgSrc": "../image/imvBook/nhagiakim.jpg"
+  },
+  {
+    "name": "Bạn đắt giá bao nhiêu",
+    "Author": "Vãn Tình",
+    "imgSrc": "../image/imvBook/bandatgiabaonhieu.jpg"
+  },
+  {
+    "name": "Trời sinh vụng về",
+    "Author": "Lư Tư Hạo",
+    "imgSrc": "../image/imvBook/troisinhvungve.jpg"
+  }
+]

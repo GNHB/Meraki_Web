@@ -1,0 +1,42 @@
+﻿[
+  {
+    "name": "Feynman chuyện thật như đùa",
+    "Author": "Richard P. Feynman",
+    "imgSrc": "../image/imvBook/feynman.jpg"
+  },
+  {
+    "name": "Vật lý của tương lai",
+    "Author": "Michio Kaku",
+    "imgSrc": "../image/imvBook/vatlycuatuonglai.jpg"
+  },
+  {
+    "name": "Tôi, tương lai và thế giới",
+    "Author": "Nguyễn Phi Vân",
+    "imgSrc": "../image/imvBook/toituonglaivathegioi.jpg"
+  },
+  {
+    "name": "Kinh doanh trong thời đại 4.0",
+    "Author": "Sunil Gupta",
+    "imgSrc": "../image/imvBook/kinhdoanh40.jpg"
+  },
+  {
+    "name": "7 bài học hay nhất về vật lý ",
+    "Author": "Carlo Rovelli",
+    "imgSrc": "../image/imvBook/7baihocvatly.jpg"
+  },
+  {
+    "name": "Lịch sử vạn vật",
+    "Author": "Bill Bryson",
+    "imgSrc": "../image/imvBook/luocsuvanvat.jpg"
+  },
+  {
+    "name": "Code dạo ký sự – lập trình viên đâu phải chỉ biết code",
+    "Author": "Phạm Huy Hoàng (Developer)",
+    "imgSrc": "../image/imvBook/codedaokysu.jpg"
+  },
+  {
+    "name": "Liệu IT đã hết thời",
+    "Author": "Nicholas Carr",
+    "imgSrc": "../image/imvBook/lieuITdahetthoi.jpg"
+  }
+]

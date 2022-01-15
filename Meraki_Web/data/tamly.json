@@ -1,0 +1,53 @@
+﻿[
+  {
+    "name": "Tình cờ gặp hạnh phúc",
+
+    "Author": "Daniel Gilbert",
+    "imgSrc": "../image/imvBook/tinhcogaphanhphuc.jpg"
+  },
+  {
+    "name": "Nghịch lý của sự lựa chọn",
+
+    "Author": "Barry Schwartz",
+    "imgSrc": "../image/imvBook/nghichlycuasuluachon.jpg"
+  },
+  {
+    "name": "Đi tìm lẽ sống",
+
+    "Author": "Viktor Frankl",
+    "imgSrc": "../image/imvBook/ditimlesong.jpg"
+  },
+  {
+    "name": "Điểm bùng phát",
+
+    "Author": "Malcolm Gladwell",
+    "imgSrc": "../image/imvBook/diembungphat.jpg"
+  },
+  {
+    "name": "Đọc vị bất kì ai",
+
+    "Author": "TS. David J. Lieberman",
+    "imgSrc": "../image/imvBook/docvibatkiai.jpg"
+  },
+  {
+    "name": "Bạn không thông minh lắm đâu",
+
+    "Author": "David McRaney",
+    "imgSrc": "../image/imvBook/bankhongthongminhlamdau.jpg"
+  },
+  {
+    "name": "Sức mạnh tiềm thức",
+
+    "Author": "Joseph Murphyc",
+    "imgSrc": "../image/imvBook/sucmanhtiemthuc.jpg"
+  },
+  {
+    "name": "Tâm lý học hài hước",
+
+    "Author": "Richard Wiseman",
+    "imgSrc": "../image/imvBook/tamlyhochaihuoc.jpg"
+  }
+
+
+
+]

@@ -1,0 +1,56 @@
+﻿[
+  {
+    "name": "Bóng hình của gió",
+
+    "Author": "Carlos Ruiz Zafón",
+    "imgSrc": "../image/imvBook/bonghinhcuagio.jpg"
+  },
+  {
+    "name": "Mật mã Da Vinci",
+
+    "Author": "Dan Brown",
+    "imgSrc": "../image/imvBook/matmadavinci.jpg"
+  },
+  {
+    "name": "Mưu Sát",
+
+    "Author": "Tử Kim Trần",
+    "imgSrc": "../image/imvBook/muusat.jpg"
+  },
+  {
+    "name": "Trước khi nhắm mắt",
+    "Author": "Higashino Keigo",
+    "imgSrc": "../image/imvBook/truockhinhammat.jpg"
+  },
+
+  {
+    "name": "Thiên thần và ác quỷ",
+
+    "Author": "Dan Brown",
+    "imgSrc": "../image/imvBook/thienthanacquy.jpg"
+  },
+  {
+    "name": "Tội lỗi không chứng cứ",
+
+    "Author": "Tử Kim Trần",
+    "imgSrc": "../image/imvBook/toiloikhongchungcu.jpg"
+  },
+  {
+    "name": "Suối nguồn",
+    "Author": "Ayn Rand",
+    "imgSrc": "../image/imvBook/suoinguon.jpg"
+  },
+  {
+    "name": "Origin",
+
+    "Author": "Dan Brown",
+    "imgSrc": "../image/imvBook/origin.jpg"
+  },
+  {
+    "name": "Kỳ án ánh trăng",
+
+    "Author": "Quỷ Cổ Nữ",
+    "imgSrc": "../image/imvBook/kyananhtrang.jpg"
+  }
+ 
+]

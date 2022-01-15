@@ -1,0 +1,56 @@
+﻿[
+  {
+    "name": "Kẻ dọn rác",
+
+    "Author": "Tần Minh",
+    "imgSrc": "../image/imvBook/kedonrac.jpg"
+  },
+  {
+    "name": "Kẻ tầm xương",
+
+    "Author": "Jeffery Deaver",
+    "imgSrc": "../image/imvBook/ketamxuong.jpg"
+  },
+  {
+    "name": "3 - 1= Mấy?",
+
+    "Author": "Chu Đức Đông",
+    "imgSrc": "../image/imvBook/batrumotbangmay.jpg"
+  },
+  {
+    "name": "Gặp ma",
+    "Author": "Phan Văn Đà",
+    "imgSrc": "../image/imvBook/gapma.jpg"
+  },
+  {
+    "name": "Mặt nạ máu",
+    "Author": "Hồng Nương Tử",
+    "imgSrc": "../image/imvBook/matnamau.jpg"
+  },
+  {
+    "name": "Dữ liệu tử thần",
+
+    "Author": "Jeffery Deaver",
+    "imgSrc": "../image/imvBook/dulieututhan.jpg"
+  },
+  {
+    "name": "Bầy ong biến mất",
+
+    "Author": "Denise Mina",
+    "imgSrc": "../image/imvBook/bayongbienmat.jpg"
+  },
+  {
+    "name": "Kẻ mạo danh",
+
+    "Author": "Jeffrey Archer",
+    "imgSrc": "../image/imvBook/kemaodanh.jpg"
+  },
+  {
+    "name": "Buồng khử",
+
+    "Author": "Jeffery Deaver",
+    "imgSrc": "../image/imvBook/buongkhu.jpg"
+  }
+ 
+
+]

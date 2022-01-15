@@ -1,0 +1,65 @@
+﻿[
+  {
+    "name": "Hà nội vắng em",
+    "Author": "Bành Thế Đoàn",
+    "imgSrc": "../image/imvBook/hanovanem.jpg"
+  },
+  {
+    "name": "Có một ngày, bố mẹ sẽ già đi",
+    "Author": "Nhiều tác giả",
+    "imgSrc": "../image/imvBook/comotngay.jpg"
+  },
+  {
+    "name": "Hachiko - chú chó đợi chờ",
+    "Author": "Luis Prats, Zuzanna Celej",
+    "imgSrc": "../image/imvBook/hachiki.jpg"
+  },
+  {
+    "name": "Tớ muốn ăn tụy của cậu",
+    "Author": "Sumino Yoru",
+    "imgSrc": "../image/imvBook/tomuonantuycuacau.jpg"
+  },
+  {
+    "name": "All in love - ngập tràn yêu thương",
+    "Author": "Cố Tây Tước",
+    "imgSrc": "../image/imvBook/allinlove.jpg"
+  },
+  {
+    "name": "Mắt biếc",
+    "Author": "Nguyễn Nhật Ánh",
+    "imgSrc": "../image/imvBook/matbiec.png"
+  },
+  {
+    "name": "Cây cam ngọt của tôi",
+    "Author": "Jose Mauro de Vasconcelos",
+    "imgSrc": "../image/imvBook/caycamngotcuatoi.jpg"
+  },
+  {
+    "name": "Những giấc mơ ở hiệu sách morisaki",
+    "Author": "Yagisawa Satoshi",
+    "imgSrc": "../image/imvBook/nhunggiacmo.jpg"
+  },
+  {
+    "name": "Cô gái đến từ hôm qua",
+    "Author": "Nguyễn Nhật Ánh",
+    "imgSrc": "../image/imvBook/cogaidentuhomqua.png"
+  },
+  {
+    "name": "Chú chó không nhà",
+    "Author": "Sarah Lean",
+    "imgSrc": "../image/imvBook/chuchokhongnha.png"
+  },
+  {
+    "name": "Rừng nauy",
+    "Author": "Haruki Murakami",
+    "imgSrc": "../image/imvBook/rungnauy.jpg"
+  },
+  {
+    "name": "Dứt tình",
+    "Author": "Vũ Trọng Phụng",
+    "imgSrc": "../image/imvBook/duttinh.jpg"
+  }
+
+
+
+]

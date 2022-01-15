@@ -1,0 +1,52 @@
+﻿[
+  {
+    "name": "Lược sử loài người",
+
+    "Author": "../image/imvIcon/threestar-52.png",
+    "imgSrc": "../image/imvBook/luocsuloainguoi.jpg"
+  },
+
+  {
+    "name": "Nhà giả kim",
+
+    "Author": "../image/imvIcon/threestar-52.png",
+    "imgSrc": "../image/imvBook/nhagiakim.jpg"
+  },
+  {
+    "name": "Suối nguồn",
+
+    "Author": "../image/imvIcon/threestar-52.png",
+    "imgSrc": "../image/imvBook/suoinguon.jpg"
+  },
+  {
+    "name": "Ngày của người chết",
+
+    "Author": "../image/imvIcon/threestar-52.png",
+    "imgSrc": "../image/imvBook/ngaycuanguoichet.jpg"
+  },
+  {
+    "name": "Phía sau nghi can X",
+
+    "Author": "../image/imvIcon/threestar-52.png",
+    "imgSrc": "../image/imvBook/phiasaunghicanx.png"
+  },
+  {
+    "name": "Nghịch lý của sự lựa chọn",
+
+    "Author": "../image/imvIcon/threestar-52.png",
+    "imgSrc": "../image/imvBook/nghichlycuasuluachon.jpg"
+  },
+  {
+    "name": "Trước khi nhắm mắt",
+
+    "Author": "../image/imvIcon/threestar-52.png",
+    "imgSrc": "../image/imvBook/truockhinhammat.jpg"
+  },
+  {
+    "name": "Vòng tròn máu",
+
+    "Author": "../image/imvIcon/threestar-52.png",
+    "imgSrc": "../image/imvBook/vongtronmau.jpg"
+  }
+
+]

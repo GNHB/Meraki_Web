@@ -119,18 +119,84 @@
 
         <div class="tittle_member">
             <div class="header">THÀNH VIÊN SÁNG LẬP</div>
-            <button class="seeAll" type="button" onclick="loadDoc()">Xem chi tiết</button>
         </div>
-        <table id="demo"></table>
-
-        <div id="QuyDinhBanQuyen">
-            <div class="header">QUY ĐỊNH BẢN QUYỀN</div>
-            <div class="text_1">
-                Tất cả các tác phẩm của Meraki Book đều được mua bản quyền từ các nhà xuất bản cũng như tác giả. Trong trường hợp có bất kì đơn vị nào khác đăng tải tác phẩm, xâm hại đến quyền hợp pháp của Waka, chúng tôi sẽ buộc phải thực hiện các biện pháp bảo vệ quyền lợi của mình, bao gồm nhưng không giới hạn việc báo cáo vi phạm trên các kho ứng dụng; trên kết quả trả về từ các máy tìm kiếm; yêu cầu Cơ quan an ninh chuyên trách, Cơ quan thanh tra chuyên ngành vào cuộc để giải quyết theo quy định của pháp luật. Rất mong các đơn vị cung cấp nội dung trên mạng internet tuân thủ  theo đúng quy định của pháp luật và tôn trọng tác giả, đơn vị sở hữu bản quyền của tác phẩm.
+        <div class="member_container" style="margin-top:25px">
+            <div class="card">
+                <div class="card-image">
+                    <img src="../image/imvMember/giang.png" />
+                </div>
+                <div class="card-text">
+                    <p class="name">Nguyễn Hoàng Bảo Giang</p>
+                    <hr class="line" />
+                    <p class="quote">
+                        “Life is what happens when you're busy making other plans.”
+                    </p>
+                </div>
+                <div class="card-stats">
+                    <p>CEO</p>
+                </div>
             </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../image/imvMember/hau.png" />
+                </div>
+                <div class="card-text">
+                    <p class="name">Mai Thị Thúy Hậu</p>
+                    <hr class="line" />
+                    <p class="quote">
+                        “Do not go where the path may lead, go instead where there is no path and leave a trail.”
+                    </p>
+                </div>
+                <div class="card-stats">
+                    <p>COO</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../image/imvMember/kim.png" />
+                </div>
+                <div class="card-text">
+                    <p class="name">Trần Hồng Kim</p>
+                    <hr class="line" />
+                    <p class="quote">
+                        “Go confidently in the direction of your dreams! Live the life you've imagined.”
+                    </p>
+                </div>
+                <div class="card-stats">
+                    <p>Head of Administration</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../image/imvMember/vi.png" />
+                </div>
+                <div class="card-text">
+                    <p class="name">Lê Thị Hoài Vi</p>
+                    <hr class="line" />
+                    <p class="quote">
+                        “Today is hard, tomorrow will be worse but the day after tomorrow will be sunshine”
+                    </p>
+                </div>
+                <div class="card-stats">
+                    <p>
+                        Head of Marketing
+                    </p>
+                </div>
+            </div>
+
         </div>
 
-    </div>
+            <div id="QuyDinhBanQuyen">
+                <div class="header">QUY ĐỊNH BẢN QUYỀN</div>
+                <div class="text_1">
+                    Tất cả các tác phẩm của Meraki Book đều được mua bản quyền từ các nhà xuất bản cũng như tác giả. Trong trường hợp có bất kì đơn vị nào khác đăng tải tác phẩm, xâm hại đến quyền hợp pháp của Waka, chúng tôi sẽ buộc phải thực hiện các biện pháp bảo vệ quyền lợi của mình, bao gồm nhưng không giới hạn việc báo cáo vi phạm trên các kho ứng dụng; trên kết quả trả về từ các máy tìm kiếm; yêu cầu Cơ quan an ninh chuyên trách, Cơ quan thanh tra chuyên ngành vào cuộc để giải quyết theo quy định của pháp luật. Rất mong các đơn vị cung cấp nội dung trên mạng internet tuân thủ  theo đúng quy định của pháp luật và tôn trọng tác giả, đơn vị sở hữu bản quyền của tác phẩm.
+                </div>
+            </div>
+
+        </div>
 
     <div id="display">
 
@@ -189,77 +255,6 @@
         </div>
     </footer>
     <script src="../js/slidequote.js"></script>
-
-    <!--<script>
-        let xmlContent = '';
-        let tableBooks = document.getElementById('member');
-        fetch('memberList.xml').then((response) => {
-            response.text().then((xml) => {
-                xmlContent = xml;
-
-                let parser = new DOMParser();
-                let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
-                let member = xmlDOM.querySelectorAll('member');
-
-                member.forEach(bookXmlNode => {
-
-                    let row = document.createElement('div');
-
-                    //author
-                    let td = document.createElement('p');
-                    td.innerText = bookXmlNode.children[0].innerHTML;
-                    row.appendChild(p);
-
-                    //  title
-                    td = document.createElement('p');
-                    td.innerText = bookXmlNode.children[1].innerHTML;
-                    row.appendChild(p);
-
-                    //price
-                    td = document.createElement('p');
-                    td.innerText = '$ ' + bookXmlNode.children[3].innerHTML;
-                    row.appendChild(p);
-
-                    //description
-                    td = document.createElement('img');
-                    td.innerText = bookXmlNode.children[5].innerHTML;
-                    row.appendChild(img);
-
-                    member.children[1].appendChild(row);
-
-                });
-
-            });
-        });
-    </script>
-    <script>
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "memberList.xml", true);
-        var html = "";
-        var member = document.getElementById('member');
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4 && xhr.status == 200) {
-
-            } else {
-                html += "Không lấy được dữ liệu"
-            }
-            member.innerHTML = html;
-        }
-        xhr.send();
-
-        var xmlDoc = xhr.responseXML;
-        var x = xmlDoc.getElementByTagName("member");
-        for (i = 0; i < x.length; i++) {
-            html += "<div>";
-            html += "<img>" + x[i].getElementByTagName("photo")[0].childNodes[0].nodeValue;
-            html += "<p>" + x[i].getElementByTagName("name")[0].childNodes[0].nodeValue + "</p>";
-            html += "<p>" + x[i].getElementByTagName("position")[0].childNodes[0].nodeValue + "</p>";
-            html += "<p>" + x[i].getElementByTagName("id")[0].childNodes[0].nodeValue + "</p>";
-            html += "<p>" + x[i].getElementByTagName("quote")[0].childNodes[0].nodeValue + "</p>";
-        }
-        html += "</div>"
-    </script>-->
-
     <script>
         function loadDoc() {
             var xhttp = new XMLHttpRequest();
