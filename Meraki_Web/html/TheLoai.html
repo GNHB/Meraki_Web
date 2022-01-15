@@ -7,19 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!----------------------CSS/JAVESCRIPT  SLIDER-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script type="text/javascript"
-            src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/bookslider.css" />
 
+    <link rel="stylesheet" type="text/css" href="../css/bookslider.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-----------------------CSS CONTENT------------>
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/TheLoai.css" />
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/Footer.css" />
     <link rel="stylesheet" href="../css/listsach.css" />
+ 
     <!----------------------FONT-------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -124,250 +123,64 @@
 
         <!--NỘI DUNG-->
         <div class="content active" data-tab-content>
-            <p style="text-align: center; ">Tâm lý</p>
-            <hr style="width: 100%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom: 5px;" />
-            <a style="text-decoration: none;" href="../html/Newbooks.html"><p class="all">Xem tất cả</p></a>
+            <!------------------------------Slider tâm lý-->
+            <section class="listbook" id="listbook">
+                <h1 class="listbook-heading">Tâm lý</h1>
+                <a href="../html/Newbooks.html" style="text-decoration:none">
+                    <p align="right" class="all">XEM TẤT CẢ</p>
+                </a>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper splot_sach13" id="listslider2">
 
-            <div class="slider">
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/laohac.jpg" />
                     </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Lão Hạc</a></span>
-                            <br>
-                            <span class="authorbook">Nam Cao</span>
-                        </p>
+                    <div class="swiper-next">
+                        <button type='button' class='slick-next pull-right'><i class='fas fa-chevron-right'></i></button>
                     </div>
+                    <div class="swiper-prev">
+                        <button type='button' class='slick-prev pull-left'><i class='fas fa-chevron-left'></i></button>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/chuchokhongnha.png" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Chú chó không nhà</a></span><br>
-                            <span class="authorbook">Sarah Lean</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/duttinh.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Dứt tình</a></span><br>
-                            <span class="authorbook">Vũ Trọng Phụng</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/kyananhtrang.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Kỳ án ánh trăng</a></span><br>
-                            <span class="authorbook">Quỷ Cổ Nữ</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/suoinguon.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Suối nguồn</a></span><br>
-                            <span class="authorbook">Ayn Rand</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/troisinhvungve.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Trước khi nhắm mắt</a></span><br>
-                            <span class="authorbook">Lư Tư Hạo</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/nhagiakim.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Nhà giả kim</a></span><br>
-                            <span class="authorbook">Paulo Coelho</span>
-                        </p>
-                    </div>
-                </div>
+            </section>
+            <!------------------------------Slider Văn Học-->
+            <section class="listbook" id="listbook">
+                <h1 class="listbook-heading">Tiểu thuyết/ Văn học</h1>
+                <a href="../html/Newbooks.html" style="text-decoration:none">
+                    <p align="right" class="all">XEM TẤT CẢ</p>
+                </a>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper splot_sach14" id="listslider2">
 
-            </div>
+                    </div>
+                    <div class="swiper-next">
+                        <button type='button' class='slick-next pull-right'><i class='fas fa-chevron-right'></i></button>
+                    </div>
+                    <div class="swiper-prev">
+                        <button type='button' class='slick-prev pull-left'><i class='fas fa-chevron-left'></i></button>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <!------------------------------Slider Viễn tương-->
+            <section class="listbook" id="listbook">
+                <h1 class="listbook-heading">Viễn tưởng</h1>
+                <a href="../html/Newbooks.html" style="text-decoration:none">
+                    <p align="right" class="all">XEM TẤT CẢ</p>
+                </a>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper splot_sach15" id="listslider2">
 
-            <p style="text-align: center; margin-top: 40px;">Tiểu thuyết/ Văn học</p>
-            <hr style="width: 100%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom: 5px;" />
-            <a style="text-decoration: none;" href="../html/Newbooks.html"><p class="all">Xem tất cả</p></a>
-            <div class="slider">
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/origin.jpg" />
                     </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Origin</a></span><br>
-                            <span class="authorbook">Dan Brown</span>
-                        </p>
+                    <div class="swiper-next">
+                        <button type='button' class='slick-next pull-right'><i class='fas fa-chevron-right'></i></button>
                     </div>
+                    <div class="swiper-prev">
+                        <button type='button' class='slick-prev pull-left'><i class='fas fa-chevron-left'></i></button>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/thutoi.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Thú tội</a></span><br>
-                            <span class="authorbook">Minato Kanae</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/trenduongbang.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Trên đường băng</a></span><br>
-                            <span class="authorbook">Tony buổi sáng</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/truockhinhammat.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Trước khi nhắm mắt</a></span><br>
-                            <span class="authorbook">Keigo Higashino</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/truyenkieu.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Truyện Kiều</a></span><br>
-                            <span class="authorbook">Nguyễn Du</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/vongtronmau.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Vòng tròn máu</a></span><br>
-                            <span class="authorbook">Edgar Wallace</span>
-                        </p>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <p style="text-align: center; margin-top: 40px;">Viễn tưởng</p>
-            <hr style="width: 100%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom: 5px;" />
-            <a href="../html/Newbooks.html"><p class="all">Xem tất cả</p></a>
-            <div class="slider">
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/hoanguc.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Hỏa ngục</a></span><br>
-                            <span class="authorbook">Dan Brown</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/harrypotter.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Harry Potter</a></span> <br>
-                            <span class="authorbook">J.K.Rowling</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/luocsuloainguoi.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Lược sử loài người</a></span> <br>
-                            <span class="authorbook">Yuval Noah Harari</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/haisophan.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Hai số phận</a></span> <br>
-                            <span class="authorbook">Jeffrey Archer</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/bandatgiabaonhieu.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Bạn đắt giá bao nhiêu</a></span>  <br>
-                            <span class="authorbook">Vãn Tình</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/dambighet.jpg" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Dám bị ghét</a></span> <br>
-                            <span class="authorbook">Kishimi Ichiro</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="bookview">
-                    <div class="coverbook">
-                        <img src="../image/imvBook/phiasaunghicanx.png" />
-                    </div>
-                    <div class="description">
-                        <p class="titlebook">
-                            <span class="titlename"><a href="../html/DetailBook.html">Phía sau nghi can X</a></span>  <br>
-                            <span class="authorbook">Keigo Higashino</span>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
+            </section>
+            <!------------------------------Tác giả được yêu thích nhất-->
             <p style="text-align: center; margin-top: 40px;">Tác giả được yêu thích nhất</p>
             <hr style="width: 100%; margin-left: auto; margin-right: auto; height: 1px; background-color: black; margin-top: 5px; margin-bottom:5px;" />
             <a style="text-decoration: none;" href="../html/Newbooks.html"><p class="all">Xem tất cả</p></a>
@@ -459,7 +272,7 @@
         <div id="tv_dl" class="content" data-tab-content>
             <p style="font-size:20px; font-weight:bold; text-align:center;">Thiên văn - Địa lý</p>
             <div class="plot">
-                <div class="splot_sach5"  id="listsachjson">
+                <div class="splot_sach5" id="listsachjson">
 
 
                 </div>
@@ -469,8 +282,8 @@
         <!-------------------------------------VT-CN-->
         <div id="vl_cn" class="content" data-tab-content>
             <p style="font-size:20px; font-weight:bold; text-align:center;">Vật lý - Công nghệ</p>
-            <div class="plot">
-                <div class="splot_sach6"  id="listsachjson">
+            <div class="plot" >
+                <div class="splot_sach6" id="listsachjson">
 
 
                 </div>
@@ -490,7 +303,7 @@
         <div id="tc" class="content" data-tab-content>
             <p style="font-size:20px; font-weight:bold; text-align:center;">Tình cảm</p>
             <div class="plot">
-                <div class="splot_sach7"  id="listsachjson">
+                <div class="splot_sach7" id="listsachjson">
 
 
                 </div>
@@ -500,7 +313,7 @@
         <div id="tt" class="content" data-tab-content>
             <p style="font-size:20px; font-weight:bold; text-align:center;">Trinh thám</p>
             <div class="plot">
-                <div class="splot_sach1"  id="listsachjson">
+                <div class="splot_sach1" id="listsachjson">
 
                 </div>
             </div>
@@ -509,9 +322,7 @@
         <div id="kd" class="content" data-tab-content>
             <p style="font-size:20px; font-weight:bold; text-align:center;">Kinh dị</p>
             <div class="plot">
-                <div class="splot_sach2"  id="listsachjson">
-
-
+                <div class="splot_sach2" id="listsachjson">
                 </div>
             </div>
         </div>
@@ -519,7 +330,7 @@
         <div id="vt" class="content" data-tab-content>
             <p style="font-size:20px; font-weight:bold; text-align:center;">Viễn tưởng</p>
             <div class="plot">
-                <div class="splot_sach3"  id="listsachjson">
+                <div class="splot_sach3" id="listsachjson">
 
 
                 </div>
@@ -529,9 +340,7 @@
         <div id="t" class="content" data-tab-content>
             <p style="font-size:20px; font-weight:bold; text-align:center;">Thơ</p>
             <div class="plot">
-                <div class="splot_sach4"  id="listsachjson">
-
-
+                <div class="splot_sach4" id="listsachjson">
                 </div>
             </div>
         </div>
@@ -539,9 +348,7 @@
         <div id="pt" class="content" data-tab-content>
             <p style="font-size:20px; font-weight:bold; text-align:center;">Phương tây</p>
             <div class="plot">
-                <div class="splot_sach8"  id="listsachjson">
-
-
+                <div class="splot_sach8" id="listsachjson">
                 </div>
             </div>
         </div>
@@ -549,8 +356,7 @@
         <div id="tl" class="content" data-tab-content>
             <p style="font-size:20px; font-weight:bold; text-align:center;">Tâm lý</p>
             <div class="plot">
-                <div class="splot_sach9"  id="listsachjson">
-
+                <div class="splot_sach9" id="listsachjson">
 
                 </div>
             </div>
@@ -559,7 +365,7 @@
         <div id="n_sao" class="content" data-tab-content>
             <p style="font-size:20px; font-weight:bold; text-align:center;">5 sao</p>
             <div class="plot">
-                <div class="splot_sach10"  id="listsachjson">
+                <div class="splot_sach10" id="listsachjson">
 
 
                 </div>
@@ -569,7 +375,7 @@
         <div id="b_sao" class="content" data-tab-content>
             <p style="font-size:20px; font-weight:bold; text-align:center;">Từ 4 sao</p>
             <div class="plot">
-                <div class="splot_sach11"  id="listsachjson">
+                <div class="splot_sach11" id="listsachjson">
 
 
                 </div>
@@ -669,12 +475,38 @@
             })
         })
     </script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!--DROP DOWN---->
     <script type="text/javascript" src="../js/Theloai.js"></script>
     <!--JS SliderQuote-->
     <script src="../js/slidequote.js"></script>
-    <script src="../js/theLoaiSlider.js"></script>
-    <!--<script src="../js/book.js"></script>-->
     <script src="../js/listsach.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper3", {
+            spaceBetween: 10,
+            loop: true,
+            centeredSlides: true,
+            //autoplay: {
+            //    delay: 9500,
+            //    disableOnInteraction: false,
+            //},
+            navigation: {
+                nextEl: ".swiper-next",
+                prevEl: ".swiper-prev",
+            },
+            breakpoints: {
+                450: {
+                    slidesPerView: 2.5,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 3.5,
+                },
+            },
+        });
+    </script>
 </body>
 </html>

@@ -70,7 +70,7 @@ function loadJSON() {
      
 }
 function kinhdiJSON() {
-    fetch('../data/kinhdi.json')
+    fetch('../data/tinhcam.json')
         .then(response => response.json())
         .then(data => {
             let html = '';
@@ -169,7 +169,7 @@ function thoJSON() {
 
 }
 function trinhthamJSON() {
-    fetch('../data/trinhtham.json')
+    fetch('../data/phuongtay.json')
         .then(response => response.json())
         .then(data => {
             let html = '';

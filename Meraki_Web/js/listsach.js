@@ -12,6 +12,9 @@ const productList9 = document.querySelector('.splot_sach9');
 const productList10 = document.querySelector('.splot_sach10');
 const productList11 = document.querySelector('.splot_sach11');
 const productList12 = document.querySelector('.splot_sach12');
+const productList13 = document.querySelector('.splot_sach13');
+const productList14 = document.querySelector('.splot_sach14');
+const productList15 = document.querySelector('.splot_sach15');
 const productList0 = document.querySelector('.splot_sach0');
 eventListeners();
 
@@ -113,7 +116,7 @@ function vientuongJSON() {
             data.forEach(product => {
                 html += `
 
-          <div class="swiper-slide ">
+          <div class="swiper-slide "  style="flex-shrink: 2;">
                 <div class="item-a">
                     <div class="box_best_sellers">
                         <div class="box_img">
@@ -133,6 +136,7 @@ function vientuongJSON() {
             });
 
             productList1.innerHTML = html;
+            productList15.innerHTML = html;
 
         })
         .catch(error => {
@@ -288,7 +292,7 @@ function phuongtayJSON() {
             data.forEach(product => {
                 html += `
 
-          <div class="swiper-slide ">
+          <div class="swiper-slide "  style="flex-shrink: 2;">
                 <div class="item-a">
                     <div class="box_best_sellers">
                         <div class="box_img">
@@ -308,6 +312,7 @@ function phuongtayJSON() {
             });
 
             productList8.innerHTML = html;
+            productList14.innerHTML = html;
 
         })
     ////.catch(error => {
@@ -323,7 +328,7 @@ function tamlyJSON() {
             data.forEach(product => {
                 html += `
 
-          <div class="swiper-slide ">
+          <div class="swiper-slide "  style="flex-shrink: 2;">
                 <div class="item-a">
                     <div class="box_best_sellers">
                         <div class="box_img">
@@ -343,6 +348,7 @@ function tamlyJSON() {
             });
 
             productList9.innerHTML = html;
+            productList13.innerHTML = html;
 
         })
     ////.catch(error => {

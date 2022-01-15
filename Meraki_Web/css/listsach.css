@@ -242,14 +242,80 @@
 
 
 #listsachjson {
-    display: flex;
-    flex-wrap: wrap;
+   
+    align-content: center;
+    grid-template-columns: repeat(4,1fr);
+    display: grid;
+}
+.listbook {
+    margin: 1em auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    height: auto;
+    padding: 0 20px;
 }
 
+  
+#listslider2 {
+    height: auto;
+    max-width: 1000px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.slick-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--green);
+    z-index: 2;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+    .slick-prev:hover {
+        color: var(--green);
+        background-color: var(--yellow);
+    }
+
+.slick-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--green);
+    z-index: 2;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+    .slick-next:hover {
+        color: var(--green);
+        background-color: var(--yellow)
+    }
+
+
+@media screen and (min-width: 300px) {
+    #listsachjson {
+       
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+    .listbook {
+        border-top: 1px solid #487B72;
+        width: 100%;
+        margin: 30px auto;
+        background-color: var(--light_skin);
+        padding: 10px 50px 10px 50px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    #listsachjson {
+        align-content: center;
+        grid-template-columns: repeat(4,1fr);
+        display: grid;
+    }
+}
