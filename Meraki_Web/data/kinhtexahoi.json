@@ -28,20 +28,8 @@
     "name": "Súng, vi trùng và thép",
     "Author": "Jared Diamond",
     "imgSrc": "../image/imvBook/sungvitrungvathep.jpg"
-  },
-  {
-    "name": "Nhà giả kim",
-    "Author": "Paulo Coelho",
-    "imgSrc": "../image/imvBook/nhagiakim.jpg"
-  },
-  {
-    "name": "Bạn đắt giá bao nhiêu",
-    "Author": "Vãn Tình",
-    "imgSrc": "../image/imvBook/bandatgiabaonhieu.jpg"
-  },
-  {
-    "name": "Trời sinh vụng về",
-    "Author": "Lư Tư Hạo",
-    "imgSrc": "../image/imvBook/troisinhvungve.jpg"
   }
+
+
+
 ]

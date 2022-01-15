@@ -46,6 +46,30 @@
 
     "Author": "Richard Wiseman",
     "imgSrc": "../image/imvBook/tamlyhochaihuoc.jpg"
+  },
+  {
+    "name": "Phi lý trí",
+
+    "Author": "Dan Ariely",
+    "imgSrc": "../image/imvBook/philytri.jpg"
+  },
+  {
+    "name": "Bản chất của dối trá",
+
+    "Author": "Dan Ariely",
+    "imgSrc": "../image/imvBook/banchatcuadoitra.jpg"
+  },
+  {
+    "name": "Tình cờ gặp hạnh phúc",
+
+    "Author": "Daniel Gilbert",
+    "imgSrc": "../image/imvBook/tinhcogaphanhphuc.jpg"
+  },
+  {
+    "name": "Điểm bùng phát",
+
+    "Author": "Malcolm Gladwell",
+    "imgSrc": "../image/imvBook/diembungphat.jpg"
   }
 
 

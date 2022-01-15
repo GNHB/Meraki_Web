@@ -53,6 +53,24 @@
 
     "Author": "Alexandre Dumas con",
     "imgSrc": "../image/imvBook/trahoanu.jpg"
+  },
+  {
+    "name": "IT",
+
+    "Author": "Stephen King",
+    "imgSrc": "../image/imvBook/it.jpg"
+  },
+  {
+    "name": "Cậu bé học việc và thầy trừ tà - Phần 3: Đêm của kẻ đánh cắp hồn",
+
+    "Author": "Joseph Delaney",
+    "imgSrc": "../image/imvBook/demcuakedanhcaphon.jpg"
+  },
+  {
+    "name": "Peter Pan",
+
+    "Author": "James M. Barrie",
+    "imgSrc": "../image/imvBook/peterpan.jpg"
   }
 
 

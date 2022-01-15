@@ -51,6 +51,25 @@
 
     "Author": "Quỷ Cổ Nữ",
     "imgSrc": "../image/imvBook/kyananhtrang.jpg"
+  },
+  {
+    "name": "Sự im lặng của bầy cừu",
+
+    "Author": "Thomas Haris",
+    "imgSrc": "../image/imvBook/suimlangcuabaycuu.jpg"
+  },
+  {
+    "name": "Thú tội",
+
+    "Author": "Minato Kanae",
+    "imgSrc": "../image/imvBook/thutoi.jpg"
+  },
+  {
+    "name": "Bí mật của Naoko",
+
+    "Author": "Higashino Keigo",
+    "imgSrc": "../image/imvBook/bimatcuanaoko.jpg"
   }
- 
+
+
 ]

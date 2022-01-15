@@ -47,6 +47,28 @@
 
     "Author": "../image/imvIcon/fourstar-52.png",
     "imgSrc": "../image/imvBook/truyenkieu.jpg"
+  },
+  {
+    "name": "Tình cờ gặp hạnh phúc",
+
+    "Author": "../image/imvIcon/fourstar-52.png",
+    "imgSrc": "../image/imvBook/tinhcogaphanhphuc.jpg"
+  },
+  {
+    "name": "Điểm bùng phát",
+
+    "Author": "../image/imvIcon/fourstar-52.png",
+    "imgSrc": "../image/imvBook/diembungphat.jpg"
+  },
+  {
+    "name": "Bạn đắt giá bao nhiêu",
+    "Author": "../image/imvIcon/fourstar-52.png",
+    "imgSrc": "../image/imvBook/bandatgiabaonhieu.jpg"
+  },
+  {
+    "name": "Trời sinh vụng về",
+    "Author": "../image/imvIcon/fourstar-52.png",
+    "imgSrc": "../image/imvBook/troisinhvungve.jpg"
   }
 
 ]

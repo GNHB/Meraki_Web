@@ -50,7 +50,25 @@
 
     "Author": "Jeffery Deaver",
     "imgSrc": "../image/imvBook/buongkhu.jpg"
+  },
+  {
+    "name": "IT",
+
+    "Author": "Stephen King",
+    "imgSrc": "../image/imvBook/it.jpg"
+  },
+  {
+    "name": "Ác quỷ Nam Kinh",
+
+    "Author": "Mo Hayder",
+    "imgSrc": "../image/imvBook/acquynamkinh.jpg"
+  },
+  {
+    "name": "GOTH- Những kẻ hắc ám",
+
+    "Author": "Otsuichi",
+    "imgSrc": "../image/imvBook/nhungkehacam.jpg"
   }
- 
+
 
 ]

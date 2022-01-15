@@ -46,6 +46,30 @@
 
     "Author": "Carl Sagan",
     "imgSrc": "../image/imvBook/vutru.jpg"
+  },
+  {
+    "name": "Số phận của vũ trụ",
+
+    "Author": "Trịnh Xuân Thuận",
+    "imgSrc": "../image/imvBook/sophancuavutru.png"
+  },
+  {
+    "name": "Sự minh định của Địa Lý",
+
+    "Author": " Robert Kaplan",
+    "imgSrc": "../image/imvBook/suminhdinhcuadialy.png"
+  },
+  {
+    "name": "7 kỳ quan thế giới",
+
+    "Author": "Russell Ash, Richard Bonson",
+    "imgSrc": "../image/imvBook/7kiquanthegioi.png"
+  },
+  {
+    "name": "Các thánh địa trên thế giới",
+
+    "Author": "Colin Wilson",
+    "imgSrc": "../image/imvBook/cacthanhdiatrenthegioi.png"
   }
 
 

@@ -38,5 +38,25 @@
     "name": "Liệu IT đã hết thời",
     "Author": "Nicholas Carr",
     "imgSrc": "../image/imvBook/lieuITdahetthoi.jpg"
+  },
+  {
+    "name": "Thành phố thông minh",
+    "Author": "HouBing Song, Ravi Srinivasan, Tamim Sookoor, Sabina Jeschke",
+    "imgSrc": "../image/imvBook/thanhphothongminh.jpg"
+  },
+  {
+    "name": "Dữ liệu lớn",
+    "Author": "Viktor Mayer – SchÖnberger & Kenneth Cukier",
+    "imgSrc": "../image/imvBook/bigdata.jpg"
+  },
+  {
+    "name": "Sự tiến hóa của vật lý",
+    "Author": "A. Einstein, L. Infeld",
+    "imgSrc": "../image/imvBook/sutienhoacuavatly.jpg"
+  },
+  {
+    "name": "Trật tự thời gian",
+    "Author": "Carlo Rovelli",
+    "imgSrc": "../image/imvBook/trattuthoigian.jpg"
   }
 ]

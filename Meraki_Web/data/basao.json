@@ -47,6 +47,29 @@
 
     "Author": "../image/imvIcon/threestar-52.png",
     "imgSrc": "../image/imvBook/vongtronmau.jpg"
+  },
+  {
+    "name": "Nhà giả kim",
+    "Author": "../image/imvIcon/threestar-52.png",
+    "imgSrc": "../image/imvBook/nhagiakim.jpg"
+  },
+  {
+    "name": "Vũ trụ trong vỏ hạt dẻ",
+
+    "Author": "../image/imvIcon/threestar-52.png",
+    "imgSrc": "../image/imvBook/vutrutronghatvode.jpg"
+  },
+  {
+    "name": "Các thế giới song song",
+
+    "Author": "../image/imvIcon/threestar-52.png",
+    "imgSrc": "../image/imvBook/cacthegioisongsong.jpg"
+  },
+  {
+    "name": "Lỗ đen: các bài diễn thuyết trên đài",
+
+    "Author": "../image/imvIcon/threestar-52.png",
+    "imgSrc": "../image/imvBook/loden.jpg"
   }
 
 ]
