@@ -1,11 +1,72 @@
 ﻿[
   {
-    "name": "Hà nội vắng em",
+    "name": "Những thử thách của Apollo - Phần 3: Địa cung rực lửa",
 
-    "Author": "Bành Thế Đoàn",
-    "imgSrc": "../image/imvBook/hanovanem.jpg"
+    "Author": "../image/imvIcon/fivestar.png",
+    "imgSrc": "../image/imvBook/nhungthuthachcuaapollo.jpg"
+  },
+  {
+    "name": "Cậu bé học việc và thầy trừ tà - Phần 3: Đêm của kẻ đánh cắp hồn",
+
+    "Author": "../image/imvIcon/fivestar.png",
+    "imgSrc": "../image/imvBook/demcuakedanhcaphon.jpg"
+  },
+  {
+    "name": "Peter Pan",
+
+    "Author": "../image/imvIcon/fivestar.png",
+    "imgSrc": "../image/imvBook/peterpan.jpg"
+  },
+  {
+    "name": "Mật mã Da Vinci",
+
+    "Author": "../image/imvIcon/fivestar.png",
+    "imgSrc": "../image/imvBook/matmadavinci.jpg"
+  },
+  {
+    "name": "Mưu Sát",
+
+    "Author": "../image/imvIcon/fivestar.png",
+    "imgSrc": "../image/imvBook/muusat.jpg"
+  },
+  {
+    "name": "Trước khi nhắm mắt",
+    "Author": "../image/imvIcon/fivestar.png",
+    "imgSrc": "../image/imvBook/truockhinhammat.jpg"
+  },
+  {
+    "name": "Có một ngày, bố mẹ sẽ già đi",
+    "Author": "../image/imvIcon/fivestar.png",
+    "imgSrc": "../image/imvBook/comotngay.jpg"
+  },
+  {
+    "name": "Hachiko - chú chó đợi chờ",
+    "Author": "../image/imvIcon/fivestar.png",
+    "imgSrc": "../image/imvBook/hachiki.jpg"
+  },
+  {
+    "name": "Tớ muốn ăn tụy của cậu",
+    "Author": "../image/imvIcon/fivestar.png",
+    "imgSrc": "../image/imvBook/tomuonantuycuacau.jpg"
+  },
+  {
+    "name": "Điểm bùng phát",
+
+    "Author": "../image/imvIcon/fivestar.png",
+    "imgSrc": "../image/imvBook/diembungphat.jpg"
+  },
+  {
+    "name": "Đọc vị bất kì ai",
+
+    "Author": "../image/imvIcon/fivestar.png",
+    "imgSrc": "../image/imvBook/docvibatkiai.jpg"
+  },
+  {
+    "name": "Bạn không thông minh lắm đâu",
+
+    "Author": "../image/imvIcon/fivestar.png",
+    "imgSrc": "../image/imvBook/bankhongthongminhlamdau.jpg"
   }
- 
- 
+
 
 ]
