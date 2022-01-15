@@ -1,11 +1,59 @@
 ﻿[
   {
-    "name": "Hà nội vắng em",
+    "name": "Hai số phận",
 
-    "Author": "Bành Thế Đoàn",
-    "imgSrc": "../image/imvBook/hanovanem.jpg"
+    "Author": "Jeffrey Archer",
+    "imgSrc": "../image/imvBook/haisophan.jpg"
+  },
+  {
+    "name": "Harry Potter",
+
+    "Author": "J.K.Rowling",
+    "imgSrc": "../image/imvBook/harrypotter.jpg"
+  },
+  {
+    "name": "Hỏa ngục",
+
+    "Author": "Dan Brown",
+    "imgSrc": "../image/imvBook/hoanguc.jpg"
+  },
+  {
+    "name": "Sherlock Holmes",
+
+    "Author": "Arthur Conan Doyle",
+    "imgSrc": "../image/imvBook/nhungvukyancuasherlockholmes.jpg"
+  },
+  {
+    "name": "Kiêu hãnh và định kiến",
+
+    "Author": "Jane Austen",
+    "imgSrc": "../image/imvBook/kieuhanhvadinhkien.jpg"
+  },
+  {
+    "name": "Chuyện năm tầng",
+
+    "Author": "Nicolas Ancion",
+    "imgSrc": "../image/imvBook/chuyennamtang.jpg"
+  },
+  {
+    "name": "Không gia đình",
+
+    "Author": "Hector Malot",
+    "imgSrc": "../image/imvBook/khonggiadinh.jpg"
+  },
+  {
+    "name": "Những Cuộc Phiêu Lưu Của Huckleberry Finn",
+
+    "Author": "Mark Twain",
+    "imgSrc": "../image/imvBook/nhungcuocphieuluucuahuckleberryfinn.jpg"
+  },
+
+  {
+    "name": "Trà hoa nữ",
+
+    "Author": "Alexandre Dumas con",
+    "imgSrc": "../image/imvBook/trahoanu.jpg"
   }
- 
- 
+
 
 ]

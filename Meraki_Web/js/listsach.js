@@ -404,7 +404,7 @@ function bonsaoJSON() {
                                 <p style="font-size:16px"><strong>${product.name}</strong></p>
                             </a>
                             
-                            <p style="font-size:14px">${product.Author}</p>
+                            <img src="${product.Author}" style="width=90px" />
                         </div>
                     </div>
                 </div>
@@ -439,7 +439,7 @@ function basaoJSON() {
                                 <p style="font-size:16px"><strong>${product.name}</strong></p>
                             </a>
                             
-                            <p style="font-size:14px">${product.Author}</p>
+                            <img src="${product.Author}" style="width=90px" />
                         </div>
                     </div>
                 </div>

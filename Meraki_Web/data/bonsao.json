@@ -2,10 +2,51 @@
   {
     "name": "Hà nội vắng em",
 
-    "Author": "Bành Thế Đoàn",
+    "Author": "../image/imvIcon/fourstar-52.png",
     "imgSrc": "../image/imvBook/hanovanem.jpg"
+  },
+
+  {
+    "name": "Mặt nạ máu",
+
+    "Author": "../image/imvIcon/fourstar-52.png",
+    "imgSrc": "../image/imvBook/matnamau.jpg"
+  },
+  {
+    "name": "Suối nguồn",
+
+    "Author": "../image/imvIcon/fourstar-52.png",
+    "imgSrc": "../image/imvBook/suoinguon.jpg"
+  },
+  {
+    "name": "Trà hoa nữ",
+
+    "Author": "../image/imvIcon/fourstar-52.png",
+    "imgSrc": "../image/imvBook/trahoanu.jpg"
+  },
+  {
+    "name": "Thú tội",
+
+    "Author": "../image/imvIcon/fourstar-52.png",
+    "imgSrc": "../image/imvBook/thutoi.jpg"
+  },
+  {
+    "name": "Peter Pan",
+
+    "Author": "../image/imvIcon/fourstar-52.png",
+    "imgSrc": "../image/imvBook/peterpan.jpg"
+  },
+  {
+    "name": "Mưu sát",
+
+    "Author": "../image/imvIcon/fourstar-52.png",
+    "imgSrc": "../image/imvBook/muusat.jpg"
+  },
+  {
+    "name": "Truyện kiều",
+
+    "Author": "../image/imvIcon/fourstar-52.png",
+    "imgSrc": "../image/imvBook/truyenkieu.jpg"
   }
- 
- 
 
 ]
